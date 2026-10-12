@@ -181,7 +181,7 @@ test('expiration : fin publiée passée → Expirée', () => {
   assert.equal(r.verificationStatus, 'expired');
 });
 test('expiration : garde de jour 9h-23h après 23h → Expirée', () => {
-  const r = applyTimeStatus(rec({ verificationStatus: 'confirmed', dutyType: 'day', hoursText: '9h-23h' }), '2026-10-13', new Date('2026-10-13T23:30:00+01:00'));
+  const r = applyTimeStatus(rec({ verificationStatus: 'confirmed', dutyType: 'day', hoursText: '9h-23h' }), '2026-10-13', new Date('2026-10-13T23:59:00Z'));
   assert.equal(r.verificationStatus, 'expired');
 });
 test('sélection : garde de nuit de la veille incluse le matin, exclue des gardes de jour', () => {
