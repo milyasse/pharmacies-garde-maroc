@@ -25,6 +25,9 @@ const VERBOSE = args.includes('--verbose');
 const STRICT = args.includes('--strict');
 const fixturesIdx = args.indexOf('--fixtures');
 const FIXTURES = fixturesIdx >= 0 ? args[fixturesIdx + 1] : null;
+const rawIdx = args.indexOf('--save-raw');
+const SAVE_RAW = rawIdx >= 0 ? path.resolve(args[rawIdx + 1]) : null; // diagnostic : copie brute des pages lues
+let rawSaved = 0;
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const outIdx = args.indexOf('--out');
 const OUT = outIdx >= 0 ? path.resolve(args[outIdx + 1]) : path.join(ROOT, 'public', 'data');
@@ -67,7 +70,13 @@ async function politeFetch(url: string, accept = 'text/html'): Promise<string> {
         continue;
       }
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      return await res.text();
+      const body = await res.text();
+      if (SAVE_RAW && rawSaved < 8 && accept === 'text/html') {
+        rawSaved++;
+        await mkdir(SAVE_RAW, { recursive: true });
+        await writeFile(path.join(SAVE_RAW, url.replace(/^https?:\/\//, '').replace(/[^a-z0-9.-]+/gi, '_')), body, 'utf8');
+      }
+      return body;
     } catch (e) {
       lastErr = e;
       await sleep(2000 * (attempt + 1));
