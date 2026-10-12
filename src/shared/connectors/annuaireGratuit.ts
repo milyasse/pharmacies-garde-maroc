@@ -95,6 +95,8 @@ function coordsFrom(html: string): { lat: number; lng: number } | null {
 
 /** Date de la page : « mise à jour le … » prioritaire, sinon le titre « Aujourd'hui … ». */
 export function parsePageDate(html: string): { date: string | null; kind: ListingPage['pageDateKind'] } {
+  const t = html.match(/mise\s+(?:&agrave;|à)\s+jour\s+le\s*<time[^>]*datetime=["'](\d{4}-\d{2}-\d{2})/i);
+  if (t && isIsoDate(t[1])) return { date: t[1], kind: 'updated' };
   const text = htmlToText(html);
   const upd = text.match(/mis[e]?\s+à\s+jour\s+le\s+([^\n]{0,60})/i);
   if (upd) {
@@ -109,18 +111,78 @@ export function parsePageDate(html: string): { date: string | null; kind: Listin
   return { date: null, kind: null };
 }
 
-/** Découpe la page liste en blocs, un par pharmacie (titre <h2>/<h3>/<h4> contenant un lien de fiche). */
+function attr(tag: string, name: string): string | null {
+  const m = tag.match(new RegExp(`\\s${name}\\s*=\\s*("([^"]*)"|'([^']*)')`, 'i'));
+  return m ? decodeEntities(decodeEntities(m[2] ?? m[3] ?? '')).trim() || null : null; // certains attributs sont doublement échappés
+}
+
+/** Valeur d'une ligne « <span>Libellé</span><strong>valeur</strong> » d'une carte. */
+function infoItem(block: string, label: string): string | null {
+  const re = new RegExp(`<span[^>]*>\\s*${label}\\s*</span>\\s*<strong[^>]*>([\\s\\S]*?)</strong>`, 'i');
+  const m = block.match(re);
+  return m ? cleanSpaces(m[1]) || null : null;
+}
+
+/**
+ * Stratégie 1 (structure observée le 13/10/2026) : une carte par pharmacie
+ * <li class="ag_pharmacy_card" data-name data-url data-lat data-lng> … </li>
+ */
+function parseCards(body: string): ListingEntry[] {
+  const starts: { index: number; tag: string }[] = [];
+  const re = /<li\b[^>]*class\s*=\s*["'][^"']*\bag_pharmacy_card\b(?!_)[^"']*["'][^>]*>/gi;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(body))) starts.push({ index: m.index, tag: m[0] });
+  const out: ListingEntry[] = [];
+  starts.forEach((s, i) => {
+    const block = body.slice(s.index + s.tag.length, i + 1 < starts.length ? starts[i + 1].index : Math.min(body.length, s.index + 8000));
+    const url = attr(s.tag, 'data-url') ?? block.match(DETAIL_HREF)?.[1] ?? null;
+    const key = url?.match(/-s(\d+)\.html/)?.[1];
+    const nameRaw = attr(s.tag, 'data-name') ?? cleanSpaces(block.match(/<h[2-4]\b[^>]*>([\s\S]*?)<\/h[2-4]>/i)?.[1] ?? '');
+    if (!url || !key || !nameRaw) return;
+    const lat = Number(attr(s.tag, 'data-lat'));
+    const lng = Number(attr(s.tag, 'data-lng') ?? attr(s.tag, 'data-lon'));
+    const located = isValidLatLng(lat, lng) && isInMorocco(lat, lng);
+    const c = located ? { lat, lng } : coordsFrom(block);
+    const statusText = cleanSpaces(block.match(/class=["'][^"']*\bag_ph_status\b[^"']*["'][^>]*>([\s\S]*?)<\//i)?.[1] ?? '');
+    const gardeInfo = infoItem(block, 'Garde');
+    const dutyLabel = findDutyLabel(statusText) ?? (gardeInfo ? findDutyLabel('Garde ' + gardeInfo) ?? `Garde ${gardeInfo}` : null);
+    const street = block.match(/itemprop=["']streetAddress["'][^>]*>([\s\S]*?)<\//i);
+    const address = street ? cleanSpaces(street[1]).replace(/\s*-\s*$/, '') || null : null;
+    out.push({
+      sourceKey: 's' + key,
+      // La source contient parfois l'apostrophe abîmée en « 039 » (code HTML &#039; tronqué)
+      name: titleCase((nameRaw.replace(/\s*صيدلية.*$/, '').trim() || nameRaw).replace(/\b([LD])\s+0?39\s+/gi, "$1'")),
+      detailUrl: absolutize(url),
+      dutyLabel,
+      hoursText: findHoursText(statusText) ?? findHoursText(gardeInfo ?? ''),
+      district: infoItem(block, 'Quartier'),
+      address,
+      latitude: c?.lat ?? null,
+      longitude: c?.lng ?? null,
+    });
+  });
+  return out;
+}
+
+/** Découpe la page liste en entrées : cartes structurées, sinon blocs « titre + lien de fiche ». */
 export function parseListing(html: string): ListingPage {
   const { date, kind } = parsePageDate(html);
   const body = html.replace(/<(script|style|noscript)[\s\S]*?<\/\1>/gi, ' ');
-  const headingRe = /<h([2-4])\b[^>]*>([\s\S]*?)<\/h\1>/gi;
+  const emptyNotice = /aucune pharmacie trouv[ée]e/i.test(htmlToText(body));
+  const cards = parseCards(body);
+  if (cards.length) {
+    const seen = new Set<string>();
+    return { pageDate: date, pageDateKind: kind, entries: cards.filter((e) => !seen.has(e.sourceKey) && !!seen.add(e.sourceKey)), emptyNotice };
+  }
+  // Stratégie 2 (secours) : titre <h2>-<h4> avec le lien de fiche dedans, ou juste avant (<a href><h3>…</h3></a>)
+  const headingRe = /(<a\b[^>]*>\s*)?<h([2-4])\b[^>]*>([\s\S]*?)<\/h\2>/gi;
   const heads: { index: number; end: number; href: string; key: string; name: string }[] = [];
   let m: RegExpExecArray | null;
   while ((m = headingRe.exec(body))) {
-    const inner = m[2];
+    const inner = (m[1] ?? '') + m[3];
     const link = inner.match(DETAIL_HREF);
     if (!link) continue;
-    const name = cleanSpaces(inner);
+    const name = cleanSpaces(m[3]);
     if (!/pharmac|صيدلية/i.test(name)) continue;
     heads.push({ index: m.index, end: m.index + m[0].length, href: absolutize(link[1]), key: 's' + link[2], name });
   }
@@ -169,7 +231,6 @@ export function parseListing(html: string): ListingPage {
       longitude: c?.lng ?? null,
     });
   });
-  const emptyNotice = /aucune pharmacie trouv[ée]e/i.test(htmlToText(body));
   return { pageDate: date, pageDateKind: kind, entries, emptyNotice };
 }
 

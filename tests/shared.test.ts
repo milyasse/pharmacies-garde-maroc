@@ -229,3 +229,24 @@ test('couleurs de rang : 1 vert foncé, 2 vert clair, 3 bleu, 4 orange, 5 violet
   const six = new Set(Array.from({ length: 10 }, (_, i) => rankColor(i + 6).bg));
   assert.equal(six.size, 10);
 });
+
+test('structure réelle observée (cartes ag_pharmacy_card, 13/10/2026)', () => {
+  const p = parseListing(fx('structure-cartes-2026-10.html'));
+  assert.equal(p.pageDate, '2026-10-13');
+  assert.equal(p.pageDateKind, 'updated');
+  assert.equal(p.entries.length, 3);
+  const [a, , b] = p.entries;
+  assert.equal(a.name, 'Pharmacie Labchir');
+  assert.equal(a.sourceKey, 's238109');
+  assert.equal(a.detailUrl, 'https://www.annuaire-gratuit.ma/pharmacie-labchir-s238109.html');
+  assert.equal(a.latitude, 33.9156077);
+  assert.equal(a.longitude, -6.9121605);
+  assert.equal(a.district, 'Centre');
+  assert.equal(a.address, 'n° 1 nemssia, av. abdelkrim khattabi');
+  assert.equal(classifyDutyLabel(a.dutyLabel), 'continuous');
+  assert.equal(b.name, "Pharmacie De L'Exemple", 'apostrophe abîmée « 039 » réparée');
+  assert.equal(b.latitude, null, 'data-lat vide : pas de coordonnées inventées');
+  assert.equal(classifyDutyLabel(b.dutyLabel), 'day');
+  assert.equal(b.hoursText, '9h-23h');
+  assert.equal(b.district, 'Agdal');
+});
