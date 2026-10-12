@@ -1,0 +1,100 @@
+{
+ "generatedAt": "2026-10-12T23:52:47.194Z",
+ "todayMorocco": "2026-10-12",
+ "dates": [],
+ "runs": [
+  {
+   "sourceId": "annuaire-gratuit",
+   "sourceName": "annuaire-gratuit.ma",
+   "city": "rabat",
+   "url": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
+   "ok": false,
+   "pageDate": "2026-10-13",
+   "count": 0,
+   "error": "Aucune pharmacie extraite : la structure de la page a peut-être changé.",
+   "checkedAt": "2026-10-12T23:52:47.210Z"
+  },
+  {
+   "sourceId": "annuaire-gratuit",
+   "sourceName": "annuaire-gratuit.ma",
+   "city": "sale",
+   "url": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
+   "ok": false,
+   "pageDate": "2026-10-13",
+   "count": 0,
+   "error": "Aucune pharmacie extraite : la structure de la page a peut-être changé.",
+   "checkedAt": "2026-10-12T23:52:48.951Z"
+  },
+  {
+   "sourceId": "annuaire-gratuit",
+   "sourceName": "annuaire-gratuit.ma",
+   "city": "temara",
+   "url": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
+   "ok": false,
+   "pageDate": "2026-10-13",
+   "count": 0,
+   "error": "Aucune pharmacie extraite : la structure de la page a peut-être changé.",
+   "checkedAt": "2026-10-12T23:52:49.634Z"
+  }
+ ],
+ "connectors": [
+  {
+   "id": "annuaire-gratuit",
+   "name": "annuaire-gratuit.ma",
+   "homepage": "https://www.annuaire-gratuit.ma/",
+   "enabled": true,
+   "cities": [
+    "rabat",
+    "sale",
+    "temara"
+   ],
+   "reason": "Liste du jour par ville + historique de garde daté (début/fin) sur chaque fiche. Pages autorisées par robots.txt. Collecte espacée (≥ 1,5 s entre requêtes), toutes les ~2 h."
+  },
+  {
+   "id": "manual",
+   "name": "Saisie manuelle (tableau de garde officiel)",
+   "homepage": "",
+   "enabled": true,
+   "cities": [
+    "rabat",
+    "sale",
+    "temara"
+   ],
+   "reason": "Fichiers manual/AAAA-MM-JJ.json : permet de saisir un tableau de garde officiel (Ordre / conseil régional) avec son URL ou sa référence."
+  },
+  {
+   "id": "lematin",
+   "name": "lematin.ma",
+   "homepage": "https://lematin.ma/pharmacie-garde/rabat",
+   "enabled": false,
+   "cities": [
+    "rabat"
+   ],
+   "reason": "Désactivé : couvre Rabat uniquement (pas Salé ni Témara) et la liste est chargée par un point d’accès interdit par le robots.txt du site (/ajax/, /api/)."
+  },
+  {
+   "id": "wadifapublic",
+   "name": "wadifapublic.ma",
+   "homepage": "https://www.wadifapublic.ma/fr/pharmacie-de-garde-maroc/rabat",
+   "enabled": false,
+   "cities": [
+    "rabat",
+    "sale",
+    "temara"
+   ],
+   "reason": "Désactivé : listes sans date de validité explicite et dispositif anti-robot (« honeypot ») présent sur les pages ; nous ne contournons pas les protections."
+  },
+  {
+   "id": "med-ma",
+   "name": "med.ma",
+   "homepage": "https://www.med.ma/pharmacie/garde-24-24/rabat",
+   "enabled": false,
+   "cities": [
+    "rabat",
+    "sale",
+    "temara"
+   ],
+   "reason": "Non utilisé pour les gardes : annuaire sans date de validité ni horodatage de mise à jour."
+  }
+ ]
+}
