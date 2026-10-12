@@ -1,0 +1,86 @@
+name: Collecte des gardes et déploiement
+
+on:
+  schedule:
+    # Toutes les 2 heures (heures en UTC). GitHub peut retarder les tâches planifiées de quelques minutes.
+    - cron: '7 */2 * * *'
+    # Passages supplémentaires autour des changements de garde (≈ 8h40 et 20h40 au Maroc)
+    - cron: '40 7,19 * * *'
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: collect-and-deploy
+  cancel-in-progress: false
+
+jobs:
+  collect-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Tests unitaires (sans dépendance)
+        run: npm test
+
+      - name: Collecte des pharmacies de garde
+        id: collect
+        continue-on-error: true
+        run: npm run collect -- --strict
+
+      - name: Signaler une source en erreur
+        if: steps.collect.outcome == 'failure'
+        run: echo "::warning title=Source de garde en erreur::Au moins une source n'a pas pu être lue. Voir le journal de l'étape « Collecte » et public/data/status.json."
+
+      - name: Enregistrer les données collectées
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data
+          if git diff --cached --quiet; then
+            echo "Aucune nouvelle donnée."
+          else
+            git commit -m "data: collecte du $(TZ=Africa/Casablanca date '+%Y-%m-%d %H:%M') (heure du Maroc)"
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" || true
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
+
+      - name: Installer les dépendances
+        run: npm install --no-audit --no-fund
+
+      - name: Vérification des types (informative)
+        continue-on-error: true
+        run: npm run typecheck
+
+      - name: Construire l'application
+        env:
+          # https://<utilisateur>.github.io/<depot>/ ; "/" si le dépôt s'appelle <utilisateur>.github.io
+          BASE_PATH: ${{ endsWith(github.event.repository.name, '.github.io') && '/' || format('/{0}/', github.event.repository.name) }}
+        run: |
+          npm run build
+          cp dist/index.html dist/404.html
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: collect-build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

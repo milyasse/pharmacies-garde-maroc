@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-20",
+  "sourceName": "Conseil régional de l'Ordre des pharmaciens — tableau d'octobre",
+  "sourceUrl": "https://exemple.invalid/tableau-garde-octobre.pdf",
+  "records": [
+    {
+      "name": "Pharmacie (nom tel que publié)",
+      "city": "temara",
+      "district": "Quartier publié",
+      "address": "Adresse publiée",
+      "phone": "05 37 00 00 00",
+      "dutyType": "continuous",
+      "hoursText": null,
+      "dutyStartDate": "2026-10-20",
+      "dutyEndDate": "2026-10-21"
+    }
+  ]
+}

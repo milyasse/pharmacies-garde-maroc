@@ -1,0 +1,379 @@
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { Header } from './components/Header.tsx';
+import { SearchPanel, type Origin } from './components/SearchPanel.tsx';
+import { PharmacyMap } from './components/PharmacyMap.tsx';
+import { PharmacyList, type SortBy } from './components/PharmacyList.tsx';
+import { MapLegend } from './components/MapLegend.tsx';
+import { SourceStatus } from './components/SourceStatus.tsx';
+import type { RouteState } from './components/PharmacyCard.tsx';
+import { getCurrentPosition } from './services/geolocation.ts';
+import { searchPlace } from './services/geocoding.ts';
+import { getRoute, type RouteResult, type TravelMode } from './services/routing.ts';
+import { loadSnapshots, loadStatus } from './services/pharmacySearch.ts';
+import { buildResults, sortByDuration, type DutyFilter, type SearchOutcome } from './shared/search.ts';
+import type { CollectorStatus, Pharmacy } from './shared/types.ts';
+import { formatFrDate, formatMoroccoDateTime, isIsoDate, moroccoDate } from './shared/dates.ts';
+import { haversineKm } from './shared/distance.ts';
+import { CITIES, CONNECTORS } from './shared/connectors/registry.ts';
+import { CONFIG } from './config.ts';
+import { SpinnerIcon } from './components/icons.tsx';
+
+// Préférences non sensibles uniquement (jamais la position)
+function pref<T>(k: string, fallback: T): T {
+  try {
+    const v = localStorage.getItem('pgm.' + k);
+    return v === null ? fallback : (JSON.parse(v) as T);
+  } catch {
+    return fallback;
+  }
+}
+function savePref(k: string, v: unknown) {
+  try {
+    localStorage.setItem('pgm.' + k, JSON.stringify(v));
+  } catch {
+    /* stockage indisponible : sans conséquence */
+  }
+}
+
+const FILTER_LABEL: Record<DutyFilter, string> = { all: 'tous types', day: 'garde de jour', night: 'garde de nuit', continuous: 'garde 24h/24' };
+
+type SearchState =
+  | { state: 'idle' }
+  | { state: 'loading' }
+  | { state: 'error'; error: string }
+  | { state: 'done'; outcome: SearchOutcome; notice: string | null; date: string; radiusKm: number };
+
+export default function App() {
+  const [origin, setOrigin] = useState<Origin | null>(null);
+  const [originError, setOriginError] = useState<string | null>(null);
+  const [locating, setLocating] = useState(false);
+  const [picking, setPicking] = useState(false);
+  const [date, setDate] = useState(() => moroccoDate());
+  const [radiusKm, setRadiusKm] = useState<number>(() => pref('radius', 5));
+  const [dutyFilter, setDutyFilter] = useState<DutyFilter>(() => pref('filter', 'all'));
+  const [mode, setMode] = useState<TravelMode>(() => pref('mode', 'car'));
+  const [sortBy, setSortBy] = useState<SortBy>('distance');
+  const [status, setStatus] = useState<CollectorStatus | null>(null);
+  const [statusError, setStatusError] = useState<string | null>(null);
+  const [search, setSearch] = useState<SearchState>({ state: 'idle' });
+  const [hasSearched, setHasSearched] = useState(false);
+  const [collapsed, setCollapsed] = useState(false);
+  const [routes, setRoutes] = useState<Record<string, RouteResult>>({});
+  const [routeStates, setRouteStates] = useState<Record<string, RouteState>>({});
+  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [focus, setFocus] = useState<{ id: string | null; n: number }>({ id: null, n: 0 });
+  const [routesShown, setRoutesShown] = useState(true);
+  const [showAllRoutes, setShowAllRoutes] = useState(false);
+  const [computingAll, setComputingAll] = useState(false);
+  const [settingsOpen, setSettingsOpen] = useState(false);
+  const mapBox = useRef<HTMLDivElement>(null);
+  const searchAbort = useRef<AbortController | null>(null);
+  const routeAbort = useRef<AbortController | null>(null);
+
+  useEffect(() => savePref('radius', radiusKm), [radiusKm]);
+  useEffect(() => savePref('filter', dutyFilter), [dutyFilter]);
+  useEffect(() => savePref('mode', mode), [mode]);
+
+  const refreshStatus = useCallback(async () => {
+    try {
+      setStatus(await loadStatus());
+      setStatusError(null);
+    } catch (e) {
+      setStatusError((e as Error).message);
+    }
+  }, []);
+  useEffect(() => { void refreshStatus(); }, [refreshStatus]);
+
+  // ---------- Recherche
+  const runSearch = useCallback(async () => {
+    if (!origin) {
+      setOriginError('Indiquez une position de départ : « Ma position », une adresse ou un point sur la carte.');
+      return;
+    }
+    if (!isIsoDate(date)) {
+      setSearch({ state: 'error', error: 'Date invalide.' });
+      return;
+    }
+    if (!(radiusKm > 0 && radiusKm <= 100)) {
+      setSearch({ state: 'error', error: 'Rayon invalide (entre 0,1 et 100 km).' });
+      return;
+    }
+    searchAbort.current?.abort();
+    const ac = new AbortController();
+    searchAbort.current = ac;
+    setOriginError(null);
+    setSearch({ state: 'loading' });
+    setRoutes({});
+    setRouteStates({});
+    routeAbort.current?.abort();
+    try {
+      const [{ day, prev }, st] = await Promise.all([loadSnapshots(date, ac.signal), loadStatus(ac.signal).catch(() => null)]);
+      if (st) setStatus(st);
+      const today = moroccoDate();
+      const outcome = buildResults({
+        dayRecords: day?.records ?? [],
+        previousDayRecords: prev?.records ?? [],
+        date,
+        origin,
+        radiusKm,
+        dutyFilter,
+      });
+      const notices: string[] = [];
+      if (!day && !prev) {
+        if (date > today) notices.push(`Les sources ne publient pas les gardes à l’avance : aucune garde connue pour le ${formatFrDate(date)}. Réessayez ce jour-là.`);
+        else notices.push(`Aucune garde n’a été collectée pour le ${formatFrDate(date)} (historique conservé 60 jours).`);
+      } else if (date > today) {
+        notices.push('Date future : seules les gardes saisies depuis un tableau officiel peuvent apparaître.');
+      }
+      if (date === today && st) {
+        const ageH = (Date.now() - new Date(st.generatedAt).getTime()) / 3.6e6;
+        if (ageH > 6) notices.push(`Dernière collecte le ${formatMoroccoDateTime(st.generatedAt)} : les données peuvent ne pas être à jour.`);
+        const failed = st.runs.filter((r) => !r.ok);
+        if (failed.length) notices.push(`Source indisponible lors de la dernière collecte pour : ${failed.map((r) => CITIES.find((c) => c.id === r.city)?.name ?? r.city).join(', ')}.`);
+        const stale = st.runs.filter((r) => r.ok && r.pageDate && r.pageDate !== st.todayMorocco);
+        if (stale.length) notices.push(`La page source de ${stale.map((r) => CITIES.find((c) => c.id === r.city)?.name).join(', ')} affichait une autre date que le jour de collecte.`);
+      }
+      const nearest = Math.min(...CITIES.map((c) => haversineKm(origin, c.center)));
+      if (nearest > 25) notices.push('Votre position est hors de la zone couverte au démarrage (Rabat, Salé, Témara).');
+      setSearch({ state: 'done', outcome, notice: notices.join(' ') || null, date, radiusKm });
+      const first = outcome.ranked[0]?.id ?? null;
+      setSelectedId(first);
+      setCollapsed(true);
+    } catch (e) {
+      if ((e as Error).name === 'AbortError') return;
+      setSearch({ state: 'error', error: (e as Error).message });
+    }
+  }, [origin, date, radiusKm, dutyFilter]);
+
+  // Relance automatique quand un paramètre change après une première recherche
+  useEffect(() => {
+    if (hasSearched && origin) void runSearch();
+  }, [hasSearched, origin, date, radiusKm, dutyFilter, runSearch]);
+
+  // ---------- Position
+  const locate = useCallback(async () => {
+    setLocating(true);
+    setOriginError(null);
+    try {
+      const g = await getCurrentPosition();
+      setOrigin({ lat: g.lat, lng: g.lng, label: 'Ma position', kind: 'gps', accuracyM: g.accuracyM });
+      setPicking(false);
+      setHasSearched(true);
+    } catch (e) {
+      setOriginError((e as Error).message);
+      setCollapsed(false);
+    } finally {
+      setLocating(false);
+    }
+  }, []);
+
+  // ---------- Itinéraires
+  const allResults: Pharmacy[] = useMemo(() => {
+    if (search.state !== 'done') return [];
+    return [...search.outcome.ranked, ...search.outcome.expired, ...search.outcome.unlocated];
+  }, [search]);
+
+  const computeRoute = useCallback(async (id: string, signal?: AbortSignal) => {
+    const p = allResults.find((x) => x.id === id);
+    if (!p || !origin || p.latitude === null || p.longitude === null) return;
+    if (routes[id]) return;
+    setRouteStates((s) => ({ ...s, [id]: { loading: true } }));
+    try {
+      const r = await getRoute(origin, { lat: p.latitude, lng: p.longitude }, mode, signal);
+      setRoutes((m) => ({ ...m, [id]: r }));
+      setRouteStates((s) => ({ ...s, [id]: {} }));
+    } catch (e) {
+      if ((e as Error).name === 'AbortError') {
+        setRouteStates((s) => ({ ...s, [id]: {} }));
+        return;
+      }
+      setRouteStates((s) => ({ ...s, [id]: { error: `${(e as Error).message} Utilisez « Ouvrir dans Google Maps ».` } }));
+    }
+  }, [allResults, origin, mode, routes]);
+
+  // Itinéraire par défaut vers la pharmacie sélectionnée
+  useEffect(() => {
+    if (!selectedId || !origin || search.state !== 'done') return;
+    if (routes[selectedId] || routeStates[selectedId]?.loading || routeStates[selectedId]?.error) return;
+    void computeRoute(selectedId);
+  }, [selectedId, origin, search, routes, routeStates, computeRoute]);
+
+  // Changement de mode de trajet : on recalcule
+  useEffect(() => {
+    setRoutes({});
+    setRouteStates({});
+  }, [mode]);
+
+  async function computeAll() {
+    if (search.state !== 'done' || !origin) return;
+    routeAbort.current?.abort();
+    const ac = new AbortController();
+    routeAbort.current = ac;
+    setComputingAll(true);
+    for (const p of search.outcome.ranked.slice(0, CONFIG.maxRoutesBatch)) {
+      if (ac.signal.aborted) break;
+      if (routes[p.id]) continue;
+      await computeRoute(p.id, ac.signal);
+      await new Promise((r) => setTimeout(r, 350)); // ménage le service public
+    }
+    setComputingAll(false);
+  }
+
+  const withRoutes = useCallback(
+    (list: Pharmacy[]) => list.map((p) => (routes[p.id] ? { ...p, distanceRoadKm: routes[p.id].distanceKm, estimatedTravelMinutes: routes[p.id].durationMin } : p)),
+    [routes],
+  );
+
+  const view = useMemo(() => {
+    if (search.state !== 'done') return null;
+    const ranked = withRoutes(search.outcome.ranked);
+    return {
+      list: sortBy === 'duration' ? sortByDuration(ranked) : ranked,
+      ranked,
+      expired: withRoutes(search.outcome.expired),
+      unlocated: search.outcome.unlocated,
+    };
+  }, [search, withRoutes, sortBy]);
+
+  const mapPharmacies = useMemo(() => (view ? [...view.ranked, ...view.expired] : []), [view]);
+  const visibleRouteIds = useMemo(
+    () => (showAllRoutes ? Object.keys(routes) : selectedId ? [selectedId] : []),
+    [showAllRoutes, routes, selectedId],
+  );
+
+  const select = (id: string) => setSelectedId(id);
+  const showOnMap = (id: string) => {
+    setSelectedId(id);
+    setFocus((f) => ({ id, n: f.n + 1 }));
+    if (window.matchMedia('(max-width: 1023px)').matches) mapBox.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+  const traceRoute = (id: string) => {
+    setSelectedId(id);
+    setRoutesShown(true);
+    // l'effet « itinéraire par défaut » relance le calcul (y compris après une erreur)
+    setRouteStates((s) => {
+      const n = { ...s };
+      delete n[id];
+      return n;
+    });
+    if (window.matchMedia('(max-width: 1023px)').matches) mapBox.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
+  const sourceLinks = (status?.runs ?? []).map((r) => ({ name: `${r.sourceName} (${CITIES.find((c) => c.id === r.city)?.name})`, url: r.url }));
+
+  return (
+    <div className="flex min-h-full flex-col lg:h-full">
+      <Header onLocate={locate} locating={locating} onOpenSettings={() => setSettingsOpen(true)} />
+      <main className="flex-1 lg:grid lg:min-h-0 lg:grid-cols-[440px_1fr]">
+        <div className="lg:min-h-0 lg:overflow-y-auto lg:border-r lg:border-line">
+          {collapsed && search.state === 'done' ? (
+            <div className="flex items-center gap-3 bg-white px-4 py-3 lg:px-6">
+              <p className="min-w-0 flex-1 text-sm">
+                <b>{origin?.kind === 'gps' ? 'Ma position' : origin?.kind === 'map' ? 'Point sur la carte' : origin?.label.split(',')[0]}</b>
+                <span className="text-muted"> · {formatFrDate(date)} · {radiusKm} km · {FILTER_LABEL[dutyFilter]}</span>
+              </p>
+              <button type="button" onClick={() => setCollapsed(false)} className="rounded-xl bg-brand-50 px-3 py-2 text-sm font-bold text-brand-700">Modifier</button>
+            </div>
+          ) : (
+            <SearchPanel
+              origin={origin}
+              locating={locating}
+              onLocate={locate}
+              onAddressSearch={(q) => searchPlace(q)}
+              onChoosePlace={(p) => { setOrigin({ lat: p.lat, lng: p.lng, label: p.label, kind: 'address' }); setPicking(false); setHasSearched(true); }}
+              picking={picking}
+              onTogglePick={() => { setPicking((v) => !v); mapBox.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }}
+              date={date}
+              onDate={setDate}
+              radiusKm={radiusKm}
+              onRadius={setRadiusKm}
+              dutyFilter={dutyFilter}
+              onDutyFilter={setDutyFilter}
+              onSearch={() => { if (hasSearched || !origin) void runSearch(); else setHasSearched(true); }}
+              searching={search.state === 'loading'}
+              originError={originError}
+            />
+          )}
+
+          <div className="hidden lg:block">{renderResults()}</div>
+        </div>
+
+        <div className="flex flex-col lg:min-h-0">
+          <div ref={mapBox} className="relative h-[55vh] min-h-[320px] scroll-mt-2 lg:h-auto lg:flex-1">
+            <PharmacyMap
+              origin={origin}
+              radiusKm={radiusKm}
+              pharmacies={mapPharmacies}
+              selectedId={selectedId}
+              routes={routes}
+              visibleRouteIds={visibleRouteIds}
+              mode={mode}
+              picking={picking}
+              onPick={(lat, lng) => { setOrigin({ lat, lng, label: 'Point choisi sur la carte', kind: 'map' }); setPicking(false); setHasSearched(true); }}
+              onSelect={select}
+              focusSignal={focus}
+              routesShown={routesShown}
+              onToggleRoutes={() => setRoutesShown((v) => !v)}
+              canShowRoutes={Object.keys(routes).length > 0}
+            />
+          </div>
+          <div className="bg-white px-4 py-2"><MapLegend count={view?.ranked.length ?? 5} /></div>
+          <div className="lg:hidden">{renderResults()}</div>
+        </div>
+      </main>
+      <SourceStatus open={settingsOpen} onClose={() => setSettingsOpen(false)} status={status} statusError={statusError} mode={mode} onMode={setMode} />
+    </div>
+  );
+
+  function renderResults() {
+    if (search.state === 'idle') {
+      return (
+        <section className="space-y-2 p-4 text-sm lg:px-6">
+          <h2 className="text-base font-extrabold">Trouver une pharmacie de garde</h2>
+          <p>Choisissez votre position, la date et le rayon, puis lancez la recherche. Zone couverte au démarrage : <b>Rabat, Salé et Témara</b>.</p>
+          <p className="text-muted">Sources actives : {CONNECTORS.filter((c) => c.enabled && c.homepage).map((c) => c.name).join(', ')}.</p>
+        </section>
+      );
+    }
+    if (search.state === 'loading') {
+      return <p className="flex items-center gap-2 p-4 text-sm font-semibold lg:px-6" role="status"><SpinnerIcon /> Recherche des gardes publiées…</p>;
+    }
+    if (search.state === 'error') {
+      return (
+        <div role="alert" className="m-4 rounded-xl bg-danger-50 p-3 text-sm font-semibold text-danger-600">
+          {search.error}{' '}
+          <button type="button" className="underline" onClick={() => void runSearch()}>Réessayer</button>
+        </div>
+      );
+    }
+    if (!view) return null;
+    return (
+      <PharmacyList
+        date={search.date}
+        radiusKm={search.radiusKm}
+        list={view.list}
+        expired={view.expired}
+        unlocated={view.unlocated}
+        outside={search.outcome.outside}
+        filteredOutByType={search.outcome.filteredOutByType}
+        dataNotice={search.notice}
+        sortBy={sortBy}
+        onSort={(s) => { setSortBy(s); if (s === 'duration') void computeAll(); }}
+        selectedId={selectedId}
+        origin={origin}
+        mode={mode}
+        routeStates={routeStates}
+        onSelect={select}
+        onShowOnMap={showOnMap}
+        onRoute={traceRoute}
+        onComputeAll={() => void computeAll()}
+        computingAll={computingAll}
+        showAllRoutes={showAllRoutes}
+        onShowAllRoutes={setShowAllRoutes}
+        onRefresh={() => void runSearch()}
+        onEnlarge={() => setRadiusKm((r) => Math.min(100, r < 5 ? 5 : r < 10 ? 10 : r < 20 ? 20 : r < 30 ? 30 : r * 2))}
+        sourceLinks={sourceLinks}
+      />
+    );
+  }
+}
