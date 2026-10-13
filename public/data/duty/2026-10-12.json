@@ -1,6 +1,6 @@
 {
  "date": "2026-10-12",
- "generatedAt": "2026-10-13T08:25:01.318Z",
+ "generatedAt": "2026-10-13T10:23:38.662Z",
  "records": [
   {
    "id": "rabat-maghreb-arabi",
@@ -606,7 +606,7 @@
    "phone": "+212537603990",
    "dutyDate": "2026-10-12",
    "dutyType": "day",
-   "dutyLabel": "Garde de jour",
+   "dutyLabel": "Garde Jour",
    "hoursText": "9h-23h",
    "dutyStartDate": "2026-10-12",
    "dutyEndDate": "2026-10-13",
@@ -617,14 +617,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-al-anouar-s241888.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-10-13",
-     "lastCheckedAt": "2026-10-13T08:25:04.194Z",
+     "lastCheckedAt": "2026-10-13T10:24:02.045Z",
      "historyMatch": {
       "start": "2026-10-12",
       "end": "2026-10-13",
       "label": "Garde Jour"
      },
      "dutyType": "day",
-     "dutyLabel": "Garde de jour"
+     "dutyLabel": "Garde Jour"
     }
    ],
    "verificationStatus": "confirmed",

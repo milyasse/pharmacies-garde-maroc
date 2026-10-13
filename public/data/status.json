@@ -1,8 +1,9 @@
 {
- "generatedAt": "2026-10-13T08:25:01.318Z",
+ "generatedAt": "2026-10-13T10:23:38.662Z",
  "todayMorocco": "2026-10-13",
  "dates": [
-  "2026-10-12"
+  "2026-10-12",
+  "2026-10-13"
  ],
  "runs": [
   {
@@ -12,9 +13,9 @@
    "url": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
    "ok": true,
    "pageDate": "2026-10-13",
-   "count": 8,
+   "count": 7,
    "error": null,
-   "checkedAt": "2026-10-13T08:25:01.344Z"
+   "checkedAt": "2026-10-13T10:23:38.677Z"
   },
   {
    "sourceId": "annuaire-gratuit",
@@ -23,9 +24,9 @@
    "url": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
    "ok": true,
    "pageDate": "2026-10-13",
-   "count": 8,
+   "count": 7,
    "error": null,
-   "checkedAt": "2026-10-13T08:25:03.311Z"
+   "checkedAt": "2026-10-13T10:23:49.546Z"
   },
   {
    "sourceId": "annuaire-gratuit",
@@ -36,7 +37,7 @@
    "pageDate": "2026-10-13",
    "count": 3,
    "error": null,
-   "checkedAt": "2026-10-13T08:25:04.194Z"
+   "checkedAt": "2026-10-13T10:24:02.045Z"
   }
  ],
  "connectors": [

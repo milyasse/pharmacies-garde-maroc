@@ -1,0 +1,598 @@
+{
+ "date": "2026-10-13",
+ "generatedAt": "2026-10-13T10:23:38.662Z",
+ "records": [
+  {
+   "id": "rabat-boustane",
+   "name": "Pharmacie Al Boustane",
+   "address": "69, bd Moustakbal, Amal 4 compl. (c.y.m.) Rabat",
+   "city": "rabat",
+   "district": "Yacoub El Mansour",
+   "latitude": 33.9790077,
+   "longitude": -6.8892348,
+   "coordinatesSource": "source",
+   "phone": "+212537799293",
+   "dutyDate": "2026-10-13",
+   "dutyType": "continuous",
+   "dutyLabel": "Ouvert 24h/24",
+   "hoursText": null,
+   "dutyStartDate": "2026-10-13",
+   "dutyEndDate": "2026-10-14",
+   "sources": [
+    {
+     "sourceId": "annuaire-gratuit",
+     "sourceName": "annuaire-gratuit.ma",
+     "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-al-boustane-s237599.html",
+     "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
+     "sourcePublishedAt": "2026-10-13",
+     "lastCheckedAt": "2026-10-13T10:23:38.677Z",
+     "historyMatch": {
+      "start": "2026-10-13",
+      "end": "2026-10-14",
+      "label": "Garde Jour et Nuit"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "Ouvert 24h/24"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "medium",
+   "notes": []
+  },
+  {
+   "id": "rabat-belmahi",
+   "name": "Pharmacie Belmahi",
+   "address": "1, rue tonkin (av madagascar) prés l'école andre malraux et marché diour jamaa Rabat",
+   "city": "rabat",
+   "district": "Oceon Orangers",
+   "latitude": 34.0066296,
+   "longitude": -6.8530181,
+   "coordinatesSource": "source",
+   "phone": "+212537722650",
+   "dutyDate": "2026-10-13",
+   "dutyType": "day",
+   "dutyLabel": "Garde Jour",
+   "hoursText": null,
+   "dutyStartDate": "2026-10-13",
+   "dutyEndDate": "2026-10-14",
+   "sources": [
+    {
+     "sourceId": "annuaire-gratuit",
+     "sourceName": "annuaire-gratuit.ma",
+     "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-belmahi-s237666.html",
+     "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
+     "sourcePublishedAt": "2026-10-13",
+     "lastCheckedAt": "2026-10-13T10:23:38.677Z",
+     "historyMatch": {
+      "start": "2026-10-13",
+      "end": "2026-10-14",
+      "label": "Garde Jour"
+     },
+     "dutyType": "day",
+     "dutyLabel": "Garde Jour"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "medium",
+   "notes": []
+  },
+  {
+   "id": "rabat-theatre",
+   "name": "Pharmacie Du Théâtre",
+   "address": "11 rue haj abdeslam kabbaj ex rue al marj - Rabat",
+   "city": "rabat",
+   "district": "Centre Ville",
+   "latitude": 34.0196278,
+   "longitude": -6.8331119,
+   "coordinatesSource": "source",
+   "phone": "+212537702794",
+   "dutyDate": "2026-10-13",
+   "dutyType": "day",
+   "dutyLabel": "Garde Jour",
+   "hoursText": null,
+   "dutyStartDate": "2026-10-13",
+   "dutyEndDate": "2026-10-14",
+   "sources": [
+    {
+     "sourceId": "annuaire-gratuit",
+     "sourceName": "annuaire-gratuit.ma",
+     "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-du-theatre-s237159.html",
+     "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
+     "sourcePublishedAt": "2026-10-13",
+     "lastCheckedAt": "2026-10-13T10:23:38.677Z",
+     "historyMatch": {
+      "start": "2026-10-13",
+      "end": "2026-10-14",
+      "label": "Garde Jour"
+     },
+     "dutyType": "day",
+     "dutyLabel": "Garde Jour"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "medium",
+   "notes": []
+  },
+  {
+   "id": "rabat-peupliers",
+   "name": "Pharmacie les Peupliers",
+   "address": "Hay Ryad 17 lot.1, secteur 10 Rabat",
+   "city": "rabat",
+   "district": "Hay Riad",
+   "latitude": 33.9595196,
+   "longitude": -6.8728176,
+   "coordinatesSource": "source",
+   "phone": "+212537711158",
+   "dutyDate": "2026-10-13",
+   "dutyType": "continuous",
+   "dutyLabel": "Ouvert 24h/24",
+   "hoursText": null,
+   "dutyStartDate": "2026-10-13",
+   "dutyEndDate": "2026-10-14",
+   "sources": [
+    {
+     "sourceId": "annuaire-gratuit",
+     "sourceName": "annuaire-gratuit.ma",
+     "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-les-peupliers-s237670.html",
+     "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
+     "sourcePublishedAt": "2026-10-13",
+     "lastCheckedAt": "2026-10-13T10:23:38.677Z",
+     "historyMatch": {
+      "start": "2026-10-13",
+      "end": "2026-10-14",
+      "label": "Garde Jour et Nuit"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "Ouvert 24h/24"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "medium",
+   "notes": []
+  },
+  {
+   "id": "rabat-loubaris",
+   "name": "Pharmacie Loubaris",
+   "address": "complexe commercial dar essalamav mohammed belhassan el ouazani Rabat",
+   "city": "rabat",
+   "district": "Takadoum Et Souissi",
+   "latitude": 33.9781233,
+   "longitude": -6.8259336,
+   "coordinatesSource": "source",
+   "phone": "+212537754713",
+   "dutyDate": "2026-10-13",
+   "dutyType": "continuous",
+   "dutyLabel": "Ouvert 24h/24",
+   "hoursText": null,
+   "dutyStartDate": "2026-10-13",
+   "dutyEndDate": "2026-10-14",
+   "sources": [
+    {
+     "sourceId": "annuaire-gratuit",
+     "sourceName": "annuaire-gratuit.ma",
+     "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-loubaris-s135774.html",
+     "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
+     "sourcePublishedAt": "2026-10-13",
+     "lastCheckedAt": "2026-10-13T10:23:38.677Z",
+     "historyMatch": {
+      "start": "2026-10-13",
+      "end": "2026-10-14",
+      "label": "Garde Jour et Nuit"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "Ouvert 24h/24"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "medium",
+   "notes": []
+  },
+  {
+   "id": "rabat-marjolaine",
+   "name": "Pharmacie Marjolaine",
+   "address": "rue la méditerranée,n 62, al montalak 2, c.y.m - Rabat",
+   "city": "rabat",
+   "district": "Yacoub El Mansour",
+   "latitude": 33.9697277,
+   "longitude": -6.9043373,
+   "coordinatesSource": "source",
+   "phone": "+212537291233",
+   "dutyDate": "2026-10-13",
+   "dutyType": "day",
+   "dutyLabel": "Garde Jour",
+   "hoursText": null,
+   "dutyStartDate": "2026-10-13",
+   "dutyEndDate": "2026-10-14",
+   "sources": [
+    {
+     "sourceId": "annuaire-gratuit",
+     "sourceName": "annuaire-gratuit.ma",
+     "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-marjolaine-s241173.html",
+     "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
+     "sourcePublishedAt": "2026-10-13",
+     "lastCheckedAt": "2026-10-13T10:23:38.677Z",
+     "historyMatch": {
+      "start": "2026-10-13",
+      "end": "2026-10-14",
+      "label": "Garde Jour"
+     },
+     "dutyType": "day",
+     "dutyLabel": "Garde Jour"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "medium",
+   "notes": []
+  },
+  {
+   "id": "rabat-oqba",
+   "name": "Pharmacie Oqba",
+   "address": "62 avenue oqba - Rabat",
+   "city": "rabat",
+   "district": "Agdal",
+   "latitude": 34.003118,
+   "longitude": -6.8498515,
+   "coordinatesSource": "source",
+   "phone": "+212537772699",
+   "dutyDate": "2026-10-13",
+   "dutyType": "continuous",
+   "dutyLabel": "Ouvert 24h/24",
+   "hoursText": null,
+   "dutyStartDate": "2026-10-13",
+   "dutyEndDate": "2026-10-14",
+   "sources": [
+    {
+     "sourceId": "annuaire-gratuit",
+     "sourceName": "annuaire-gratuit.ma",
+     "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-oqba-s117136.html",
+     "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
+     "sourcePublishedAt": "2026-10-13",
+     "lastCheckedAt": "2026-10-13T10:23:38.677Z",
+     "historyMatch": {
+      "start": "2026-10-13",
+      "end": "2026-10-14",
+      "label": "Garde Jour et Nuit"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "Ouvert 24h/24"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "medium",
+   "notes": []
+  },
+  {
+   "id": "sale-abdedine",
+   "name": "Pharmacie Abdedine",
+   "address": "101, bd Massira El Khadra, Bettana Sale",
+   "city": "sale",
+   "district": "Bettana",
+   "latitude": 34.0309408,
+   "longitude": -6.8147813,
+   "coordinatesSource": "source",
+   "phone": "+212537845138",
+   "dutyDate": "2026-10-13",
+   "dutyType": "day",
+   "dutyLabel": "Garde Jour",
+   "hoursText": null,
+   "dutyStartDate": "2026-10-13",
+   "dutyEndDate": "2026-10-14",
+   "sources": [
+    {
+     "sourceId": "annuaire-gratuit",
+     "sourceName": "annuaire-gratuit.ma",
+     "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-abdedine-s237416.html",
+     "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
+     "sourcePublishedAt": "2026-10-13",
+     "lastCheckedAt": "2026-10-13T10:23:49.546Z",
+     "historyMatch": {
+      "start": "2026-10-13",
+      "end": "2026-10-14",
+      "label": "Garde Jour"
+     },
+     "dutyType": "day",
+     "dutyLabel": "Garde Jour"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "medium",
+   "notes": []
+  },
+  {
+   "id": "sale-hayat",
+   "name": "Pharmacie Al Hayat",
+   "address": "boulevard atlas lekbir. immeuble des enseignants Sale",
+   "city": "sale",
+   "district": "Hay Essalam",
+   "latitude": 34.0428231,
+   "longitude": -6.7909556,
+   "coordinatesSource": "source",
+   "phone": "+212537808401",
+   "dutyDate": "2026-10-13",
+   "dutyType": "continuous",
+   "dutyLabel": "Ouvert 24h/24",
+   "hoursText": null,
+   "dutyStartDate": "2026-10-13",
+   "dutyEndDate": "2026-10-14",
+   "sources": [
+    {
+     "sourceId": "annuaire-gratuit",
+     "sourceName": "annuaire-gratuit.ma",
+     "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-al-hayat-s241589.html",
+     "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
+     "sourcePublishedAt": "2026-10-13",
+     "lastCheckedAt": "2026-10-13T10:23:49.546Z",
+     "historyMatch": {
+      "start": "2026-10-13",
+      "end": "2026-10-14",
+      "label": "Garde Jour et Nuit"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "Ouvert 24h/24"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "medium",
+   "notes": []
+  },
+  {
+   "id": "sale-centrale",
+   "name": "Pharmacie centrale",
+   "address": "angle de l'avenue med ben al hassan et de l'avenue hassan iiimm 44a.c4 - Sale",
+   "city": "sale",
+   "district": "Sala el jadida",
+   "latitude": 33.9938872,
+   "longitude": -6.7463404,
+   "coordinatesSource": "source",
+   "phone": "+212537530691",
+   "dutyDate": "2026-10-13",
+   "dutyType": "continuous",
+   "dutyLabel": "Ouvert 24h/24",
+   "hoursText": null,
+   "dutyStartDate": "2026-10-13",
+   "dutyEndDate": "2026-10-14",
+   "sources": [
+    {
+     "sourceId": "annuaire-gratuit",
+     "sourceName": "annuaire-gratuit.ma",
+     "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-centrale-s237202.html",
+     "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
+     "sourcePublishedAt": "2026-10-13",
+     "lastCheckedAt": "2026-10-13T10:23:49.546Z",
+     "historyMatch": {
+      "start": "2026-10-13",
+      "end": "2026-10-14",
+      "label": "Garde Jour et Nuit"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "Ouvert 24h/24"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "medium",
+   "notes": []
+  },
+  {
+   "id": "sale-chafia",
+   "name": "Pharmacie Chafia",
+   "address": "cité safâa 4 imm 23 app 7 sala al jadida - Sale",
+   "city": "sale",
+   "district": "Sala El Jadida",
+   "latitude": 34.0151969,
+   "longitude": -6.7399761,
+   "coordinatesSource": "source",
+   "phone": "+212537830797",
+   "dutyDate": "2026-10-13",
+   "dutyType": "day",
+   "dutyLabel": "Garde Jour",
+   "hoursText": null,
+   "dutyStartDate": "2026-10-13",
+   "dutyEndDate": "2026-10-14",
+   "sources": [
+    {
+     "sourceId": "annuaire-gratuit",
+     "sourceName": "annuaire-gratuit.ma",
+     "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-chafia-s238487.html",
+     "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
+     "sourcePublishedAt": "2026-10-13",
+     "lastCheckedAt": "2026-10-13T10:23:49.546Z",
+     "historyMatch": {
+      "start": "2026-10-13",
+      "end": "2026-10-14",
+      "label": "Garde Jour"
+     },
+     "dutyType": "day",
+     "dutyLabel": "Garde Jour"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "medium",
+   "notes": []
+  },
+  {
+   "id": "sale-essaf",
+   "name": "Pharmacie Essaf",
+   "address": "24h/24h42 rue essaf secteur mrissa Sale",
+   "city": "sale",
+   "district": "Hay Chmaou",
+   "latitude": 34.0385779,
+   "longitude": -6.8223006,
+   "coordinatesSource": "source",
+   "phone": "+212537844870",
+   "dutyDate": "2026-10-13",
+   "dutyType": "continuous",
+   "dutyLabel": "Ouvert 24h/24",
+   "hoursText": null,
+   "dutyStartDate": "2026-10-13",
+   "dutyEndDate": "2026-10-14",
+   "sources": [
+    {
+     "sourceId": "annuaire-gratuit",
+     "sourceName": "annuaire-gratuit.ma",
+     "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-essaf-s238264.html",
+     "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
+     "sourcePublishedAt": "2026-10-13",
+     "lastCheckedAt": "2026-10-13T10:23:49.546Z",
+     "historyMatch": {
+      "start": "2026-10-13",
+      "end": "2026-10-14",
+      "label": "Garde Jour et Nuit"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "Ouvert 24h/24"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "medium",
+   "notes": []
+  },
+  {
+   "id": "sale-oum-kora",
+   "name": "Pharmacie Oum Al Kora",
+   "address": "av youssef ibn tachfine n°110 bis hay cheikh lamfadel - Sale",
+   "city": "sale",
+   "district": "Hay Arrahma",
+   "latitude": 34.0596854,
+   "longitude": -6.7861797,
+   "coordinatesSource": "source",
+   "phone": "+212537871343",
+   "dutyDate": "2026-10-13",
+   "dutyType": "continuous",
+   "dutyLabel": "Ouvert 24h/24",
+   "hoursText": null,
+   "dutyStartDate": "2026-10-13",
+   "dutyEndDate": "2026-10-14",
+   "sources": [
+    {
+     "sourceId": "annuaire-gratuit",
+     "sourceName": "annuaire-gratuit.ma",
+     "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-oum-al-kora-s237167.html",
+     "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
+     "sourcePublishedAt": "2026-10-13",
+     "lastCheckedAt": "2026-10-13T10:23:49.546Z",
+     "historyMatch": {
+      "start": "2026-10-13",
+      "end": "2026-10-14",
+      "label": "Garde Jour et Nuit"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "Ouvert 24h/24"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "medium",
+   "notes": []
+  },
+  {
+   "id": "sale-sidi-abdellah",
+   "name": "Pharmacie Sidi Abdellah",
+   "address": "hay guezzara km 66 route de kénitra - Sale",
+   "city": "sale",
+   "district": "Al Mohit Abouab Sala",
+   "latitude": 34.082549,
+   "longitude": -6.7780833,
+   "coordinatesSource": "source",
+   "phone": "+212537822084",
+   "dutyDate": "2026-10-13",
+   "dutyType": "continuous",
+   "dutyLabel": "Ouvert 24h/24",
+   "hoursText": null,
+   "dutyStartDate": "2026-10-13",
+   "dutyEndDate": "2026-10-14",
+   "sources": [
+    {
+     "sourceId": "annuaire-gratuit",
+     "sourceName": "annuaire-gratuit.ma",
+     "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-sidi-abdellah-s241117.html",
+     "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
+     "sourcePublishedAt": "2026-10-13",
+     "lastCheckedAt": "2026-10-13T10:23:49.546Z",
+     "historyMatch": {
+      "start": "2026-10-13",
+      "end": "2026-10-14",
+      "label": "Garde Jour et Nuit"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "Ouvert 24h/24"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "medium",
+   "notes": []
+  },
+  {
+   "id": "temara-hilal",
+   "name": "Pharmacie Al Hilal",
+   "address": "bd Tarik Bnou Ziad, residence al khaizourane 4 commerce 16 Temara",
+   "city": "temara",
+   "district": "Centre",
+   "latitude": 33.9066667,
+   "longitude": -6.9154473,
+   "coordinatesSource": "source",
+   "phone": "+212537403088",
+   "dutyDate": "2026-10-13",
+   "dutyType": "continuous",
+   "dutyLabel": "Ouvert 24h/24",
+   "hoursText": null,
+   "dutyStartDate": "2026-10-13",
+   "dutyEndDate": "2026-10-14",
+   "sources": [
+    {
+     "sourceId": "annuaire-gratuit",
+     "sourceName": "annuaire-gratuit.ma",
+     "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-al-hilal-s237531.html",
+     "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
+     "sourcePublishedAt": "2026-10-13",
+     "lastCheckedAt": "2026-10-13T10:24:02.045Z",
+     "historyMatch": {
+      "start": "2026-10-13",
+      "end": "2026-10-14",
+      "label": "Garde Jour et Nuit"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "Ouvert 24h/24"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "medium",
+   "notes": []
+  },
+  {
+   "id": "temara-miramar",
+   "name": "Pharmacie Miramar",
+   "address": "257. avenue moulay abdellah Temara",
+   "city": "temara",
+   "district": "Harhoura",
+   "latitude": 33.9438848,
+   "longitude": -6.9337189,
+   "coordinatesSource": "source",
+   "phone": "+212537744445",
+   "dutyDate": "2026-10-13",
+   "dutyType": "continuous",
+   "dutyLabel": "Ouvert 24h/24",
+   "hoursText": null,
+   "dutyStartDate": "2026-10-13",
+   "dutyEndDate": "2026-10-14",
+   "sources": [
+    {
+     "sourceId": "annuaire-gratuit",
+     "sourceName": "annuaire-gratuit.ma",
+     "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-miramar-s252577.html",
+     "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
+     "sourcePublishedAt": "2026-10-13",
+     "lastCheckedAt": "2026-10-13T10:24:02.045Z",
+     "historyMatch": {
+      "start": "2026-10-13",
+      "end": "2026-10-14",
+      "label": "Garde Jour et Nuit"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "Ouvert 24h/24"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "medium",
+   "notes": []
+  }
+ ]
+}
