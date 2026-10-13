@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-13T06:29:02.582Z",
+ "generatedAt": "2026-10-13T07:55:30.095Z",
  "todayMorocco": "2026-10-13",
  "dates": [
   "2026-10-12"
@@ -14,7 +14,7 @@
    "pageDate": "2026-10-13",
    "count": 8,
    "error": null,
-   "checkedAt": "2026-10-13T06:29:02.601Z"
+   "checkedAt": "2026-10-13T07:55:30.120Z"
   },
   {
    "sourceId": "annuaire-gratuit",
@@ -25,7 +25,7 @@
    "pageDate": "2026-10-13",
    "count": 8,
    "error": null,
-   "checkedAt": "2026-10-13T06:29:04.906Z"
+   "checkedAt": "2026-10-13T07:55:31.189Z"
   },
   {
    "sourceId": "annuaire-gratuit",
@@ -36,7 +36,7 @@
    "pageDate": "2026-10-13",
    "count": 3,
    "error": null,
-   "checkedAt": "2026-10-13T06:29:05.746Z"
+   "checkedAt": "2026-10-13T07:55:32.198Z"
   }
  ],
  "connectors": [
