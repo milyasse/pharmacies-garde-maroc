@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-13T18:27:41.488Z",
+ "generatedAt": "2026-10-13T20:02:05.809Z",
  "todayMorocco": "2026-10-13",
  "dates": [
   "2026-10-12",
@@ -11,33 +11,33 @@
    "sourceName": "annuaire-gratuit.ma",
    "city": "rabat",
    "url": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
-   "ok": true,
-   "pageDate": "2026-10-13",
-   "count": 7,
-   "error": null,
-   "checkedAt": "2026-10-13T18:27:41.516Z"
+   "ok": false,
+   "pageDate": null,
+   "count": 0,
+   "error": "Page inaccessible : fetch failed",
+   "checkedAt": "2026-10-13T20:02:05.828Z"
   },
   {
    "sourceId": "annuaire-gratuit",
    "sourceName": "annuaire-gratuit.ma",
    "city": "sale",
    "url": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
-   "ok": true,
-   "pageDate": "2026-10-13",
-   "count": 7,
-   "error": null,
-   "checkedAt": "2026-10-13T18:27:42.610Z"
+   "ok": false,
+   "pageDate": null,
+   "count": 0,
+   "error": "Page inaccessible : fetch failed",
+   "checkedAt": "2026-10-13T20:02:48.000Z"
   },
   {
    "sourceId": "annuaire-gratuit",
    "sourceName": "annuaire-gratuit.ma",
    "city": "temara",
    "url": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
-   "ok": true,
-   "pageDate": "2026-10-13",
-   "count": 3,
-   "error": null,
-   "checkedAt": "2026-10-13T18:27:43.351Z"
+   "ok": false,
+   "pageDate": null,
+   "count": 0,
+   "error": "Page inaccessible : fetch failed",
+   "checkedAt": "2026-10-13T20:03:30.049Z"
   }
  ],
  "connectors": [
