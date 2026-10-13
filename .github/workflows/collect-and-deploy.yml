@@ -35,7 +35,7 @@ jobs:
       - name: Collecte des pharmacies de garde
         id: collect
         continue-on-error: true
-        run: npm run collect -- --strict --save-raw debug-raw
+        run: npm run collect -- --strict
 
       - name: Signaler une source en erreur
         if: steps.collect.outcome == 'failure'
@@ -46,7 +46,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add public/data
-          [ -d debug-raw ] && git add debug-raw || true
           if git diff --cached --quiet; then
             echo "Aucune nouvelle donnée."
           else

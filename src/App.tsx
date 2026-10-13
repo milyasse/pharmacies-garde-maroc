@@ -12,7 +12,7 @@ import { getRoute, type RouteResult, type TravelMode } from './services/routing.
 import { loadSnapshots, loadStatus } from './services/pharmacySearch.ts';
 import { buildResults, sortByDuration, type DutyFilter, type SearchOutcome } from './shared/search.ts';
 import type { CollectorStatus, Pharmacy } from './shared/types.ts';
-import { formatFrDate, formatMoroccoDateTime, isIsoDate, moroccoDate } from './shared/dates.ts';
+import { addDays, formatFrDate, formatMoroccoDateTime, isIsoDate, moroccoDate } from './shared/dates.ts';
 import { haversineKm } from './shared/distance.ts';
 import { CITIES, CONNECTORS } from './shared/connectors/registry.ts';
 import { CONFIG } from './config.ts';
@@ -130,7 +130,7 @@ export default function App() {
         if (ageH > 6) notices.push(`Dernière collecte le ${formatMoroccoDateTime(st.generatedAt)} : les données peuvent ne pas être à jour.`);
         const failed = st.runs.filter((r) => !r.ok);
         if (failed.length) notices.push(`Source indisponible lors de la dernière collecte pour : ${failed.map((r) => CITIES.find((c) => c.id === r.city)?.name ?? r.city).join(', ')}.`);
-        const stale = st.runs.filter((r) => r.ok && r.pageDate && r.pageDate !== st.todayMorocco);
+        const stale = st.runs.filter((r) => r.ok && r.pageDate && r.pageDate < addDays(st.todayMorocco, -1));
         if (stale.length) notices.push(`La page source de ${stale.map((r) => CITIES.find((c) => c.id === r.city)?.name).join(', ')} affichait une autre date que le jour de collecte.`);
       }
       const nearest = Math.min(...CITIES.map((c) => haversineKm(origin, c.center)));

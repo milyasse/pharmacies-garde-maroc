@@ -20,9 +20,13 @@ export const CONFIDENCE_LABEL: Record<ConfidenceLevel, string> = {
 /** Un signal « daté » d'une source pour la date D. */
 export function sourceSignals(s: SourceRef, dutyDate: string, collectedOn: string | null) {
   const history = !!s.historyMatch;
-  // La liste n'est un signal que si la page annonce la date ET que cette date était
-  // bien « aujourd'hui » au moment de la collecte (sinon la page est périmée).
-  const listing = !!s.sourcePublishedAt && s.sourcePublishedAt === dutyDate && (collectedOn === null || collectedOn === dutyDate);
+  // La liste n'est un signal que si la page annonce une date de la garde ET que la collecte
+  // a eu lieu pendant la garde (sinon la page est périmée). Fenêtre = [début, fin] publiés,
+  // ou le seul jour de la garde si l'historique est muet.
+  const start = s.historyMatch?.start ?? dutyDate;
+  const end = s.historyMatch?.end ?? dutyDate;
+  const within = (d: string | null) => !!d && start <= d && d <= end;
+  const listing = within(s.sourcePublishedAt) && (collectedOn === null || within(collectedOn)) && (s.historyMatch ? true : s.sourcePublishedAt === dutyDate);
   return { history, listing };
 }
 

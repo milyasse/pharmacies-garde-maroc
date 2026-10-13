@@ -108,6 +108,15 @@ function historyFor(rows: HistoryRow[], date: string): HistoryRow | null {
   return covering.find((r) => r.start === date) ?? covering.sort((a, b) => (a.start < b.start ? 1 : -1))[0];
 }
 
+/**
+ * Ligne d'historique pour une entrée de liste : celle qui commence à la date de la page,
+ * sinon celle qui la couvre (garde commencée la veille, ex. page datée du lendemain
+ * avant minuit ou nuit en cours après minuit).
+ */
+function historyForListing(rows: HistoryRow[], pageDate: string): HistoryRow | null {
+  return historyFor(rows, pageDate);
+}
+
 async function geocode(address: string, city: CityId, cache: Record<string, GeoCacheEntry>, budget: { left: number }) {
   const q = `${address}, ${CITY_NAME[city]}, Maroc`;
   if (cache[q]) return cache[q];
@@ -214,7 +223,7 @@ async function main() {
     run.ok = true;
     const dutyDate = page.pageDate ?? today;
     if (!page.pageDate) log(`⚠ ${city.name} : la page n’affiche pas de date — gardes rattachées au ${today} en « À confirmer »`);
-    else if (page.pageDate !== today) log(`⚠ ${city.name} : la page affiche le ${page.pageDate} (aujourd’hui : ${today}) — page périmée`);
+    else if (page.pageDate < addDays(today, -1) || page.pageDate > addDays(today, 1)) log(`⚠ ${city.name} : la page affiche le ${page.pageDate} (aujourd’hui : ${today}) — page périmée`);
     log(`✓ ${city.name} : ${page.entries.length} pharmacie(s), page datée ${page.pageDate ?? 'inconnue'}`);
 
     for (const e of page.entries) {
@@ -230,7 +239,9 @@ async function main() {
         }
       }
       const d = detailCache[e.sourceKey]?.detail ?? null;
-      const hist = d ? historyFor(d.history, dutyDate) : null;
+      const hist = d ? historyForListing(d.history, dutyDate) : null;
+      // La garde est rattachée au jour où elle COMMENCE selon l'historique daté de la fiche
+      const recordDate = hist ? hist.start : dutyDate;
       let lat = e.latitude ?? d?.latitude ?? null;
       let lng = e.longitude ?? d?.longitude ?? null;
       let coordinatesSource: DutyRecord['coordinatesSource'] = lat !== null ? 'source' : null;
@@ -248,11 +259,11 @@ async function main() {
       push({
         id: recordId(city.id, name), name, address: address ?? null, city: city.id, district: e.district,
         latitude: lat, longitude: lng, coordinatesSource, phone: d?.phone ?? null,
-        dutyDate, dutyType: classifyDutyLabel(e.dutyLabel) ?? classifyDutyLabel(hist?.label ?? null),
+        dutyDate: recordDate, dutyType: classifyDutyLabel(e.dutyLabel) ?? classifyDutyLabel(hist?.label ?? null),
         dutyLabel: e.dutyLabel, hoursText: e.hoursText, dutyStartDate: null, dutyEndDate: null,
         sources: [src], verificationStatus: 'to_confirm', confidenceLevel: 'low', notes: [],
       });
-      debug(name, { dutyDate, hist, lat, lng, phone: d?.phone });
+      debug(name, { pageDate: dutyDate, recordDate, hist, lat, lng, phone: d?.phone });
     }
   }
 
