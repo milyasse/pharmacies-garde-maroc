@@ -1,0 +1,2 @@
+date;ville;nom;adresse;quartier;telephone;type;debut;fin;horaires;latitude;longitude;source;source_url
+20/10/2026;Témara;Pharmacie (nom publié);;;;24h;;;;;;Tableau de garde officiel d'octobre;https://exemple.invalid/tableau-octobre.pdf

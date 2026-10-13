@@ -250,3 +250,21 @@ test('structure réelle observée (cartes ag_pharmacy_card, 13/10/2026)', () => 
   assert.equal(b.hoursText, '9h-23h');
   assert.equal(b.district, 'Agdal');
 });
+
+test('import CSV d’un tableau de garde officiel (jours à venir)', async () => {
+  const { parseManualCsv } = await import('../src/shared/manualCsv.ts');
+  const csv = [
+    'date;ville;nom;adresse;telephone;type;source;source_url',
+    '20/10/2026;Témara;Pharmacie Labchir;;0537 64 29 50;24h;Tableau officiel;https://exemple.invalid/t.pdf',
+    '2026-10-20;Rabat;"Pharmacie ""Test""";1 rue X;;jour;;https://exemple.invalid/t.pdf',
+    '2026-10-20;Fès;Pharmacie Y;;;nuit;;https://exemple.invalid/t.pdf',
+    '2026-10-20;Salé;Pharmacie Z;;;nuit;;',
+  ].join('\n');
+  const { rows, errors } = parseManualCsv(csv);
+  assert.equal(rows.length, 2);
+  assert.equal(errors.length, 2);
+  assert.deepEqual([rows[0].city, rows[0].date, rows[0].dutyEndDate, rows[0].dutyType], ['temara', '2026-10-20', '2026-10-21', 'continuous']);
+  assert.equal(rows[1].name, 'Pharmacie "Test"');
+  assert.equal(rows[1].dutyEndDate, '2026-10-20', 'garde de jour : même jour');
+  assert.equal(rows[1].sourceName, 'Tableau de garde officiel');
+});

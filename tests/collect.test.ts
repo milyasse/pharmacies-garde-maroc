@@ -123,3 +123,20 @@ test('compteurs par ville : actives et répartition par type', async () => {
   assert.equal(late.day, 0, 'garde de jour 9h-23h terminée');
   assert.equal(late.expired, 1);
 });
+
+test('collecteur : tableau CSV à venir enrichi par les pharmacies connues', () => {
+  const out = mkdtempSync(path.join(tmpdir(), 'pgm-'));
+  const manual = mkdtempSync(path.join(tmpdir(), 'pgm-manual-'));
+  runCollector(out, manual); // apprend Labchir (position, téléphone)
+  writeFileSync(path.join(manual, 'octobre.csv'), 'date;ville;nom;type;source_url\n2026-10-20;Témara;PHARMACIE LABCHIR;24h;https://exemple.invalid/t.pdf\n2026-10-20;Témara;Pharmacie Inconnue;nuit;https://exemple.invalid/t.pdf\n');
+  runCollector(out, manual);
+  const snap = JSON.parse(readFileSync(path.join(out, 'duty', '2026-10-20.json'), 'utf8')) as DutySnapshot;
+  const l = snap.records.find((r) => /labchir/i.test(r.name))!;
+  assert.equal(l.latitude, 33.9156077, 'position reprise de la source, pas inventée');
+  assert.equal(l.phone, '+212537642950');
+  assert.equal(l.verificationStatus, 'confirmed');
+  const u = snap.records.find((r) => /inconnue/i.test(r.name))!;
+  assert.equal(u.latitude, null);
+  const st = JSON.parse(readFileSync(path.join(out, 'status.json'), 'utf8')) as CollectorStatus;
+  assert.ok(st.dates.includes('2026-10-20'));
+});

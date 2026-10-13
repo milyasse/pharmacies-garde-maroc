@@ -3,6 +3,7 @@ import type { Place } from '../services/geocoding.ts';
 import type { CityId } from '../shared/types.ts';
 import type { DutyFilter } from '../shared/search.ts';
 import { CalendarIcon, GpsIcon, MapIcon, PinIcon, SpinnerIcon } from './icons.tsx';
+import { addDays } from '../shared/dates.ts';
 
 export interface Origin {
   lat: number;
@@ -38,6 +39,8 @@ export function SearchPanel(props: {
   onSearch: () => void;
   searching: boolean;
   originError: string | null;
+  availableDates: string[];
+  today: string;
 }) {
   const [query, setQuery] = useState('');
   const [places, setPlaces] = useState<Place[] | null>(null);
@@ -138,6 +141,7 @@ export function SearchPanel(props: {
           <CalendarIcon size={20} className="text-brand-600" />
           <input id="date" type="date" required value={props.date} onChange={(e) => e.target.value && props.onDate(e.target.value)} className="flex-1 bg-transparent text-sm font-semibold outline-none" />
         </div>
+        <DateStrip today={props.today} value={props.date} available={props.availableDates} onPick={props.onDate} />
       </div>
 
       {/* Rayon */}
@@ -190,5 +194,31 @@ export function SearchPanel(props: {
         {props.searching && <SpinnerIcon />} Rechercher les pharmacies de garde
       </button>
     </section>
+  );
+}
+
+/** Raccourcis de dates : veille, aujourd'hui, prochains jours, avec indication des données disponibles. */
+function DateStrip(props: { today: string; value: string; available: string[]; onPick: (d: string) => void }) {
+  const days = [-1, 0, 1, 2, 3].map((k) => addDays(props.today, k));
+  const fmt = (d: string, k: number) =>
+    k === 0 ? 'Aujourd’hui' : k === 1 ? 'Demain' : k === -1 ? 'Hier' : new Intl.DateTimeFormat('fr-FR', { weekday: 'short', day: 'numeric', timeZone: 'UTC' }).format(new Date(d + 'T12:00:00Z'));
+  return (
+    <div className="flex gap-1.5 overflow-x-auto pb-1" role="group" aria-label="Raccourcis de date">
+      {days.map((d, i) => {
+        const k = i - 1;
+        const on = props.value === d;
+        // aujourd'hui : la garde de la veille couvre la nuit, donc des données existent dès qu'hier ou aujourd'hui est collecté
+        const has = props.available.includes(d) || (k === 0 && props.available.includes(addDays(d, -1)));
+        return (
+          <button key={d} type="button" aria-pressed={on} onClick={() => props.onPick(d)}
+            className={`shrink-0 rounded-xl px-3 py-1.5 text-left text-xs font-bold ${on ? 'bg-brand-700 text-white' : 'bg-bg text-ink'}`}>
+            {fmt(d, k)}
+            <span className={`block text-[10px] font-semibold ${on ? 'text-white/80' : has ? 'text-brand-600' : 'text-muted'}`}>
+              {has ? '● gardes connues' : k > 0 ? 'non publiées' : 'aucune donnée'}
+            </span>
+          </button>
+        );
+      })}
+    </div>
   );
 }

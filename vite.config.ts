@@ -2,13 +2,27 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 import { VitePWA } from 'vite-plugin-pwa';
+import { readFileSync } from 'node:fs';
+import { execSync } from 'node:child_process';
 
 // Chemin de base : "/<nom-du-depot>/" sur https://<utilisateur>.github.io/<nom-du-depot>/
 // Défini par le workflow (BASE_PATH). En local : "/".
 const base = process.env.BASE_PATH || '/';
 
+// Informations de version affichées dans l'app (Paramètres et pied de page)
+const pkg = JSON.parse(readFileSync(new URL('./package.json', import.meta.url), 'utf8')) as { version: string };
+let sha = (process.env.GITHUB_SHA || '').slice(0, 7);
+if (!sha) {
+  try { sha = execSync('git rev-parse --short HEAD').toString().trim(); } catch { sha = 'local'; }
+}
+
 export default defineConfig({
   base,
+  define: {
+    __APP_VERSION__: JSON.stringify(pkg.version),
+    __BUILD_SHA__: JSON.stringify(sha),
+    __BUILD_TIME__: JSON.stringify(new Date().toISOString()),
+  },
   build: {
     target: 'es2020',
     cssCodeSplit: true,

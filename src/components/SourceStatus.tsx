@@ -3,6 +3,7 @@ import { CITY_NAME, CONNECTORS } from '../shared/connectors/registry.ts';
 import { formatMoroccoDateTime, formatShortDate } from '../shared/dates.ts';
 import type { TravelMode } from '../services/routing.ts';
 import { CloseIcon } from './icons.tsx';
+import { APP_VERSION, BUILD_SHA, BUILD_TIME } from '../version.ts';
 
 export function SourceStatus(props: {
   open: boolean;
@@ -89,6 +90,16 @@ export function SourceStatus(props: {
           <h3 className="font-extrabold">Confidentialité</h3>
           <p>Votre position reste dans votre navigateur. Elle n’est transmise qu’aux services nécessaires : OpenStreetMap (fond de carte), OSRM (itinéraire, seulement à la demande) et Nominatim (seulement si vous cherchez une adresse). Elle n’est jamais enregistrée.</p>
           <p className="text-xs text-muted">Fond de carte © contributeurs OpenStreetMap · Itinéraires OSRM (FOSSGIS / Project OSRM) · Géocodage Nominatim.</p>
+        </section>
+
+        <section className="mt-5 space-y-1 border-t border-line pt-4 text-sm">
+          <h3 className="font-extrabold">À propos</h3>
+          <dl className="grid grid-cols-[auto_1fr] gap-x-3 gap-y-1 text-xs">
+            <dt className="text-muted">Version de l’application</dt><dd className="font-bold">{APP_VERSION}</dd>
+            <dt className="text-muted">Build</dt><dd className="font-mono">{BUILD_SHA}{BUILD_TIME ? ` · ${formatMoroccoDateTime(BUILD_TIME)}` : ''}</dd>
+            <dt className="text-muted">Données de garde</dt><dd>{props.status ? `collecte du ${formatMoroccoDateTime(props.status.generatedAt)}` : '—'}</dd>
+          </dl>
+          <p className="text-xs"><a className="underline" href="https://github.com/milyasse/pharmacies-garde-maroc" target="_blank" rel="noopener noreferrer">Code source et historique des versions</a></p>
         </section>
       </div>
     </div>

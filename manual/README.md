@@ -1,12 +1,25 @@
-# Saisie manuelle d'un tableau de garde
+# Saisie des tableaux de garde officiels (jours à venir)
 
-Quand une source officielle (conseil régional de l'Ordre des pharmaciens, délégation, affichage
-officiel) publie un tableau de garde qui ne peut pas être collecté automatiquement, vous pouvez le
-saisir ici. Le collecteur le fusionne avec les autres sources au prochain passage.
+Les sites consultés automatiquement ne publient les gardes de Rabat, Salé et Témara **que le jour même**.
+Pour afficher les **jours à venir**, ajoutez ici le tableau de garde officiel (conseil régional de l'Ordre,
+syndicat, affichage en pharmacie…). Le collecteur l'intègre au passage suivant (toutes les ~2 h).
 
-- Un fichier par date : `manual/AAAA-MM-JJ.json` (date de début de la garde).
-- `sourceUrl` est **obligatoire** (lien du tableau, ou référence vérifiable du document).
-- Ne saisissez que ce qui est publié : laissez absent tout champ inconnu (jamais de coordonnées approximatives).
-- Si une autre source publie une information différente, la garde apparaîtra « Sources contradictoires ».
+## Le plus simple : un fichier CSV (Excel, Google Sheets, Numbers)
 
-Voir `exemple.json.txt` pour le format (renommez en `AAAA-MM-JJ.json` ; l'exemple n'est pas lu tel quel).
+1. Copiez `modele-tableau.csv.txt`, remplissez une ligne par garde, enregistrez en **CSV** (séparateur `;` ou `,`),
+   puis déposez le fichier dans ce dossier sous un nom en `.csv` (ex. `octobre-2026.csv`) — sur GitHub :
+   *Add file → Upload files*.
+2. Colonnes obligatoires : `date`, `ville` (Rabat, Salé, Témara), `nom`, `source_url` (lien ou référence vérifiable du tableau).
+3. Colonnes facultatives : `adresse`, `quartier`, `telephone`, `type` (jour, nuit, 24h), `debut`, `fin`
+   (par défaut : le jour même pour une garde de jour, jusqu'au lendemain sinon), `horaires`, `latitude`, `longitude`, `source`.
+4. Dates au format `JJ/MM/AAAA` ou `AAAA-MM-JJ`.
+
+Position, téléphone et adresse manquants sont repris automatiquement des pharmacies déjà connues de l'application
+(même nom, même ville) ; sinon l'adresse est géocodée, et à défaut la pharmacie est listée « position non publiée ».
+Rien n'est inventé. Une ligne invalide est ignorée et signalée dans le journal de la collecte.
+
+Si une autre source publie une information différente pour la même pharmacie, l'app affiche « Sources contradictoires ».
+
+## Format JSON (alternative)
+
+Un fichier par date `AAAA-MM-JJ.json` — voir `exemple.json.txt`.

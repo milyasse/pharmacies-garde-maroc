@@ -18,6 +18,7 @@ import { haversineKm } from './shared/distance.ts';
 import { CITIES, CITY_NAME, CONNECTORS } from './shared/connectors/registry.ts';
 import { CONFIG } from './config.ts';
 import { SpinnerIcon } from './components/icons.tsx';
+import { APP_VERSION, BUILD_SHA } from './version.ts';
 
 // Préférences non sensibles uniquement (jamais la position)
 function pref<T>(k: string, fallback: T): T {
@@ -147,7 +148,7 @@ export default function App() {
       });
       const notices: string[] = [];
       if (!day && !prev) {
-        if (date > today) notices.push(`Les sources ne publient pas les gardes à l’avance : aucune garde connue pour le ${formatFrDate(date)}. Réessayez ce jour-là.`);
+        if (date > today) notices.push(`Les sites sources ne publient les gardes de Rabat, Salé et Témara que le jour même : aucune garde connue pour le ${formatFrDate(date)}. Elles apparaîtront ici dès leur publication, ou plus tôt si le tableau de garde officiel est ajouté à l’application.`);
         else notices.push(`Aucune garde n’a été collectée pour le ${formatFrDate(date)} (historique conservé 60 jours).`);
       } else if (date > today) {
         notices.push('Date future : seules les gardes saisies depuis un tableau officiel peuvent apparaître.');
@@ -338,6 +339,8 @@ export default function App() {
               onSearch={() => { if (hasSearched || !origin) void runSearch(); else setHasSearched(true); }}
               searching={search.state === 'loading'}
               originError={originError}
+              availableDates={status?.dates ?? []}
+              today={moroccoDate()}
             />
           )}
 
@@ -367,6 +370,9 @@ export default function App() {
           <div className="lg:hidden">{renderResults()}</div>
         </div>
       </main>
+      <footer className="border-t border-line bg-white px-4 py-2 text-center text-[11px] text-muted">
+        Pharmacies de Garde Maroc · v{APP_VERSION} ({BUILD_SHA})
+      </footer>
       <SourceStatus open={settingsOpen} onClose={() => setSettingsOpen(false)} status={status} statusError={statusError} mode={mode} onMode={setMode} />
     </div>
   );

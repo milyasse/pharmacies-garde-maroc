@@ -14,6 +14,8 @@ import { dedupe, recordId } from '../src/shared/merge.ts';
 import { isInMorocco, isValidLatLng } from '../src/shared/distance.ts';
 import { normalizeMoroccanPhone, titleCase } from '../src/shared/text.ts';
 import { CITIES, CITY_NAME, CONNECTORS } from '../src/shared/connectors/registry.ts';
+import { parseManualCsv } from '../src/shared/manualCsv.ts';
+import { isSamePharmacy } from '../src/shared/merge.ts';
 import {
   ANNUAIRE_ID, ANNUAIRE_NAME, listingUrl, parseDetail, parseListing,
   type DetailPage, type HistoryRow,
@@ -152,6 +154,28 @@ async function loadManual(nowIso: string): Promise<DutyRecord[]> {
   if (!existsSync(MANUAL_DIR)) return [];
   const out: DutyRecord[] = [];
   for (const f of await readdir(MANUAL_DIR)) {
+    if (/\.csv$/i.test(f)) {
+      const { rows, errors } = parseManualCsv(await readFile(path.join(MANUAL_DIR, f), 'utf8'));
+      for (const e of errors) log(`⚠ ${f} : ${e}`);
+      for (const r of rows) {
+        const src: SourceRef = {
+          sourceId: 'manual', sourceName: r.sourceName, sourceUrl: r.sourceUrl, listingUrl: null,
+          sourcePublishedAt: r.date, lastCheckedAt: nowIso,
+          historyMatch: { start: r.dutyStartDate, end: r.dutyEndDate, label: 'Tableau de garde saisi manuellement' },
+          dutyType: r.dutyType, dutyLabel: null,
+        };
+        const located = isValidLatLng(r.latitude, r.longitude) && isInMorocco(r.latitude!, r.longitude!);
+        out.push({
+          id: recordId(r.city, r.name), name: r.name, address: r.address, city: r.city, district: r.district,
+          latitude: located ? r.latitude : null, longitude: located ? r.longitude : null, coordinatesSource: located ? 'source' : null,
+          phone: normalizeMoroccanPhone(r.phone), dutyDate: r.dutyStartDate, dutyType: r.dutyType, dutyLabel: null,
+          hoursText: r.hoursText, dutyStartDate: r.dutyStartDate, dutyEndDate: r.dutyEndDate, sources: [src],
+          verificationStatus: 'to_confirm', confidenceLevel: 'low', notes: [],
+        });
+      }
+      log(`✓ saisie manuelle ${f} : ${rows.length} garde(s)${errors.length ? `, ${errors.length} ligne(s) rejetée(s)` : ''}`);
+      continue;
+    }
     if (!/^\d{4}-\d{2}-\d{2}\.json$/.test(f)) continue;
     const m = await readJson<ManualFile | null>(path.join(MANUAL_DIR, f), null);
     if (!m || !isIsoDate(m.date) || !m.sourceUrl || !Array.isArray(m.records)) {
@@ -267,8 +291,30 @@ async function main() {
     }
   }
 
-  // ---- Source : saisie manuelle
-  for (const r of await loadManual(nowIso)) push(r);
+  // ---- Source : saisie manuelle (tableaux officiels, y compris jours à venir)
+  // Les champs absents (position, téléphone, adresse) sont complétés à partir des pharmacies
+  // déjà vues chez une source — jamais inventés.
+  const known: DutyRecord[] = [...byDate.values()].flat();
+  const dutyDir0 = path.join(OUT, 'duty');
+  if (existsSync(dutyDir0)) {
+    for (const f of (await readdir(dutyDir0)).sort().reverse().slice(0, 30)) {
+      const snap = await readJson<DutySnapshot | null>(path.join(dutyDir0, f), null);
+      if (snap) known.push(...snap.records.filter((r) => r.sources.some((s) => s.sourceId !== 'manual')));
+    }
+  }
+  for (const r of await loadManual(nowIso)) {
+    const k = known.find((x) => isSamePharmacy(x, r) && x.latitude !== null);
+    if (k) {
+      if (r.latitude === null && k.latitude !== null) { r.latitude = k.latitude; r.longitude = k.longitude; r.coordinatesSource = k.coordinatesSource; }
+      r.phone ??= k.phone;
+      r.address ??= k.address;
+      r.district ??= k.district;
+    } else if (r.latitude === null && r.address) {
+      const g = await geocode(r.address, r.city, geoCache, geoBudget);
+      if (g && g.lat !== null) { r.latitude = g.lat; r.longitude = g.lng; r.coordinatesSource = 'geocoded'; }
+    }
+    push(r);
+  }
 
   // ---- Fusion avec ce qui a déjà été collecté pour ces dates, puis écriture
   for (const [date, fresh] of byDate) {

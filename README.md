@@ -1,5 +1,7 @@
 # Pharmacies de Garde Maroc
 
+Version actuelle : **1.1.0** — voir [CHANGELOG.md](CHANGELOG.md).
+
 Application web installable (PWA) qui trouve les **pharmacies de garde autour de vous**, pour une **date** et un **rayon** donnés, à partir de sources publiques datées — démarrage sur **Rabat, Salé et Témara**.
 
 - Position GPS, adresse (Nominatim) ou point touché sur la carte
@@ -83,7 +85,7 @@ Pour un trafic important, remplacez tuiles/OSRM/Nominatim par une instance dédi
 
 - **Ville** : ajouter l'identifiant dans `CityId` (`src/shared/types.ts`), dans `CITIES` (`src/shared/connectors/registry.ts`) et le slug dans `ANNUAIRE_CITY_SLUGS`.
 - **Source** : écrire un parseur pur dans `src/shared/connectors/`, des tests sur des pages modèles, l'appeler dans `scripts/collect.ts`, et la déclarer dans `CONNECTORS`. Une source qui ne peut pas être lue légalement ou de façon fiable reste déclarée **désactivée** avec sa raison.
-- **Tableau officiel** non automatisable : saisie manuelle dans `manual/` (voir [manual/README.md](manual/README.md)).
+- **Tableau officiel / jours à venir** : déposer un CSV dans `manual/` (voir [manual/README.md](manual/README.md)). Les sites en ligne ne publient les gardes que le jour même.
 
 ## Structure
 
