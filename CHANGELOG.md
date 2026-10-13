@@ -1,5 +1,9 @@
 # Historique des versions
 
+## 1.2.0 — 13/10/2026
+- Nouveau logo et nouvelle icône « repère-croix » (repère de carte + croix de pharmacie), choisis parmi 3 pistes Figma et 1 proposition Canva.
+- Icônes Android (dont icône adaptative « maskable »), iPhone et favicon régénérées ; logo horizontal `public/icons/logo-horizontal.svg`.
+
 ## 1.1.0 — 13/10/2026
 - Nombre de pharmacies de garde disponibles par ville (Rabat, Salé, Témara), visible dès l'ouverture ; une ville se choisit d'un geste.
 - Raccourcis de date (hier → J+3) indiquant les jours pour lesquels des gardes sont connues.

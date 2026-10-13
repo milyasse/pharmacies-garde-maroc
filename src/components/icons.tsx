@@ -28,7 +28,11 @@ export const WarnIcon = ({ size, ...p }: P) => (
   <svg {...base(size)} {...p}><path d="M12 3 2 20h20L12 3z" /><path d="M12 10v4M12 17.5v.5" /></svg>
 );
 export const CrossLogo = ({ size = 32 }: { size?: number }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="6" fill="#fff" /><path d="M12 7v10M7 12h10" stroke="#0B5D3B" strokeWidth="3.2" strokeLinecap="round" /></svg>
+  // Logo « repère-croix » (piste A retenue) : repère blanc, croix verte
+  <svg width={size} height={size} viewBox="0 0 120 120" aria-hidden="true">
+    <path d="M60 6C33 6 12 27 12 53c0 35 48 61 48 61s48-26 48-61C108 27 87 6 60 6z" fill="#fff" />
+    <path d="M52 29h16v16h16v16H68v16H52V61H36V45h16z" fill="#0B5D3B" />
+  </svg>
 );
 export const MapIcon = ({ size, ...p }: P) => (
   <svg {...base(size)} {...p}><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2z" /><path d="M9 4v14M15 6v14" /></svg>
