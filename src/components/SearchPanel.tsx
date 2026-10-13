@@ -1,5 +1,6 @@
-import { useState, type FormEvent } from 'react';
+import { useRef, useState, type FormEvent } from 'react';
 import type { Place } from '../services/geocoding.ts';
+import type { CityId } from '../shared/types.ts';
 import type { DutyFilter } from '../shared/search.ts';
 import { CalendarIcon, GpsIcon, MapIcon, PinIcon, SpinnerIcon } from './icons.tsx';
 
@@ -7,8 +8,9 @@ export interface Origin {
   lat: number;
   lng: number;
   label: string;
-  kind: 'gps' | 'address' | 'map';
+  kind: 'gps' | 'address' | 'map' | 'city';
   accuracyM?: number;
+  city?: CityId;
 }
 
 const RADII = [1, 2, 5, 10, 15, 20, 30];
@@ -43,6 +45,7 @@ export function SearchPanel(props: {
   const [geoErr, setGeoErr] = useState<string | null>(null);
   const [custom, setCustom] = useState(!RADII.includes(props.radiusKm));
   const [radiusErr, setRadiusErr] = useState<string | null>(null);
+  const radiusTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
 
   async function submitAddress(e: FormEvent) {
     e.preventDefault();
@@ -66,7 +69,9 @@ export function SearchPanel(props: {
     if (!Number.isFinite(n) || n <= 0) return setRadiusErr('Indiquez un rayon positif en kilomètres.');
     if (n > 100) return setRadiusErr('Rayon limité à 100 km.');
     setRadiusErr(null);
-    props.onRadius(Math.round(n * 10) / 10);
+    // attend la fin de la saisie avant de relancer la recherche
+    clearTimeout(radiusTimer.current);
+    radiusTimer.current = setTimeout(() => props.onRadius(Math.round(n * 10) / 10), 450);
   }
 
   return (

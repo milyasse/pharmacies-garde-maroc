@@ -1,10 +1,14 @@
-// Chargement des données de garde publiées par le collecteur (public/data/*.json).
+// Chargement des données de garde publiées par le collecteur (public/data/*.json),
+// avec un cache mémoire court pour ne pas re-télécharger à chaque changement de rayon ou de filtre.
 
 import { CONFIG } from '../config.ts';
 import type { CollectorStatus, DutySnapshot } from '../shared/types.ts';
 import { addDays } from '../shared/dates.ts';
 
 export class DataError extends Error {}
+
+const TTL_MS = 5 * 60 * 1000;
+const cache = new Map<string, { at: number; value: Promise<unknown> }>();
 
 async function getJson<T>(url: string, signal?: AbortSignal): Promise<T | null> {
   let res: Response;
@@ -23,14 +27,26 @@ async function getJson<T>(url: string, signal?: AbortSignal): Promise<T | null> 
   }
 }
 
-export function loadStatus(signal?: AbortSignal) {
-  return getJson<CollectorStatus>(`${CONFIG.dataUrl}/status.json`, signal);
+/** Requête mise en cache 5 min (les requêtes identiques en cours sont partagées). */
+function cached<T>(url: string, force = false): Promise<T | null> {
+  const hit = cache.get(url);
+  if (!force && hit && Date.now() - hit.at < TTL_MS) return hit.value as Promise<T | null>;
+  const value = getJson<T>(url).catch((e) => {
+    cache.delete(url); // ne pas garder une erreur en cache
+    throw e;
+  });
+  cache.set(url, { at: Date.now(), value });
+  return value;
 }
 
-export async function loadSnapshots(date: string, signal?: AbortSignal) {
+export function loadStatus(force = false) {
+  return cached<CollectorStatus>(`${CONFIG.dataUrl}/status.json`, force);
+}
+
+export async function loadSnapshots(date: string, force = false) {
   const [day, prev] = await Promise.all([
-    getJson<DutySnapshot>(`${CONFIG.dataUrl}/duty/${date}.json`, signal),
-    getJson<DutySnapshot>(`${CONFIG.dataUrl}/duty/${addDays(date, -1)}.json`, signal),
+    cached<DutySnapshot>(`${CONFIG.dataUrl}/duty/${date}.json`, force),
+    cached<DutySnapshot>(`${CONFIG.dataUrl}/duty/${addDays(date, -1)}.json`, force),
   ]);
   return { day, prev };
 }

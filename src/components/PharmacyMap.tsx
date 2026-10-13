@@ -1,5 +1,5 @@
 // Carte Leaflet / OpenStreetMap pilotée de façon impérative (contrôle fin des couches).
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { CONFIG } from '../config.ts';
@@ -9,7 +9,7 @@ import { STATUS_LABEL } from '../shared/status.ts';
 import { rankColor } from '../utils/colors.ts';
 import type { RouteResult } from '../services/routing.ts';
 import type { Origin } from './SearchPanel.tsx';
-import { GpsIcon, RouteIcon } from './icons.tsx';
+import { CloseIcon, ExpandIcon, GpsIcon, RouteIcon } from './icons.tsx';
 
 const esc = (s: string) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]!);
 
@@ -65,13 +65,46 @@ export function PharmacyMap(props: {
   onPickRef.current = props.onPick;
   onSelectRef.current = props.onSelect;
 
+  const [full, setFull] = useState(false);
+  const [hint, setHint] = useState(false);
+  const fullRef = useRef(false);
+  fullRef.current = full;
   const markerKey = props.pharmacies.map((p) => `${p.id}:${p.rank}:${p.verificationStatus}:${p.latitude},${p.longitude}`).join('|');
 
   // Initialisation
   useEffect(() => {
     if (!el.current || map.current) return;
-    const m = L.map(el.current, { zoomControl: true, attributionControl: true }).setView([CONFIG.defaultCenter.lat, CONFIG.defaultCenter.lng], 12);
-    L.tileLayer(CONFIG.tileUrl, { maxZoom: 19, attribution: CONFIG.tileAttribution }).addTo(m);
+    // Écrans tactiles : un doigt fait défiler la PAGE, deux doigts déplacent/zooment la carte
+    // (sinon la carte « capture » le doigt et on ne peut plus remonter ni descendre dans la page).
+    const touch = L.Browser.touch && window.matchMedia('(pointer: coarse)').matches;
+    const m = L.map(el.current, { zoomControl: false, attributionControl: true, dragging: !touch, tapHold: false, zoomSnap: 0.5 })
+      .setView([CONFIG.defaultCenter.lat, CONFIG.defaultCenter.lng], 12);
+    L.tileLayer(CONFIG.tileUrl, { maxZoom: 19, attribution: CONFIG.tileAttribution, keepBuffer: 2, updateWhenZooming: false }).addTo(m);
+    const node = el.current;
+    let hintTimer: ReturnType<typeof setTimeout> | undefined;
+    let hintsShown = 0; // l'aide « deux doigts » n'apparaît que quelques fois
+    let hint1 = false;
+    const onTouchStart = (e: TouchEvent) => {
+      if (fullRef.current) return;
+      if (e.touches.length >= 2) {
+        m.dragging.enable();
+        setHint(false);
+      }
+    };
+    const onTouchMove = (e: TouchEvent) => {
+      if (fullRef.current || e.touches.length !== 1 || m.dragging.enabled() || hintsShown >= 3) return;
+      if (!hint1) { hint1 = true; hintsShown++; setHint(true); }
+      clearTimeout(hintTimer);
+      hintTimer = setTimeout(() => { setHint(false); hint1 = false; }, 1600);
+    };
+    const onTouchEnd = (e: TouchEvent) => {
+      if (!fullRef.current && e.touches.length === 0 && touch) m.dragging.disable();
+    };
+    if (touch) {
+      node.addEventListener('touchstart', onTouchStart, { passive: true });
+      node.addEventListener('touchmove', onTouchMove, { passive: true });
+      node.addEventListener('touchend', onTouchEnd, { passive: true });
+    }
     m.on('click', (e: L.LeafletMouseEvent) => {
       if (pickRef.current) onPickRef.current(e.latlng.lat, e.latlng.lng);
     });
@@ -80,6 +113,10 @@ export function PharmacyMap(props: {
     const ro = new ResizeObserver(() => m.invalidateSize());
     ro.observe(el.current);
     return () => {
+      clearTimeout(hintTimer);
+      node.removeEventListener('touchstart', onTouchStart);
+      node.removeEventListener('touchmove', onTouchMove);
+      node.removeEventListener('touchend', onTouchEnd);
       ro.disconnect();
       m.remove();
       map.current = null;
@@ -172,6 +209,24 @@ export function PharmacyMap(props: {
     mk.openPopup();
   }, [props.focusSignal]);
 
+  // Plein écran : la carte se manipule librement à un doigt
+  useEffect(() => {
+    const m = map.current;
+    if (!m) return;
+    const touch = L.Browser.touch && window.matchMedia('(pointer: coarse)').matches;
+    if (full) {
+      m.dragging.enable();
+      document.body.style.overflow = 'hidden';
+    } else {
+      if (touch) m.dragging.disable();
+      document.body.style.overflow = '';
+    }
+    setTimeout(() => m.invalidateSize(), 50);
+    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setFull(false);
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [full]);
+
   function recenter() {
     const m = map.current;
     if (!m) return;
@@ -180,9 +235,18 @@ export function PharmacyMap(props: {
   }
 
   return (
-    <div className={`relative h-full w-full ${props.picking ? 'map-picking' : ''}`}>
+    <div className={`${full ? 'fixed inset-0 z-[900] bg-bg' : 'relative h-full w-full'} ${props.picking ? 'map-picking' : ''}`}>
       <div ref={el} className="h-full w-full" role="application" aria-label="Carte des pharmacies de garde" />
-      <div className="absolute right-3 top-3 z-[500] flex flex-col gap-2">
+      {hint && (
+        <div className="pointer-events-none absolute inset-0 z-[600] flex items-center justify-center bg-black/35 p-6 text-center text-sm font-bold text-white">
+          Utilisez deux doigts pour déplacer la carte, ou ouvrez-la en plein écran ⤢
+        </div>
+      )}
+      <div className="absolute right-3 top-3 z-[500] flex flex-col gap-2" style={full ? { top: 'max(env(safe-area-inset-top), 12px)' } : undefined}>
+        <button type="button" onClick={() => setFull((v) => !v)} className={`rounded-xl p-2.5 shadow-md ${full ? 'bg-brand-700 text-white' : 'bg-white text-brand-700'}`}
+          title={full ? 'Quitter le plein écran' : 'Carte en plein écran'} aria-label={full ? 'Quitter le plein écran' : 'Carte en plein écran'} aria-pressed={full}>
+          {full ? <CloseIcon size={20} /> : <ExpandIcon size={20} />}
+        </button>
         <button type="button" onClick={props.onToggleRoutes} disabled={!props.canShowRoutes} aria-pressed={props.routesShown}
           className={`rounded-xl p-2.5 shadow-md disabled:opacity-50 ${props.routesShown ? 'bg-brand-700 text-white' : 'bg-white text-brand-700'}`}
           title={props.routesShown ? 'Masquer les itinéraires' : 'Afficher les itinéraires'} aria-label={props.routesShown ? 'Masquer les itinéraires' : 'Afficher les itinéraires'}>
@@ -191,6 +255,11 @@ export function PharmacyMap(props: {
         <button type="button" onClick={recenter} className="rounded-xl bg-white p-2.5 text-brand-700 shadow-md" title="Revenir à la position de départ" aria-label="Revenir à la position de départ">
           <GpsIcon size={20} />
         </button>
+        <div className="flex flex-col overflow-hidden rounded-xl bg-white shadow-md">
+          <button type="button" onClick={() => map.current?.zoomIn()} className="px-3 py-2 text-lg font-extrabold text-brand-700" aria-label="Zoomer">+</button>
+          <span className="h-px bg-line" />
+          <button type="button" onClick={() => map.current?.zoomOut()} className="px-3 py-2 text-lg font-extrabold text-brand-700" aria-label="Dézoomer">−</button>
+        </div>
       </div>
       {props.picking && (
         <div className="pointer-events-none absolute inset-x-0 top-3 z-[500] mx-auto w-fit rounded-full bg-brand-700 px-4 py-2 text-sm font-bold text-white shadow-lg">

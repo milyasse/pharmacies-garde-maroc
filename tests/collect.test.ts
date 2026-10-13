@@ -107,3 +107,19 @@ test('recherche : rayon, rang, filtre par type, expirées séparées', () => {
   const late = buildResults({ dayRecords: snap.records, previousDayRecords: [], date: '2026-10-13', origin, radiusKm: 5, dutyFilter: 'all', now: new Date('2026-10-14T12:00:00Z') });
   assert.ok(late.expired.length >= 1, 'garde terminée → classée à part comme expirée');
 });
+
+test('compteurs par ville : actives et répartition par type', async () => {
+  const { countByCity, selectPharmacies } = await import('../src/shared/search.ts');
+  const out = mkdtempSync(path.join(tmpdir(), 'pgm-'));
+  const manual = mkdtempSync(path.join(tmpdir(), 'pgm-manual-'));
+  runCollector(out, manual);
+  const snap = JSON.parse(readFileSync(path.join(out, 'duty', '2026-10-13.json'), 'utf8')) as DutySnapshot;
+  const list = selectPharmacies(snap.records, [], '2026-10-13', new Date('2026-10-13T11:00:00Z'));
+  const [rabat, sale, temara] = countByCity(list, ['rabat', 'sale', 'temara']);
+  assert.equal(rabat.active, 0);
+  assert.equal(sale.active, 0);
+  assert.deepEqual({ a: temara.active, c: temara.continuous, d: temara.day }, { a: 3, c: 2, d: 1 });
+  const late = countByCity(selectPharmacies(snap.records, [], '2026-10-13', new Date('2026-10-13T23:59:00Z')), ['temara'])[0];
+  assert.equal(late.day, 0, 'garde de jour 9h-23h terminée');
+  assert.equal(late.expired, 1);
+});

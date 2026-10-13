@@ -9,6 +9,16 @@ const base = process.env.BASE_PATH || '/';
 
 export default defineConfig({
   base,
+  build: {
+    target: 'es2020',
+    cssCodeSplit: true,
+    rollupOptions: {
+      output: {
+        // Bibliothèques séparées : mises en cache par le navigateur d'une version à l'autre
+        manualChunks: { react: ['react', 'react-dom'], leaflet: ['leaflet'] },
+      },
+    },
+  },
   plugins: [
     react(),
     tailwindcss(),

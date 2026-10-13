@@ -5,16 +5,17 @@ import { PharmacyMap } from './components/PharmacyMap.tsx';
 import { PharmacyList, type SortBy } from './components/PharmacyList.tsx';
 import { MapLegend } from './components/MapLegend.tsx';
 import { SourceStatus } from './components/SourceStatus.tsx';
+import { CityOverview } from './components/CityOverview.tsx';
 import type { RouteState } from './components/PharmacyCard.tsx';
 import { getCurrentPosition } from './services/geolocation.ts';
 import { searchPlace } from './services/geocoding.ts';
 import { getRoute, type RouteResult, type TravelMode } from './services/routing.ts';
 import { loadSnapshots, loadStatus } from './services/pharmacySearch.ts';
-import { buildResults, sortByDuration, type DutyFilter, type SearchOutcome } from './shared/search.ts';
-import type { CollectorStatus, Pharmacy } from './shared/types.ts';
+import { buildResults, countByCity, selectPharmacies, sortByDuration, type CityCount, type DutyFilter, type SearchOutcome } from './shared/search.ts';
+import type { CityId, CollectorStatus, Pharmacy } from './shared/types.ts';
 import { addDays, formatFrDate, formatMoroccoDateTime, isIsoDate, moroccoDate } from './shared/dates.ts';
 import { haversineKm } from './shared/distance.ts';
-import { CITIES, CONNECTORS } from './shared/connectors/registry.ts';
+import { CITIES, CITY_NAME, CONNECTORS } from './shared/connectors/registry.ts';
 import { CONFIG } from './config.ts';
 import { SpinnerIcon } from './components/icons.tsx';
 
@@ -67,16 +68,19 @@ export default function App() {
   const [computingAll, setComputingAll] = useState(false);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const mapBox = useRef<HTMLDivElement>(null);
-  const searchAbort = useRef<AbortController | null>(null);
+  const searchSeq = useRef(0);
+  const [cityCounts, setCityCounts] = useState<CityCount[] | null>(null);
+  const [cityLoading, setCityLoading] = useState(false);
+  const [cityError, setCityError] = useState<string | null>(null);
   const routeAbort = useRef<AbortController | null>(null);
 
   useEffect(() => savePref('radius', radiusKm), [radiusKm]);
   useEffect(() => savePref('filter', dutyFilter), [dutyFilter]);
   useEffect(() => savePref('mode', mode), [mode]);
 
-  const refreshStatus = useCallback(async () => {
+  const refreshStatus = useCallback(async (force = false) => {
     try {
-      setStatus(await loadStatus());
+      setStatus(await loadStatus(force));
       setStatusError(null);
     } catch (e) {
       setStatusError((e as Error).message);
@@ -84,8 +88,31 @@ export default function App() {
   }, []);
   useEffect(() => { void refreshStatus(); }, [refreshStatus]);
 
+  // Synthèse par ville, chargée dès l'ouverture (sans position) et à chaque changement de date
+  const loadCityCounts = useCallback(async (force = false) => {
+    if (!isIsoDate(date)) return;
+    setCityLoading(true);
+    try {
+      const { day, prev } = await loadSnapshots(date, force);
+      const list = selectPharmacies(day?.records ?? [], prev?.records ?? [], date);
+      setCityCounts(countByCity(list, CITIES.map((c) => c.id)));
+      setCityError(null);
+    } catch (e) {
+      setCityError((e as Error).message);
+    } finally {
+      setCityLoading(false);
+    }
+  }, [date]);
+  useEffect(() => { void loadCityCounts(); }, [loadCityCounts]);
+  // Actualisation quand l'app revient au premier plan (données collectées toutes les ~2 h)
+  useEffect(() => {
+    const onVis = () => { if (document.visibilityState === 'visible') void loadCityCounts(); };
+    document.addEventListener('visibilitychange', onVis);
+    return () => document.removeEventListener('visibilitychange', onVis);
+  }, [loadCityCounts]);
+
   // ---------- Recherche
-  const runSearch = useCallback(async () => {
+  const runSearch = useCallback(async (force = false) => {
     if (!origin) {
       setOriginError('Indiquez une position de départ : « Ma position », une adresse ou un point sur la carte.');
       return;
@@ -98,17 +125,17 @@ export default function App() {
       setSearch({ state: 'error', error: 'Rayon invalide (entre 0,1 et 100 km).' });
       return;
     }
-    searchAbort.current?.abort();
-    const ac = new AbortController();
-    searchAbort.current = ac;
+    const seq = ++searchSeq.current; // seule la dernière recherche lancée s'affiche
     setOriginError(null);
     setSearch({ state: 'loading' });
     setRoutes({});
     setRouteStates({});
     routeAbort.current?.abort();
     try {
-      const [{ day, prev }, st] = await Promise.all([loadSnapshots(date, ac.signal), loadStatus(ac.signal).catch(() => null)]);
+      const [{ day, prev }, st] = await Promise.all([loadSnapshots(date, force), loadStatus(force).catch(() => null)]);
+      if (seq !== searchSeq.current) return;
       if (st) setStatus(st);
+      if (force) void loadCityCounts(true);
       const today = moroccoDate();
       const outcome = buildResults({
         dayRecords: day?.records ?? [],
@@ -140,10 +167,20 @@ export default function App() {
       setSelectedId(first);
       setCollapsed(true);
     } catch (e) {
-      if ((e as Error).name === 'AbortError') return;
+      if (seq !== searchSeq.current) return;
       setSearch({ state: 'error', error: (e as Error).message });
     }
-  }, [origin, date, radiusKm, dutyFilter]);
+  }, [origin, date, radiusKm, dutyFilter, loadCityCounts]);
+
+  const pickCity = useCallback((id: CityId) => {
+    const c = CITIES.find((x) => x.id === id);
+    if (!c) return;
+    setOrigin({ lat: c.center.lat, lng: c.center.lng, label: `Centre de ${c.name}`, kind: 'city', city: id });
+    setRadiusKm((r) => (r < 10 ? 10 : r)); // couvrir la ville entière
+    setPicking(false);
+    setHasSearched(true);
+    if (window.matchMedia('(max-width: 1023px)').matches) setTimeout(() => mapBox.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
+  }, []);
 
   // Relance automatique quand un paramètre change après une première recherche
   useEffect(() => {
@@ -266,10 +303,19 @@ export default function App() {
       <Header onLocate={locate} locating={locating} onOpenSettings={() => setSettingsOpen(true)} />
       <main className="flex-1 lg:grid lg:min-h-0 lg:grid-cols-[440px_1fr]">
         <div className="lg:min-h-0 lg:overflow-y-auto lg:border-r lg:border-line">
+          <CityOverview
+            date={date}
+            counts={cityCounts}
+            loading={cityLoading}
+            error={cityError}
+            activeCity={origin?.kind === 'city' ? origin.city ?? null : null}
+            onPickCity={pickCity}
+            compact={collapsed}
+          />
           {collapsed && search.state === 'done' ? (
             <div className="flex items-center gap-3 bg-white px-4 py-3 lg:px-6">
               <p className="min-w-0 flex-1 text-sm">
-                <b>{origin?.kind === 'gps' ? 'Ma position' : origin?.kind === 'map' ? 'Point sur la carte' : origin?.label.split(',')[0]}</b>
+                <b>{origin?.kind === 'gps' ? 'Ma position' : origin?.kind === 'map' ? 'Point sur la carte' : origin?.kind === 'city' ? CITY_NAME[origin.city!] : origin?.label.split(',')[0]}</b>
                 <span className="text-muted"> · {formatFrDate(date)} · {radiusKm} km · {FILTER_LABEL[dutyFilter]}</span>
               </p>
               <button type="button" onClick={() => setCollapsed(false)} className="rounded-xl bg-brand-50 px-3 py-2 text-sm font-bold text-brand-700">Modifier</button>
@@ -299,7 +345,7 @@ export default function App() {
         </div>
 
         <div className="flex flex-col lg:min-h-0">
-          <div ref={mapBox} className="relative h-[55vh] min-h-[320px] scroll-mt-2 lg:h-auto lg:flex-1">
+          <div ref={mapBox} className="relative h-[48vh] min-h-[300px] scroll-mt-2 lg:h-auto lg:flex-1">
             <PharmacyMap
               origin={origin}
               radiusKm={radiusKm}
@@ -370,7 +416,7 @@ export default function App() {
         computingAll={computingAll}
         showAllRoutes={showAllRoutes}
         onShowAllRoutes={setShowAllRoutes}
-        onRefresh={() => void runSearch()}
+        onRefresh={() => void runSearch(true)}
         onEnlarge={() => setRadiusKm((r) => Math.min(100, r < 5 ? 5 : r < 10 ? 10 : r < 20 ? 20 : r < 30 ? 30 : r * 2))}
         sourceLinks={sourceLinks}
       />

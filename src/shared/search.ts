@@ -1,7 +1,7 @@
 // Logique de recherche pure (testable) : sélection par date, filtre par type,
 // filtrage par rayon et classement par distance à vol d'oiseau.
 
-import type { DutyRecord, DutyType, Pharmacy } from './types.ts';
+import type { CityId, DutyRecord, DutyType, Pharmacy } from './types.ts';
 import { filterAndRank, type LatLng } from './distance.ts';
 import { selectForDate, STATUS_ORDER } from './status.ts';
 
@@ -59,7 +59,7 @@ export function buildResults(params: {
   now?: Date;
 }): SearchOutcome {
   const { dayRecords, previousDayRecords, date, origin, radiusKm, dutyFilter, now = new Date() } = params;
-  const selected = selectForDate(dayRecords, previousDayRecords, date, now).map(toPharmacy);
+  const selected = selectPharmacies(dayRecords, previousDayRecords, date, now);
   const byType = dutyFilter === 'all' ? selected : selected.filter((p) => p.dutyType === dutyFilter);
   const active = byType.filter((p) => p.verificationStatus !== 'expired');
   const expiredAll = byType.filter((p) => p.verificationStatus === 'expired');
@@ -85,4 +85,38 @@ export function sortByDuration(list: Pharmacy[]): Pharmacy[] {
       if (db === null) return -1;
       return da - db;
     });
+}
+
+/** Pharmacies de garde rattachées à la date (toutes villes, avant filtres). */
+export function selectPharmacies(dayRecords: DutyRecord[], previousDayRecords: DutyRecord[], date: string, now: Date = new Date()): Pharmacy[] {
+  return selectForDate(dayRecords, previousDayRecords, date, now).map(toPharmacy);
+}
+
+export interface CityCount {
+  city: CityId;
+  active: number; // non expirées
+  continuous: number;
+  day: number;
+  night: number;
+  unknownType: number;
+  confirmed: number;
+  expired: number;
+}
+
+/** Nombre de pharmacies de garde disponibles par ville (expirées comptées à part). */
+export function countByCity(list: Pharmacy[], cities: CityId[]): CityCount[] {
+  return cities.map((city) => {
+    const inCity = list.filter((p) => p.city === city);
+    const active = inCity.filter((p) => p.verificationStatus !== 'expired');
+    return {
+      city,
+      active: active.length,
+      continuous: active.filter((p) => p.dutyType === 'continuous').length,
+      day: active.filter((p) => p.dutyType === 'day').length,
+      night: active.filter((p) => p.dutyType === 'night').length,
+      unknownType: active.filter((p) => p.dutyType === null).length,
+      confirmed: active.filter((p) => p.verificationStatus === 'confirmed').length,
+      expired: inCity.length - active.length,
+    };
+  });
 }
