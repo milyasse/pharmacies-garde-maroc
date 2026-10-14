@@ -7,6 +7,9 @@ const URL = process.env.APP_URL || 'http://localhost:4173/pharmacies-garde-maroc
 const OUT = 'marketing';
 await mkdir(`${OUT}/video-raw`, { recursive: true });
 const wait = (ms) => new Promise((r) => setTimeout(r, ms));
+import { appendFile } from 'node:fs/promises';
+const logf = (m) => { console.log(m); return appendFile(`${OUT}/capture-log.txt`, m + '\n'); };
+process.on('unhandledRejection', async (e) => { await logf('ERREUR ' + (e?.stack || e)); process.exit(1); });
 
 const browser = await chromium.launch();
 
@@ -19,8 +22,10 @@ const ctx = await browser.newContext({
 });
 const page = await ctx.newPage();
 const shot = async (name) => { await page.screenshot({ path: `${OUT}/${name}.png` }); console.log('📸', name); };
-await page.goto(URL, { waitUntil: 'networkidle' });
-await page.getByText('au total').first().waitFor({ timeout: 20000 });
+page.on('console', (m) => m.type() === 'error' && logf('console: ' + m.text()));
+await page.goto(URL, { waitUntil: 'domcontentloaded' });
+await logf('titre: ' + (await page.title()));
+await page.getByText('au total').first().waitFor({ timeout: 30000 }).catch(async (e) => { await logf('attente villes: ' + e.message); });
 await wait(1500);
 await shot('01-accueil-villes');
 await page.getByRole('button', { name: 'Détecter ma position' }).click();
@@ -51,8 +56,8 @@ const d = await browser.newContext({
   geolocation: { latitude: 33.9985, longitude: -6.8520 }, permissions: ['geolocation'],
 });
 const dp = await d.newPage();
-await dp.goto(URL, { waitUntil: 'networkidle' });
-await dp.getByText('au total').first().waitFor({ timeout: 20000 });
+await dp.goto(URL, { waitUntil: 'domcontentloaded' });
+await dp.getByText('au total').first().waitFor({ timeout: 30000 }).catch(() => {});
 await dp.getByRole('button', { name: 'Détecter ma position' }).click();
 await wait(5000);
 const r2 = dp.getByRole('button', { name: /Itinéraire/ }).first();

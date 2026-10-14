@@ -28,15 +28,20 @@ jobs:
           npm install --no-save --no-audit --no-fund playwright@1.48.2
           npx playwright install --with-deps chromium
       - name: Captures et vidéo
+        env:
+          BASE_PATH: /pharmacies-garde-maroc/
         run: |
           npx vite preview --port 4173 --strictPort &
           sleep 5
           node scripts/capture.mjs
       - name: Vidéo MP4
+        if: always()
         run: |
+          [ -f marketing/demo-mobile.webm ] || exit 0
           ffmpeg -y -i marketing/demo-mobile.webm -vf "scale=1080:-2:flags=lanczos,fps=30" -c:v libx264 -pix_fmt yuv420p -crf 20 -movflags +faststart marketing/demo-mobile.mp4
           rm -rf marketing/video-raw
       - name: Enregistrer
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
