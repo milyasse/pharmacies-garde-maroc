@@ -2168,5 +2168,67 @@
    ]
   },
   "fetchedAt": "2026-10-13T10:24:06.078Z"
+ },
+ "s21467": {
+  "detail": {
+   "name": "Pharmacie Aya",
+   "address": "dr. nawfal lahlou rue el hachmi el mestari (douwar al askar), n°4, lot aya Rabat",
+   "phone": "+212537693388",
+   "latitude": 34.0166307,
+   "longitude": -6.8569156,
+   "history": [
+    {
+     "start": "2026-10-14",
+     "end": "2026-10-15",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-09-11",
+     "end": "2026-09-12",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-09-01",
+     "end": "2026-09-02",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-07-21",
+     "end": "2026-07-22",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-07-13",
+     "end": "2026-07-14",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-07-05",
+     "end": "2026-07-06",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-07-04",
+     "end": "2026-07-05",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-06-09",
+     "end": "2026-06-10",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-04-22",
+     "end": "2026-04-23",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-03-16",
+     "end": "2026-03-17",
+     "label": "Garde Jour Services / Spécialités : Pharmacie"
+    }
+   ]
+  },
+  "fetchedAt": "2026-10-14T10:34:06.083Z"
  }
 }

@@ -1,9 +1,10 @@
 {
- "generatedAt": "2026-10-14T08:34:54.388Z",
+ "generatedAt": "2026-10-14T10:34:03.914Z",
  "todayMorocco": "2026-10-14",
  "dates": [
   "2026-10-12",
-  "2026-10-13"
+  "2026-10-13",
+  "2026-10-14"
  ],
  "runs": [
   {
@@ -13,31 +14,31 @@
    "url": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
    "ok": true,
    "pageDate": "2026-10-14",
-   "count": 7,
+   "count": 1,
    "error": null,
-   "checkedAt": "2026-10-14T08:34:54.415Z"
+   "checkedAt": "2026-10-14T10:34:03.935Z"
   },
   {
    "sourceId": "annuaire-gratuit",
    "sourceName": "annuaire-gratuit.ma",
    "city": "sale",
    "url": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
-   "ok": true,
+   "ok": false,
    "pageDate": "2026-10-14",
-   "count": 7,
-   "error": null,
-   "checkedAt": "2026-10-14T08:34:56.522Z"
+   "count": 0,
+   "error": "Aucune pharmacie extraite : la structure de la page a peut-être changé.",
+   "checkedAt": "2026-10-14T10:34:06.084Z"
   },
   {
    "sourceId": "annuaire-gratuit",
    "sourceName": "annuaire-gratuit.ma",
    "city": "temara",
    "url": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
-   "ok": true,
+   "ok": false,
    "pageDate": "2026-10-14",
-   "count": 3,
-   "error": null,
-   "checkedAt": "2026-10-14T08:34:56.829Z"
+   "count": 0,
+   "error": "Aucune pharmacie extraite : la structure de la page a peut-être changé.",
+   "checkedAt": "2026-10-14T10:34:07.165Z"
   }
  ],
  "connectors": [

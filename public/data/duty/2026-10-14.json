@@ -1,0 +1,43 @@
+{
+ "date": "2026-10-14",
+ "generatedAt": "2026-10-14T10:34:03.914Z",
+ "records": [
+  {
+   "id": "rabat-aya",
+   "name": "Pharmacie Aya",
+   "address": "dr. nawfal lahlou rue el hachmi el mestari (douwar al askar), n°4, lot aya Rabat",
+   "city": "rabat",
+   "district": "Ocean Orangers",
+   "latitude": 34.0166307,
+   "longitude": -6.8569156,
+   "coordinatesSource": "source",
+   "phone": "+212537693388",
+   "dutyDate": "2026-10-14",
+   "dutyType": "day",
+   "dutyLabel": "Garde Jour",
+   "hoursText": null,
+   "dutyStartDate": "2026-10-14",
+   "dutyEndDate": "2026-10-15",
+   "sources": [
+    {
+     "sourceId": "annuaire-gratuit",
+     "sourceName": "annuaire-gratuit.ma",
+     "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-aya-s21467.html",
+     "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
+     "sourcePublishedAt": "2026-10-14",
+     "lastCheckedAt": "2026-10-14T10:34:03.935Z",
+     "historyMatch": {
+      "start": "2026-10-14",
+      "end": "2026-10-15",
+      "label": "Garde Jour"
+     },
+     "dutyType": "day",
+     "dutyLabel": "Garde Jour"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "medium",
+   "notes": []
+  }
+ ]
+}
