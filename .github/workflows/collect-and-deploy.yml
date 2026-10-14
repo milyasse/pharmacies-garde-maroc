@@ -37,6 +37,19 @@ jobs:
         continue-on-error: true
         run: npm run collect -- --strict
 
+      - name: Diagnostic sources (temporaire)
+        continue-on-error: true
+        run: >
+          node --experimental-strip-types --no-warnings scripts/probe.ts
+          https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html
+          https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html
+          https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html
+          "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-10-12"
+          "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-10-19"
+          https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-anzi.html
+          https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html
+          https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html
+
       - name: Signaler une source en erreur
         if: steps.collect.outcome == 'failure'
         run: echo "::warning title=Source de garde en erreur::Au moins une source n'a pas pu être lue. Voir le journal de l'étape « Collecte » et public/data/status.json."
@@ -46,6 +59,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add public/data
+          [ -d debug-raw ] && git add debug-raw || true
           if git diff --cached --quiet; then
             echo "Aucune nouvelle donnée."
           else
