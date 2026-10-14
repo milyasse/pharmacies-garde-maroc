@@ -1,10 +1,21 @@
 {
- "generatedAt": "2026-10-14T20:30:13.310Z",
+ "generatedAt": "2026-10-14T20:34:16.782Z",
  "todayMorocco": "2026-10-14",
  "dates": [
   "2026-10-12",
   "2026-10-13",
-  "2026-10-14"
+  "2026-10-14",
+  "2026-10-15",
+  "2026-10-16",
+  "2026-10-17",
+  "2026-10-18",
+  "2026-10-19",
+  "2026-10-20",
+  "2026-10-21",
+  "2026-10-22",
+  "2026-10-23",
+  "2026-10-24",
+  "2026-10-25"
  ],
  "runs": [
   {
@@ -16,29 +27,95 @@
    "pageDate": "2026-10-14",
    "count": 1,
    "error": null,
-   "checkedAt": "2026-10-14T20:30:13.332Z"
+   "checkedAt": "2026-10-14T20:34:16.814Z"
   },
   {
    "sourceId": "annuaire-gratuit",
    "sourceName": "annuaire-gratuit.ma",
    "city": "sale",
    "url": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
-   "ok": false,
+   "ok": true,
    "pageDate": "2026-10-14",
    "count": 0,
-   "error": "Aucune pharmacie extraite : la structure de la page a peut-être changé.",
-   "checkedAt": "2026-10-14T20:30:14.715Z"
+   "error": null,
+   "checkedAt": "2026-10-14T20:34:17.893Z"
   },
   {
    "sourceId": "annuaire-gratuit",
    "sourceName": "annuaire-gratuit.ma",
    "city": "temara",
    "url": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
-   "ok": false,
+   "ok": true,
    "pageDate": "2026-10-14",
    "count": 0,
-   "error": "Aucune pharmacie extraite : la structure de la page a peut-être changé.",
-   "checkedAt": "2026-10-14T20:30:15.134Z"
+   "error": null,
+   "checkedAt": "2026-10-14T20:34:18.551Z"
+  },
+  {
+   "sourceId": "guidepharmacies",
+   "sourceName": "guidepharmacies.ma",
+   "city": "rabat",
+   "url": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html",
+   "ok": true,
+   "pageDate": "2026-10-12",
+   "count": 37,
+   "error": null,
+   "checkedAt": "2026-10-14T20:34:20.033Z"
+  },
+  {
+   "sourceId": "guidepharmacies",
+   "sourceName": "guidepharmacies.ma",
+   "city": "rabat",
+   "url": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-10-19",
+   "ok": true,
+   "pageDate": "2026-10-19",
+   "count": 49,
+   "error": null,
+   "checkedAt": "2026-10-14T20:35:25.270Z"
+  },
+  {
+   "sourceId": "guidepharmacies",
+   "sourceName": "guidepharmacies.ma",
+   "city": "sale",
+   "url": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
+   "ok": true,
+   "pageDate": "2026-10-12",
+   "count": 46,
+   "error": null,
+   "checkedAt": "2026-10-14T20:35:46.490Z"
+  },
+  {
+   "sourceId": "guidepharmacies",
+   "sourceName": "guidepharmacies.ma",
+   "city": "sale",
+   "url": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-10-19",
+   "ok": true,
+   "pageDate": "2026-10-19",
+   "count": 61,
+   "error": null,
+   "checkedAt": "2026-10-14T20:35:47.800Z"
+  },
+  {
+   "sourceId": "guidepharmacies",
+   "sourceName": "guidepharmacies.ma",
+   "city": "temara",
+   "url": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html",
+   "ok": true,
+   "pageDate": "2026-10-12",
+   "count": 27,
+   "error": null,
+   "checkedAt": "2026-10-14T20:35:49.311Z"
+  },
+  {
+   "sourceId": "guidepharmacies",
+   "sourceName": "guidepharmacies.ma",
+   "city": "temara",
+   "url": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html?date=2026-10-19",
+   "ok": true,
+   "pageDate": "2026-10-19",
+   "count": 29,
+   "error": null,
+   "checkedAt": "2026-10-14T20:35:50.736Z"
   }
  ],
  "connectors": [
@@ -53,6 +130,18 @@
     "temara"
    ],
    "reason": "Liste du jour par ville + historique de garde daté (début/fin) sur chaque fiche. Pages autorisées par robots.txt. Collecte espacée (≥ 1,5 s entre requêtes), toutes les ~2 h."
+  },
+  {
+   "id": "guidepharmacies",
+   "name": "guidepharmacies.ma",
+   "homepage": "https://www.guidepharmacies.ma/pharmacies-de-garde.html",
+   "enabled": true,
+   "cities": [
+    "rabat",
+    "sale",
+    "temara"
+   ],
+   "reason": "Planning hebdomadaire publié à l’avance (semaine en cours et suivante) : jours à venir disponibles. Position publiée = centre du quartier, complétée par la position exacte d’une autre source ou par l’adresse de la fiche."
   },
   {
    "id": "manual",
