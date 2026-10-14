@@ -1,6 +1,6 @@
 {
  "date": "2026-10-18",
- "generatedAt": "2026-10-14T20:44:10.559Z",
+ "generatedAt": "2026-10-14T22:29:50.565Z",
  "records": [
   {
    "id": "rabat-bahja",
@@ -25,7 +25,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-al-bahja-00h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html",
      "sourcePublishedAt": "2026-10-12",
-     "lastCheckedAt": "2026-10-14T20:44:14.247Z",
+     "lastCheckedAt": "2026-10-14T22:29:54.401Z",
      "historyMatch": {
       "start": "2026-10-18",
       "end": "2026-10-18",
@@ -64,7 +64,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-des-oudayas-dim.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html",
      "sourcePublishedAt": "2026-10-12",
-     "lastCheckedAt": "2026-10-14T20:44:14.247Z",
+     "lastCheckedAt": "2026-10-14T22:29:54.401Z",
      "historyMatch": {
       "start": "2026-10-18",
       "end": "2026-10-18",
@@ -103,7 +103,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-ibn-baytar-00h-dim.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html",
      "sourcePublishedAt": "2026-10-12",
-     "lastCheckedAt": "2026-10-14T20:44:14.247Z",
+     "lastCheckedAt": "2026-10-14T22:29:54.401Z",
      "historyMatch": {
       "start": "2026-10-18",
       "end": "2026-10-18",
@@ -142,7 +142,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-les-arcades-00hh.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html",
      "sourcePublishedAt": "2026-10-12",
-     "lastCheckedAt": "2026-10-14T20:44:14.247Z",
+     "lastCheckedAt": "2026-10-14T22:29:54.401Z",
      "historyMatch": {
       "start": "2026-10-18",
       "end": "2026-10-18",
@@ -181,7 +181,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-marjane-dim.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html",
      "sourcePublishedAt": "2026-10-12",
-     "lastCheckedAt": "2026-10-14T20:44:14.247Z",
+     "lastCheckedAt": "2026-10-14T22:29:54.401Z",
      "historyMatch": {
       "start": "2026-10-18",
       "end": "2026-10-18",
@@ -220,7 +220,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-ryad-dim.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html",
      "sourcePublishedAt": "2026-10-12",
-     "lastCheckedAt": "2026-10-14T20:44:14.247Z",
+     "lastCheckedAt": "2026-10-14T22:29:54.401Z",
      "historyMatch": {
       "start": "2026-10-18",
       "end": "2026-10-19",
@@ -259,7 +259,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-tansift-dim.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html",
      "sourcePublishedAt": "2026-10-12",
-     "lastCheckedAt": "2026-10-14T20:44:14.247Z",
+     "lastCheckedAt": "2026-10-14T22:29:54.401Z",
      "historyMatch": {
       "start": "2026-10-18",
       "end": "2026-10-19",
@@ -298,7 +298,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-youssoufia-dim.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html",
      "sourcePublishedAt": "2026-10-12",
-     "lastCheckedAt": "2026-10-14T20:44:14.247Z",
+     "lastCheckedAt": "2026-10-14T22:29:54.401Z",
      "historyMatch": {
       "start": "2026-10-18",
       "end": "2026-10-18",
@@ -317,7 +317,7 @@
   {
    "id": "sale-omrane",
    "name": "Pharmacie Al Omrane",
-   "address": null,
+   "address": "52, Ain Mediouna (Près de l'hôpital aktidal)",
    "city": "sale",
    "district": "Bettana",
    "latitude": 34.03355,
@@ -337,7 +337,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-al-omrane-dim.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
      "sourcePublishedAt": "2026-10-12",
-     "lastCheckedAt": "2026-10-14T20:45:21.656Z",
+     "lastCheckedAt": "2026-10-14T22:30:20.583Z",
      "historyMatch": {
       "start": "2026-10-18",
       "end": "2026-10-18",
@@ -376,7 +376,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-amzar-dim.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
      "sourcePublishedAt": "2026-10-12",
-     "lastCheckedAt": "2026-10-14T20:45:21.656Z",
+     "lastCheckedAt": "2026-10-14T22:30:20.583Z",
      "historyMatch": {
       "start": "2026-10-18",
       "end": "2026-10-19",
@@ -395,7 +395,7 @@
   {
    "id": "sale-chifaa",
    "name": "Pharmacie Chifaa",
-   "address": null,
+   "address": "18,Lot Zohour Route Mehdia (Prés école Yakada II)",
    "city": "sale",
    "district": "Hay Chmaou",
    "latitude": 34.066527,
@@ -415,7 +415,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-chifaa-dim.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
      "sourcePublishedAt": "2026-10-12",
-     "lastCheckedAt": "2026-10-14T20:45:21.656Z",
+     "lastCheckedAt": "2026-10-14T22:30:20.583Z",
      "historyMatch": {
       "start": "2026-10-18",
       "end": "2026-10-19",
@@ -434,7 +434,7 @@
   {
    "id": "sale-poste",
    "name": "Pharmacie De La Poste",
-   "address": null,
+   "address": "Fondée en 1956, شارع 2 مارس باب الخميس ( أمام البريد و المدرسة فاطمة الفهرية)",
    "city": "sale",
    "district": "Salé Médina",
    "latitude": 34.037,
@@ -454,7 +454,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-de-la-poste-dim.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
      "sourcePublishedAt": "2026-10-12",
-     "lastCheckedAt": "2026-10-14T20:45:21.656Z",
+     "lastCheckedAt": "2026-10-14T22:30:20.583Z",
      "historyMatch": {
       "start": "2026-10-18",
       "end": "2026-10-19",
@@ -473,7 +473,7 @@
   {
    "id": "sale-filali",
    "name": "Pharmacie El Filali",
-   "address": null,
+   "address": "30 Lotissement Jouhari, Hors Bab Sebta, Route kenitra, EST وراء المدرسة العليا للتكنولوجيا",
    "city": "sale",
    "district": "Sidi Moussa",
    "latitude": 34.050237,
@@ -493,7 +493,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-el-filali-dim.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
      "sourcePublishedAt": "2026-10-12",
-     "lastCheckedAt": "2026-10-14T20:45:21.656Z",
+     "lastCheckedAt": "2026-10-14T22:30:20.583Z",
      "historyMatch": {
       "start": "2026-10-18",
       "end": "2026-10-19",
@@ -512,7 +512,7 @@
   {
    "id": "sale-mamounia",
    "name": "Pharmacie El Mamounia",
-   "address": null,
+   "address": "R1, IMM, 11 Cité El Mamounia - Tabriquet",
    "city": "sale",
    "district": "Tabriquet",
    "latitude": 34.05448,
@@ -532,7 +532,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-el-mamounia-dim.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
      "sourcePublishedAt": "2026-10-12",
-     "lastCheckedAt": "2026-10-14T20:45:21.656Z",
+     "lastCheckedAt": "2026-10-14T22:30:20.583Z",
      "historyMatch": {
       "start": "2026-10-18",
       "end": "2026-10-19",
@@ -551,7 +551,7 @@
   {
    "id": "sale-hay-arrahma",
    "name": "Pharmacie Hay Arrahma",
-   "address": null,
+   "address": "Sect C, Hay rahma N°39",
    "city": "sale",
    "district": "Hay Arrahma",
    "latitude": 34.057518,
@@ -571,7 +571,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-hay-arrahma-dim.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
      "sourcePublishedAt": "2026-10-12",
-     "lastCheckedAt": "2026-10-14T20:45:21.656Z",
+     "lastCheckedAt": "2026-10-14T22:30:20.583Z",
      "historyMatch": {
       "start": "2026-10-18",
       "end": "2026-10-19",
@@ -590,7 +590,7 @@
   {
    "id": "sale-meriem",
    "name": "Pharmacie Meriem",
-   "address": null,
+   "address": "90 rue sidi yahia Hay Inbiaat",
    "city": "sale",
    "district": "Hay Elinbiate",
    "latitude": 34.062,
@@ -610,7 +610,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-meriem-dim.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
      "sourcePublishedAt": "2026-10-12",
-     "lastCheckedAt": "2026-10-14T20:45:21.656Z",
+     "lastCheckedAt": "2026-10-14T22:30:20.583Z",
      "historyMatch": {
       "start": "2026-10-18",
       "end": "2026-10-18",
@@ -629,7 +629,7 @@
   {
    "id": "sale-moussadikine",
    "name": "Pharmacie Moussadikine",
-   "address": null,
+   "address": "Av Ennasser hay oued Eddahab rue dar Essalam N 252 bis",
    "city": "sale",
    "district": "Laayayda",
    "latitude": 34.057418,
@@ -649,7 +649,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-moussadikine-dim.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
      "sourcePublishedAt": "2026-10-12",
-     "lastCheckedAt": "2026-10-14T20:45:21.656Z",
+     "lastCheckedAt": "2026-10-14T22:30:20.583Z",
      "historyMatch": {
       "start": "2026-10-18",
       "end": "2026-10-19",
@@ -668,7 +668,7 @@
   {
    "id": "sale-oum-hani",
    "name": "Pharmacie Oum Hani",
-   "address": null,
+   "address": "N°45 Hors bas sebta grina, En face Lycée Abou Bakr el Kadiri, Route De Kenitra",
    "city": "sale",
    "district": "Sidi Moussa",
    "latitude": 34.050237,
@@ -688,7 +688,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-oum-hani-dim.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
      "sourcePublishedAt": "2026-10-12",
-     "lastCheckedAt": "2026-10-14T20:45:21.656Z",
+     "lastCheckedAt": "2026-10-14T22:30:20.583Z",
      "historyMatch": {
       "start": "2026-10-18",
       "end": "2026-10-19",
@@ -707,7 +707,7 @@
   {
    "id": "sale-sala-jadida",
    "name": "Pharmacie Sala Al Jadida",
-   "address": null,
+   "address": "4, Boulevard Moulay Youssef",
    "city": "sale",
    "district": "Sala El Jadida",
    "latitude": 34.001557,
@@ -727,7 +727,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-sala-al-jadida-00h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
      "sourcePublishedAt": "2026-10-12",
-     "lastCheckedAt": "2026-10-14T20:45:21.656Z",
+     "lastCheckedAt": "2026-10-14T22:30:20.583Z",
      "historyMatch": {
       "start": "2026-10-18",
       "end": "2026-10-18",
@@ -746,7 +746,7 @@
   {
    "id": "sale-volubilis",
    "name": "Pharmacie Volubilis",
-   "address": null,
+   "address": "مكرر سكتور 11",
    "city": "sale",
    "district": "Hay Essalam",
    "latitude": 34.039858,
@@ -766,7 +766,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-volubilis-dim.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
      "sourcePublishedAt": "2026-10-12",
-     "lastCheckedAt": "2026-10-14T20:45:21.656Z",
+     "lastCheckedAt": "2026-10-14T22:30:20.583Z",
      "historyMatch": {
       "start": "2026-10-18",
       "end": "2026-10-19",
@@ -805,7 +805,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-al-hiba-dim.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html",
      "sourcePublishedAt": "2026-10-12",
-     "lastCheckedAt": "2026-10-14T20:45:45.703Z",
+     "lastCheckedAt": "2026-10-14T22:31:25.787Z",
      "historyMatch": {
       "start": "2026-10-18",
       "end": "2026-10-18",
@@ -844,7 +844,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-annassiha-dim.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html",
      "sourcePublishedAt": "2026-10-12",
-     "lastCheckedAt": "2026-10-14T20:45:45.703Z",
+     "lastCheckedAt": "2026-10-14T22:31:25.787Z",
      "historyMatch": {
       "start": "2026-10-18",
       "end": "2026-10-18",
@@ -883,7 +883,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-chifaa-t-dim.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html",
      "sourcePublishedAt": "2026-10-12",
-     "lastCheckedAt": "2026-10-14T20:45:45.703Z",
+     "lastCheckedAt": "2026-10-14T22:31:25.787Z",
      "historyMatch": {
       "start": "2026-10-18",
       "end": "2026-10-18",
@@ -922,7 +922,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-du-quartier-sam.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html",
      "sourcePublishedAt": "2026-10-12",
-     "lastCheckedAt": "2026-10-14T20:45:45.703Z",
+     "lastCheckedAt": "2026-10-14T22:31:25.787Z",
      "historyMatch": {
       "start": "2026-10-18",
       "end": "2026-10-19",
@@ -961,7 +961,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-echoumoue-sam.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html",
      "sourcePublishedAt": "2026-10-12",
-     "lastCheckedAt": "2026-10-14T20:45:45.703Z",
+     "lastCheckedAt": "2026-10-14T22:31:25.787Z",
      "historyMatch": {
       "start": "2026-10-18",
       "end": "2026-10-19",
@@ -1000,7 +1000,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-el-guich-dim.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html",
      "sourcePublishedAt": "2026-10-12",
-     "lastCheckedAt": "2026-10-14T20:45:45.703Z",
+     "lastCheckedAt": "2026-10-14T22:31:25.787Z",
      "historyMatch": {
       "start": "2026-10-18",
       "end": "2026-10-18",
@@ -1039,7 +1039,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-el-haq-dim.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html",
      "sourcePublishedAt": "2026-10-12",
-     "lastCheckedAt": "2026-10-14T20:45:45.703Z",
+     "lastCheckedAt": "2026-10-14T22:31:25.787Z",
      "historyMatch": {
       "start": "2026-10-18",
       "end": "2026-10-18",
@@ -1078,7 +1078,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-regragui-dim.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html",
      "sourcePublishedAt": "2026-10-12",
-     "lastCheckedAt": "2026-10-14T20:45:45.703Z",
+     "lastCheckedAt": "2026-10-14T22:31:25.787Z",
      "historyMatch": {
       "start": "2026-10-18",
       "end": "2026-10-18",
@@ -1117,7 +1117,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-riyad-el-wifak-dim.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html",
      "sourcePublishedAt": "2026-10-12",
-     "lastCheckedAt": "2026-10-14T20:45:45.703Z",
+     "lastCheckedAt": "2026-10-14T22:31:25.787Z",
      "historyMatch": {
       "start": "2026-10-18",
       "end": "2026-10-18",

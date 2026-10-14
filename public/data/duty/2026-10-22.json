@@ -1,6 +1,6 @@
 {
  "date": "2026-10-22",
- "generatedAt": "2026-10-14T20:44:10.559Z",
+ "generatedAt": "2026-10-14T22:29:50.565Z",
  "records": [
   {
    "id": "rabat-hikma",
@@ -25,7 +25,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-al-hikma-r-00h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:44:32.835Z",
+     "lastCheckedAt": "2026-10-14T22:29:57.336Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-22",
@@ -64,7 +64,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-arrayhane.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:44:32.835Z",
+     "lastCheckedAt": "2026-10-14T22:29:57.336Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
@@ -103,7 +103,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-avenue-dalger-hassan-24h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:44:32.835Z",
+     "lastCheckedAt": "2026-10-14T22:29:57.336Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
@@ -142,7 +142,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-chbanat-24h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:44:32.835Z",
+     "lastCheckedAt": "2026-10-14T22:29:57.336Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
@@ -181,7 +181,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-ksar-labhar-00h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:44:32.835Z",
+     "lastCheckedAt": "2026-10-14T22:29:57.336Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-22",
@@ -220,7 +220,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-michlifen.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:44:32.835Z",
+     "lastCheckedAt": "2026-10-14T22:29:57.336Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
@@ -259,7 +259,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-al-hikma.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:45:44.245Z",
+     "lastCheckedAt": "2026-10-14T22:30:53.486Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-22",
@@ -278,7 +278,7 @@
   {
    "id": "sale-bettana",
    "name": "Pharmacie Bettana",
-   "address": null,
+   "address": "1, Avenue Wattassiyine Bettana",
    "city": "sale",
    "district": "Bettana",
    "latitude": 34.03355,
@@ -298,7 +298,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-bettana.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:45:44.245Z",
+     "lastCheckedAt": "2026-10-14T22:30:53.486Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-22",
@@ -337,7 +337,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-du-myrte-00h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:45:44.245Z",
+     "lastCheckedAt": "2026-10-14T22:30:53.486Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-22",
@@ -376,7 +376,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-hajji-24h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:45:44.245Z",
+     "lastCheckedAt": "2026-10-14T22:30:53.486Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-22",
@@ -415,7 +415,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-lopera.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:45:44.245Z",
+     "lastCheckedAt": "2026-10-14T22:30:53.486Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
@@ -434,7 +434,7 @@
   {
    "id": "sale-nassiha",
    "name": "Pharmacie Nassiha",
-   "address": null,
+   "address": "صيدلية النصيحة, الكاريان أمام المسبح البلدي E حي الرحمة سكتور, و سوق حي الرحمة",
    "city": "sale",
    "district": "Hay Arrahma",
    "latitude": 34.057518,
@@ -454,7 +454,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-nassiha.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:45:44.245Z",
+     "lastCheckedAt": "2026-10-14T22:30:53.486Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
@@ -493,7 +493,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-parc-addoha.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:45:44.245Z",
+     "lastCheckedAt": "2026-10-14T22:30:53.486Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
@@ -532,7 +532,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-annassiha-jeu.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:45:47.211Z",
+     "lastCheckedAt": "2026-10-14T22:31:27.341Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-22",
@@ -571,7 +571,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-du-conseil.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:45:47.211Z",
+     "lastCheckedAt": "2026-10-14T22:31:27.341Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-22",
@@ -610,7 +610,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-moulay-idriss.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:45:47.211Z",
+     "lastCheckedAt": "2026-10-14T22:31:27.341Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-22",
@@ -649,7 +649,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-regragui.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:45:47.211Z",
+     "lastCheckedAt": "2026-10-14T22:31:27.341Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-22",

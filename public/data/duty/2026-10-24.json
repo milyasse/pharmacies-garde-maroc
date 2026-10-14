@@ -1,6 +1,6 @@
 {
  "date": "2026-10-24",
- "generatedAt": "2026-10-14T20:44:10.559Z",
+ "generatedAt": "2026-10-14T22:29:50.565Z",
  "records": [
   {
    "id": "rabat-akkari",
@@ -25,7 +25,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-akkari-24hh.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:44:32.835Z",
+     "lastCheckedAt": "2026-10-14T22:29:57.336Z",
      "historyMatch": {
       "start": "2026-10-24",
       "end": "2026-10-25",
@@ -64,7 +64,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-al-boustane-00h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:44:32.835Z",
+     "lastCheckedAt": "2026-10-14T22:29:57.336Z",
      "historyMatch": {
       "start": "2026-10-24",
       "end": "2026-10-24",
@@ -103,7 +103,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-bin-el-ouidane-sam.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:44:32.835Z",
+     "lastCheckedAt": "2026-10-14T22:29:57.336Z",
      "historyMatch": {
       "start": "2026-10-24",
       "end": "2026-10-25",
@@ -142,7 +142,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-chenier-dim.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:44:32.835Z",
+     "lastCheckedAt": "2026-10-14T22:29:57.336Z",
      "historyMatch": {
       "start": "2026-10-24",
       "end": "2026-10-24",
@@ -181,7 +181,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-diour-jamaa-24hh.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:44:32.835Z",
+     "lastCheckedAt": "2026-10-14T22:29:57.336Z",
      "historyMatch": {
       "start": "2026-10-24",
       "end": "2026-10-24",
@@ -220,7 +220,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-le-claridge-sam.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:44:32.835Z",
+     "lastCheckedAt": "2026-10-14T22:29:57.336Z",
      "historyMatch": {
       "start": "2026-10-24",
       "end": "2026-10-25",
@@ -259,7 +259,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-marjolaine-24h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:44:32.835Z",
+     "lastCheckedAt": "2026-10-14T22:29:57.336Z",
      "historyMatch": {
       "start": "2026-10-24",
       "end": "2026-10-25",
@@ -298,7 +298,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-ya-sin-sam.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:44:32.835Z",
+     "lastCheckedAt": "2026-10-14T22:29:57.336Z",
      "historyMatch": {
       "start": "2026-10-24",
       "end": "2026-10-25",
@@ -317,7 +317,7 @@
   {
    "id": "sale-ahmed-hajji",
    "name": "Pharmacie Ahmed Hajji",
-   "address": null,
+   "address": "Avenue Hassan II (En face de la gare routiere)",
    "city": "sale",
    "district": "Bettana",
    "latitude": 34.03355,
@@ -337,7 +337,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-ahmed-hajji-sam.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:45:44.245Z",
+     "lastCheckedAt": "2026-10-14T22:30:53.486Z",
      "historyMatch": {
       "start": "2026-10-24",
       "end": "2026-10-24",
@@ -376,7 +376,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-amina-sam.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:45:44.245Z",
+     "lastCheckedAt": "2026-10-14T22:30:53.486Z",
      "historyMatch": {
       "start": "2026-10-24",
       "end": "2026-10-25",
@@ -415,7 +415,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-amri-sam.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:45:44.245Z",
+     "lastCheckedAt": "2026-10-14T22:30:53.486Z",
      "historyMatch": {
       "start": "2026-10-24",
       "end": "2026-10-25",
@@ -434,7 +434,7 @@
   {
    "id": "sale-argana",
    "name": "Pharmacie Argana",
-   "address": null,
+   "address": "Lot Assaada ferdaous Imm 140 N°5 Hssain",
    "city": "sale",
    "district": "Sala El Jadida",
    "latitude": 34.001557,
@@ -454,7 +454,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-argana-24h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:45:44.245Z",
+     "lastCheckedAt": "2026-10-14T22:30:53.486Z",
      "historyMatch": {
       "start": "2026-10-24",
       "end": "2026-10-25",
@@ -493,7 +493,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-az-zahra-sam.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:45:44.245Z",
+     "lastCheckedAt": "2026-10-14T22:30:53.486Z",
      "historyMatch": {
       "start": "2026-10-24",
       "end": "2026-10-25",
@@ -512,7 +512,7 @@
   {
    "id": "sale-bayti",
    "name": "Pharmacie Bayti",
-   "address": null,
+   "address": "Av Mohamed V G28 Mag N°1.28 Bayti 2",
    "city": "sale",
    "district": "Sala El Jadida",
    "latitude": 34.001557,
@@ -532,7 +532,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-bayti-00h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:45:44.245Z",
+     "lastCheckedAt": "2026-10-14T22:30:53.486Z",
      "historyMatch": {
       "start": "2026-10-24",
       "end": "2026-10-24",
@@ -571,7 +571,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-dar-el-yousr-sam.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:45:44.245Z",
+     "lastCheckedAt": "2026-10-14T22:30:53.486Z",
      "historyMatch": {
       "start": "2026-10-24",
       "end": "2026-10-25",
@@ -610,7 +610,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-hajji-sam.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:45:44.245Z",
+     "lastCheckedAt": "2026-10-14T22:30:53.486Z",
      "historyMatch": {
       "start": "2026-10-24",
       "end": "2026-10-24",
@@ -629,7 +629,7 @@
   {
    "id": "sale-nassiha",
    "name": "Pharmacie Nassiha",
-   "address": null,
+   "address": "صيدلية النصيحة, الكاريان أمام المسبح البلدي E حي الرحمة سكتور, و سوق حي الرحمة",
    "city": "sale",
    "district": "Hay Arrahma",
    "latitude": 34.057518,
@@ -649,7 +649,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-nassiha-sam.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:45:44.245Z",
+     "lastCheckedAt": "2026-10-14T22:30:53.486Z",
      "historyMatch": {
       "start": "2026-10-24",
       "end": "2026-10-25",
@@ -688,7 +688,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-oum-al-kora-sam.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:45:44.245Z",
+     "lastCheckedAt": "2026-10-14T22:30:53.486Z",
      "historyMatch": {
       "start": "2026-10-24",
       "end": "2026-10-25",
@@ -727,7 +727,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-sidi-abdellah-sam.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:45:44.245Z",
+     "lastCheckedAt": "2026-10-14T22:30:53.486Z",
      "historyMatch": {
       "start": "2026-10-24",
       "end": "2026-10-25",
@@ -766,7 +766,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-al-mamoune-sam.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:45:47.211Z",
+     "lastCheckedAt": "2026-10-14T22:31:27.341Z",
      "historyMatch": {
       "start": "2026-10-24",
       "end": "2026-10-24",
@@ -805,7 +805,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-errachad-sam.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:45:47.211Z",
+     "lastCheckedAt": "2026-10-14T22:31:27.341Z",
      "historyMatch": {
       "start": "2026-10-24",
       "end": "2026-10-25",
@@ -844,7 +844,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-masjid-annour-sam.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:45:47.211Z",
+     "lastCheckedAt": "2026-10-14T22:31:27.341Z",
      "historyMatch": {
       "start": "2026-10-24",
       "end": "2026-10-24",
@@ -883,7 +883,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-moulay-slimane-sam.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:45:47.211Z",
+     "lastCheckedAt": "2026-10-14T22:31:27.341Z",
      "historyMatch": {
       "start": "2026-10-24",
       "end": "2026-10-24",
@@ -922,7 +922,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-mouram-dim.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:45:47.211Z",
+     "lastCheckedAt": "2026-10-14T22:31:27.341Z",
      "historyMatch": {
       "start": "2026-10-24",
       "end": "2026-10-24",
@@ -961,7 +961,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-tarik-el-fellah-sam.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T20:45:47.211Z",
+     "lastCheckedAt": "2026-10-14T22:31:27.341Z",
      "historyMatch": {
       "start": "2026-10-24",
       "end": "2026-10-24",
