@@ -7,7 +7,7 @@ import { MapLegend } from './components/MapLegend.tsx';
 import { SourceStatus } from './components/SourceStatus.tsx';
 import { CityOverview } from './components/CityOverview.tsx';
 import type { RouteState } from './components/PharmacyCard.tsx';
-import { getCurrentPosition } from './services/geolocation.ts';
+import { getCurrentPosition, type GeoError } from './services/geolocation.ts';
 import { searchPlace } from './services/geocoding.ts';
 import { getRoute, type RouteResult, type TravelMode } from './services/routing.ts';
 import { loadSnapshots, loadStatus } from './services/pharmacySearch.ts';
@@ -48,6 +48,7 @@ type SearchState =
 export default function App() {
   const [origin, setOrigin] = useState<Origin | null>(null);
   const [originError, setOriginError] = useState<string | null>(null);
+  const [geoHelp, setGeoHelp] = useState<{ message: string; help: string[] } | null>(null);
   const [locating, setLocating] = useState(false);
   const [picking, setPicking] = useState(false);
   const [date, setDate] = useState(() => moroccoDate());
@@ -192,14 +193,16 @@ export default function App() {
   const locate = useCallback(async () => {
     setLocating(true);
     setOriginError(null);
+    setGeoHelp(null);
     try {
       const g = await getCurrentPosition();
       setOrigin({ lat: g.lat, lng: g.lng, label: 'Ma position', kind: 'gps', accuracyM: g.accuracyM });
       setPicking(false);
       setHasSearched(true);
     } catch (e) {
-      setOriginError((e as Error).message);
-      setCollapsed(false);
+      const err = e as GeoError;
+      setGeoHelp({ message: err.message, help: err.help ?? [] });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     } finally {
       setLocating(false);
     }
@@ -302,6 +305,20 @@ export default function App() {
   return (
     <div className="flex min-h-full flex-col lg:h-full">
       <Header onLocate={locate} locating={locating} onOpenSettings={() => setSettingsOpen(true)} />
+      {geoHelp && (
+        <div role="alert" className="border-b border-warn-600/30 bg-warn-50 px-4 py-3 text-sm text-warn-600 lg:px-6">
+          <div className="flex items-start gap-2">
+            <p className="flex-1 font-extrabold">📍 {geoHelp.message}</p>
+            <button type="button" onClick={() => setGeoHelp(null)} className="rounded-lg px-2 font-bold" aria-label="Fermer">✕</button>
+          </div>
+          {geoHelp.help.length > 0 && (
+            <ul className="mt-1 list-disc space-y-1 pl-5 text-[13px] font-semibold text-ink">
+              {geoHelp.help.map((h) => <li key={h}>{h}</li>)}
+            </ul>
+          )}
+          <button type="button" onClick={() => void locate()} className="mt-2 rounded-xl bg-brand-700 px-3 py-2 text-sm font-bold text-white">Réessayer</button>
+        </div>
+      )}
       <main className="flex-1 lg:grid lg:min-h-0 lg:grid-cols-[440px_1fr]">
         <div className="lg:min-h-0 lg:overflow-y-auto lg:border-r lg:border-line">
           <CityOverview
