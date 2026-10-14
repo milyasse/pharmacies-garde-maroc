@@ -1,6 +1,6 @@
 {
  "date": "2026-10-22",
- "generatedAt": "2026-10-14T22:29:50.565Z",
+ "generatedAt": "2026-10-14T22:59:33.755Z",
  "records": [
   {
    "id": "rabat-hikma",
@@ -25,7 +25,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-al-hikma-r-00h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T22:29:57.336Z",
+     "lastCheckedAt": "2026-10-14T22:59:40.240Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-22",
@@ -64,7 +64,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-arrayhane.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T22:29:57.336Z",
+     "lastCheckedAt": "2026-10-14T22:59:40.240Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
@@ -86,9 +86,9 @@
    "address": "19 Avenue d'Alger Hassan",
    "city": "rabat",
    "district": "Centre Ville",
-   "latitude": 34.022638,
-   "longitude": -6.821484,
-   "coordinatesSource": "district",
+   "latitude": 34.0174608,
+   "longitude": -6.8258189,
+   "coordinatesSource": "geocoded",
    "phone": "+212537726323",
    "dutyDate": "2026-10-22",
    "dutyType": "continuous",
@@ -103,7 +103,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-avenue-dalger-hassan-24h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T22:29:57.336Z",
+     "lastCheckedAt": "2026-10-14T22:59:40.240Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
@@ -142,7 +142,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-chbanat-24h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T22:29:57.336Z",
+     "lastCheckedAt": "2026-10-14T22:59:40.240Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
@@ -181,7 +181,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-ksar-labhar-00h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T22:29:57.336Z",
+     "lastCheckedAt": "2026-10-14T22:59:40.240Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-22",
@@ -203,9 +203,9 @@
    "address": "2 Avenue Michlifen",
    "city": "rabat",
    "district": "Agdal",
-   "latitude": 33.9983,
-   "longitude": -6.8543,
-   "coordinatesSource": "district",
+   "latitude": 33.9947531,
+   "longitude": -6.8507219,
+   "coordinatesSource": "geocoded",
    "phone": "+212537675354",
    "dutyDate": "2026-10-22",
    "dutyType": "continuous",
@@ -220,7 +220,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-michlifen.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T22:29:57.336Z",
+     "lastCheckedAt": "2026-10-14T22:59:40.240Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
@@ -239,7 +239,7 @@
   {
    "id": "sale-hikma",
    "name": "Pharmacie Al Hikma",
-   "address": null,
+   "address": "شارع مولاي عبد القادر رقم 29 بلاد السحيمي, قرب سوق الشيشان و الملحقة الادارية السهلي",
    "city": "sale",
    "district": "Hay Elinbiate",
    "latitude": 34.062,
@@ -259,7 +259,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-al-hikma.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T22:30:53.486Z",
+     "lastCheckedAt": "2026-10-14T23:00:05.670Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-22",
@@ -298,7 +298,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-bettana.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T22:30:53.486Z",
+     "lastCheckedAt": "2026-10-14T23:00:05.670Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-22",
@@ -317,7 +317,7 @@
   {
    "id": "sale-myrte",
    "name": "Pharmacie Du Myrte",
-   "address": null,
+   "address": "Mag N° 6 Imm N° 6 Résidence Rouihiyene Al Omrane, Prés Mosquée Mohamed VI et Piscine Sala Al Jadida",
    "city": "sale",
    "district": "Sala El Jadida",
    "latitude": 34.001557,
@@ -337,7 +337,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-du-myrte-00h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T22:30:53.486Z",
+     "lastCheckedAt": "2026-10-14T23:00:05.670Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-22",
@@ -356,7 +356,7 @@
   {
    "id": "sale-hajji",
    "name": "Pharmacie Hajji",
-   "address": null,
+   "address": "46,Rue El Haddadine (Houatine)",
    "city": "sale",
    "district": "Salé Medina & Sidi Moussa & Hay Chamou",
    "latitude": 34.037,
@@ -376,7 +376,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-hajji-24h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T22:30:53.486Z",
+     "lastCheckedAt": "2026-10-14T23:00:05.670Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-22",
@@ -395,7 +395,7 @@
   {
    "id": "sale-opera",
    "name": "Pharmacie L'Opera",
-   "address": null,
+   "address": "Res. Essania II N°1 (Derrière Cinéma L'Opera, et prés de l'institut El Yakada)",
    "city": "sale",
    "district": "Tabriquet",
    "latitude": 34.05448,
@@ -415,7 +415,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-lopera.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T22:30:53.486Z",
+     "lastCheckedAt": "2026-10-14T23:00:05.670Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
@@ -454,7 +454,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-nassiha.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T22:30:53.486Z",
+     "lastCheckedAt": "2026-10-14T23:00:05.670Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
@@ -473,7 +473,7 @@
   {
    "id": "sale-parc-addoha",
    "name": "Pharmacie Parc Addoha",
-   "address": null,
+   "address": "صيدلية حديقة الضحى, شارع القاعدة الجوية مشروع الضحى الحديقة, عمارة 75 متجر 1 لعيايدة",
    "city": "sale",
    "district": "Laayayda",
    "latitude": 34.057418,
@@ -493,7 +493,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-parc-addoha.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T22:30:53.486Z",
+     "lastCheckedAt": "2026-10-14T23:00:05.670Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
@@ -512,7 +512,7 @@
   {
    "id": "temara-annassiha",
    "name": "Pharmacie Annassiha",
-   "address": null,
+   "address": "603 S1 lot B Riad Ouled Mtaâ Témara",
    "city": "temara",
    "district": "Oulad Mtaâ",
    "latitude": 33.939892,
@@ -532,7 +532,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-annassiha-jeu.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T22:31:27.341Z",
+     "lastCheckedAt": "2026-10-14T23:01:00.525Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-22",
@@ -571,7 +571,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-du-conseil.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T22:31:27.341Z",
+     "lastCheckedAt": "2026-10-14T23:01:00.525Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-22",
@@ -610,7 +610,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-moulay-idriss.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T22:31:27.341Z",
+     "lastCheckedAt": "2026-10-14T23:01:00.525Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-22",
@@ -629,7 +629,7 @@
   {
    "id": "temara-regragui",
    "name": "Pharmacie Regragui",
-   "address": null,
+   "address": "42 Residence attawfik,casino, Plage Harhoura",
    "city": "temara",
    "district": "Harhoura",
    "latitude": 33.914435,
@@ -649,7 +649,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-regragui.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T22:31:27.341Z",
+     "lastCheckedAt": "2026-10-14T23:01:00.525Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-22",

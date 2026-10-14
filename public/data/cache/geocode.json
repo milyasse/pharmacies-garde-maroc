@@ -223,5 +223,80 @@
   "lat": null,
   "lng": null,
   "at": "2026-10-14T22:30:20.579Z"
+ },
+ "2 Avenue Michlifen, Rabat, Maroc": {
+  "lat": 33.9947531,
+  "lng": -6.8507219,
+  "at": "2026-10-14T22:59:42.037Z"
+ },
+ "7,8 Bloc B maché Ksar labhar, Prés hopital My Youssef, Rabat, Maroc": {
+  "lat": null,
+  "lng": null,
+  "at": "2026-10-14T22:59:43.704Z"
+ },
+ "19 Avenue d'Alger Hassan, Rabat, Maroc": {
+  "lat": 34.0174608,
+  "lng": -6.8258189,
+  "at": "2026-10-14T22:59:45.090Z"
+ },
+ "Secteur 6D1, Rue Arrayhane, Rabat, Maroc": {
+  "lat": null,
+  "lng": null,
+  "at": "2026-10-14T22:59:46.646Z"
+ },
+ "349 Lot Chbanat C.Y.M, Rabat, Maroc": {
+  "lat": null,
+  "lng": null,
+  "at": "2026-10-14T22:59:48.204Z"
+ },
+ "Numéro 1376 Amal 5 C.Y.M, Rabat, Maroc": {
+  "lat": null,
+  "lng": null,
+  "at": "2026-10-14T22:59:49.982Z"
+ },
+ "A l’intérieur de la gare Al Boraq, A l’intérieur gare Al Boraq A Côté Starbucks Rue Abderrahmane Ghafiki, Rabat, Maroc": {
+  "lat": null,
+  "lng": null,
+  "at": "2026-10-14T22:59:51.381Z"
+ },
+ "200 Avenue Mohamed Ben Abdellah - Akkari, Rabat, Maroc": {
+  "lat": null,
+  "lng": null,
+  "at": "2026-10-14T22:59:52.665Z"
+ },
+ "45, Av Moulay Ismail HASSAN, Rabat, Maroc": {
+  "lat": 34.0205134,
+  "lng": -6.8272091,
+  "at": "2026-10-14T22:59:54.591Z"
+ },
+ "Av Nakhil Résidence Ryad Al Otors, Rabat, Maroc": {
+  "lat": null,
+  "lng": null,
+  "at": "2026-10-14T22:59:55.499Z"
+ },
+ "Av Ahmed Reda Guidira Résidence Nakhil - Rabat, Prés De Dar El Khobz Et Hammam Aouicha, Rabat, Maroc": {
+  "lat": null,
+  "lng": null,
+  "at": "2026-10-14T22:59:57.154Z"
+ },
+ "À côté Av Al Majd 9 bis bloc DG Kouass, (Ancien poste pointage taxi et Achoura) C.Y.M, Rabat, Maroc": {
+  "lat": null,
+  "lng": null,
+  "at": "2026-10-14T22:59:58.710Z"
+ },
+ "443 Rue Alhassoune Hay Al Manzah C.Y.M, A Côté De Youpi Et Du Restaurant Piccola Italia, Rabat, Maroc": {
+  "lat": null,
+  "lng": null,
+  "at": "2026-10-14T22:59:59.963Z"
+ },
+ "Angle Av Bin El Ouidane Rue El Gansra Agdal, Rabat, Maroc": {
+  "lat": null,
+  "lng": null,
+  "at": "2026-10-14T23:00:01.626Z"
+ },
+ "27 Rue Tunis Hassan, Rabat, Maroc": {
+  "lat": 34.0198048,
+  "lng": -6.8229589,
+  "at": "2026-10-14T23:00:03.473Z"
  }
 }

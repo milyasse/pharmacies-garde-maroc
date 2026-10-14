@@ -1,6 +1,6 @@
 {
  "date": "2026-10-23",
- "generatedAt": "2026-10-14T22:29:50.565Z",
+ "generatedAt": "2026-10-14T22:59:33.755Z",
  "records": [
   {
    "id": "rabat-attaissir",
@@ -25,7 +25,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-attaissir-00h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T22:29:57.336Z",
+     "lastCheckedAt": "2026-10-14T22:59:40.240Z",
      "historyMatch": {
       "start": "2026-10-23",
       "end": "2026-10-23",
@@ -47,9 +47,9 @@
    "address": "45, Av Moulay Ismail HASSAN",
    "city": "rabat",
    "district": "Centre Ville",
-   "latitude": 34.022638,
-   "longitude": -6.821484,
-   "coordinatesSource": "district",
+   "latitude": 34.0205134,
+   "longitude": -6.8272091,
+   "coordinatesSource": "geocoded",
    "phone": "+212537726216",
    "dutyDate": "2026-10-23",
    "dutyType": "day",
@@ -64,7 +64,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-centre-cheques-postaux-00h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T22:29:57.336Z",
+     "lastCheckedAt": "2026-10-14T22:59:40.240Z",
      "historyMatch": {
       "start": "2026-10-23",
       "end": "2026-10-23",
@@ -103,7 +103,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-choukroallah-dim.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T22:29:57.336Z",
+     "lastCheckedAt": "2026-10-14T22:59:40.240Z",
      "historyMatch": {
       "start": "2026-10-23",
       "end": "2026-10-24",
@@ -142,7 +142,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-du-croissant-00h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T22:29:57.336Z",
+     "lastCheckedAt": "2026-10-14T22:59:40.240Z",
      "historyMatch": {
       "start": "2026-10-23",
       "end": "2026-10-23",
@@ -181,7 +181,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-gare-agdal.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T22:29:57.336Z",
+     "lastCheckedAt": "2026-10-14T22:59:40.240Z",
      "historyMatch": {
       "start": "2026-10-23",
       "end": "2026-10-24",
@@ -220,7 +220,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-ghayt.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T22:29:57.336Z",
+     "lastCheckedAt": "2026-10-14T22:59:40.240Z",
      "historyMatch": {
       "start": "2026-10-23",
       "end": "2026-10-24",
@@ -259,7 +259,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-hassania.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T22:29:57.336Z",
+     "lastCheckedAt": "2026-10-14T22:59:40.240Z",
      "historyMatch": {
       "start": "2026-10-23",
       "end": "2026-10-24",
@@ -278,7 +278,7 @@
   {
    "id": "sale-20-aout",
    "name": "Pharmacie 20 Août",
-   "address": null,
+   "address": "إقامة 20 غشت تابريكت",
    "city": "sale",
    "district": "Tabriquet",
    "latitude": 34.05448,
@@ -298,7 +298,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-20-aout.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T22:30:53.486Z",
+     "lastCheckedAt": "2026-10-14T23:00:05.670Z",
      "historyMatch": {
       "start": "2026-10-23",
       "end": "2026-10-24",
@@ -317,7 +317,7 @@
   {
    "id": "sale-alhamd",
    "name": "Pharmacie Alhamd",
-   "address": null,
+   "address": "366, Rue Yasmine, Sect.A Hay Rahma",
    "city": "sale",
    "district": "Hay Arrahma",
    "latitude": 34.057518,
@@ -337,7 +337,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-alhamd.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T22:30:53.486Z",
+     "lastCheckedAt": "2026-10-14T23:00:05.670Z",
      "historyMatch": {
       "start": "2026-10-23",
       "end": "2026-10-24",
@@ -356,7 +356,7 @@
   {
    "id": "sale-dar-bahr",
    "name": "Pharmacie Dar Al Bahr",
-   "address": null,
+   "address": "Imm 2 Mag N:C11 Res Dar Al Bahr Bloc H Mohit",
    "city": "sale",
    "district": "Al Mohit Abouab Sala",
    "latitude": 34.082095,
@@ -376,7 +376,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-dar-al-bahr.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T22:30:53.486Z",
+     "lastCheckedAt": "2026-10-14T23:00:05.670Z",
      "historyMatch": {
       "start": "2026-10-23",
       "end": "2026-10-24",
@@ -395,7 +395,7 @@
   {
    "id": "sale-wahda",
    "name": "Pharmacie El Wahda",
-   "address": null,
+   "address": "زنقة حسان المعروفة بزنقة الذهبية (قرب الشاطو الكبير)",
    "city": "sale",
    "district": "Hay Elinbiate",
    "latitude": 34.062,
@@ -415,7 +415,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-el-wahda-s.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T22:30:53.486Z",
+     "lastCheckedAt": "2026-10-14T23:00:05.670Z",
      "historyMatch": {
       "start": "2026-10-23",
       "end": "2026-10-23",
@@ -434,7 +434,7 @@
   {
    "id": "sale-hiba-sante",
    "name": "Pharmacie Hiba Sante",
-   "address": null,
+   "address": "Lot Bachir II Hay Chemaou (Route de Kenitra)",
    "city": "sale",
    "district": "Salé Medina & Sidi Moussa & Hay Chamou",
    "latitude": 34.037,
@@ -454,7 +454,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-hiba-sante-24h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T22:30:53.486Z",
+     "lastCheckedAt": "2026-10-14T23:00:05.670Z",
      "historyMatch": {
       "start": "2026-10-23",
       "end": "2026-10-24",
@@ -473,7 +473,7 @@
   {
    "id": "sale-nouvelle-cite-ex-cite-royale",
    "name": "Pharmacie LA NOUVELLE CITÉ Ex: CITE ROYALE",
-   "address": null,
+   "address": "Avenue Atlass IMB 4, Prés Station Taxi & Hamam Zahra",
    "city": "sale",
    "district": "Sala El Jadida",
    "latitude": 34.001557,
@@ -493,7 +493,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-la-nouvelle-cite-24h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T22:30:53.486Z",
+     "lastCheckedAt": "2026-10-14T23:00:05.670Z",
      "historyMatch": {
       "start": "2026-10-23",
       "end": "2026-10-24",
@@ -532,7 +532,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-moussadikine.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T22:30:53.486Z",
+     "lastCheckedAt": "2026-10-14T23:00:05.670Z",
      "historyMatch": {
       "start": "2026-10-23",
       "end": "2026-10-24",
@@ -551,7 +551,7 @@
   {
    "id": "sale-moustawsaf-bettana",
    "name": "Pharmacie Moustawsaf Bettana",
-   "address": null,
+   "address": "4 Rue Doukkala",
    "city": "sale",
    "district": "Bettana",
    "latitude": 34.03355,
@@ -571,7 +571,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-moustawsaf-bettana.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T22:30:53.486Z",
+     "lastCheckedAt": "2026-10-14T23:00:05.670Z",
      "historyMatch": {
       "start": "2026-10-23",
       "end": "2026-10-24",
@@ -590,7 +590,7 @@
   {
    "id": "sale-tajeddine",
    "name": "Pharmacie Tajeddine",
-   "address": null,
+   "address": "Mag C 20 Résidence Al Amine 3 Laayayda Tél: 0612 71 92 79",
    "city": "sale",
    "district": "El Mazza Sidi Abdellah",
    "latitude": 34.08102,
@@ -610,7 +610,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-tajeddine.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T22:30:53.486Z",
+     "lastCheckedAt": "2026-10-14T23:00:05.670Z",
      "historyMatch": {
       "start": "2026-10-23",
       "end": "2026-10-23",
@@ -649,7 +649,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-volubilis.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T22:30:53.486Z",
+     "lastCheckedAt": "2026-10-14T23:00:05.670Z",
      "historyMatch": {
       "start": "2026-10-23",
       "end": "2026-10-24",
@@ -688,7 +688,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-al-kasbah.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T22:31:27.341Z",
+     "lastCheckedAt": "2026-10-14T23:01:00.525Z",
      "historyMatch": {
       "start": "2026-10-23",
       "end": "2026-10-23",
@@ -727,7 +727,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-al-waha-t.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T22:31:27.341Z",
+     "lastCheckedAt": "2026-10-14T23:01:00.525Z",
      "historyMatch": {
       "start": "2026-10-23",
       "end": "2026-10-23",
@@ -746,7 +746,7 @@
   {
    "id": "temara-annassiha",
    "name": "Pharmacie Annassiha",
-   "address": null,
+   "address": "603 S1 lot B Riad Ouled Mtaâ Témara",
    "city": "temara",
    "district": "Oulad Mtaâ",
    "latitude": 33.939892,
@@ -766,7 +766,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-annassiha-ven.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html?date=2026-10-19",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-14T22:31:27.341Z",
+     "lastCheckedAt": "2026-10-14T23:01:00.525Z",
      "historyMatch": {
       "start": "2026-10-23",
       "end": "2026-10-23",
