@@ -798,5 +798,55 @@
   "address": "Rés. Al Ghourfa Route Sidi Yahia",
   "phone": "+212537747319",
   "at": "2026-10-14T23:01:09.533Z"
+ },
+ "temara|pharmacie tarik el fellah": {
+  "address": "Km 4 Route El Fellah - Harhoura",
+  "phone": null,
+  "at": "2026-10-14T23:04:27.076Z"
+ },
+ "temara|pharmacie du conseil": {
+  "address": "33 Rue De Rabat Temara",
+  "phone": "+212537741163",
+  "at": "2026-10-14T23:04:28.513Z"
+ },
+ "temara|pharmacie moulay idriss": {
+  "address": "Secteur 1 Lot 103 Massira 1",
+  "phone": "+212537602270",
+  "at": "2026-10-14T23:04:30.032Z"
+ },
+ "temara|pharmacie al kasbah": {
+  "address": "69 Lotissement Al kasbah skikina - Temara",
+  "phone": "+212537644046",
+  "at": "2026-10-14T23:04:31.581Z"
+ },
+ "temara|pharmacie al waha": {
+  "address": "Résidence Al Waha Mag N°3 Harhoura",
+  "phone": "+212537407575",
+  "at": "2026-10-14T23:04:33.011Z"
+ },
+ "temara|pharmacie mouram": {
+  "address": "Av Tarik Ibn Ziad, Residence Janane Temara, Ilot N°2 Mag 48",
+  "phone": "+212537408618",
+  "at": "2026-10-14T23:04:34.526Z"
+ },
+ "temara|pharmacie moulay slimane": {
+  "address": "806 Hay Nahda - Tél: 0538 97 36 45",
+  "phone": "+212538973645",
+  "at": "2026-10-14T23:04:36.033Z"
+ },
+ "temara|pharmacie errachad": {
+  "address": "N°2327,Rue errachad Hay El Wifaq",
+  "phone": "+212537617929",
+  "at": "2026-10-14T23:04:37.522Z"
+ },
+ "temara|pharmacie al mamoune": {
+  "address": "Rue Al Anisse, Guich Loudaya",
+  "phone": "+212537560315",
+  "at": "2026-10-14T23:04:38.990Z"
+ },
+ "temara|pharmacie masjid annour": {
+  "address": "39 Gr.6 résidence Annour 1 - Tamesna",
+  "phone": "+212537619778",
+  "at": "2026-10-14T23:04:40.531Z"
  }
 }
