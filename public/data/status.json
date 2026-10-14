@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-10-13T22:29:33.311Z",
- "todayMorocco": "2026-10-13",
+ "generatedAt": "2026-10-14T00:39:59.970Z",
+ "todayMorocco": "2026-10-14",
  "dates": [
   "2026-10-12",
   "2026-10-13"
@@ -12,10 +12,10 @@
    "city": "rabat",
    "url": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
    "ok": true,
-   "pageDate": "2026-10-13",
+   "pageDate": "2026-10-14",
    "count": 7,
    "error": null,
-   "checkedAt": "2026-10-13T22:29:33.327Z"
+   "checkedAt": "2026-10-14T00:39:59.985Z"
   },
   {
    "sourceId": "annuaire-gratuit",
@@ -23,10 +23,10 @@
    "city": "sale",
    "url": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
    "ok": true,
-   "pageDate": "2026-10-13",
+   "pageDate": "2026-10-14",
    "count": 7,
    "error": null,
-   "checkedAt": "2026-10-13T22:29:34.677Z"
+   "checkedAt": "2026-10-14T00:40:01.421Z"
   },
   {
    "sourceId": "annuaire-gratuit",
@@ -34,10 +34,10 @@
    "city": "temara",
    "url": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
    "ok": true,
-   "pageDate": "2026-10-13",
+   "pageDate": "2026-10-14",
    "count": 3,
    "error": null,
-   "checkedAt": "2026-10-13T22:29:35.181Z"
+   "checkedAt": "2026-10-14T00:40:02.223Z"
   }
  ],
  "connectors": [
