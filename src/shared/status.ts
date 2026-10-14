@@ -57,7 +57,7 @@ export function computeBaseStatus(rec: Pick<DutyRecord, 'sources' | 'dutyDate'>)
     return { status: 'conflicting', confidence: 'low', notes };
   }
   // Contradiction sur les dates d'historique
-  const ranges = new Set(rec.sources.map((s) => (s.historyMatch ? s.historyMatch.start + '→' + s.historyMatch.end : null)).filter(Boolean));
+  const ranges = new Set(rec.sources.map((s) => s.historyMatch?.start ?? null).filter(Boolean));
   if (ranges.size > 1) {
     notes.push('Les sources publient des périodes de garde différentes.');
     return { status: 'conflicting', confidence: 'low', notes };
@@ -74,8 +74,16 @@ export function computeBaseStatus(rec: Pick<DutyRecord, 'sources' | 'dutyDate'>)
   if (distinctSourcesDated >= 2) confidence = 'high';
   else if (dated.some((p) => p.history && p.listing)) confidence = 'medium';
   else confidence = 'low';
+  const planning = (x: SourceRef) => /planning/i.test(x.historyMatch?.label ?? '');
   if (dated.every((p) => !p.history)) notes.push('Garde publiée dans la liste du jour, absente de l’historique de la fiche.');
-  if (dated.every((p) => !p.listing)) notes.push('Garde confirmée par l’historique daté de la fiche.');
+  if (dated.every((p) => !p.listing)) {
+    if (dated.every((p) => planning(p.s))) {
+      const collected = dated.map((p) => (p.s.lastCheckedAt ? moroccoDate(new Date(p.s.lastCheckedAt)) : null)).filter(Boolean) as string[];
+      notes.push(collected.length && collected.every((d) => d < rec.dutyDate)
+        ? 'Planning publié à l’avance : à revérifier le jour même.'
+        : 'Garde publiée dans le planning hebdomadaire de la source.');
+    } else notes.push('Garde confirmée par l’historique daté de la fiche.');
+  }
   return { status: 'confirmed', confidence, notes };
 }
 

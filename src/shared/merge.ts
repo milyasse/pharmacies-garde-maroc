@@ -10,12 +10,13 @@ export function recordId(city: string, name: string): string {
 }
 
 /** Deux fiches désignent-elles la même pharmacie ? */
-export function isSamePharmacy(a: Pick<DutyRecord, 'id' | 'name' | 'city' | 'latitude' | 'longitude' | 'phone'>, b: typeof a): boolean {
+export function isSamePharmacy(a: Pick<DutyRecord, 'id' | 'name' | 'city' | 'latitude' | 'longitude' | 'phone'> & { coordinatesSource?: DutyRecord['coordinatesSource'] }, b: typeof a): boolean {
   if (a.id === b.id) return true;
   if (a.city !== b.city) return false;
   if (a.phone && b.phone && a.phone === b.phone) return true;
   const sim = similarity(a.name, b.name);
-  const bothLocated = isValidLatLng(a.latitude, a.longitude) && isValidLatLng(b.latitude, b.longitude);
+  const bothLocated = isValidLatLng(a.latitude, a.longitude) && isValidLatLng(b.latitude, b.longitude) &&
+    a.coordinatesSource !== 'district' && b.coordinatesSource !== 'district';
   if (bothLocated) {
     const d = haversineKm({ lat: a.latitude!, lng: a.longitude! }, { lat: b.latitude!, lng: b.longitude! });
     if (d <= 0.15 && sim >= 0.6) return true;
@@ -57,18 +58,24 @@ export function finalize(rec: DutyRecord): DutyRecord {
   };
 }
 
+const COORD_RANK = { source: 3, geocoded: 2, district: 1 } as const;
+function bestCoords(a: DutyRecord, b: DutyRecord) {
+  const score = (r: DutyRecord) => (isValidLatLng(r.latitude, r.longitude) && r.coordinatesSource ? COORD_RANK[r.coordinatesSource] : 0);
+  const w = score(b) > score(a) ? b : a;
+  return { latitude: w.latitude, longitude: w.longitude, coordinatesSource: score(w) ? w.coordinatesSource : null };
+}
+
 export function mergeTwo(a: DutyRecord, b: DutyRecord): DutyRecord {
   const conflictCoords =
+    a.coordinatesSource !== 'district' && b.coordinatesSource !== 'district' &&
     isValidLatLng(a.latitude, a.longitude) && isValidLatLng(b.latitude, b.longitude) &&
     haversineKm({ lat: a.latitude!, lng: a.longitude! }, { lat: b.latitude!, lng: b.longitude! }) > 0.3;
   const merged: DutyRecord = {
     ...a,
     address: pick(a.address, b.address),
     district: pick(a.district, b.district),
-    // Les coordonnées publiées par une source priment sur un géocodage
-    latitude: a.coordinatesSource === 'source' || b.coordinatesSource !== 'source' ? pick(a.latitude, b.latitude) : b.latitude,
-    longitude: a.coordinatesSource === 'source' || b.coordinatesSource !== 'source' ? pick(a.longitude, b.longitude) : b.longitude,
-    coordinatesSource: a.coordinatesSource === 'source' || b.coordinatesSource === 'source' ? 'source' : pick(a.coordinatesSource, b.coordinatesSource),
+    // Position la plus précise : publiée par une source > géocodée > centre du quartier
+    ...bestCoords(a, b),
     phone: pick(a.phone, b.phone),
     dutyType: b.dutyType ?? a.dutyType,
     dutyLabel: b.dutyLabel ?? a.dutyLabel,

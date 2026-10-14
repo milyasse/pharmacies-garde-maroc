@@ -16,7 +16,7 @@ export function MapLegend({ count }: { count: number }) {
           </span>
         );
       })}
-      <span>· pointillés : rayon · trait coloré : itinéraire routier</span>
+      <span>· cercle pointillé : rayon · marqueur pointillé : position approximative (quartier) · trait coloré : itinéraire routier</span>
     </div>
   );
 }

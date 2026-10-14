@@ -15,7 +15,7 @@ const esc = (s: string) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&
 
 function pinIcon(p: Pharmacy, selected: boolean) {
   const c = rankColor(p.rank);
-  const cls = ['rank-pin', selected ? 'is-selected' : '', p.verificationStatus === 'expired' ? 'is-expired' : ''].join(' ');
+  const cls = ['rank-pin', selected ? 'is-selected' : '', p.verificationStatus === 'expired' ? 'is-expired' : '', p.coordinatesSource === 'district' ? 'is-approx' : ''].join(' ');
   return L.divIcon({
     className: 'rank-marker',
     html: `<div class="${cls}" style="background:${c.bg};color:${c.fg}">${p.rank ?? '·'}</div>`,
@@ -32,7 +32,8 @@ function popupHtml(p: Pharmacy, mode: 'car' | 'foot') {
   return `<div style="min-width:180px">
     <div style="font-weight:800;font-size:14px">${p.rank ? `${p.rank}. ` : ''}${esc(p.name)}</div>
     <div style="font-size:12px;margin-top:2px">${STATUS_LABEL[p.verificationStatus]}</div>
-    <div style="font-size:12px;margin-top:4px">${formatKm(p.distanceStraightLineKm)} à vol d’oiseau</div>
+    <div style="font-size:12px;margin-top:4px">${p.coordinatesSource === 'district' ? '≈ ' : ''}${formatKm(p.distanceStraightLineKm)} à vol d’oiseau</div>
+    ${p.coordinatesSource === 'district' ? '<div style="font-size:11px;color:#b45309">Position approximative (centre du quartier)</div>' : ''}
     <div style="font-size:12px">${road}</div>
   </div>`;
 }

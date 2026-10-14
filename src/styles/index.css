@@ -33,6 +33,8 @@ body { @apply bg-bg text-ink antialiased; -webkit-tap-highlight-color: transpare
 }
 .rank-pin.is-selected { transform: scale(1.25); box-shadow: 0 0 0 4px rgba(29,111,216,.35), 0 3px 10px rgba(0,0,0,.35); }
 .rank-pin.is-expired { opacity: .55; filter: grayscale(.6); }
+/* Position approximative (centre du quartier) : contour pointillé */
+.rank-pin.is-approx { border-style: dashed; border-color: #fff; outline: 2px dashed currentColor; outline-offset: 2px; }
 .origin-marker { background: transparent; border: 0; }
 .origin-dot {
   width: 22px; height: 22px; border-radius: 9999px; background: #1d6fd8;

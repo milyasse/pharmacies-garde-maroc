@@ -25,9 +25,9 @@ test('collecteur : fichiers produits, statuts, aucune donnée inventée', () => 
   const manual = mkdtempSync(path.join(tmpdir(), 'pgm-manual-'));
   runCollector(out, manual);
   const status = JSON.parse(readFileSync(path.join(out, 'status.json'), 'utf8')) as CollectorStatus;
-  assert.equal(status.runs.length, 3);
+  assert.equal(status.runs.filter((r) => r.sourceId === 'annuaire-gratuit').length, 3);
   assert.ok(status.connectors.some((c) => c.id === 'wadifapublic' && !c.enabled));
-  const tem = status.runs.find((r) => r.city === 'temara')!;
+  const tem = status.runs.find((r) => r.city === 'temara' && r.sourceId === 'annuaire-gratuit')!;
   assert.equal(tem.pageDate, '2026-10-13');
   assert.equal(tem.count, 3);
 

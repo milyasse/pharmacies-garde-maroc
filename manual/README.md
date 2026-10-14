@@ -1,7 +1,7 @@
 # Saisie des tableaux de garde officiels (jours à venir)
 
-Les sites consultés automatiquement ne publient les gardes de Rabat, Salé et Témara **que le jour même**.
-Pour afficher les **jours à venir**, ajoutez ici le tableau de garde officiel (conseil régional de l'Ordre,
+guidepharmacies.ma publie déjà le planning jusqu'à la fin de la semaine suivante. Pour aller plus loin
+(mois complet) ou ajouter une source officielle, ajoutez ici le tableau de garde officiel (conseil régional de l'Ordre,
 syndicat, affichage en pharmacie…). Le collecteur l'intègre au passage suivant (toutes les ~2 h).
 
 ## Le plus simple : un fichier CSV (Excel, Google Sheets, Numbers)

@@ -18,6 +18,7 @@ export function toPharmacy(r: DutyRecord): Pharmacy {
     district: r.district,
     latitude: r.latitude,
     longitude: r.longitude,
+    coordinatesSource: r.coordinatesSource ?? null,
     phone: r.phone,
     dutyStart: r.dutyStartDate,
     dutyEnd: r.dutyEndDate,

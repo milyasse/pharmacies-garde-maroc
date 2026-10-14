@@ -107,5 +107,7 @@ export function parseHours(text: string | null): { startMin: number; endMin: num
   const sh = Number(m[1]), sm = Number(m[2] ?? 0), eh = Number(m[3]), em = Number(m[4] ?? 0);
   if (sh > 24 || eh > 24 || sm > 59 || em > 59) return null;
   const fmt = (h: number, mi: number) => `${h}h${mi ? String(mi).padStart(2, '0') : ''}`;
-  return { startMin: sh * 60 + sm, endMin: eh * 60 + em, text: `${fmt(sh, sm)}-${fmt(eh, em)}` };
+  const midnight = eh === 0 && em === 0 && sh > 0; // « 9h à 00h00 » = jusqu'à minuit
+  const endMin = midnight ? 24 * 60 : eh * 60 + em;
+  return { startMin: sh * 60 + sm, endMin, text: `${fmt(sh, sm)}-${midnight ? '24h' : fmt(eh, em)}` };
 }

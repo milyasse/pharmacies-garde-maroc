@@ -148,10 +148,10 @@ export default function App() {
       });
       const notices: string[] = [];
       if (!day && !prev) {
-        if (date > today) notices.push(`Les sites sources ne publient les gardes de Rabat, Salé et Témara que le jour même : aucune garde connue pour le ${formatFrDate(date)}. Elles apparaîtront ici dès leur publication, ou plus tôt si le tableau de garde officiel est ajouté à l’application.`);
+        if (date > today) notices.push(`Aucune garde publiée pour le ${formatFrDate(date)}. Les plannings sont en général disponibles jusqu’à la fin de la semaine suivante : réessayez plus près de cette date.`);
         else notices.push(`Aucune garde n’a été collectée pour le ${formatFrDate(date)} (historique conservé 60 jours).`);
       } else if (date > today) {
-        notices.push('Date future : seules les gardes saisies depuis un tableau officiel peuvent apparaître.');
+        notices.push('Date à venir : gardes issues du planning publié à l’avance — à revérifier le jour même.');
       }
       if (date === today && st) {
         const ageH = (Date.now() - new Date(st.generatedAt).getTime()) / 3.6e6;

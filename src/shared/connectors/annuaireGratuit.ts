@@ -168,7 +168,7 @@ function parseCards(body: string): ListingEntry[] {
 export function parseListing(html: string): ListingPage {
   const { date, kind } = parsePageDate(html);
   const body = html.replace(/<(script|style|noscript)[\s\S]*?<\/\1>/gi, ' ');
-  const emptyNotice = /aucune pharmacie trouv[ée]e/i.test(htmlToText(body));
+  const emptyNotice = /aucune pharmacie(?: de garde)? trouv[ée]e/i.test(htmlToText(body));
   const cards = parseCards(body);
   if (cards.length) {
     const seen = new Set<string>();

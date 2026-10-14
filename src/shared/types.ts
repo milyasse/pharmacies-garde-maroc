@@ -36,7 +36,7 @@ export interface DutyRecord {
   district: string | null;
   latitude: number | null;
   longitude: number | null;
-  coordinatesSource: 'source' | 'geocoded' | null;
+  coordinatesSource: 'source' | 'geocoded' | 'district' | null; // 'district' = centre du quartier (approximatif)
   phone: string | null;
   dutyDate: string; // date (YYYY-MM-DD) à laquelle la source rattache la garde
   dutyType: DutyType | null;
@@ -94,6 +94,7 @@ export interface Pharmacy {
   district: string | null;
   latitude: number | null;
   longitude: number | null;
+  coordinatesSource: 'source' | 'geocoded' | 'district' | null;
   phone: string | null;
   dutyStart: string | null;
   dutyEnd: string | null;

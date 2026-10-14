@@ -268,3 +268,47 @@ test('import CSV d’un tableau de garde officiel (jours à venir)', async () =>
   assert.equal(rows[1].dutyEndDate, '2026-10-20', 'garde de jour : même jour');
   assert.equal(rows[1].sourceName, 'Tableau de garde officiel');
 });
+
+// ---------- guidepharmacies.ma (page réelle de Témara, semaine du 12/10/2026)
+test('guidepharmacies : planning hebdomadaire, jours, types, centre de quartier', async () => {
+  const { parseGuideWeek, parseGuideLabel, nextMonday } = await import('../src/shared/connectors/guidePharmacies.ts');
+  const w = parseGuideWeek(fx('guide-temara-semaine-2026-10-12.html'));
+  assert.equal(w.weekStart, '2026-10-12');
+  assert.equal(w.weekEnd, '2026-10-18');
+  assert.deepEqual(w.days, ['2026-10-14', '2026-10-15', '2026-10-16', '2026-10-17', '2026-10-18']);
+  assert.ok(w.entries.length >= 25);
+  assert.ok(w.entries.every((e) => e.name !== 'Pharmacie'), 'entrée sans nom ignorée');
+  const anouar = w.entries.find((e) => e.name === 'Pharmacie Al Anouar' && e.date === '2026-10-14')!;
+  assert.equal(anouar.phone, '+212537603990');
+  assert.equal(anouar.district, 'Oulad Mtaâ');
+  assert.deepEqual([anouar.dutyType, anouar.hoursText, anouar.start, anouar.end], ['day', '9h-24h', '2026-10-14', '2026-10-14']);
+  const atl = w.entries.find((e) => e.name === 'Pharmacie Atlantique')!;
+  assert.deepEqual([atl.dutyType, atl.end], ['continuous', '2026-10-16']);
+  assert.equal(w.nextWeekUrl, 'https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html?date=2026-10-19');
+  assert.deepEqual(parseGuideLabel('Centre (Al Wifak)'), { district: 'Centre (Al Wifak)', dutyType: null, hoursText: null });
+  assert.deepEqual(parseGuideLabel('Medina (9h à 22h30)'), { district: 'Medina', dutyType: 'day', hoursText: '9h-22h30' });
+  assert.equal(nextMonday('2026-10-14'), '2026-10-19');
+  assert.equal(nextMonday('2026-10-18'), '2026-10-19');
+  assert.equal(nextMonday('2026-10-19'), '2026-10-26');
+});
+
+test('guidepharmacies : fiche (adresse + téléphone)', async () => {
+  const { parseGuideDetail } = await import('../src/shared/connectors/guidePharmacies.ts');
+  assert.deepEqual(parseGuideDetail(fx('guide-fiche-anzi.html')), {
+    address: "N°4 Angle Av Hassan II et rue Abbas Ibn Farnas, En Face De La Gare Rabat AGDAL Sur L'avenue Hassan II.",
+    phone: '+212537691313',
+  });
+});
+
+test('fusion : position exacte prioritaire sur le centre de quartier, pas de faux conflit de fin de garde', async () => {
+  const a = rec({ id: 'temara-al-anouar', name: 'Pharmacie Al Anouar', latitude: 33.9398, longitude: -6.9146, coordinatesSource: 'district', dutyType: 'day',
+    sources: [src({ sourceId: 'guidepharmacies', sourceUrl: 'g', dutyType: 'day', historyMatch: { start: '2026-10-13', end: '2026-10-13', label: null } })] });
+  const b = rec({ id: 'temara-al-anouar', name: 'Pharmacie Al Anouar', latitude: 33.93902, longitude: -6.8911516, coordinatesSource: 'source', dutyType: 'day',
+    sources: [src({ sourceUrl: 'a', dutyType: 'day', historyMatch: { start: '2026-10-13', end: '2026-10-14', label: null } })] });
+  const out = dedupe([a, b]);
+  assert.equal(out.length, 1);
+  assert.equal(out[0].coordinatesSource, 'source');
+  assert.equal(out[0].latitude, 33.93902);
+  assert.equal(out[0].verificationStatus, 'confirmed');
+  assert.equal(out[0].confidenceLevel, 'high');
+});

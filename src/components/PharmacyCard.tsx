@@ -38,6 +38,7 @@ export const PharmacyCard = forwardRef<HTMLElement, {
 }>(function PharmacyCard({ p, selected, origin, mode, route, onSelect, onShowOnMap, onRoute }, ref) {
   const c = rankColor(p.rank);
   const located = p.latitude !== null && p.longitude !== null;
+  const approx = p.coordinatesSource === 'district';
   const expired = p.verificationStatus === 'expired';
   return (
     <article
@@ -64,7 +65,7 @@ export const PharmacyCard = forwardRef<HTMLElement, {
 
       <div className="mt-3 grid grid-cols-3 gap-2">
         <div className="rounded-lg bg-bg px-2.5 py-2">
-          <p className="text-[15px] font-extrabold">{formatKm(p.distanceStraightLineKm)}</p>
+          <p className="text-[15px] font-extrabold">{approx && p.distanceStraightLineKm !== null ? '≈ ' : ''}{formatKm(p.distanceStraightLineKm)}</p>
           <p className="text-[11px] font-medium text-muted">à vol d’oiseau</p>
         </div>
         <div className="rounded-lg bg-bg px-2.5 py-2">
@@ -86,6 +87,7 @@ export const PharmacyCard = forwardRef<HTMLElement, {
         </ul>
       )}
       {!located && <p className="mt-1 text-xs font-semibold text-warn-600">Position non publiée : impossible de la placer sur la carte ou de la classer.</p>}
+      {approx && <p className="mt-1 text-xs font-semibold text-warn-600">Position approximative (centre du quartier) : distance et itinéraire indicatifs, fiez-vous à l’adresse ou appelez.</p>}
 
       <p className="mt-2 text-[11px] font-medium text-muted">
         Source :{' '}

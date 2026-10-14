@@ -15,6 +15,7 @@ import { isInMorocco, isValidLatLng } from '../src/shared/distance.ts';
 import { normalizeMoroccanPhone, titleCase } from '../src/shared/text.ts';
 import { CITIES, CITY_NAME, CONNECTORS } from '../src/shared/connectors/registry.ts';
 import { parseManualCsv } from '../src/shared/manualCsv.ts';
+import { GUIDE_ID, GUIDE_NAME, guideWeekUrl, nextMonday, parseGuideDetail, parseGuideWeek } from '../src/shared/connectors/guidePharmacies.ts';
 import { isSamePharmacy } from '../src/shared/merge.ts';
 import {
   ANNUAIRE_ID, ANNUAIRE_NAME, listingUrl, parseDetail, parseListing,
@@ -37,7 +38,7 @@ const manualIdx = args.indexOf('--manual');
 const MANUAL_DIR = manualIdx >= 0 ? path.resolve(args[manualIdx + 1]) : path.join(ROOT, 'manual');
 const REQUEST_GAP_MS = 1500;
 const MAX_DETAIL_FETCHES = 45;
-const MAX_GEOCODES = 8;
+const MAX_GEOCODES = 15;
 const RETENTION_DAYS = 60;
 
 const repo = process.env.GITHUB_REPOSITORY ? `https://github.com/${process.env.GITHUB_REPOSITORY}` : 'local';
@@ -291,6 +292,81 @@ async function main() {
     }
   }
 
+  // ---- Source : guidepharmacies.ma (planning hebdomadaire : semaine en cours + semaine suivante)
+  const guideCache = await readJson<Record<string, { address: string | null; phone: string | null; at: string }>>(path.join(OUT, 'cache', 'guide-details.json'), {});
+  let guideDetailBudget = 40;
+  // Pharmacies dont la position exacte est connue (publiée par une autre source), pour compléter
+  const precise: DutyRecord[] = [...byDate.values()].flat().filter((r) => r.coordinatesSource === 'source');
+  const dutyDirP = path.join(OUT, 'duty');
+  if (existsSync(dutyDirP)) {
+    for (const f of (await readdir(dutyDirP)).sort().reverse().slice(0, 30)) {
+      const snap = await readJson<DutySnapshot | null>(path.join(dutyDirP, f), null);
+      if (snap) precise.push(...snap.records.filter((r) => r.coordinatesSource === 'source'));
+    }
+  }
+  for (const city of CITIES) {
+    for (const url of [guideWeekUrl(city.id), guideWeekUrl(city.id, nextMonday(today))]) {
+      const run: SourceRunStatus = { sourceId: GUIDE_ID, sourceName: GUIDE_NAME, city: city.id, url, ok: false, pageDate: null, count: 0, error: null, checkedAt: new Date().toISOString() };
+      runs.push(run);
+      let week;
+      try {
+        week = parseGuideWeek(await politeFetch(url));
+      } catch (e) {
+        run.error = `Page inaccessible : ${(e as Error).message}`;
+        log(`✗ ${GUIDE_NAME} ${city.name} : ${run.error}`);
+        continue;
+      }
+      run.pageDate = week.weekStart;
+      run.count = week.entries.length;
+      if (!week.days.length && !week.weekStart) {
+        run.error = 'Planning illisible : la structure de la page a peut-être changé.';
+        log(`✗ ${GUIDE_NAME} ${city.name} : ${run.error}`);
+        continue;
+      }
+      run.ok = true;
+      log(`✓ ${GUIDE_NAME} ${city.name} : semaine du ${week.weekStart ?? '?'} — ${week.entries.length} garde(s) sur ${week.days.length} jour(s)`);
+      for (const e of week.entries) {
+        if (e.end < addDays(today, -1)) continue; // jours passés : inutiles
+        const key = city.id + '|' + e.name.toLowerCase();
+        if (!guideCache[key] && e.detailUrl && guideDetailBudget > 0) {
+          guideDetailBudget--;
+          try {
+            guideCache[key] = { ...parseGuideDetail(await politeFetch(e.detailUrl)), at: new Date().toISOString() };
+          } catch (err) {
+            debug('fiche inaccessible', e.detailUrl, err);
+          }
+        }
+        const det = guideCache[key];
+        const rec: DutyRecord = {
+          id: recordId(city.id, e.name), name: e.name, address: det?.address ?? null, city: city.id, district: e.district,
+          latitude: null, longitude: null, coordinatesSource: null,
+          phone: e.phone ?? det?.phone ?? null, dutyDate: e.date, dutyType: e.dutyType, dutyLabel: e.label,
+          hoursText: e.hoursText, dutyStartDate: e.start, dutyEndDate: e.end,
+          sources: [{
+            sourceId: GUIDE_ID, sourceName: GUIDE_NAME, sourceUrl: e.detailUrl ?? url, listingUrl: url,
+            sourcePublishedAt: week.weekStart, lastCheckedAt: run.checkedAt,
+            historyMatch: { start: e.start, end: e.end, label: 'Planning hebdomadaire publié' },
+            dutyType: e.dutyType, dutyLabel: e.label,
+          }],
+          verificationStatus: 'to_confirm', confidenceLevel: 'low', notes: [],
+        };
+        // Position : exacte si une autre source la publie ; sinon adresse géocodée ; sinon centre du quartier (signalé)
+        const k = precise.find((x) => isSamePharmacy(x, rec));
+        if (k) {
+          rec.latitude = k.latitude; rec.longitude = k.longitude; rec.coordinatesSource = 'source';
+          rec.address ??= k.address;
+        } else if (rec.address) {
+          const g = await geocode(rec.address, city.id, geoCache, geoBudget);
+          if (g && g.lat !== null) { rec.latitude = g.lat; rec.longitude = g.lng; rec.coordinatesSource = 'geocoded'; }
+        }
+        if (rec.latitude === null && e.districtLat !== null) {
+          rec.latitude = e.districtLat; rec.longitude = e.districtLng; rec.coordinatesSource = 'district';
+        }
+        push(rec);
+      }
+    }
+  }
+
   // ---- Source : saisie manuelle (tableaux officiels, y compris jours à venir)
   // Les champs absents (position, téléphone, adresse) sont complétés à partir des pharmacies
   // déjà vues chez une source — jamais inventés.
@@ -344,6 +420,7 @@ async function main() {
   await writeJson(path.join(OUT, 'status.json'), status);
   await writeJson(path.join(OUT, 'cache', 'details.json'), detailCache);
   await writeJson(path.join(OUT, 'cache', 'geocode.json'), geoCache);
+  await writeJson(path.join(OUT, 'cache', 'guide-details.json'), guideCache);
 
   const okRuns = runs.filter((r) => r.ok).length;
   log(`terminé : ${okRuns}/${runs.length} page(s) source exploitée(s), ${MAX_DETAIL_FETCHES - detailBudget} fiche(s) téléchargée(s), ${MAX_GEOCODES - geoBudget.left} géocodage(s).`);

@@ -22,6 +22,15 @@ export const CONNECTORS: ConnectorInfo[] = [
       'Liste du jour par ville + historique de garde daté (début/fin) sur chaque fiche. Pages autorisées par robots.txt. Collecte espacée (≥ 1,5 s entre requêtes), toutes les ~2 h.',
   },
   {
+    id: 'guidepharmacies',
+    name: 'guidepharmacies.ma',
+    homepage: 'https://www.guidepharmacies.ma/pharmacies-de-garde.html',
+    enabled: true,
+    cities: ['rabat', 'sale', 'temara'],
+    reason:
+      'Planning hebdomadaire publié à l’avance (semaine en cours et suivante) : jours à venir disponibles. Position publiée = centre du quartier, complétée par la position exacte d’une autre source ou par l’adresse de la fiche.',
+  },
+  {
     id: 'manual',
     name: 'Saisie manuelle (tableau de garde officiel)',
     homepage: '',
