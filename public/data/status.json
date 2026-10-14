@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-14T20:27:57.005Z",
+ "generatedAt": "2026-10-14T20:30:13.310Z",
  "todayMorocco": "2026-10-14",
  "dates": [
   "2026-10-12",
@@ -16,7 +16,7 @@
    "pageDate": "2026-10-14",
    "count": 1,
    "error": null,
-   "checkedAt": "2026-10-14T20:27:57.042Z"
+   "checkedAt": "2026-10-14T20:30:13.332Z"
   },
   {
    "sourceId": "annuaire-gratuit",
@@ -27,7 +27,7 @@
    "pageDate": "2026-10-14",
    "count": 0,
    "error": "Aucune pharmacie extraite : la structure de la page a peut-être changé.",
-   "checkedAt": "2026-10-14T20:27:58.253Z"
+   "checkedAt": "2026-10-14T20:30:14.715Z"
   },
   {
    "sourceId": "annuaire-gratuit",
@@ -38,7 +38,7 @@
    "pageDate": "2026-10-14",
    "count": 0,
    "error": "Aucune pharmacie extraite : la structure de la page a peut-être changé.",
-   "checkedAt": "2026-10-14T20:27:58.863Z"
+   "checkedAt": "2026-10-14T20:30:15.134Z"
   }
  ],
  "connectors": [
