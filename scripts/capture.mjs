@@ -1,5 +1,5 @@
 // Captures d'écran et vidéo de démonstration de l'application (exécuté dans GitHub Actions).
-// Données réelles du jour ; position simulée : Rabat-Agdal.
+// Données réelles du jour (v2) ; position simulée : Rabat-Agdal.
 import { chromium } from 'playwright';
 import { mkdir, readdir, rename } from 'node:fs/promises';
 

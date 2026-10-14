@@ -1,6 +1,6 @@
 # Pharmacies de Garde Maroc
 
-Version actuelle : **1.3.1** — voir [CHANGELOG.md](CHANGELOG.md).
+Version actuelle : **1.3.2** — voir [CHANGELOG.md](CHANGELOG.md).
 
 Application web installable (PWA) qui trouve les **pharmacies de garde autour de vous**, pour une **date** et un **rayon** donnés, à partir de sources publiques datées — démarrage sur **Rabat, Salé et Témara**.
 

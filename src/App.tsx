@@ -157,10 +157,11 @@ export default function App() {
       if (date === today && st) {
         const ageH = (Date.now() - new Date(st.generatedAt).getTime()) / 3.6e6;
         if (ageH > 6) notices.push(`Dernière collecte le ${formatMoroccoDateTime(st.generatedAt)} : les données peuvent ne pas être à jour.`);
-        const failed = st.runs.filter((r) => !r.ok);
-        if (failed.length) notices.push(`Source indisponible lors de la dernière collecte pour : ${failed.map((r) => CITIES.find((c) => c.id === r.city)?.name ?? r.city).join(', ')}.`);
-        const stale = st.runs.filter((r) => r.ok && r.pageDate && r.pageDate < addDays(st.todayMorocco, -1));
-        if (stale.length) notices.push(`La page source de ${stale.map((r) => CITIES.find((c) => c.id === r.city)?.name).join(', ')} affichait une autre date que le jour de collecte.`);
+        const failed = st.runs.filter((r) => !r.ok && !st.runs.some((o) => o.ok && o.city === r.city));
+        if (failed.length) notices.push(`Source indisponible lors de la dernière collecte pour : ${[...new Set(failed.map((r) => CITIES.find((c) => c.id === r.city)?.name ?? r.city))].join(', ')}.`);
+        // seules les listes « du jour » peuvent être périmées (un planning hebdomadaire commence le lundi)
+        const stale = st.runs.filter((r) => r.ok && r.sourceId === 'annuaire-gratuit' && r.pageDate && r.pageDate < addDays(st.todayMorocco, -1));
+        if (stale.length) notices.push(`La liste du jour de ${[...new Set(stale.map((r) => CITIES.find((c) => c.id === r.city)?.name))].join(', ')} affichait une date ancienne.`);
       }
       const nearest = Math.min(...CITIES.map((c) => haversineKm(origin, c.center)));
       if (nearest > 25) notices.push('Votre position est hors de la zone couverte au démarrage (Rabat, Salé, Témara).');
@@ -300,7 +301,8 @@ export default function App() {
     if (window.matchMedia('(max-width: 1023px)').matches) mapBox.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
-  const sourceLinks = (status?.runs ?? []).map((r) => ({ name: `${r.sourceName} (${CITIES.find((c) => c.id === r.city)?.name})`, url: r.url }));
+  // un lien par site source (page d'accueil des gardes)
+  const sourceLinks = CONNECTORS.filter((c) => c.enabled && c.homepage).map((c) => ({ name: c.name, url: c.homepage }));
 
   return (
     <div className="flex min-h-full flex-col lg:h-full">

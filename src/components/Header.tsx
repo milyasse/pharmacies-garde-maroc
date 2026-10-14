@@ -21,7 +21,7 @@ export function Header(props: { onLocate: () => void; locating: boolean; onOpenS
       <div className="mx-auto flex items-center gap-3 px-4 py-3 lg:px-6">
         <CrossLogo size={32} />
         <div className="min-w-0 flex-1">
-          <h1 className="truncate text-[17px] font-extrabold leading-tight">Pharmacies de Garde Maroc</h1>
+          <h1 className="text-[15px] font-extrabold leading-tight sm:text-[17px]">Pharmacies de Garde Maroc</h1>
           <p className="text-xs font-medium text-white/85">
             <time dateTime={now.toISOString()}>{label}</time> · heure du Maroc
           </p>

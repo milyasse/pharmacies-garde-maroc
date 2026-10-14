@@ -1,5 +1,9 @@
 # Historique des versions
 
+## 1.3.2 — 15/10/2026
+- Suppression d'une fausse alerte « autre date » liée au planning hebdomadaire ; liens vers les sources regroupés.
+- « 24h/24 » n'est plus répété ; titre lisible en entier sur téléphone.
+
 ## 1.3.1 — 14/10/2026
 - « Ma position » plus fiable : GPS puis, à défaut, position réseau (Wi-Fi / antenne) ; position récente réutilisée.
 - Message visible en haut de l'écran en cas d'échec, avec la marche à suivre selon l'appareil (iPhone, Android, ordinateur) et la détection des navigateurs intégrés aux applications (WhatsApp, Facebook…), où la localisation est souvent bloquée.

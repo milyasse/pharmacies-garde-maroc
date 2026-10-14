@@ -19,7 +19,7 @@ export interface RouteState {
 function dutyText(p: Pharmacy): string {
   const parts: string[] = [];
   parts.push(p.dutyType ? DUTY_TYPE_LABEL[p.dutyType] : p.dutyLabel ? p.dutyLabel : 'Type de garde non publié');
-  if (p.hoursText) parts.push(p.hoursText);
+  if (p.hoursText && !(p.dutyType === 'continuous' && /24\s*h\s*\/\s*24/.test(p.hoursText))) parts.push(p.hoursText);
   if (p.dutyStart && p.dutyEnd && p.dutyStart !== p.dutyEnd) parts.push(`du ${formatShortDate(p.dutyStart)} au ${formatShortDate(p.dutyEnd)}`);
   else if (p.dutyStart) parts.push(`le ${formatShortDate(p.dutyStart)}`);
   else parts.push(`publiée pour le ${formatShortDate(p.dutyDate)}`);
