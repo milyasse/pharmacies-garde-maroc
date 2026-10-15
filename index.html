@@ -16,9 +16,11 @@
       #splash { position: fixed; inset: 0; z-index: 9999; overflow: hidden; background: #061a32; cursor: default; -webkit-user-select: none; user-select: none; transition: opacity .6s ease; }
       #splash.sp-out { opacity: 0; pointer-events: none; }
       /* fond flou pour les écrans larges (le visuel est affiché en entier au centre) */
-      #splash .sp-fill { position: absolute; inset: -40px; background: url("/src/assets/splash-garde.webp") center / cover no-repeat; filter: blur(28px) brightness(.55); transform: scale(1.1); }
+      #splash .sp-fill { position: absolute; inset: -40px; background: url("/src/assets/splash-garde-941.webp") center / cover no-repeat; filter: blur(28px) brightness(.55); transform: scale(1.1); }
       /* le visuel garde ses proportions (941 × 1672) ; les animations utilisent les mêmes coordonnées */
       #splash .sp-art { position: absolute; left: 50%; top: 50%; width: min(100vw, calc(100vh * 941 / 1672)); width: min(100vw, calc(100dvh * 941 / 1672)); aspect-ratio: 941 / 1672; transform: translate(-50%, -50%); box-shadow: 0 0 60px rgba(0,0,0,.45); }
+      /* téléphones et écrans en hauteur : le visuel remplit tout l'écran (léger rognage des bords) */
+      @media (max-aspect-ratio: 62/100) { #splash .sp-art { width: max(100vw, calc(100vh * 941 / 1672)); width: max(100vw, calc(100dvh * 941 / 1672)); box-shadow: none; transform: translate(-51.6%, -50%); } }
       #splash .sp-art img, #splash .sp-art svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
       #splash .sp-art img { object-fit: cover; }
       #splash .sp-live { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
@@ -33,7 +35,7 @@
     <div id="splash" role="status" aria-label="Chargement de Pharmacies de Garde Maroc">
       <div class="sp-fill" aria-hidden="true"></div>
       <div class="sp-art">
-        <img src="/src/assets/splash-garde.webp" alt="Pharmacies de Garde Maroc — Trouvez une pharmacie de garde près de vous" width="941" height="1672" fetchpriority="high" decoding="sync" />
+        <img src="/src/assets/splash-garde-1882.webp" srcset="/src/assets/splash-garde-941.webp 941w, /src/assets/splash-garde-1882.webp 1882w" sizes="(max-aspect-ratio: 62/100) 57vh, 57vh" alt="Pharmacies de Garde Maroc — Trouvez une pharmacie de garde près de vous" width="941" height="1672" fetchpriority="high" decoding="async" />
         <svg viewBox="0 0 941 1672" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
           <defs>
             <radialGradient id="spGlow"><stop offset="0" stop-color="#5ff6ea" stop-opacity=".75" /><stop offset=".45" stop-color="#22d3c5" stop-opacity=".25" /><stop offset="1" stop-color="#22d3c5" stop-opacity="0" /></radialGradient>

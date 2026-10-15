@@ -1,5 +1,9 @@
 # Historique des versions
 
+## 1.5.2 — 15/10/2026
+- Écran de lancement **plein écran** sur téléphone (le visuel remplit tout l'écran ; centré sur fond flou sur ordinateur et tablette).
+- Visuel en **haute résolution** : agrandi ×2 par IA (Real-ESRGAN, 1882 × 3344) pour rester net sur les écrans haute densité ; la version standard est servie aux petits écrans.
+
 ## 1.5.1 — 15/10/2026
 - Écran de lancement : le visuel fourni est affiché **tel quel** (en entier, sans recadrage ; fond flou sur les écrans larges), avec des animations superposées : halo et reflet sur le logo, étincelle qui suit l'anneau, ondes sous les repères de la carte, lumières de la ville qui scintillent, roue « Chargement… » qui tourne et trois points qui suivent les étapes réelles du chargement.
 
