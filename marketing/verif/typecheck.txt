@@ -1,5 +1,5 @@
 
-> pharmacies-garde-maroc@1.5.1 typecheck
+> pharmacies-garde-maroc@1.5.3 typecheck
 > tsc --noEmit
 
 TYPECHECK OK
