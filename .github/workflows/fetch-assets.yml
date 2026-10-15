@@ -1,0 +1,31 @@
+name: Récupérer des médias marketing
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: "URLs séparées par des espaces"
+        required: true
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Télécharger
+        env:
+          URLS: ${{ inputs.urls }}
+        run: |
+          mkdir -p marketing/stock
+          for u in $URLS; do
+            case "$u" in https://storage.orshot.com/*) ;; *) echo "URL refusée: $u"; exit 1;; esac
+            curl -fsSL -o "marketing/stock/$(basename "$u")" "$u"
+          done
+          ls -la marketing/stock
+      - name: Enregistrer
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
+          git add marketing/stock
+          git commit -m "Médias marketing (stock Orshot/Pixabay)" || exit 0
+          git pull --rebase && git push
