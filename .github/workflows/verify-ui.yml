@@ -1,0 +1,45 @@
+name: Vérification de l'interface
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Installer, vérifier les types, construire
+        env:
+          BASE_PATH: /pharmacies-garde-maroc/
+        run: |
+          npm install --no-audit --no-fund
+          mkdir -p marketing/verif
+          (npm run typecheck > marketing/verif/typecheck.txt 2>&1 && echo "TYPECHECK OK" >> marketing/verif/typecheck.txt) || echo "TYPECHECK EN ERREUR" >> marketing/verif/typecheck.txt
+          npm run build 2>&1 | tail -25 > marketing/verif/build.txt
+      - name: Installer Playwright
+        run: |
+          npm install --no-save --no-audit --no-fund playwright@1.48.2
+          npx playwright install --with-deps chromium
+      - name: Parcours
+        env:
+          BASE_PATH: /pharmacies-garde-maroc/
+        run: |
+          npx vite preview --port 4173 --strictPort &
+          sleep 5
+          node scripts/verify-ui.mjs
+      - name: Enregistrer
+        if: always()
+        run: |
+          rm -rf marketing/verif/raw
+          git config user.name "github-actions[bot]"
+          git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
+          git add marketing/verif
+          git commit -m "Vérification de l'interface" || exit 0
+          git pull --rebase origin main
+          git push origin HEAD:main
