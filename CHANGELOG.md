@@ -1,10 +1,13 @@
 # Historique des versions
 
+## 1.4.1 — 15/10/2026
+- Écran de lancement : photo de la tour Hassan (Rabat) et rythme plus posé.
+
 ## 1.4.0 — 15/10/2026
-- Nouvel **écran de lancement** animé : logo en repère qui se pose avec des ondes de localisation, titre bicolore, photo de la Kasbah des Oudayas (Rabat), « Toujours proche de vous ».
-- La barre de progression suit le vrai chargement (démarrage → sources → gardes du jour) ; l'écran disparaît dès que les données sont prêtes (2,3 s minimum à la première ouverture, plus court ensuite ; toucher l'écran pour passer).
+- Nouvel **écran de lancement** animé : logo en repère qui se pose avec des ondes de localisation, titre bicolore, photo de la **tour Hassan** (Rabat), « Toujours proche de vous ».
+- La barre de progression suit le vrai chargement (démarrage → sources → gardes du jour) ; l'écran disparaît dès que les données sont prêtes (environ 4 s à la première ouverture, chaque étape restant lisible ; plus court ensuite ; toucher l'écran pour passer).
 - Animations réduites si l'appareil le demande (« réduire les animations ») ; fonctionne hors ligne.
-- Photo : Pixabay n° 5014427 (kabaretka), libre de droits, trouvée via Orshot.
+- Photo : tour Hassan par Xhiliana (Unsplash, licence libre), trouvée via Orshot.
 
 ## 1.3.2 — 15/10/2026
 - Suppression d'une fausse alerte « autre date » liée au planning hebdomadaire ; liens vers les sources regroupés.
