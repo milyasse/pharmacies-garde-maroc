@@ -11,6 +11,7 @@ import { getCurrentPosition, type GeoError } from './services/geolocation.ts';
 import { searchPlace } from './services/geocoding.ts';
 import { getRoute, type RouteResult, type TravelMode } from './services/routing.ts';
 import { loadSnapshots, loadStatus } from './services/pharmacySearch.ts';
+import { splashDone, splashStep } from './services/splash.ts';
 import { buildResults, countByCity, selectPharmacies, sortByDuration, type CityCount, type DutyFilter, type SearchOutcome } from './shared/search.ts';
 import type { CityId, CollectorStatus, Pharmacy } from './shared/types.ts';
 import { addDays, formatFrDate, formatMoroccoDateTime, isIsoDate, moroccoDate } from './shared/dates.ts';
@@ -84,6 +85,7 @@ export default function App() {
     try {
       setStatus(await loadStatus(force));
       setStatusError(null);
+      splashStep(62, 'Vérification des sources…');
     } catch (e) {
       setStatusError((e as Error).message);
     }
@@ -103,6 +105,8 @@ export default function App() {
       setCityError((e as Error).message);
     } finally {
       setCityLoading(false);
+      splashStep(92, 'Préparation de la carte…');
+      splashDone();
     }
   }, [date]);
   useEffect(() => { void loadCityCounts(); }, [loadCityCounts]);

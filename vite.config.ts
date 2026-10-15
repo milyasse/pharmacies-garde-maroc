@@ -47,7 +47,7 @@ export default defineConfig({
         start_url: base,
         scope: base,
         display: 'standalone',
-        background_color: '#F3F5F4',
+        background_color: '#DCECF8',
         theme_color: '#0B5D3B',
         icons: [
           { src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png' },
@@ -56,7 +56,7 @@ export default defineConfig({
         ],
       },
       workbox: {
-        globPatterns: ['**/*.{js,css,html,svg,png,woff2}'],
+        globPatterns: ['**/*.{js,css,html,svg,png,webp,woff2}'],
         globIgnores: ['**/data/**'],
         navigateFallbackDenylist: [/\/data\//],
         runtimeCaching: [
