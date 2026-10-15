@@ -1,0 +1,12 @@
+== état avant
+{"status":"deployment_cancelled"}
+== annulation
+
+== état après
+{"status":"deployment_cancelled"}
+== déploiements récents
+7098864257 df2b786 2026-10-15T16:53:01Z
+7098838311 604bd24 2026-10-15T16:51:49Z
+7098800272 8606fce 2026-10-15T16:50:03Z
+7098759005 190e51d 2026-10-15T16:48:09Z
+7098704027 190e51d 2026-10-15T16:45:39Z
