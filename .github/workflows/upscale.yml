@@ -28,6 +28,7 @@ jobs:
           pip install --quiet "numpy<2" opencv-python-headless==4.9.0.80
           pip install --quiet torch==2.0.1 torchvision==0.15.2 --index-url https://download.pytorch.org/whl/cpu
           pip install --quiet basicsr==1.4.2 realesrgan==0.3.0
+          pip install --quiet --force-reinstall "numpy<2" "opencv-python==4.9.0.80" "opencv-python-headless==4.9.0.80"
           curl -fsSL -o RealESRGAN_x4plus.pth https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth
       - name: Agrandir
         env:
