@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       urls:
-        description: "URLs séparées par des espaces"
+        description: "URLs séparées par des espaces (ou nom=URL)"
         required: true
 permissions:
   contents: write
@@ -17,9 +17,11 @@ jobs:
           URLS: ${{ inputs.urls }}
         run: |
           mkdir -p marketing/stock
-          for u in $URLS; do
-            case "$u" in https://storage.orshot.com/*) ;; *) echo "URL refusée: $u"; exit 1;; esac
-            curl -fsSL -o "marketing/stock/$(basename "$u")" "$u"
+          for item in $URLS; do
+            case "$item" in *=https://*) name="${item%%=https://*}"; u="https://${item#*=https://}";; *) u="$item"; name="$(basename "${u%%\?*}")";; esac
+            case "$u" in https://storage.orshot.com/*|https://images.unsplash.com/*) ;; *) echo "URL refusée: $u"; exit 1;; esac
+            case "$name" in *[!A-Za-z0-9._-]*|"") echo "Nom refusé: $name"; exit 1;; esac
+            curl -fsSL -o "marketing/stock/$name" "$u"
           done
           ls -la marketing/stock
       - name: Enregistrer
