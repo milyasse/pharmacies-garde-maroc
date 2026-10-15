@@ -1,5 +1,8 @@
 # Historique des versions
 
+## 1.5.1 — 15/10/2026
+- Écran de lancement : le visuel fourni est affiché **tel quel** (en entier, sans recadrage ; fond flou sur les écrans larges), avec des animations superposées : halo et reflet sur le logo, étincelle qui suit l'anneau, ondes sous les repères de la carte, lumières de la ville qui scintillent, roue « Chargement… » qui tourne et trois points qui suivent les étapes réelles du chargement.
+
 ## 1.5.0 — 15/10/2026
 - **La recherche ne démarre plus toute seule** : changer la date, le rayon, le type de garde, l'adresse ou le point sur la carte ne relance rien ; la recherche part au clic sur « Rechercher les pharmacies de garde ». Si les critères ont changé depuis les résultats affichés, un message le signale et le bouton est mis en évidence. Restent immédiats : toucher une ville et le bouton « Ma position » de l'en-tête.
 - **Nouvel écran de lancement « nuit »** : tour Hassan illuminée, carte de la ville en perspective avec repères de pharmacies lumineux et itinéraire qui se dessine, villes couvertes qui défilent (Rabat, Salé, Témara), logo avec anneau d'orbite.
