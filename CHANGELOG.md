@@ -1,5 +1,8 @@
 # Historique des versions
 
+## 1.5.3 — 15/10/2026
+- Écran de lancement plus court : environ 7 s à la première ouverture (au lieu de 8), environ 2,6 s ensuite ; toucher l'écran le fait passer immédiatement, à tout moment.
+
 ## 1.5.2 — 15/10/2026
 - Écran de lancement **plein écran** sur téléphone (le visuel remplit tout l'écran ; centré sur fond flou sur ordinateur et tablette).
 - Visuel en **haute résolution** : agrandi ×2 par IA (Real-ESRGAN, 1882 × 3344) pour rester net sur les écrans haute densité ; la version standard est servie aux petits écrans.

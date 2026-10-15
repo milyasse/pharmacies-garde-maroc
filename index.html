@@ -86,8 +86,8 @@
         var s = document.getElementById('splash'); if (!s) return;
         var t0 = Date.now(), seen = false;
         try { seen = sessionStorage.getItem('pgm-splash') === '1'; sessionStorage.setItem('pgm-splash', '1'); } catch (e) {}
-        var MIN = seen ? 2600 : 6500;      // durée minimale d'affichage (ms)
-        var STEP_MIN = seen ? 550 : 1500;  // chaque étape reste au moins ce temps
+        var MIN = seen ? 2600 : 5600;      // durée minimale d'affichage (ms)
+        var STEP_MIN = seen ? 550 : 1300;  // chaque étape reste au moins ce temps
         var step = document.getElementById('splash-step');
         var finished = false, queue = [], busy = false, lastShown = Date.now(), onIdle = null, stepIndex = 0;
         var LABEL_DOT = { 'Recherche des pharmacies de garde…': 0, 'Vérification des sources…': 1, 'Préparation de la carte…': 2, 'Prêt': 3 };
@@ -113,10 +113,10 @@
         function done() {
           if (finished) return; finished = true;
           queue.push({ l: 'Prêt' });
-          onIdle = function () { setTimeout(hide, Math.max(0, MIN - (Date.now() - t0)) + 700); };
+          onIdle = function () { setTimeout(hide, Math.max(0, MIN - (Date.now() - t0)) + 400); };
           pump();
         }
-        s.addEventListener('click', function () { if (Date.now() - t0 > 1500) { finished = true; queue = []; hide(); } });
+        s.addEventListener('click', function () { finished = true; queue = []; hide(); }); // toucher l'écran pour passer, à tout moment
         window.__splash = { step: set, done: done, current: function () { return stepIndex; } };
         setTimeout(function () { if (!finished) done(); }, 14000); // sécurité : ne jamais bloquer l'accès
       })();
