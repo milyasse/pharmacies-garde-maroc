@@ -1,5 +1,5 @@
 GSAP actif : true
-écran retiré après 8.6 s
+écran retiré après 8.0 s
 requêtes de données après « Ma position » (formulaire) : 0 ; après changement de rayon : 0 (attendu 0)
 message « critères modifiés » visible : false
 requêtes après clic sur « Rechercher » : 0 (attendu ≥ 0, résultats affichés)

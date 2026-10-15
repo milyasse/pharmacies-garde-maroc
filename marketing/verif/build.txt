@@ -1,5 +1,5 @@
 
-> pharmacies-garde-maroc@1.5.0 build
+> pharmacies-garde-maroc@1.5.1 build
 > vite build
 
 [36mvite v6.4.4 [32mbuilding for production...[36m[39m
@@ -7,19 +7,19 @@ transforming...
 [32m✓[39m 64 modules transformed.
 rendering chunks...
 computing gzip size...
-[2mdist/[22m[32mregisterSW.js                            [39m[1m[2m  0.18 kB[22m[1m[22m
-[2mdist/[22m[32mmanifest.webmanifest                     [39m[1m[2m  0.58 kB[22m[1m[22m
-[2mdist/[22m[32mindex.html                               [39m[1m[2m 15.57 kB[22m[1m[22m[2m │ gzip:   5.33 kB[22m
-[2mdist/[22m[2massets/[22m[32msplash-hassan-nuit-DhMlJSLG.webp  [39m[1m[2m 80.81 kB[22m[1m[22m
-[2mdist/[22m[2massets/[22m[35mindex-CBZoew5V.css                [39m[1m[2m 39.72 kB[22m[1m[22m[2m │ gzip:  11.97 kB[22m
-[2mdist/[22m[2massets/[22m[36mreact-DHz4kLit.js                 [39m[1m[2m 12.46 kB[22m[1m[22m[2m │ gzip:   4.37 kB[22m
-[2mdist/[22m[2massets/[22m[36mleaflet-DCIffZry.js               [39m[1m[2m149.58 kB[22m[1m[22m[2m │ gzip:  43.34 kB[22m
-[2mdist/[22m[2massets/[22m[36mindex-DoYMbsMP.js                 [39m[1m[2m357.16 kB[22m[1m[22m[2m │ gzip: 118.42 kB[22m
-[32m✓ built in 1.84s[39m
+[2mdist/[22m[32mregisterSW.js                      [39m[1m[2m  0.18 kB[22m[1m[22m
+[2mdist/[22m[32mmanifest.webmanifest               [39m[1m[2m  0.58 kB[22m[1m[22m
+[2mdist/[22m[32mindex.html                         [39m[1m[2m 10.25 kB[22m[1m[22m[2m │ gzip:   3.58 kB[22m
+[2mdist/[22m[2massets/[22m[32msplash-garde-B4nlKPJb.webp  [39m[1m[2m111.08 kB[22m[1m[22m
+[2mdist/[22m[2massets/[22m[35mindex-CBZoew5V.css          [39m[1m[2m 39.72 kB[22m[1m[22m[2m │ gzip:  11.97 kB[22m
+[2mdist/[22m[2massets/[22m[36mreact-DHz4kLit.js           [39m[1m[2m 12.46 kB[22m[1m[22m[2m │ gzip:   4.37 kB[22m
+[2mdist/[22m[2massets/[22m[36mleaflet-DCIffZry.js         [39m[1m[2m149.58 kB[22m[1m[22m[2m │ gzip:  43.34 kB[22m
+[2mdist/[22m[2massets/[22m[36mindex-CpuisajO.js           [39m[1m[2m352.57 kB[22m[1m[22m[2m │ gzip: 116.83 kB[22m
+[32m✓ built in 1.28s[39m
 
 [36mPWA v1.3.0[39m
 mode      [35mgenerateSW[39m
-precache  [32m21 entries[39m [2m(694.76 KiB)[22m
+precache  [32m21 entries[39m [2m(714.66 KiB)[22m
 files generated
   [2mdist/sw.js[22m
   [2mdist/workbox-e4022e15.js[22m
