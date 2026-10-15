@@ -44,7 +44,9 @@ type SearchState =
   | { state: 'idle' }
   | { state: 'loading' }
   | { state: 'error'; error: string }
-  | { state: 'done'; outcome: SearchOutcome; notice: string | null; date: string; radiusKm: number };
+  | { state: 'done'; outcome: SearchOutcome; notice: string | null; date: string; radiusKm: number; dutyFilter: DutyFilter; originKey: string };
+
+const originKey = (o: Origin | null) => (o ? `${o.lat.toFixed(5)},${o.lng.toFixed(5)}` : '');
 
 export default function App() {
   const [origin, setOrigin] = useState<Origin | null>(null);
@@ -60,7 +62,9 @@ export default function App() {
   const [status, setStatus] = useState<CollectorStatus | null>(null);
   const [statusError, setStatusError] = useState<string | null>(null);
   const [search, setSearch] = useState<SearchState>({ state: 'idle' });
-  const [hasSearched, setHasSearched] = useState(false);
+  // La recherche ne démarre que sur une action explicite (bouton « Rechercher », ville, « Ma position » de l'en-tête)
+  const [searchNonce, setSearchNonce] = useState(0);
+  const requestSearch = useCallback(() => setSearchNonce((n) => n + 1), []);
   const [collapsed, setCollapsed] = useState(false);
   const [routes, setRoutes] = useState<Record<string, RouteResult>>({});
   const [routeStates, setRouteStates] = useState<Record<string, RouteState>>({});
@@ -169,7 +173,7 @@ export default function App() {
       }
       const nearest = Math.min(...CITIES.map((c) => haversineKm(origin, c.center)));
       if (nearest > 25) notices.push('Votre position est hors de la zone couverte au démarrage (Rabat, Salé, Témara).');
-      setSearch({ state: 'done', outcome, notice: notices.join(' ') || null, date, radiusKm });
+      setSearch({ state: 'done', outcome, notice: notices.join(' ') || null, date, radiusKm, dutyFilter, originKey: originKey(origin) });
       const first = outcome.ranked[0]?.id ?? null;
       setSelectedId(first);
       setCollapsed(true);
@@ -185,17 +189,20 @@ export default function App() {
     setOrigin({ lat: c.center.lat, lng: c.center.lng, label: `Centre de ${c.name}`, kind: 'city', city: id });
     setRadiusKm((r) => (r < 10 ? 10 : r)); // couvrir la ville entière
     setPicking(false);
-    setHasSearched(true);
+    requestSearch();
     if (window.matchMedia('(max-width: 1023px)').matches) setTimeout(() => mapBox.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
-  }, []);
+  }, [requestSearch]);
 
-  // Relance automatique quand un paramètre change après une première recherche
+  // Exécute la recherche demandée explicitement, avec les critères à jour (pas de relance automatique)
+  const runSearchRef = useRef(runSearch);
+  runSearchRef.current = runSearch;
   useEffect(() => {
-    if (hasSearched && origin) void runSearch();
-  }, [hasSearched, origin, date, radiusKm, dutyFilter, runSearch]);
+    if (searchNonce > 0) void runSearchRef.current();
+  }, [searchNonce]);
+  const criteriaChanged = search.state === 'done' && (search.date !== date || search.radiusKm !== radiusKm || search.dutyFilter !== dutyFilter || search.originKey !== originKey(origin));
 
   // ---------- Position
-  const locate = useCallback(async () => {
+  const locate = useCallback(async (andSearch = false) => {
     setLocating(true);
     setOriginError(null);
     setGeoHelp(null);
@@ -203,7 +210,7 @@ export default function App() {
       const g = await getCurrentPosition();
       setOrigin({ lat: g.lat, lng: g.lng, label: 'Ma position', kind: 'gps', accuracyM: g.accuracyM });
       setPicking(false);
-      setHasSearched(true);
+      if (andSearch) requestSearch();
     } catch (e) {
       const err = e as GeoError;
       setGeoHelp({ message: err.message, help: err.help ?? [] });
@@ -211,7 +218,7 @@ export default function App() {
     } finally {
       setLocating(false);
     }
-  }, []);
+  }, [requestSearch]);
 
   // ---------- Itinéraires
   const allResults: Pharmacy[] = useMemo(() => {
@@ -310,7 +317,7 @@ export default function App() {
 
   return (
     <div className="flex min-h-full flex-col lg:h-full">
-      <Header onLocate={locate} locating={locating} onOpenSettings={() => setSettingsOpen(true)} />
+      <Header onLocate={() => void locate(true)} locating={locating} onOpenSettings={() => setSettingsOpen(true)} />
       {geoHelp && (
         <div role="alert" className="border-b border-warn-600/30 bg-warn-50 px-4 py-3 text-sm text-warn-600 lg:px-6">
           <div className="flex items-start gap-2">
@@ -348,9 +355,9 @@ export default function App() {
             <SearchPanel
               origin={origin}
               locating={locating}
-              onLocate={locate}
+              onLocate={() => void locate(false)}
               onAddressSearch={(q) => searchPlace(q)}
-              onChoosePlace={(p) => { setOrigin({ lat: p.lat, lng: p.lng, label: p.label, kind: 'address' }); setPicking(false); setHasSearched(true); }}
+              onChoosePlace={(p) => { setOrigin({ lat: p.lat, lng: p.lng, label: p.label, kind: 'address' }); setPicking(false); }}
               picking={picking}
               onTogglePick={() => { setPicking((v) => !v); mapBox.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }}
               date={date}
@@ -359,7 +366,8 @@ export default function App() {
               onRadius={setRadiusKm}
               dutyFilter={dutyFilter}
               onDutyFilter={setDutyFilter}
-              onSearch={() => { if (hasSearched || !origin) void runSearch(); else setHasSearched(true); }}
+              onSearch={requestSearch}
+              criteriaChanged={criteriaChanged}
               searching={search.state === 'loading'}
               originError={originError}
               availableDates={status?.dates ?? []}
@@ -381,7 +389,7 @@ export default function App() {
               visibleRouteIds={visibleRouteIds}
               mode={mode}
               picking={picking}
-              onPick={(lat, lng) => { setOrigin({ lat, lng, label: 'Point choisi sur la carte', kind: 'map' }); setPicking(false); setHasSearched(true); }}
+              onPick={(lat, lng) => { setOrigin({ lat, lng, label: 'Point choisi sur la carte', kind: 'map' }); setPicking(false); }}
               onSelect={select}
               focusSignal={focus}
               routesShown={routesShown}
@@ -446,7 +454,7 @@ export default function App() {
         showAllRoutes={showAllRoutes}
         onShowAllRoutes={setShowAllRoutes}
         onRefresh={() => void runSearch(true)}
-        onEnlarge={() => setRadiusKm((r) => Math.min(100, r < 5 ? 5 : r < 10 ? 10 : r < 20 ? 20 : r < 30 ? 30 : r * 2))}
+        onEnlarge={() => { setRadiusKm((r) => Math.min(100, r < 5 ? 5 : r < 10 ? 10 : r < 20 ? 20 : r < 30 ? 30 : r * 2)); requestSearch(); }}
         sourceLinks={sourceLinks}
       />
     );

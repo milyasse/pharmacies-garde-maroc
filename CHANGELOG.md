@@ -1,5 +1,11 @@
 # Historique des versions
 
+## 1.5.0 — 15/10/2026
+- **La recherche ne démarre plus toute seule** : changer la date, le rayon, le type de garde, l'adresse ou le point sur la carte ne relance rien ; la recherche part au clic sur « Rechercher les pharmacies de garde ». Si les critères ont changé depuis les résultats affichés, un message le signale et le bouton est mis en évidence. Restent immédiats : toucher une ville et le bouton « Ma position » de l'en-tête.
+- **Nouvel écran de lancement « nuit »** : tour Hassan illuminée, carte de la ville en perspective avec repères de pharmacies lumineux et itinéraire qui se dessine, villes couvertes qui défilent (Rabat, Salé, Témara), logo avec anneau d'orbite.
+- **Indicateur de chargement sur mesure** : anneau de progression réelle autour d'une croix de pharmacie qui « bat », trois étapes (sources, gardes, carte). Animations réalisées avec GSAP.
+- Chargement plus long à la première ouverture (environ 6,5 s, chaque étape au moins 1,5 s) ; environ 2,6 s ensuite ; toucher l'écran pour passer.
+
 ## 1.4.1 — 15/10/2026
 - Écran de lancement : photo de la tour Hassan (Rabat) et rythme plus posé.
 

@@ -1,7 +1,7 @@
 {
   "name": "pharmacies-garde-maroc",
   "private": true,
-  "version": "1.4.1",
+  "version": "1.5.0",
   "description": "Pharmacies de garde autour de soi au Maroc (Rabat, Salé, Témara) : sources datées, carte, classement par proximité et itinéraires.",
   "type": "module",
   "engines": {
@@ -17,6 +17,7 @@
     "check:sources": "node --experimental-strip-types --no-warnings scripts/collect.ts --dry-run --verbose --strict"
   },
   "dependencies": {
+    "gsap": "^3.13.0",
     "leaflet": "^1.9.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"

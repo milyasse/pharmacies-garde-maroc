@@ -9,159 +9,174 @@
     <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <title>Pharmacies de Garde Maroc</title>
     <style>
-      /* ---------- Écran de lancement (affiché avant le chargement du JavaScript) ---------- */
+      /* ================= Écran de lancement — thème nuit (affiché avant le JavaScript) ================= */
       #splash {
-        position: fixed; inset: 0; z-index: 9999; overflow: hidden;
-        display: flex; flex-direction: column; align-items: center;
-        background: linear-gradient(180deg, #bfdcf2 0%, #dcecf8 38%, #eef6fb 60%, #f6fafc 100%);
+        --sp-bg: #0a1628; --sp-bg2: #0e2340; --sp-teal: #22d3c5; --sp-teal2: #0fb5a8; --sp-soft: rgba(205,235,240,.82);
+        position: fixed; inset: 0; z-index: 9999; overflow: hidden; color: #fff;
+        background: radial-gradient(120% 70% at 50% 18%, #13305a 0%, var(--sp-bg2) 38%, var(--sp-bg) 78%);
         font-family: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-        color: #12355b; cursor: default; -webkit-user-select: none; user-select: none;
-        transition: opacity .55s ease, transform .55s ease, filter .55s ease;
+        -webkit-user-select: none; user-select: none; cursor: default;
+        transition: opacity .6s ease, transform .6s ease;
       }
-      #splash.sp-out { opacity: 0; transform: scale(1.04); filter: blur(3px); pointer-events: none; }
-      #splash .sp-sun { position: absolute; top: -18vh; left: 50%; width: 120vmax; height: 70vh; transform: translateX(-50%);
-        background: radial-gradient(closest-side, rgba(255,255,255,.95), rgba(255,255,255,0)); opacity: .8; animation: sp-glow 6s ease-in-out infinite alternate; }
-      #splash .sp-plus { position: absolute; color: rgba(11,93,59,.16); font-weight: 800; animation: sp-float 7s ease-in-out infinite; }
-      #splash .sp-top { position: relative; z-index: 2; flex: 0 0 auto; display: flex; flex-direction: column; align-items: center;
-        padding-top: calc(max(env(safe-area-inset-top), 0px) + min(11vh, 96px)); text-align: center; }
-      #splash .sp-logo { position: relative; width: 112px; height: 124px; }
-      #splash .sp-pin { position: relative; z-index: 2; width: 112px; height: 124px; filter: drop-shadow(0 12px 18px rgba(11,93,59,.35));
-        animation: sp-drop 1.2s cubic-bezier(.2,1.35,.4,1) .2s both; }
-      #splash .sp-shadow { position: absolute; left: 50%; bottom: -10px; width: 64px; height: 12px; margin-left: -32px; border-radius: 50%;
-        background: rgba(11,60,40,.28); filter: blur(3px); animation: sp-shadow 1.2s cubic-bezier(.2,1.35,.4,1) .2s both; }
-      #splash .sp-ring { position: absolute; left: 50%; top: 46%; width: 110px; height: 110px; margin: -55px 0 0 -55px; border-radius: 50%;
-        border: 3px solid rgba(30,138,76,.55); opacity: 0; animation: sp-ring 2.8s cubic-bezier(.2,.7,.3,1) 1s infinite; }
-      #splash .sp-ring.r2 { animation-delay: 2.85s; }
-      #splash .sp-ring.r1 { animation-delay: 1.93s; }
-      #splash h1 { margin: 26px 0 0; font-size: clamp(34px, 10.5vw, 52px); line-height: 1.06; font-weight: 800; letter-spacing: -.02em; }
-      #splash h1 > span { display: block; opacity: 0; animation: sp-up 1s cubic-bezier(.2,.8,.2,1) both; }
-      #splash h1 .l1 { color: #12355b; animation-delay: .8s; }
-      #splash h1 .l2 { animation-delay: 1.05s; }
-      #splash h1 .g { color: #1e8a4c; }
-      #splash h1 .b { color: #1f5f9e; }
-      #splash .sp-cities { margin: 12px 0 0; font-size: 15px; font-weight: 700; letter-spacing: .06em; color: #3d6b8f; opacity: 0; animation: sp-up .9s ease 1.4s both; }
-      #splash .sp-photo { position: absolute; left: 0; right: 0; bottom: 0; height: 52%; z-index: 1;
-        -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 28%); mask-image: linear-gradient(180deg, transparent 0%, #000 28%);
-        animation: sp-fade 1.8s ease .3s both; }
-      #splash .sp-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 46% 30%; display: block;
-        animation: sp-kb 16s ease-out .3s both; }
-      #splash .sp-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,38,66,0) 45%, rgba(10,38,66,.5) 72%, rgba(8,30,54,.9) 100%); }
-      #splash .sp-bottom { position: absolute; left: 0; right: 0; bottom: 0; z-index: 3; display: flex; flex-direction: column; align-items: center;
-        padding: 0 24px calc(max(env(safe-area-inset-bottom), 0px) + 34px); text-align: center; }
-      #splash .sp-tag { margin: 0 0 22px; color: #fff; font-style: italic; font-weight: 700; font-size: clamp(24px, 7vw, 32px); line-height: 1.2;
-        text-shadow: 0 2px 14px rgba(0,0,0,.35); opacity: 0; animation: sp-up 1s cubic-bezier(.2,.8,.2,1) 1.7s both; }
-      #splash .sp-bar { position: relative; width: min(260px, 70vw); height: 6px; border-radius: 6px; overflow: hidden; background: rgba(255,255,255,.22);
-        opacity: 0; animation: sp-fade .6s ease 2s both; }
-      #splash .sp-bar i { position: absolute; left: 0; top: 0; bottom: 0; width: 6%; border-radius: 6px;
-        background: linear-gradient(90deg, #5dbb63, #b9f0bd); transition: width .9s cubic-bezier(.3,.7,.2,1); }
-      #splash .sp-bar i::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, transparent, rgba(255,255,255,.75), transparent);
-        transform: translateX(-100%); animation: sp-shine 1.6s ease-in-out infinite; }
-      #splash .sp-step { margin: 12px 0 0; min-height: 18px; font-size: 13px; font-weight: 600; color: rgba(255,255,255,.88); transition: opacity .25s ease;
-        opacity: 0; animation: sp-fade .6s ease 2.1s both; }
-      #splash .sp-step.sw { opacity: 0 !important; }
-      #splash .sp-ver { margin: 10px 0 0; font-size: 11px; font-weight: 600; color: rgba(255,255,255,.5); }
-      @keyframes sp-drop { 0% { opacity: 0; transform: translateY(-70px) scale(.7); } 60% { opacity: 1; } 100% { opacity: 1; transform: none; } }
-      @keyframes sp-shadow { 0% { opacity: 0; transform: scaleX(.3); } 100% { opacity: 1; transform: none; } }
-      @keyframes sp-ring { 0% { opacity: .75; transform: scale(.45); } 100% { opacity: 0; transform: scale(2.3); } }
-      @keyframes sp-up { 0% { opacity: 0; transform: translateY(18px); } 100% { opacity: 1; transform: none; } }
-      @keyframes sp-fade { from { opacity: 0; } to { opacity: 1; } }
-      @keyframes sp-kb { 0% { transform: scale(1.16) translateY(14px); } 100% { transform: scale(1.02) translateY(0); } }
-      @keyframes sp-shine { 0% { transform: translateX(-100%); } 100% { transform: translateX(100%); } }
-      @keyframes sp-glow { from { opacity: .55; } to { opacity: .95; } }
-      @keyframes sp-float { 0%, 100% { transform: translateY(0) rotate(0); } 50% { transform: translateY(-14px) rotate(8deg); } }
-      @media (min-width: 900px) { #splash .sp-photo { left: 50%; right: auto; width: min(100%, 980px); height: 55%; transform: translateX(-50%); -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 22%), linear-gradient(90deg, transparent 0%, #000 18%, #000 82%, transparent 100%); -webkit-mask-composite: source-in; mask-image: linear-gradient(180deg, transparent 0%, #000 22%), linear-gradient(90deg, transparent 0%, #000 18%, #000 82%, transparent 100%); mask-composite: intersect; } #splash .sp-photo img { object-position: 45% 12%; } }
-      @media (prefers-reduced-motion: reduce) {
-        #splash *, #splash *::after { animation-duration: .01ms !important; animation-delay: 0s !important; animation-iteration-count: 1 !important; }
-        #splash .sp-ring { display: none; }
+      #splash.sp-out { opacity: 0; transform: scale(1.05); pointer-events: none; }
+      #splash .sp-blob { position: absolute; border-radius: 50%; pointer-events: none; }
+      #splash .sp-blob.b1 { width: 260px; height: 260px; left: -120px; top: -120px; background: radial-gradient(circle at 65% 65%, #1aa8a0 0%, #0d6f73 45%, rgba(13,111,115,0) 72%); opacity: .55; }
+      #splash .sp-blob.b2 { width: 300px; height: 300px; right: -150px; bottom: -150px; background: radial-gradient(circle at 35% 35%, #1aa8a0 0%, #0d6f73 45%, rgba(13,111,115,0) 72%); opacity: .5; }
+      #splash .sp-arc { position: absolute; left: -40px; top: -60px; width: 300px; height: 300px; border-radius: 50%; border: 2px solid rgba(34,211,197,.55); border-color: transparent rgba(34,211,197,.55) transparent transparent; transform: rotate(20deg); }
+      #splash .sp-stars { position: absolute; inset: 0 0 45% 0; background-image: radial-gradient(1.2px 1.2px at 12% 22%, rgba(255,255,255,.55), transparent), radial-gradient(1px 1px at 78% 12%, rgba(255,255,255,.5), transparent), radial-gradient(1.4px 1.4px at 64% 34%, rgba(255,255,255,.35), transparent), radial-gradient(1px 1px at 28% 48%, rgba(255,255,255,.4), transparent), radial-gradient(1.2px 1.2px at 88% 52%, rgba(255,255,255,.35), transparent), radial-gradient(1px 1px at 45% 8%, rgba(255,255,255,.45), transparent); }
+      #splash .sp-wrap { position: relative; box-sizing: border-box; height: 100%; max-width: 520px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; text-align: center;
+        padding: calc(max(env(safe-area-inset-top), 0px) + clamp(18px, 4.5vh, 48px)) 20px calc(max(env(safe-area-inset-bottom), 0px) + 18px); }
+      #splash .sp-logo { width: clamp(118px, 17vh, 150px); height: auto; overflow: visible; flex: 0 0 auto; }
+      #splash h1 { margin: clamp(4px, 1.2vh, 12px) 0 0; font-weight: 800; letter-spacing: -.015em; line-height: 1.04; font-size: clamp(32px, min(10vw, 5.4vh), 48px); }
+      #splash h1 .w { display: inline-block; }
+      #splash .sp-maroc { display: flex; align-items: center; justify-content: center; gap: 14px; margin-top: .08em; color: var(--sp-teal); }
+      #splash .sp-maroc i { display: block; width: clamp(40px, 13vw, 80px); height: 3px; border-radius: 3px; background: linear-gradient(90deg, rgba(34,211,197,0), var(--sp-teal)); }
+      #splash .sp-maroc i + span + i { background: linear-gradient(90deg, var(--sp-teal), rgba(34,211,197,0)); }
+      #splash .sp-sub { margin: clamp(8px, 1.6vh, 16px) 0 0; font-size: clamp(14px, 4vw, 17px); line-height: 1.4; font-weight: 500; color: var(--sp-soft); }
+      #splash .sp-scene { position: relative; z-index: 0; flex: 1 1 auto; width: 100%; min-height: 170px; margin-top: 10px; }
+      #splash .sp-title, #splash .sp-sub, #splash .sp-logo { position: relative; z-index: 1; }
+      #splash .sp-tower { position: absolute; left: 50%; bottom: 40%; height: 64%; max-height: 340px; width: auto; transform: translateX(-62%); opacity: .95;
+        -webkit-mask-image: linear-gradient(180deg, #000 70%, transparent 100%); mask-image: linear-gradient(180deg, #000 70%, transparent 100%); }
+      #splash .sp-map { position: absolute; left: 50%; bottom: 0; width: 140%; max-width: 760px; height: 60%; transform: translateX(-50%); overflow: visible; }
+      #splash .sp-city { position: absolute; right: 4%; bottom: 66%; display: flex; align-items: center; gap: 6px; transform: rotate(-6deg); }
+      #splash .sp-city b { font-style: italic; font-weight: 800; font-size: clamp(18px, 5.4vw, 24px); color: #fff; min-width: 4.4em; text-align: left; }
+      #splash .sp-city u { position: absolute; left: 4px; right: -6px; bottom: -6px; height: 3px; border-radius: 3px; background: linear-gradient(90deg, var(--sp-teal), rgba(34,211,197,.15)); }
+      #splash .sp-loader { position: relative; flex: 0 0 auto; display: flex; flex-direction: column; align-items: center; gap: 8px; padding-top: 8px; }
+      #splash .sp-ring { width: 64px; height: 64px; overflow: visible; }
+      #splash .sp-ring .arc { transition: stroke-dashoffset 1s cubic-bezier(.3,.7,.2,1); }
+      #splash .sp-step { min-height: 20px; margin: 0; font-size: 14px; font-weight: 600; color: var(--sp-soft); transition: opacity .25s ease; }
+      #splash .sp-step.sw { opacity: 0; }
+      #splash .sp-dots { display: flex; gap: 10px; }
+      #splash .sp-dots span { width: 9px; height: 9px; border-radius: 9px; background: rgba(34,211,197,.25); transition: all .45s cubic-bezier(.3,.7,.2,1); }
+      #splash .sp-dots span.on { width: 26px; background: var(--sp-teal); box-shadow: 0 0 10px rgba(34,211,197,.7); }
+      #splash .sp-dots span.done { background: var(--sp-teal2); }
+      #splash .sp-ver { margin: 0; font-size: 11px; font-weight: 600; color: rgba(255,255,255,.38); }
+      /* Intro : masqué jusqu'à ce que GSAP prenne la main ; repli CSS si GSAP ne se charge pas */
+      #splash .sp-in { opacity: 0; animation: sp-fallback .6s ease 1.4s forwards; }
+      #splash.gsap .sp-in { animation: none; }
+      @keyframes sp-fallback { to { opacity: 1; } }
+      @keyframes sp-spin { to { transform: rotate(360deg); } }
+      @media (min-width: 900px) {
+        #splash .sp-map { width: 120%; }
       }
+      @media (max-height: 640px) { #splash .sp-sub { display: none; } }
+      @media (prefers-reduced-motion: reduce) { #splash .sp-in { animation-delay: 0s; animation-duration: .01s; } }
     </style>
   </head>
   <body>
     <div id="splash" role="status" aria-live="polite" aria-label="Chargement de Pharmacies de Garde Maroc">
-      <div class="sp-sun"></div>
-      <span class="sp-plus" style="left:12%;top:18%;font-size:22px">+</span>
-      <span class="sp-plus" style="right:14%;top:12%;font-size:30px;animation-delay:-2s">+</span>
-      <span class="sp-plus" style="right:22%;top:34%;font-size:18px;animation-delay:-4s">+</span>
-      <span class="sp-plus" style="left:20%;top:40%;font-size:16px;animation-delay:-5s">+</span>
-      <div class="sp-top">
-        <div class="sp-logo" aria-hidden="true">
-          <span class="sp-ring"></span><span class="sp-ring r1"></span><span class="sp-ring r2"></span>
-          <svg class="sp-pin" viewBox="0 0 120 132" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="spg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a9a5a" /><stop offset="1" stop-color="#0b5d3b" /></linearGradient>
-              <radialGradient id="sph" cx=".35" cy=".25" r=".6"><stop offset="0" stop-color="#fff" stop-opacity=".35" /><stop offset="1" stop-color="#fff" stop-opacity="0" /></radialGradient>
-            </defs>
-            <path d="M60 4C30 4 7 27 7 56c0 39 53 72 53 72s53-33 53-72C113 27 90 4 60 4z" fill="url(#spg)" />
-            <path d="M60 4C30 4 7 27 7 56c0 39 53 72 53 72s53-33 53-72C113 27 90 4 60 4z" fill="url(#sph)" />
-            <circle cx="60" cy="56" r="36" fill="#fff" />
-            <path d="M51 34h18v13h13v18H69v13H51V65H38V47h13z" fill="#1e8a4c" />
-          </svg>
-          <span class="sp-shadow"></span>
+      <div class="sp-blob b1"></div><div class="sp-arc"></div><div class="sp-blob b2"></div><div class="sp-stars"></div>
+      <div class="sp-wrap">
+        <!-- Logo : repère lumineux, anneau d'orbite, tuile de carte -->
+        <svg class="sp-logo sp-in" viewBox="0 0 160 170" aria-hidden="true">
+          <defs>
+            <radialGradient id="spPin" cx=".38" cy=".3" r=".75"><stop offset="0" stop-color="#5ff2e4" /><stop offset=".55" stop-color="#14b8ab" /><stop offset="1" stop-color="#0a6f6c" /></radialGradient>
+            <linearGradient id="spTile" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#22d3c5" stop-opacity=".9" /><stop offset="1" stop-color="#0b7c7a" stop-opacity=".5" /></linearGradient>
+            <filter id="spGlow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b" /><feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge></filter>
+          </defs>
+          <g id="sp-tile" filter="url(#spGlow)">
+            <path d="M80 128 L136 148 L80 168 L24 148 Z" fill="rgba(34,211,197,.12)" stroke="url(#spTile)" stroke-width="3" />
+            <path d="M52 138 L108 158 M66 133 L122 153 M108 138 L52 158 M94 133 L38 153 M80 128 L80 168" stroke="#22d3c5" stroke-opacity=".55" stroke-width="2" />
+          </g>
+          <ellipse id="sp-orbit-back" cx="80" cy="74" rx="66" ry="20" fill="none" stroke="#bff7f1" stroke-opacity=".35" stroke-width="5" transform="rotate(-14 80 74)" stroke-dasharray="0 104 210" />
+          <g id="sp-pin" filter="url(#spGlow)">
+            <path d="M80 8C53 8 33 28 33 54c0 33 47 78 47 78s47-45 47-78C127 28 107 8 80 8z" fill="url(#spPin)" />
+            <circle cx="80" cy="54" r="30" fill="#0b5f60" fill-opacity=".55" />
+            <path d="M72 34h16v12h12v16H88v12H72V62H60V46h12z" fill="#fff" />
+          </g>
+          <ellipse id="sp-orbit" cx="80" cy="74" rx="66" ry="20" fill="none" stroke="#e6fffb" stroke-width="5" stroke-linecap="round" transform="rotate(-14 80 74)" stroke-dasharray="210 104" />
+          <circle id="sp-sat" r="5" fill="#fff" filter="url(#spGlow)" cx="146" cy="74" />
+        </svg>
+        <h1 class="sp-title"><span class="w sp-in">Pharmacies</span><br /><span class="w sp-in">de Garde</span><span class="sp-maroc sp-in"><i></i><span>Maroc</span><i></i></span></h1>
+        <p class="sp-sub sp-in">Trouvez une pharmacie de garde<br />près de vous</p>
+
+        <div class="sp-scene" aria-hidden="true">
+          <img class="sp-tower sp-in" src="/src/assets/splash-hassan-nuit.webp" alt="" width="900" height="796" decoding="async" fetchpriority="high" />
+          <svg class="sp-map" viewBox="0 0 600 260" preserveAspectRatio="xMidYMax meet"><g id="sp-mapg"></g></svg>
+          <div class="sp-city sp-in">
+            <svg width="26" height="30" viewBox="0 0 26 30"><path d="M13 1C6.4 1 1.5 6 1.5 12.2 1.5 20.5 13 29 13 29s11.5-8.5 11.5-16.8C24.5 6 19.6 1 13 1z" fill="#22d3c5" /><circle cx="13" cy="12" r="4.6" fill="#0a1628" /></svg>
+            <b id="sp-cityname">Rabat</b><u></u>
+          </div>
         </div>
-        <h1><span class="l1">Pharmacies</span><span class="l2"><span class="g">de Garde</span> <span class="b">Maroc</span></span></h1>
-        <p class="sp-cities">Rabat · Salé · Témara</p>
-      </div>
-      <div class="sp-photo" aria-hidden="true"><img src="/src/assets/splash-hassan.webp" alt="" width="1056" height="875" decoding="async" fetchpriority="high" /></div>
-      <div class="sp-bottom">
-        <p class="sp-tag">Toujours proche<br />de vous</p>
-        <div class="sp-bar" aria-hidden="true"><i></i></div>
-        <p class="sp-step" id="splash-step">Démarrage…</p>
-        <p class="sp-ver" id="splash-ver"></p>
+
+        <!-- Indicateur de chargement : anneau de progression réelle + croix qui bat + étapes -->
+        <div class="sp-loader sp-in">
+          <svg class="sp-ring" viewBox="0 0 64 64" aria-hidden="true">
+            <defs><linearGradient id="spArc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7ff5ea" /><stop offset="1" stop-color="#0fb5a8" /></linearGradient></defs>
+            <circle cx="32" cy="32" r="26" fill="none" stroke="rgba(34,211,197,.18)" stroke-width="5" />
+            <circle class="arc" cx="32" cy="32" r="26" fill="none" stroke="url(#spArc)" stroke-width="5" stroke-linecap="round" stroke-dasharray="163.4" stroke-dashoffset="157" transform="rotate(-90 32 32)" />
+            <circle id="sp-head" cx="32" cy="6" r="3.6" fill="#e6fffb" />
+            <path id="sp-cross" d="M28.5 21h7v7.5H43v7h-7.5V43h-7v-7.5H21v-7h7.5z" fill="#22d3c5" style="transform-origin:32px 32px" />
+          </svg>
+          <p class="sp-step" id="splash-step">Démarrage…</p>
+          <div class="sp-dots" aria-hidden="true"><span class="on"></span><span></span><span></span></div>
+          <p class="sp-ver" id="splash-ver"></p>
+        </div>
       </div>
     </div>
     <script>
-      // Pilotage de l'écran de lancement : progression réelle (main.tsx / App.tsx) + durée minimale pour l'animation.
+      // Contrôleur de l'écran de lancement : suit le vrai chargement (main.tsx / App.tsx) avec un rythme minimal lisible.
       (function () {
         var s = document.getElementById('splash'); if (!s) return;
         var t0 = Date.now(), seen = false;
         try { seen = sessionStorage.getItem('pgm-splash') === '1'; sessionStorage.setItem('pgm-splash', '1'); } catch (e) {}
-        var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
-        var MIN = seen ? 1200 : reduce ? 1200 : 4200;   // durée minimale d'affichage (ms)
-        var STEP_MIN = seen ? 300 : 900;                 // chaque message reste lisible au moins ce temps
-        var bar = s.querySelector('.sp-bar i'), step = document.getElementById('splash-step');
-        var pct = 4, finished = false, queue = [], busy = false, lastShown = 0, onIdle = null;
-        function width(p) { pct = Math.max(pct, p); bar.style.width = pct + '%'; }
+        var MIN = seen ? 2600 : 6500;      // durée minimale d'affichage (ms)
+        var STEP_MIN = seen ? 550 : 1500;  // chaque étape reste affichée au moins ce temps
+        var arc = s.querySelector('.sp-ring .arc'), head = document.getElementById('sp-head');
+        var step = document.getElementById('splash-step'), dots = s.querySelectorAll('.sp-dots span');
+        var C = 163.4, pct = 4, finished = false, queue = [], busy = false, lastShown = Date.now(), onIdle = null;
+        var LABEL_DOT = { 'Recherche des pharmacies de garde…': 0, 'Vérification des sources…': 1, 'Préparation de la carte…': 2, 'Prêt': 3 };
+        function width(p) {
+          pct = Math.max(pct, Math.min(100, p));
+          arc.style.strokeDashoffset = String(C * (1 - pct / 100));
+          var a = (pct / 100) * 2 * Math.PI - Math.PI / 2;
+          head.setAttribute('cx', String(32 + 26 * Math.cos(a))); head.setAttribute('cy', String(32 + 26 * Math.sin(a)));
+          if (window.__splashFx) window.__splashFx.progress(pct);
+        }
+        function setDots(i) { for (var k = 0; k < dots.length; k++) dots[k].className = k < i ? 'done' : k === i ? 'on' : ''; }
         function pump() {
           if (busy) return;
           var next = queue.shift();
           if (!next) { if (onIdle) { var f = onIdle; onIdle = null; f(); } return; }
           busy = true;
-          var wait = Math.max(0, STEP_MIN - (Date.now() - lastShown));
           setTimeout(function () {
             width(next.p);
             if (next.l && step.textContent !== next.l) {
               step.classList.add('sw');
               setTimeout(function () { step.textContent = next.l; step.classList.remove('sw'); }, 250);
+              if (next.l in LABEL_DOT) setDots(LABEL_DOT[next.l]);
             }
             lastShown = Date.now(); busy = false; pump();
-          }, wait);
+          }, Math.max(0, STEP_MIN - (Date.now() - lastShown)));
         }
         function set(p, label) {
           if (finished && p < 100) return;
           if (!label) { width(p); return; }
           queue.push({ p: p, l: label }); pump();
         }
-        var trickle = setInterval(function () { if (pct < 30) width(pct + 1.2); }, 200);
+        var trickle = setInterval(function () { if (pct < 26) width(pct + 0.8); }, 220);
         function hide() {
           if (!s.parentNode) return;
-          s.classList.add('sp-out');
-          setTimeout(function () { if (s.parentNode) s.parentNode.removeChild(s); }, 650);
+          var remove = function () { if (s.parentNode) s.parentNode.removeChild(s); };
+          if (window.__splashFx) window.__splashFx.exit(remove);
+          else { s.classList.add('sp-out'); setTimeout(remove, 650); }
         }
         function done() {
           if (finished) return; finished = true; clearInterval(trickle);
           queue.push({ p: 100, l: 'Prêt' });
-          onIdle = function () { setTimeout(hide, Math.max(0, MIN - (Date.now() - t0)) + 600); };
+          onIdle = function () { setTimeout(hide, Math.max(0, MIN - (Date.now() - t0)) + 700); };
           pump();
         }
-        s.addEventListener('click', function () { if (Date.now() - t0 > 1200) { finished = true; clearInterval(trickle); queue = []; hide(); } });
+        s.addEventListener('click', function () { if (Date.now() - t0 > 1500) { finished = true; clearInterval(trickle); queue = []; hide(); } });
         window.__splash = { step: set, done: done };
-        setTimeout(function () { if (!finished) done(); }, 10000); // sécurité : ne jamais bloquer l'accès
+        setTimeout(function () { if (!finished) done(); }, 14000); // sécurité : ne jamais bloquer l'accès
       })();
     </script>
     <noscript><style>#splash { display: none; }</style>Cette application nécessite JavaScript.</noscript>
+    <script type="module" src="/src/splash.ts"></script>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

@@ -38,6 +38,8 @@ export function SearchPanel(props: {
   onDutyFilter: (f: DutyFilter) => void;
   onSearch: () => void;
   searching: boolean;
+  /** Les critères ont changé depuis la dernière recherche affichée */
+  criteriaChanged?: boolean;
   originError: string | null;
   availableDates: string[];
   today: string;
@@ -189,8 +191,13 @@ export function SearchPanel(props: {
         </div>
       </fieldset>
 
+      {props.criteriaChanged && !props.searching && (
+        <p role="status" className="mb-2 rounded-lg bg-warn-50 px-3 py-2 text-[13px] font-semibold text-warn-600">
+          Critères modifiés : appuyez sur « Rechercher » pour mettre à jour les résultats.
+        </p>
+      )}
       <button type="button" onClick={props.onSearch} disabled={props.searching || !!radiusErr}
-        className="flex w-full items-center justify-center gap-2 rounded-xl bg-brand-700 py-3.5 text-[15px] font-bold text-white hover:bg-brand-600 disabled:opacity-60">
+        className={`flex w-full items-center justify-center gap-2 rounded-xl bg-brand-700 py-3.5 text-[15px] font-bold text-white hover:bg-brand-600 disabled:opacity-60 ${props.criteriaChanged ? 'ring-4 ring-warn-600/30' : ''}`}>
         {props.searching && <SpinnerIcon />} Rechercher les pharmacies de garde
       </button>
     </section>
