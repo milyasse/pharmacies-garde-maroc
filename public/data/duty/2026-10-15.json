@@ -1,6 +1,6 @@
 {
  "date": "2026-10-15",
- "generatedAt": "2026-10-16T20:28:45.198Z",
+ "generatedAt": "2026-10-16T22:29:08.491Z",
  "records": [
   {
    "id": "rabat-mountalak",
@@ -848,7 +848,7 @@
    "phone": "+212537603990",
    "dutyDate": "2026-10-15",
    "dutyType": "day",
-   "dutyLabel": "Garde Jour",
+   "dutyLabel": "Garde de jour",
    "hoursText": "9h-23h",
    "dutyStartDate": "2026-10-15",
    "dutyEndDate": "2026-10-15",
@@ -874,14 +874,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-al-anouar-s241888.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-10-16",
-     "lastCheckedAt": "2026-10-16T20:28:47.289Z",
+     "lastCheckedAt": "2026-10-16T22:29:10.527Z",
      "historyMatch": {
       "start": "2026-10-15",
       "end": "2026-10-16",
       "label": "Garde Jour"
      },
      "dutyType": "day",
-     "dutyLabel": "Garde Jour"
+     "dutyLabel": "Garde de jour"
     }
    ],
    "verificationStatus": "confirmed",
