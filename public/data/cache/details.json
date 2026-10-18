@@ -5957,5 +5957,67 @@
    ]
   },
   "fetchedAt": "2026-10-17T10:27:28.410Z"
+ },
+ "s254312": {
+  "detail": {
+   "name": "Pharmacie Ya Sin",
+   "address": "1-2 mosquée nahda hay nahda ii Rabat",
+   "phone": "+212537754008",
+   "latitude": 34.0218454,
+   "longitude": -6.8408929,
+   "history": [
+    {
+     "start": "2026-10-18",
+     "end": "2026-10-19",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-10-09",
+     "end": "2026-10-10",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-06-26",
+     "end": "2026-06-27",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-03-18",
+     "end": "2026-03-19",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-02-23",
+     "end": "2026-02-24",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-02-10",
+     "end": "2026-02-11",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-02-01",
+     "end": "2026-02-02",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-01-31",
+     "end": "2026-02-01",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-01-18",
+     "end": "2026-01-19",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2025-10-29",
+     "end": "2025-10-30",
+     "label": "Garde Jour et Nuit FAQ Questions fréquentes s"
+    }
+   ]
+  },
+  "fetchedAt": "2026-10-18T10:26:52.387Z"
  }
 }
