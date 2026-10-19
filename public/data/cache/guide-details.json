@@ -1058,5 +1058,205 @@
   "address": "Avenue Goundafa Angle Rue 6 Youssoufia, Tél / Fax: 0537 65 02 52",
   "phone": "+212537650252",
   "at": "2026-10-19T00:43:01.321Z"
+ },
+ "rabat|pharmacie al fatih": {
+  "address": "121, Av Med Belhassan el ouazzani, Groupe al araar Bloc 4",
+  "phone": "+212537631690",
+  "at": "2026-10-19T02:31:27.882Z"
+ },
+ "rabat|pharmacie mimosas": {
+  "address": "Magasin 15 Imm 8 Rés.mimosas Hay Elfath C.Y.M, A Côté Aswak Salam Hay Elfath",
+  "phone": "+212537292000",
+  "at": "2026-10-19T02:31:28.894Z"
+ },
+ "rabat|pharmacie bekkari": {
+  "address": "285 Rue Oulfa Bloc R Amal 3 - C.Y.M",
+  "phone": "+212537794184",
+  "at": "2026-10-19T02:31:30.464Z"
+ },
+ "rabat|pharmacie hay bouhlal": {
+  "address": "43, Groupe Al Itihad Av Sidi Mohamed Ben Abdellah, Hay Bouhlal - C.Y.M",
+  "phone": "+212537297717",
+  "at": "2026-10-19T02:31:31.927Z"
+ },
+ "sale|pharmacie azzedine": {
+  "address": "Route de mahdia résidence annajah 2, immeuble 17 magasin N° 1 Bouchouk",
+  "phone": "+212537849195",
+  "at": "2026-10-19T02:31:36.388Z"
+ },
+ "sale|pharmacie al a'araf": {
+  "address": "Avenue Atlas Al Kabir 26,, Rue Al Fadl Hay Chafaa",
+  "phone": "+212537808724",
+  "at": "2026-10-19T02:31:37.882Z"
+ },
+ "sale|pharmacie oum salma": {
+  "address": "تجزئة سلمى رقم 29 حي واد الذهب - لعيايدة",
+  "phone": "+212662629818",
+  "at": "2026-10-19T02:31:39.418Z"
+ },
+ "sale|pharmacie l'hopital de sale": {
+  "address": "Secteur D numéro 777 hay errahma",
+  "phone": "+212537871146",
+  "at": "2026-10-19T02:31:40.911Z"
+ },
+ "sale|pharmacie du maghreb arabe": {
+  "address": "Lot Villa 1223 N°4, Prés du lycée-Collège du Maghreb Arabe",
+  "phone": "+212537531310",
+  "at": "2026-10-19T02:31:42.412Z"
+ },
+ "sale|pharmacie al kasba": {
+  "address": "طريق البحر أمام سبيطار الحومة سيدي موسى, ومارشي سيدي موسى, الهاتف. 17 33 78 0537",
+  "phone": "+212537783317",
+  "at": "2026-10-19T02:31:43.930Z"
+ },
+ "sale|pharmacie mohamed v": {
+  "address": "6 Avenue Mohamed V Entre Redal et, Marjane Hay Karima Salé (Route Tramway Salé)",
+  "phone": "+212537863294",
+  "at": "2026-10-19T02:31:45.463Z"
+ },
+ "sale|pharmacie annajah": {
+  "address": "حي بوشوك النجاح طريق مهدية سلا",
+  "phone": "+212700908914",
+  "at": "2026-10-19T02:31:46.973Z"
+ },
+ "sale|pharmacie ghriss": {
+  "address": "Angle Rue Bir jdid et Nouasser N°53, A coté Hamam Cherkaoui",
+  "phone": "+212537813182",
+  "at": "2026-10-19T02:31:48.389Z"
+ },
+ "sale|pharmacie les jumelles ex: village": {
+  "address": "55, Avenue Hassan 2",
+  "phone": "+212537829500",
+  "at": "2026-10-19T02:31:49.975Z"
+ },
+ "sale|pharmacie nejjar": {
+  "address": "Centre Commercial Hay Essalam",
+  "phone": "+212537807141",
+  "at": "2026-10-19T02:31:51.523Z"
+ },
+ "sale|pharmacie zahraoui": {
+  "address": "Projet haddiqa Secteur al qods N 144 LAAYAYDA",
+  "phone": "+212530135079",
+  "at": "2026-10-19T02:31:52.939Z"
+ },
+ "sale|pharmacie al aqsa": {
+  "address": "Mag 20, Imm 14, Résidence Maamora 2, Sala Al Jadida",
+  "phone": "+212537830704",
+  "at": "2026-10-19T02:31:54.490Z"
+ },
+ "sale|pharmacie jardins maamoura": {
+  "address": "Résidence jardins maamoura imm 230 magasin 1",
+  "phone": "+212537536274",
+  "at": "2026-10-19T02:31:55.951Z"
+ },
+ "sale|pharmacie nouvelle medic": {
+  "address": "56 Bd Lalla Asmaa Tabriquet Tél: 0537 86 38 25",
+  "phone": "+212537863825",
+  "at": "2026-10-19T02:31:57.395Z"
+ },
+ "sale|pharmacie taiba": {
+  "address": "Lotissement Najah 1 Imm 37 Mag N°4, Route Mehdia",
+  "phone": "+212537877056",
+  "at": "2026-10-19T02:31:58.945Z"
+ },
+ "sale|pharmacie du plateau": {
+  "address": "6, Avenue Sakia Al Hamra",
+  "phone": "+212537781317",
+  "at": "2026-10-19T02:32:00.408Z"
+ },
+ "sale|pharmacie super arrahma": {
+  "address": "Bd Mohammed V Rési Adouiby N° 1 Sect A",
+  "phone": "+212537874895",
+  "at": "2026-10-19T02:32:02.108Z"
+ },
+ "sale|pharmacie safir": {
+  "address": "Sect 12 N°1584 Av Imam Malik et Av Med Alaoui",
+  "phone": "+212537802846",
+  "at": "2026-10-19T02:32:03.423Z"
+ },
+ "sale|pharmacie anwal": {
+  "address": "N 11 Rue Goulmime Avenue Base Aérienne Secteur Majd Laayayda",
+  "phone": "+212537875750",
+  "at": "2026-10-19T02:32:04.930Z"
+ },
+ "sale|pharmacie shems": {
+  "address": "Avenue Zarbia, N°4 Hssain",
+  "phone": "+212537835289",
+  "at": "2026-10-19T02:32:06.507Z"
+ },
+ "sale|pharmacie elixir": {
+  "address": "Rési bayti 1 Imm (J) N°1, proximite station carburant Afriquia",
+  "phone": "+212537531304",
+  "at": "2026-10-19T02:32:07.928Z"
+ },
+ "sale|pharmacie al wassat": {
+  "address": "N°1 Rue Tifelt Avenue Hassan II",
+  "phone": "+212530310030",
+  "at": "2026-10-19T02:32:09.433Z"
+ },
+ "sale|pharmacie kamar": {
+  "address": "Lotissement shems lot 219 Route de Kenitra",
+  "phone": "+212537822010",
+  "at": "2026-10-19T02:32:10.936Z"
+ },
+ "sale|pharmacie el menzeh": {
+  "address": "51, Rue Massira El Khadra",
+  "phone": "+212537803768",
+  "at": "2026-10-19T02:32:12.516Z"
+ },
+ "sale|pharmacie socrate": {
+  "address": "2157 Lot Sidi Abdellah Laayaada",
+  "phone": "+212537823462",
+  "at": "2026-10-19T02:32:13.911Z"
+ },
+ "sale|pharmacie carrefour": {
+  "address": "Centre commercial Carrefour Route de Kénitra",
+  "phone": "+212530167960",
+  "at": "2026-10-19T02:32:15.425Z"
+ },
+ "sale|pharmacie achouhadaa": {
+  "address": "425 Avenue achouhadaa Secteur 2",
+  "phone": "+212537811518",
+  "at": "2026-10-19T02:32:16.950Z"
+ },
+ "sale|pharmacie athènes": {
+  "address": "Av Abderrahim Bouabid Mag 3.4.5, قرب القرية المهنية سلا الجديدة",
+  "phone": "+212537531827",
+  "at": "2026-10-19T02:32:18.490Z"
+ },
+ "sale|pharmacie guissi": {
+  "address": "Av Bouregreg Imm,11 Zone C",
+  "phone": "+212537530345",
+  "at": "2026-10-19T02:32:19.953Z"
+ },
+ "sale|pharmacie rida": {
+  "address": "Avenue Lalla Amina, Prés de 2éme Arrondissement",
+  "phone": "+212537863680",
+  "at": "2026-10-19T02:32:21.483Z"
+ },
+ "sale|pharmacie abdedine": {
+  "address": "101, Bd Al Massira AlKhadra, Bettana, Prés Mosquée Palestine Et Café LA GRUTA",
+  "phone": "+212537845138",
+  "at": "2026-10-19T02:32:23.003Z"
+ },
+ "sale|pharmacie hay karima": {
+  "address": "46 avenue Med V Hay Karima",
+  "phone": "+212537855058",
+  "at": "2026-10-19T02:32:24.456Z"
+ },
+ "sale|pharmacie nahda": {
+  "address": "807, Av Andalouss, Secteur 3 Hay Salam",
+  "phone": "+212537800435",
+  "at": "2026-10-19T02:32:25.958Z"
+ },
+ "sale|pharmacie darshabab": {
+  "address": "شارع بوسكورة بويبلان حي وادي الذهب لعيايدة, Av. bouskoura bouiblane ,Hay oued dahab laayayda",
+  "phone": "+212537874444",
+  "at": "2026-10-19T02:32:27.488Z"
+ },
+ "sale|pharmacie al maârid": {
+  "address": "Avenue My Abdellah, Centre commercial AL MAÂRID Etage I",
+  "phone": "+212537534950",
+  "at": "2026-10-19T02:32:28.960Z"
  }
 }
