@@ -6029,5 +6029,67 @@
    ]
   },
   "fetchedAt": "2026-10-18T10:26:52.387Z"
+ },
+ "s253449": {
+  "detail": {
+   "name": "Pharmacie Al Mouhafada",
+   "address": "1105, massira i. en face de la conservation foncière",
+   "phone": "+212537604590",
+   "latitude": 33.9334298,
+   "longitude": -6.8948306,
+   "history": [
+    {
+     "start": "2026-10-19",
+     "end": "2026-10-20",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-08-24",
+     "end": "2026-08-25",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-08-09",
+     "end": "2026-08-10",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-08-08",
+     "end": "2026-08-09",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-06-26",
+     "end": "2026-06-27",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-03-20",
+     "end": "2026-03-21",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-03-13",
+     "end": "2026-03-14",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-03-08",
+     "end": "2026-03-09",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-03-07",
+     "end": "2026-03-08",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-02-03",
+     "end": "2026-02-04",
+     "label": "Garde Jour et Nuit FAQ Questions fréquentes s"
+    }
+   ]
+  },
+  "fetchedAt": "2026-10-19T10:36:08.375Z"
  }
 }

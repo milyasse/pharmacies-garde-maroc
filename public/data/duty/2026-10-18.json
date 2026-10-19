@@ -1,6 +1,6 @@
 {
  "date": "2026-10-18",
- "generatedAt": "2026-10-19T08:40:02.308Z",
+ "generatedAt": "2026-10-19T10:34:16.063Z",
  "records": [
   {
    "id": "rabat-bahja",
@@ -312,9 +312,7 @@
    ],
    "verificationStatus": "confirmed",
    "confidenceLevel": "high",
-   "notes": [
-    "Numéros de téléphone différents selon les sources."
-   ]
+   "notes": []
   },
   {
    "id": "rabat-ryad",
@@ -1199,7 +1197,7 @@
    "phone": "+212537560866",
    "dutyDate": "2026-10-18",
    "dutyType": "day",
-   "dutyLabel": "Garde de jour",
+   "dutyLabel": "Garde Jour",
    "hoursText": "9h-23h",
    "dutyStartDate": "2026-10-18",
    "dutyEndDate": "2026-10-18",
@@ -1225,14 +1223,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-annassiha-s236856.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-19T08:40:08.573Z",
+     "lastCheckedAt": "2026-10-19T10:35:40.265Z",
      "historyMatch": {
       "start": "2026-10-18",
       "end": "2026-10-19",
       "label": "Garde Jour"
      },
      "dutyType": "day",
-     "dutyLabel": "Garde de jour"
+     "dutyLabel": "Garde Jour"
     }
    ],
    "verificationStatus": "confirmed",
@@ -1497,9 +1495,7 @@
    ],
    "verificationStatus": "confirmed",
    "confidenceLevel": "high",
-   "notes": [
-    "Numéros de téléphone différents selon les sources."
-   ]
+   "notes": []
   },
   {
    "id": "temara-regragui",
