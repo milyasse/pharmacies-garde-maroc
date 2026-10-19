@@ -1258,5 +1258,100 @@
   "address": "Avenue My Abdellah, Centre commercial AL MAÂRID Etage I",
   "phone": "+212537534950",
   "at": "2026-10-19T02:32:28.960Z"
+ },
+ "sale|pharmacie al mouahad": {
+  "address": "9, Av El Mehdi Ibn Toumert Hay El Mouahidine",
+  "phone": "+212537860968",
+  "at": "2026-10-19T04:34:41.208Z"
+ },
+ "sale|pharmacie mrissa": {
+  "address": "3 Rue Idriss Sbihi – Prés Clinique Beauséjour",
+  "phone": "+212537845299",
+  "at": "2026-10-19T04:34:42.320Z"
+ },
+ "sale|pharmacie nour sale ex: himmich": {
+  "address": "Lot. Salima 2 Imm. 13 Mag. 1 Route de Kénitra",
+  "phone": "+212537880717",
+  "at": "2026-10-19T04:34:43.767Z"
+ },
+ "temara|pharmacie erraha": {
+  "address": "Rue daj guich oudaya, Prés du centre dentaire Kobry",
+  "phone": "+212537561393",
+  "at": "2026-10-19T04:34:48.240Z"
+ },
+ "temara|pharmacie la grande pharmacie de tamesna": {
+  "address": "172, Marina d'or (à côté de jouteya Tamesna)",
+  "phone": "+212537013065",
+  "at": "2026-10-19T04:34:49.778Z"
+ },
+ "temara|pharmacie jnane el fouarate": {
+  "address": "Alintissar N49, El Fouarate",
+  "phone": "+212530463424",
+  "at": "2026-10-19T04:34:51.323Z"
+ },
+ "temara|pharmacie fatine": {
+  "address": "863 Av Moulay Ali Cherif Hay Al Maghreb Al Arabi Massira 2",
+  "phone": "+212537602705",
+  "at": "2026-10-19T04:34:52.802Z"
+ },
+ "temara|pharmacie nassim el bahr": {
+  "address": "47 Lot II Résidence Roches Blanches II Harhoura",
+  "phone": "+212537744699",
+  "at": "2026-10-19T04:34:54.253Z"
+ },
+ "temara|pharmacie annaourasse": {
+  "address": "Lotissement Al Hachimia II, N°226",
+  "phone": "+212537642975",
+  "at": "2026-10-19T04:34:55.822Z"
+ },
+ "temara|pharmacie leila": {
+  "address": "168 Hay Al Firdaous Massira 1 Temara Proche De La Poste",
+  "phone": "+212537608606",
+  "at": "2026-10-19T04:34:57.357Z"
+ },
+ "temara|pharmacie les roches blanches": {
+  "address": "Av Moulay Abdellah, Temara plage (Casino)",
+  "phone": "+212537744707",
+  "at": "2026-10-19T04:34:58.808Z"
+ },
+ "temara|pharmacie la paix": {
+  "address": "20, Avenue Tarek ibn Zyad",
+  "phone": "+212537642705",
+  "at": "2026-10-19T04:35:00.313Z"
+ },
+ "temara|pharmacie el massira": {
+  "address": "Sect3 N°336 (Prés de l'institut Najah)",
+  "phone": "+212537606057",
+  "at": "2026-10-19T04:35:02.094Z"
+ },
+ "temara|pharmacie al farabi": {
+  "address": "عمارة 3 تجزئة المستقبل مسيرة 1, Imm 3 Lotissement Al Mostakbal - Massira 1",
+  "phone": "+212537605603",
+  "at": "2026-10-19T04:35:03.268Z"
+ },
+ "temara|pharmacie amina": {
+  "address": "45 masrour 2 - Temara",
+  "phone": "+212537610939",
+  "at": "2026-10-19T04:35:04.767Z"
+ },
+ "temara|pharmacie abi horaira": {
+  "address": "15 Av du Caire Lot. Abi Horaira, Oued Addahab",
+  "phone": "+212537641458",
+  "at": "2026-10-19T04:35:06.319Z"
+ },
+ "temara|pharmacie essalama": {
+  "address": "2 Avenue Mohamed 5, A Côte de Masjid Ennour et du lycée Al Ghazali",
+  "phone": "+212537747662",
+  "at": "2026-10-19T04:35:07.805Z"
+ },
+ "temara|pharmacie al fajr": {
+  "address": "Avenue My Ali Cherif",
+  "phone": "+212537601592",
+  "at": "2026-10-19T04:35:09.264Z"
+ },
+ "temara|pharmacie chatea": {
+  "address": "N°39 residence chatea bethoven harhoura",
+  "phone": "+212537744975",
+  "at": "2026-10-19T04:35:10.824Z"
  }
 }
