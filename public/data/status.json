@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-19T10:34:16.063Z",
+ "generatedAt": "2026-10-19T12:41:33.407Z",
  "todayMorocco": "2026-10-19",
  "dates": [
   "2026-10-12",
@@ -30,22 +30,22 @@
    "sourceName": "annuaire-gratuit.ma",
    "city": "rabat",
    "url": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
-   "ok": false,
-   "pageDate": null,
-   "count": 0,
-   "error": "Page inaccessible : fetch failed",
-   "checkedAt": "2026-10-19T10:34:16.083Z"
+   "ok": true,
+   "pageDate": "2026-10-19",
+   "count": 6,
+   "error": null,
+   "checkedAt": "2026-10-19T12:41:33.435Z"
   },
   {
    "sourceId": "annuaire-gratuit",
    "sourceName": "annuaire-gratuit.ma",
    "city": "sale",
    "url": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
-   "ok": false,
-   "pageDate": null,
-   "count": 0,
-   "error": "Page inaccessible : fetch failed",
-   "checkedAt": "2026-10-19T10:34:58.195Z"
+   "ok": true,
+   "pageDate": "2026-10-19",
+   "count": 8,
+   "error": null,
+   "checkedAt": "2026-10-19T12:41:43.073Z"
   },
   {
    "sourceId": "annuaire-gratuit",
@@ -56,7 +56,7 @@
    "pageDate": "2026-10-19",
    "count": 2,
    "error": null,
-   "checkedAt": "2026-10-19T10:35:40.265Z"
+   "checkedAt": "2026-10-19T12:41:53.564Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -67,7 +67,7 @@
    "pageDate": "2026-10-19",
    "count": 48,
    "error": null,
-   "checkedAt": "2026-10-19T10:36:08.381Z"
+   "checkedAt": "2026-10-19T12:41:54.955Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -78,7 +78,7 @@
    "pageDate": "2026-10-26",
    "count": 58,
    "error": null,
-   "checkedAt": "2026-10-19T10:36:11.018Z"
+   "checkedAt": "2026-10-19T12:41:57.999Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -89,7 +89,7 @@
    "pageDate": "2026-10-19",
    "count": 61,
    "error": null,
-   "checkedAt": "2026-10-19T10:36:11.860Z"
+   "checkedAt": "2026-10-19T12:41:58.976Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -100,7 +100,7 @@
    "pageDate": "2026-10-26",
    "count": 56,
    "error": null,
-   "checkedAt": "2026-10-19T10:36:13.277Z"
+   "checkedAt": "2026-10-19T12:42:00.459Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -111,7 +111,7 @@
    "pageDate": "2026-10-19",
    "count": 31,
    "error": null,
-   "checkedAt": "2026-10-19T10:36:14.779Z"
+   "checkedAt": "2026-10-19T12:42:01.934Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -122,7 +122,7 @@
    "pageDate": "2026-10-26",
    "count": 36,
    "error": null,
-   "checkedAt": "2026-10-19T10:36:16.242Z"
+   "checkedAt": "2026-10-19T12:42:03.426Z"
   }
  ],
  "connectors": [

@@ -1,6 +1,6 @@
 {
  "date": "2026-10-18",
- "generatedAt": "2026-10-19T10:34:16.063Z",
+ "generatedAt": "2026-10-19T12:41:33.407Z",
  "records": [
   {
    "id": "rabat-bahja",
@@ -534,7 +534,7 @@
    "phone": "+212537780777",
    "dutyDate": "2026-10-18",
    "dutyType": "day",
-   "dutyLabel": "Garde de jour",
+   "dutyLabel": "Garde Jour",
    "hoursText": "9h-23h",
    "dutyStartDate": "2026-10-18",
    "dutyEndDate": "2026-10-18",
@@ -560,14 +560,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-al-omrane-s250921.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-19T08:40:07.497Z",
+     "lastCheckedAt": "2026-10-19T12:41:43.073Z",
      "historyMatch": {
       "start": "2026-10-18",
       "end": "2026-10-19",
       "label": "Garde Jour"
      },
      "dutyType": "day",
-     "dutyLabel": "Garde de jour"
+     "dutyLabel": "Garde Jour"
     }
    ],
    "verificationStatus": "confirmed",
@@ -716,7 +716,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-de-la-poste-s238440.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-19T08:40:07.497Z",
+     "lastCheckedAt": "2026-10-19T12:41:43.073Z",
      "historyMatch": {
       "start": "2026-10-18",
       "end": "2026-10-19",
@@ -1223,7 +1223,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-annassiha-s236856.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-19T10:35:40.265Z",
+     "lastCheckedAt": "2026-10-19T12:41:53.564Z",
      "historyMatch": {
       "start": "2026-10-18",
       "end": "2026-10-19",
