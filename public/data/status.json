@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-19T12:41:33.407Z",
+ "generatedAt": "2026-10-19T14:38:01.021Z",
  "todayMorocco": "2026-10-19",
  "dates": [
   "2026-10-12",
@@ -34,7 +34,7 @@
    "pageDate": "2026-10-19",
    "count": 6,
    "error": null,
-   "checkedAt": "2026-10-19T12:41:33.435Z"
+   "checkedAt": "2026-10-19T14:38:01.036Z"
   },
   {
    "sourceId": "annuaire-gratuit",
@@ -45,7 +45,7 @@
    "pageDate": "2026-10-19",
    "count": 8,
    "error": null,
-   "checkedAt": "2026-10-19T12:41:43.073Z"
+   "checkedAt": "2026-10-19T14:38:02.298Z"
   },
   {
    "sourceId": "annuaire-gratuit",
@@ -56,7 +56,7 @@
    "pageDate": "2026-10-19",
    "count": 2,
    "error": null,
-   "checkedAt": "2026-10-19T12:41:53.564Z"
+   "checkedAt": "2026-10-19T14:38:04.751Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -67,7 +67,7 @@
    "pageDate": "2026-10-19",
    "count": 48,
    "error": null,
-   "checkedAt": "2026-10-19T12:41:54.955Z"
+   "checkedAt": "2026-10-19T14:38:06.695Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -78,7 +78,7 @@
    "pageDate": "2026-10-26",
    "count": 58,
    "error": null,
-   "checkedAt": "2026-10-19T12:41:57.999Z"
+   "checkedAt": "2026-10-19T14:38:08.659Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -89,7 +89,7 @@
    "pageDate": "2026-10-19",
    "count": 61,
    "error": null,
-   "checkedAt": "2026-10-19T12:41:58.976Z"
+   "checkedAt": "2026-10-19T14:38:09.527Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -100,7 +100,7 @@
    "pageDate": "2026-10-26",
    "count": 56,
    "error": null,
-   "checkedAt": "2026-10-19T12:42:00.459Z"
+   "checkedAt": "2026-10-19T14:38:11.042Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -109,9 +109,9 @@
    "url": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html",
    "ok": true,
    "pageDate": "2026-10-19",
-   "count": 31,
+   "count": 32,
    "error": null,
-   "checkedAt": "2026-10-19T12:42:01.934Z"
+   "checkedAt": "2026-10-19T14:38:12.562Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -122,7 +122,7 @@
    "pageDate": "2026-10-26",
    "count": 36,
    "error": null,
-   "checkedAt": "2026-10-19T12:42:03.426Z"
+   "checkedAt": "2026-10-19T14:38:15.605Z"
   }
  ],
  "connectors": [
