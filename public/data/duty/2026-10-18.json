@@ -1,6 +1,6 @@
 {
  "date": "2026-10-18",
- "generatedAt": "2026-10-19T20:32:48.742Z",
+ "generatedAt": "2026-10-19T22:30:05.576Z",
  "records": [
   {
    "id": "rabat-bahja",
@@ -534,7 +534,7 @@
    "phone": "+212537780777",
    "dutyDate": "2026-10-18",
    "dutyType": "day",
-   "dutyLabel": "Garde Jour",
+   "dutyLabel": "Garde de jour",
    "hoursText": "9h-23h",
    "dutyStartDate": "2026-10-18",
    "dutyEndDate": "2026-10-18",
@@ -560,14 +560,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-al-omrane-s250921.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-19T20:32:49.853Z",
+     "lastCheckedAt": "2026-10-19T22:30:08.705Z",
      "historyMatch": {
       "start": "2026-10-18",
       "end": "2026-10-19",
       "label": "Garde Jour"
      },
      "dutyType": "day",
-     "dutyLabel": "Garde Jour"
+     "dutyLabel": "Garde de jour"
     }
    ],
    "verificationStatus": "confirmed",
@@ -716,7 +716,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-de-la-poste-s238440.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-19T20:32:49.853Z",
+     "lastCheckedAt": "2026-10-19T22:30:08.705Z",
      "historyMatch": {
       "start": "2026-10-18",
       "end": "2026-10-19",
@@ -1197,7 +1197,7 @@
    "phone": "+212537560866",
    "dutyDate": "2026-10-18",
    "dutyType": "day",
-   "dutyLabel": "Garde Jour",
+   "dutyLabel": "Garde de jour",
    "hoursText": "9h-23h",
    "dutyStartDate": "2026-10-18",
    "dutyEndDate": "2026-10-18",
@@ -1223,14 +1223,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-annassiha-s236856.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-19T20:32:50.529Z",
+     "lastCheckedAt": "2026-10-19T22:30:09.082Z",
      "historyMatch": {
       "start": "2026-10-18",
       "end": "2026-10-19",
       "label": "Garde Jour"
      },
      "dutyType": "day",
-     "dutyLabel": "Garde Jour"
+     "dutyLabel": "Garde de jour"
     }
    ],
    "verificationStatus": "confirmed",
