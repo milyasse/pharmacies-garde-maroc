@@ -1,6 +1,6 @@
 {
  "date": "2026-10-19",
- "generatedAt": "2026-10-20T20:32:06.975Z",
+ "generatedAt": "2026-10-20T22:30:31.070Z",
  "records": [
   {
    "id": "rabat-masjid",
@@ -833,7 +833,7 @@
    "phone": "+212537560866",
    "dutyDate": "2026-10-19",
    "dutyType": "day",
-   "dutyLabel": "Garde Jour",
+   "dutyLabel": "Garde de jour",
    "hoursText": "9h-23h",
    "dutyStartDate": "2026-10-19",
    "dutyEndDate": "2026-10-19",
@@ -859,14 +859,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-annassiha-s236856.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-10-20",
-     "lastCheckedAt": "2026-10-20T20:32:11.206Z",
+     "lastCheckedAt": "2026-10-20T22:30:32.849Z",
      "historyMatch": {
       "start": "2026-10-19",
       "end": "2026-10-20",
       "label": "Garde Jour"
      },
      "dutyType": "day",
-     "dutyLabel": "Garde Jour"
+     "dutyLabel": "Garde de jour"
     }
    ],
    "verificationStatus": "confirmed",
