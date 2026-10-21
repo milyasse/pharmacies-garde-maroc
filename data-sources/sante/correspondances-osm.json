@@ -1,0 +1,20 @@
+{
+  "objet": "Correspondances établies à la main entre la liste officielle du ministère de la Santé et les objets OpenStreetMap, uniquement quand le nom identifie l'établissement sans ambiguïté. La position, le téléphone, les spécialités et la mention des urgences viennent alors d'OpenStreetMap ; la catégorie officielle vient du ministère.",
+  "verifieLe": "2026-10-21",
+  "correspondances": [
+    { "ministere": "Ibn Sina", "osm": ["relation/21685408"], "justification": "OSM « Hopital Ibn Sina / CHU Ibn Sina », Rabat-Souissi" },
+    { "ministere": "Hôpital Des Spécialités", "osm": ["way/789176305"], "justification": "OSM « Hopital Des Spécialités / CHU Ibn Sina »" },
+    { "ministere": "Maternité Souissi", "osm": ["way/171435526"], "justification": "OSM « Maternite du Souissi / CHU Ibn Sina »" },
+    { "ministere": "Hôpital D'enfants", "osm": ["way/482745795", "way/171435524"], "justification": "OSM « Hôpital des Enfants du CHU Ibn Sina » (deux contours du même bâtiment)" },
+    { "ministere": "Med Ben Abdellah", "osm": ["way/1037424831"], "nomUsuel": "Institut national d'oncologie Sidi Mohamed Ben Abdellah", "justification": "Institut national d'oncologie Sidi Mohamed Ben Abdellah ; OSM « المعهد الوطني للانكولوجيا » (Institut national d'oncologie), Rabat" },
+    { "ministere": "El Ayachi", "osm": ["way/789273401"], "justification": "OSM « مستشفى العياشي » (hôpital El Ayachi), Salé" },
+    { "ministere": "Princesse Lalla Aicha (Ancien Sidi Lahcen)", "osm": ["way/738368993"], "justification": "OSM « Hospital Sidi Lahcen », Témara (ancien nom indiqué par le ministère)" }
+  ],
+  "nonRapproches": [
+    { "ministere": "My Youssef", "raison": "Deux entrées « Moulay Youssef » au ministère (HIR et HR) pour un seul objet OSM : correspondance ambiguë." },
+    { "ministere": "Moulay Youssef (Ancien hôpital de Rabat)", "raison": "Idem." },
+    { "ministere": "Moulay Abdellah (Hôp.préféctoral)", "raison": "Deux établissements « Moulay Abdellah » dans OSM (ancien et nouvel hôpital) : correspondance ambiguë." },
+    { "ministere": "Maternité Orangers", "raison": "Absente d'OpenStreetMap (ne pas confondre avec la « Clinique des Orangers »)." },
+    { "ministere": "Arrazi", "raison": "Absent d'OpenStreetMap sous ce nom." }
+  ]
+}

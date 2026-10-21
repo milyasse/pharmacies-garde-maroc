@@ -1,8 +1,8 @@
 # Pharmacies de Garde Maroc
 
-Version actuelle : **1.5.3** — voir [CHANGELOG.md](CHANGELOG.md).
+Version actuelle : **1.6.0** — voir [CHANGELOG.md](CHANGELOG.md).
 
-Application web installable (PWA) qui trouve les **pharmacies de garde autour de vous**, pour une **date** et un **rayon** donnés, à partir de sources publiques datées — démarrage sur **Rabat, Salé et Témara**.
+Application web installable (PWA) qui trouve les **pharmacies de garde autour de vous** — et, depuis la v1.6, les **cliniques et hôpitaux** (onglet dédié, lien direct `#/cliniques`) —, pour une **date** et un **rayon** donnés, à partir de sources publiques datées — démarrage sur **Rabat, Salé et Témara**.
 
 - Position GPS, adresse (Nominatim) ou point touché sur la carte
 - Date (aujourd'hui par défaut), rayon 1–30 km ou personnalisé, filtre jour / nuit / 24h
@@ -13,6 +13,15 @@ Application web installable (PWA) qui trouve les **pharmacies de garde autour de
 - Design : fichier Figma « Pharmacies de Garde Maroc — UI » (tokens, composants, écrans mobile/desktop)
 
 > Les informations sont collectées automatiquement sur des sites publics. En cas de doute, appelez la pharmacie avant de vous déplacer.
+
+## Espace « Cliniques et hôpitaux » (v1.6)
+
+- Recherche par ville (Rabat, Salé, Témara), par position GPS, adresse ou point sur la carte, dans un rayon en km.
+- Filtres : type (hôpital public, clinique privée, hôpital privé, hôpital militaire, statut non publié, autre), service (urgences, maternité, pédiatrie, cardiologie… seulement ceux publiés), « urgences déclarées uniquement ».
+- Classement par distance croissante ou décroissante, carte et liste synchronisées, itinéraire OSRM, appel, Google Maps.
+- Fiche : type et catégorie officielle, adresse, coordonnées, téléphone, spécialités, urgences, horaires, garde, sources et dates.
+- Données : liste officielle du ministère de la Santé (data.gov.ma) + OpenStreetMap + saisies vérifiées — voir [SOURCES.md](SOURCES.md). Aucun établissement n'est présenté « de garde » sans désignation officielle.
+- Code : `src/shared/health/` (modèle, construction, recherche), `scripts/collect-health.ts` (collecte), `src/components/health/` (interface). La carte, la géolocalisation, le rayon et les itinéraires sont ceux de l'espace Pharmacies (`PharmacyMap`, `OriginPicker`, `RadiusPicker`, `services/routing.ts`).
 
 ## Architecture (100 % GitHub, gratuite)
 
@@ -40,6 +49,7 @@ Prérequis : Node.js ≥ 22.6.
 npm install
 npm test                 # tests unitaires et de bout en bout (sans réseau)
 npm run collect          # collecte réelle → public/data/
+npm run collect:sante    # cliniques et hôpitaux → public/data/sante/ (OSM ≤ 1 fois/jour)
 npm run dev              # http://localhost:5173
 ```
 
@@ -112,7 +122,7 @@ manual/                   saisie manuelle de tableaux officiels
 
 ## Tests
 
-`npm test` (35 tests, Node `node:test`, sans dépendance ni réseau) couvre : Haversine, filtrage par rayon, classement et rangs, dates/fuseau/plages horaires, types de garde, téléphones, parseurs liste/fiche, statuts de fiabilité, expiration, gardes de nuit de la veille, doublons et contradictions, collecteur de bout en bout, couleurs de rang.
+`npm test` (51 tests, Node `node:test`, sans dépendance ni réseau) couvre : Haversine, filtrage par rayon, classement et rangs, dates/fuseau/plages horaires, types de garde, téléphones, parseurs liste/fiche, statuts de fiabilité, expiration, gardes de nuit de la veille, doublons et contradictions, collecteur de bout en bout, couleurs de rang.
 
 Les pages modèles de `tests/fixtures/` reproduisent la structure observée des pages sources ; elles ne remplacent pas un essai réel (`npm run check:sources`).
 

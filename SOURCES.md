@@ -32,3 +32,23 @@ Zone de démarrage : **Rabat, Salé, Témara**.
 ## Si la source change ou bloque
 
 Le collecteur marque la source « en erreur » (fichier `public/data/status.json`, visible dans l'app → Paramètres) et le workflow affiche un avertissement. Lancez `npm run check:sources` en local pour voir le détail. Les parseurs sont dans `src/shared/connectors/annuaireGratuit.ts` et s'appuient sur des motifs stables (liens de fiche `-s<id>.html`, liens `destination=lat,lng`, dates ISO de l'historique) plutôt que sur des classes CSS.
+
+# Cliniques et hôpitaux — sources (21/10/2026)
+
+| Source | Statut | Ce qu'elle publie | Limites |
+|---|---|---|---|
+| **Ministère de la Santé — « Liste des hôpitaux 2022 »** ([data.gov.ma](https://data.gov.ma/data/fr/dataset/la-liste-des-hopitaux), ODbL) | **Active** | Liste nominative officielle des hôpitaux publics par délégation et catégorie (12 pour Rabat, Salé, Skhirate-Témara) | Ni adresse, ni coordonnées, ni téléphone, ni urgences. Données de 2022 (mises à jour le 14/11/2023). Extraite telle quelle dans `data-sources/sante/ministere-hopitaux-2022.json`. |
+| **OpenStreetMap** (Overpass API, ODbL) | **Active** | Position, nom (français/arabe), parfois adresse, téléphone, site, spécialités (`healthcare:speciality`), présence d'urgences (`emergency=yes/no`), horaires (`opening_hours`) | Données contributives : complètes pour certains établissements, absentes pour d'autres. Interrogé **au plus une fois par jour** (usage raisonnable). Cabinets, laboratoires, centres de dialyse et objets sans nom sont écartés. |
+| Correspondances ministère ↔ OSM | Vérifiées à la main | `data-sources/sante/correspondances-osm.json` : 7 rapprochements sans ambiguïté, 5 refusés (homonymes, absence d'OSM) avec leur raison | Un hôpital officiel non rapproché est listé « position non publiée ». |
+| Saisie manuelle (`manual/sante.json`) | Disponible, vide | Horaires vérifiés, urgences confirmées, désignations officielles de garde — chaque entrée avec source et date | Rien n'est affiché sans source. |
+| Ministère de la Santé — établissements de soins de santé primaire 2024 | Non utilisée | Centres de santé (urbains et ruraux) | Hors du périmètre « cliniques et hôpitaux » ; peut être ajoutée plus tard. |
+| Liste officielle des hôpitaux / cliniques « de garde » | **Non trouvée** | — | Aucune source officielle en ligne ne désigne des hôpitaux ou cliniques « de garde » à Rabat, Salé ou Témara. L'application n'affiche donc jamais ce statut, sauf désignation officielle saisie dans `manual/sante.json`. |
+
+## Niveaux d'information affichés (jamais confondus)
+
+1. **Répertorié** : présent dans au moins une source identifiable (ministère, OpenStreetMap).
+2. **Urgences déclarées** : une source mentionne un service d'urgences (OSM `emergency=yes` ou vérification manuelle). Cela ne garantit ni l'ouverture ni une garde.
+3. **Horaires vérifiés** : uniquement après une vérification datée et sourcée (`manual/sante.json`). Les horaires OSM sont affichés « non vérifiés ».
+4. **De garde (désignation officielle)** : uniquement si une source officielle le désigne pour la date du jour.
+
+Le type (hôpital public, clinique privée…) vient du ministère, de l'opérateur déclaré dans OSM ou, à défaut, du nom (« Clinique … », « CHU … ») — dans ce cas la fiche indique « d'après le nom ». Les services déduits du nom (ex. « Maternité … ») sont marqués d'un astérisque.

@@ -21,6 +21,8 @@ jobs:
           npm install --no-audit --no-fund
           mkdir -p marketing/verif
           (npm run typecheck > marketing/verif/typecheck.txt 2>&1 && echo "TYPECHECK OK" >> marketing/verif/typecheck.txt) || echo "TYPECHECK EN ERREUR" >> marketing/verif/typecheck.txt
+          npm test > marketing/verif/tests.txt 2>&1 && echo "TESTS OK" >> marketing/verif/tests.txt || echo "TESTS EN ERREUR" >> marketing/verif/tests.txt
+          npm run collect:sante -- --force > marketing/verif/collecte-sante.txt 2>&1 || npm run collect:sante -- --osm-fixture tests/fixtures/osm-sante-2026-10-21.json >> marketing/verif/collecte-sante.txt 2>&1
           npm run build 2>&1 | tail -25 > marketing/verif/build.txt
       - name: Installer Playwright
         run: |
@@ -40,6 +42,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
           git add marketing/verif
-          git commit -m "Vérification de l'interface" || exit 0
-          git pull --rebase origin main
-          git push origin HEAD:main
+          git add public/data/sante 2>/dev/null || true
+          git commit -m "Vérification de l'interface [skip ci]" || exit 0
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

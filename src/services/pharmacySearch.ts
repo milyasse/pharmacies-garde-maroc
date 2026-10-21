@@ -27,8 +27,8 @@ async function getJson<T>(url: string, signal?: AbortSignal): Promise<T | null> 
   }
 }
 
-/** Requête mise en cache 5 min (les requêtes identiques en cours sont partagées). */
-function cached<T>(url: string, force = false): Promise<T | null> {
+/** Requête mise en cache 5 min (les requêtes identiques en cours sont partagées). Réutilisée par l'espace Cliniques & hôpitaux. */
+export function cachedJson<T>(url: string, force = false): Promise<T | null> {
   const hit = cache.get(url);
   if (!force && hit && Date.now() - hit.at < TTL_MS) return hit.value as Promise<T | null>;
   const value = getJson<T>(url).catch((e) => {
@@ -40,13 +40,13 @@ function cached<T>(url: string, force = false): Promise<T | null> {
 }
 
 export function loadStatus(force = false) {
-  return cached<CollectorStatus>(`${CONFIG.dataUrl}/status.json`, force);
+  return cachedJson<CollectorStatus>(`${CONFIG.dataUrl}/status.json`, force);
 }
 
 export async function loadSnapshots(date: string, force = false) {
   const [day, prev] = await Promise.all([
-    cached<DutySnapshot>(`${CONFIG.dataUrl}/duty/${date}.json`, force),
-    cached<DutySnapshot>(`${CONFIG.dataUrl}/duty/${addDays(date, -1)}.json`, force),
+    cachedJson<DutySnapshot>(`${CONFIG.dataUrl}/duty/${date}.json`, force),
+    cachedJson<DutySnapshot>(`${CONFIG.dataUrl}/duty/${addDays(date, -1)}.json`, force),
   ]);
   return { day, prev };
 }

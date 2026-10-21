@@ -6,6 +6,8 @@ import { PharmacyList, type SortBy } from './components/PharmacyList.tsx';
 import { MapLegend } from './components/MapLegend.tsx';
 import { SourceStatus } from './components/SourceStatus.tsx';
 import { CityOverview } from './components/CityOverview.tsx';
+import { SpaceTabs, type Space } from './components/SpaceTabs.tsx';
+import { HealthSpace } from './components/health/HealthSpace.tsx';
 import type { RouteState } from './components/PharmacyCard.tsx';
 import { getCurrentPosition, type GeoError } from './services/geolocation.ts';
 import { searchPlace } from './services/geocoding.ts';
@@ -49,6 +51,21 @@ type SearchState =
 const originKey = (o: Origin | null) => (o ? `${o.lat.toFixed(5)},${o.lng.toFixed(5)}` : '');
 
 export default function App() {
+  // Espace affiché : « Pharmacies de garde » (URL inchangée) ou « Cliniques et hôpitaux » (#/cliniques)
+  const [space, setSpaceState] = useState<Space>(() => (window.location.hash.startsWith('#/cliniques') ? 'sante' : 'pharmacies'));
+  const [healthSignal, setHealthSignal] = useState(0);
+  const setSpace = useCallback((s: Space) => {
+    setSpaceState(s);
+    const url = s === 'sante' ? '#/cliniques' : window.location.pathname + window.location.search;
+    if (s === 'sante') window.location.hash = '/cliniques';
+    else window.history.replaceState(null, '', url);
+    window.scrollTo({ top: 0 });
+  }, []);
+  useEffect(() => {
+    const onHash = () => setSpaceState(window.location.hash.startsWith('#/cliniques') ? 'sante' : 'pharmacies');
+    window.addEventListener('hashchange', onHash);
+    return () => window.removeEventListener('hashchange', onHash);
+  }, []);
   const [origin, setOrigin] = useState<Origin | null>(null);
   const [originError, setOriginError] = useState<string | null>(null);
   const [geoHelp, setGeoHelp] = useState<{ message: string; help: string[] } | null>(null);
@@ -202,7 +219,7 @@ export default function App() {
   const criteriaChanged = search.state === 'done' && (search.date !== date || search.radiusKm !== radiusKm || search.dutyFilter !== dutyFilter || search.originKey !== originKey(origin));
 
   // ---------- Position
-  const locate = useCallback(async (andSearch = false) => {
+  const locate = useCallback(async (andSearch = false): Promise<boolean> => {
     setLocating(true);
     setOriginError(null);
     setGeoHelp(null);
@@ -211,10 +228,12 @@ export default function App() {
       setOrigin({ lat: g.lat, lng: g.lng, label: 'Ma position', kind: 'gps', accuracyM: g.accuracyM });
       setPicking(false);
       if (andSearch) requestSearch();
+      return true;
     } catch (e) {
       const err = e as GeoError;
       setGeoHelp({ message: err.message, help: err.help ?? [] });
       window.scrollTo({ top: 0, behavior: 'smooth' });
+      return false;
     } finally {
       setLocating(false);
     }
@@ -317,7 +336,7 @@ export default function App() {
 
   return (
     <div className="flex min-h-full flex-col lg:h-full">
-      <Header onLocate={() => void locate(true)} locating={locating} onOpenSettings={() => setSettingsOpen(true)} />
+      <Header onLocate={() => { if (space === 'pharmacies') void locate(true); else void locate(false).then((ok) => ok && setHealthSignal((n) => n + 1)); }} locating={locating} onOpenSettings={() => setSettingsOpen(true)} />
       {geoHelp && (
         <div role="alert" className="border-b border-warn-600/30 bg-warn-50 px-4 py-3 text-sm text-warn-600 lg:px-6">
           <div className="flex items-start gap-2">
@@ -332,7 +351,18 @@ export default function App() {
           <button type="button" onClick={() => void locate()} className="mt-2 rounded-xl bg-brand-700 px-3 py-2 text-sm font-bold text-white">Réessayer</button>
         </div>
       )}
-      <main className="flex-1 lg:grid lg:min-h-0 lg:grid-cols-[440px_1fr]">
+      <SpaceTabs space={space} onChange={setSpace} />
+      {space === 'sante' ? (
+        <HealthSpace
+          origin={origin}
+          setOrigin={setOrigin}
+          locating={locating}
+          onLocate={() => locate(false)}
+          mode={mode}
+          searchSignal={healthSignal}
+        />
+      ) : (
+      <main id="espace-pharmacies" className="flex-1 lg:grid lg:min-h-0 lg:grid-cols-[440px_1fr]">
         <div className="lg:min-h-0 lg:overflow-y-auto lg:border-r lg:border-line">
           <CityOverview
             date={date}
@@ -401,6 +431,7 @@ export default function App() {
           <div className="lg:hidden">{renderResults()}</div>
         </div>
       </main>
+      )}
       <footer className="border-t border-line bg-white px-4 py-2 text-center text-[11px] text-muted">
         Pharmacies de Garde Maroc · v{APP_VERSION} ({BUILD_SHA})
       </footer>
