@@ -20,7 +20,8 @@ import { addDays, formatFrDate, formatMoroccoDateTime, isIsoDate, moroccoDate } 
 import { haversineKm } from './shared/distance.ts';
 import { CITIES, CITY_NAME, CONNECTORS } from './shared/connectors/registry.ts';
 import { CONFIG } from './config.ts';
-import { SpinnerIcon } from './components/icons.tsx';
+import { ResultsSkeleton } from './components/ResultsSkeleton.tsx';
+import { useMediaQuery, DESKTOP } from './hooks/useMediaQuery.ts';
 import { APP_VERSION, BUILD_SHA } from './version.ts';
 
 // Préférences non sensibles uniquement (jamais la position)
@@ -54,6 +55,7 @@ export default function App() {
   // Espace affiché : « Pharmacies de garde » (URL inchangée) ou « Cliniques et hôpitaux » (#/cliniques)
   const [space, setSpaceState] = useState<Space>(() => (window.location.hash.startsWith('#/cliniques') ? 'sante' : 'pharmacies'));
   const [healthSignal, setHealthSignal] = useState(0);
+  const isDesktop = useMediaQuery(DESKTOP); // la liste de résultats n'est rendue qu'une fois (à gauche sur ordinateur, sous la carte sur téléphone)
   const setSpace = useCallback((s: Space) => {
     setSpaceState(s);
     const url = s === 'sante' ? '#/cliniques' : window.location.pathname + window.location.search;
@@ -194,6 +196,8 @@ export default function App() {
       const first = outcome.ranked[0]?.id ?? null;
       setSelectedId(first);
       setCollapsed(true);
+      // sur téléphone : amener la carte et les résultats à l'écran
+      if (!window.matchMedia(DESKTOP).matches) setTimeout(() => mapBox.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 80);
     } catch (e) {
       if (seq !== searchSeq.current) return;
       setSearch({ state: 'error', error: (e as Error).message });
@@ -405,11 +409,11 @@ export default function App() {
             />
           )}
 
-          <div className="hidden lg:block">{renderResults()}</div>
+          {isDesktop && renderResults()}
         </div>
 
         <div className="flex flex-col lg:min-h-0">
-          <div ref={mapBox} className="relative h-[48vh] min-h-[300px] scroll-mt-2 lg:h-auto lg:flex-1">
+          <div ref={mapBox} className="relative h-[48vh] min-h-[300px] scroll-mt-14 lg:h-auto lg:flex-1">
             <PharmacyMap
               origin={origin}
               radiusKm={radiusKm}
@@ -428,7 +432,7 @@ export default function App() {
             />
           </div>
           <div className="bg-white px-4 py-2"><MapLegend count={view?.ranked.length ?? 5} /></div>
-          <div className="lg:hidden">{renderResults()}</div>
+          {!isDesktop && renderResults()}
         </div>
       </main>
       )}
@@ -450,7 +454,7 @@ export default function App() {
       );
     }
     if (search.state === 'loading') {
-      return <p className="flex items-center gap-2 p-4 text-sm font-semibold lg:px-6" role="status"><SpinnerIcon /> Recherche des gardes publiées…</p>;
+      return <ResultsSkeleton label="Recherche des gardes publiées…" />;
     }
     if (search.state === 'error') {
       return (

@@ -4,11 +4,15 @@ OK  — pharmacies : pas de recherche automatique après changement de rayon
 OK  — pharmacies : résultats affichés (« 13 pharmacies de garde »)
 OK  — espace Cliniques : URL #/cliniques
 OK  — cliniques : recherche par ville (Rabat) → « 39 établissements »
-OK  — cliniques : fiche avec statuts, urgences, garde et source
+OK  — cliniques : fiche avec statuts, urgences, garde et sources
+OK  — cliniques : formulaire replié en résumé après la recherche (bouton « Modifier »)
 OK  — cliniques : aucun établissement « de garde » sans source officielle
 OK  — cliniques : 39 marqueurs pour 39 fiches
 OK  — cliniques : tri décroissant (premier : 8,6 km contre 391 m)
 OK  — cliniques : filtre « urgences déclarées » → 9 établissement(s)
+OK  — cliniques : « Calculer les trajets » → 9/9 distance(s) routière(s)
+OK  — cliniques : tri par durée de trajet
+OK  — cliniques : « Tous les itinéraires » → 19 tracés sur la carte
 OK  — cliniques : itinéraire calculé (ou erreur explicite)
 OK  — cliniques : cas « aucun établissement trouvé » avec actions proposées
 OK  — retour à l’espace Pharmacies (URL d’origine)

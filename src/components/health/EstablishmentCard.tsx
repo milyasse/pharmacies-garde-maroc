@@ -98,7 +98,6 @@ export const EstablishmentCard = forwardRef<HTMLElement, {
       {route?.error && <p role="alert" className="mt-2 text-xs font-semibold text-danger-600">{route.error}</p>}
 
       <p className="mt-3 text-[13px]">{e.address ?? <span className="italic text-muted">Adresse non publiée par les sources</span>}</p>
-      {located && <p className="text-[11px] font-medium text-muted">Coordonnées : {e.latitude!.toFixed(5)}, {e.longitude!.toFixed(5)}</p>}
 
       <dl className="mt-2 space-y-1 text-[13px]">
         <div className="flex gap-1.5">
@@ -131,27 +130,42 @@ export const EstablishmentCard = forwardRef<HTMLElement, {
 
       {e.services.length > 0 && (
         <ul className="mt-2 flex flex-wrap gap-1.5" aria-label="Spécialités et services">
-          {e.services.map((s) => (
+          {e.services.slice(0, 6).map((s) => (
             <li key={s.id} className={`rounded-full px-2.5 py-0.5 text-xs font-bold ${s.id === 'emergency' ? 'bg-danger-50 text-danger-600' : 'bg-brand-50 text-brand-700'}`}
               title={`Source : ${INFO_SOURCE_LABEL[s.source]}`}>
               {SERVICE_LABEL[s.id]}{s.source === 'nom' ? ' *' : ''}
             </li>
           ))}
+          {e.services.length > 6 && <li className="rounded-full bg-bg px-2.5 py-0.5 text-xs font-bold text-muted">+{e.services.length - 6}</li>}
         </ul>
       )}
-      {e.services.some((s) => s.source === 'nom') && <p className="mt-1 text-[11px] text-muted">* déduit du nom de l’établissement</p>}
       {e.notes.map((n) => <p key={n} className="mt-1 text-xs font-semibold text-warn-600">• {n}</p>)}
 
-      <p className="mt-2 text-[11px] font-medium text-muted">
-        Source{e.sources.length > 1 ? 's' : ''} :{' '}
-        {e.sources.map((s, i) => (
-          <span key={s.url + i}>
-            {i > 0 && ', '}
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="underline" onClick={(ev) => ev.stopPropagation()}>{s.name}</a>
-            {s.dataDate ? ` (données du ${formatShortDate(s.dataDate)})` : ''}
-          </span>
-        ))}
-      </p>
+      <details className="mt-2 rounded-xl bg-bg px-3 py-2" onClick={(ev) => ev.stopPropagation()}>
+        <summary className="flex cursor-pointer items-center justify-between text-xs font-bold text-muted">
+          Détails et sources
+          <svg className="chev h-4 w-4 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+        </summary>
+        <div className="mt-2 space-y-1.5 text-[12px]">
+          {e.services.length > 6 && (
+            <p><b>Tous les services :</b> {e.services.map((s) => SERVICE_LABEL[s.id] + (s.source === 'nom' ? ' *' : '')).join(', ')}</p>
+          )}
+          {e.services.some((s) => s.source === 'nom') && <p className="text-muted">* déduit du nom de l’établissement</p>}
+          {located && <p><b>Coordonnées :</b> {e.latitude!.toFixed(5)}, {e.longitude!.toFixed(5)}</p>}
+          {e.phone && <p><b>Téléphone :</b> {formatPhone(e.phone)}</p>}
+          <p className="text-muted">
+            <b className="text-ink">Source{e.sources.length > 1 ? 's' : ''} :</b>{' '}
+            {e.sources.map((s, i) => (
+              <span key={s.url + i}>
+                {i > 0 && ', '}
+                <a href={s.url} target="_blank" rel="noopener noreferrer" className="underline">{s.name}</a>
+                {s.dataDate ? ` (données du ${formatShortDate(s.dataDate)})` : ''}
+                {s.license ? ` — ${s.license}` : ''}
+              </span>
+            ))}
+          </p>
+        </div>
+      </details>
 
       <div className="mt-3 grid grid-cols-3 gap-2" onClick={(ev) => ev.stopPropagation()}>
         <button type="button" disabled={!located} onClick={onShowOnMap} className="rounded-xl bg-brand-50 py-2.5 text-sm font-bold text-brand-700 disabled:opacity-40">
@@ -169,7 +183,6 @@ export const EstablishmentCard = forwardRef<HTMLElement, {
         )}
       </div>
       <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1" onClick={(ev) => ev.stopPropagation()}>
-        {e.phone && <span className="text-xs font-bold text-muted">{formatPhone(e.phone)}</span>}
         {located && (
           <a href={googleMapsDirectionsUrl(origin, { lat: e.latitude!, lng: e.longitude! }, mode)} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs font-bold text-muted underline">
             Ouvrir dans Google Maps <ExternalIcon size={13} />

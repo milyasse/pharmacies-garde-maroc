@@ -77,7 +77,7 @@ export function buildResults(params: {
 }
 
 /** Re-classe selon la durée de trajet (les pharmacies sans durée calculée passent après). */
-export function sortByDuration(list: Pharmacy[]): Pharmacy[] {
+export function sortByDuration<T extends { estimatedTravelMinutes: number | null; distanceStraightLineKm: number | null }>(list: T[]): T[] {
   return [...list]
     .sort((a, b) => {
       const da = a.estimatedTravelMinutes, db = b.estimatedTravelMinutes;

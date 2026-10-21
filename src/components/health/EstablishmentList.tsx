@@ -1,12 +1,15 @@
 // Liste des établissements, synchronisée avec la carte (même logique que la liste des pharmacies).
 import { useEffect, useRef } from 'react';
 import type { EstablishmentResult } from '../../shared/health/types.ts';
-import type { SortOrder } from '../../shared/health/search.ts';
 import type { LatLng } from '../../shared/distance.ts';
 import type { TravelMode } from '../../services/routing.ts';
 import type { RouteState } from '../PharmacyCard.tsx';
 import { EstablishmentCard } from './EstablishmentCard.tsx';
-import { RefreshIcon, WarnIcon } from '../icons.tsx';
+import { RefreshIcon, SpinnerIcon, WarnIcon } from '../icons.tsx';
+
+/** Ordre d'affichage : distance croissante, décroissante, ou durée de trajet (après calcul). */
+export type HealthSort = 'asc' | 'desc' | 'duration';
+const SORT_LABEL: Record<HealthSort, string> = { asc: 'Plus proches', desc: 'Plus éloignés', duration: 'Durée' };
 
 export function EstablishmentList(props: {
   radiusKm: number;
@@ -15,8 +18,12 @@ export function EstablishmentList(props: {
   outside: number;
   filteredOut: number;
   filtersActive: boolean;
-  sort: SortOrder;
-  onSort: (s: SortOrder) => void;
+  sort: HealthSort;
+  onSort: (s: HealthSort) => void;
+  onComputeAll: () => void;
+  computingAll: boolean;
+  showAllRoutes: boolean;
+  onShowAllRoutes: (v: boolean) => void;
   selectedId: string | null;
   origin: LatLng | null;
   mode: TravelMode;
@@ -58,7 +65,7 @@ export function EstablishmentList(props: {
           <h2 className="text-base font-extrabold" aria-live="polite">
             {n === 0 ? 'Aucun établissement' : `${n} établissement${n > 1 ? 's' : ''}`}
           </h2>
-          <p className="text-xs font-medium text-muted">dans {props.radiusKm} km · {props.sort === 'asc' ? 'du plus proche au plus éloigné' : 'du plus éloigné au plus proche'}</p>
+          <p className="text-xs font-medium text-muted">dans {props.radiusKm} km · {props.sort === 'asc' ? 'du plus proche au plus éloigné' : props.sort === 'desc' ? 'du plus éloigné au plus proche' : 'triés par durée de trajet'}</p>
         </div>
         <button type="button" onClick={props.onRefresh} className="rounded-xl border-[1.5px] border-brand-700 p-2 text-brand-700" aria-label="Actualiser les résultats" title="Actualiser">
           <RefreshIcon size={18} />
@@ -72,15 +79,28 @@ export function EstablishmentList(props: {
         </div>
       )}
 
-      {n > 1 && (
-        <div className="grid w-fit grid-cols-2 gap-1 rounded-xl bg-white p-1 text-sm" role="group" aria-label="Tri par distance">
-          {(['asc', 'desc'] as SortOrder[]).map((s) => (
-            <button key={s} type="button" aria-pressed={props.sort === s} onClick={() => props.onSort(s)}
-              className={`rounded-lg px-3 py-1.5 ${props.sort === s ? 'bg-brand-700 font-bold text-white' : 'font-semibold text-muted'}`}>
-              {s === 'asc' ? 'Plus proches d’abord' : 'Plus éloignés d’abord'}
-            </button>
-          ))}
+      {n > 0 && (
+        <div className="flex flex-wrap items-center gap-2">
+          <div className="grid grid-cols-3 gap-1 rounded-xl bg-white p-1 text-sm" role="group" aria-label="Tri">
+            {(['asc', 'desc', 'duration'] as HealthSort[]).map((s) => (
+              <button key={s} type="button" aria-pressed={props.sort === s} onClick={() => props.onSort(s)}
+                className={`rounded-lg px-3 py-1.5 ${props.sort === s ? 'bg-brand-700 font-bold text-white' : 'font-semibold text-muted'}`}>
+                {SORT_LABEL[s]}
+              </button>
+            ))}
+          </div>
+          <button type="button" onClick={props.onComputeAll} disabled={props.computingAll || !props.origin}
+            className="inline-flex items-center gap-1.5 rounded-xl bg-brand-50 px-3 py-2 text-sm font-bold text-brand-700 disabled:opacity-50">
+            {props.computingAll && <SpinnerIcon size={15} />} Calculer les trajets
+          </button>
+          <label className="inline-flex items-center gap-2 text-sm font-semibold">
+            <input type="checkbox" checked={props.showAllRoutes} onChange={(e) => props.onShowAllRoutes(e.target.checked)} className="h-4 w-4 accent-[#0b5d3b]" />
+            Tous les itinéraires
+          </label>
         </div>
+      )}
+      {props.sort === 'duration' && n > 0 && props.list.some((e) => e.estimatedTravelMinutes === null) && (
+        <p className="text-xs text-muted">Les établissements dont la durée n’est pas encore calculée sont placés à la fin. Les numéros restent ceux du classement par proximité.</p>
       )}
 
       {n === 0 && (

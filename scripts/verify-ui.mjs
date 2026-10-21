@@ -60,7 +60,8 @@ await section('Parcours mobile', async () => {
   check(n > 0, `cliniques : recherche par ville (Rabat) → « ${head} »`);
   const cards = page.locator('#espace-sante article');
   const first = await cards.first().innerText().catch(() => '');
-  check(/Répertorié/.test(first) && /Garde :/.test(first) && /Urgences :/.test(first) && /Source/.test(first), 'cliniques : fiche avec statuts, urgences, garde et source');
+  check(/Répertorié/.test(first) && /Garde :/.test(first) && /Urgences :/.test(first) && /sources/i.test(first), 'cliniques : fiche avec statuts, urgences, garde et sources');
+  check(/Modifier/.test(await page.locator('#espace-sante').innerText()), 'cliniques : formulaire replié en résumé après la recherche (bouton « Modifier »)');
   check(!/De garde \(désignation officielle\)/.test(await page.locator('#espace-sante').innerText()), 'cliniques : aucun établissement « de garde » sans source officielle');
   await page.screenshot({ path: `${OUT}/sante-rabat.png` });
   // marqueurs sur la carte = nombre de fiches classées
@@ -69,13 +70,15 @@ await section('Parcours mobile', async () => {
   // tri décroissant
   const dist = async () => (await page.locator('#espace-sante article').evaluateAll((els) => els.slice(0, 50).map((e) => e.querySelector('p.text-\\[15px\\]')?.textContent ?? '')));
   const asc = await dist();
-  await page.getByRole('button', { name: /Plus éloignés d’abord/ }).click();
+  await page.getByRole('button', { name: /^Plus éloignés$/ }).click();
   await wait(500);
   const desc = await dist();
   const km = (t) => { const m = (t || '').match(/([\d,]+)\s*(km|m)/); return m ? Number(m[1].replace(',', '.')) / (m[2] === 'm' ? 1000 : 1) : NaN; };
   check(n < 2 || km(desc[0]) > km(asc[0]), `cliniques : tri décroissant (premier : ${desc[0]} contre ${asc[0]})`);
-  await page.getByRole('button', { name: /Plus proches d’abord/ }).click();
+  await page.getByRole('button', { name: /^Plus proches$/ }).click();
   // filtre urgences
+  const modifier = () => page.locator('#espace-sante').getByRole('button', { name: 'Modifier' }).click();
+  await modifier();
   await page.getByText('Urgences déclarées uniquement').click();
   await page.getByRole('button', { name: /Rechercher les établissements/ }).click();
   await wait(1500);
@@ -83,6 +86,22 @@ await section('Parcours mobile', async () => {
   const nu = Number((urgText.match(/^(\d+) établissement/m) || [])[1] || 0);
   check(nu > 0 && nu <= n, `cliniques : filtre « urgences déclarées » → ${nu} établissement(s)`);
   await page.screenshot({ path: `${OUT}/sante-urgences.png` });
+  // « Calculer les trajets » + tri par durée + tous les itinéraires
+  await page.locator('#espace-sante').getByRole('button', { name: /Calculer les trajets/ }).click();
+  await page.waitForFunction(() => { const b = [...document.querySelectorAll('#espace-sante button')].find((x) => /Calculer les trajets/.test(x.textContent || '')); return b && !b.disabled; }, null, { timeout: 60000 }).catch(() => {});
+  await wait(800);
+  const roads = await page.locator('#espace-sante article:visible').evaluateAll((els) => els.filter((e) => /\d+(,\d)? (km|m)\s*par la route/.test(e.innerText)).length);
+  check(roads >= Math.min(nu, 2), `cliniques : « Calculer les trajets » → ${roads}/${nu} distance(s) routière(s)`);
+  await page.locator('#espace-sante').getByRole('button', { name: /^Durée$/ }).click();
+  await wait(400);
+  check(/triés par durée de trajet/.test(await page.locator('#espace-sante section[aria-label="Résultats"]').first().innerText()), 'cliniques : tri par durée de trajet');
+  await page.locator('#espace-sante').getByText('Tous les itinéraires').click();
+  await wait(800);
+  const lines = await page.locator('#espace-sante .leaflet-overlay-pane path').count();
+  check(lines >= 4, `cliniques : « Tous les itinéraires » → ${lines} tracés sur la carte`);
+  await page.screenshot({ path: `${OUT}/sante-trajets.png` });
+  await page.locator('#espace-sante').getByText('Tous les itinéraires').click();
+  await page.locator('#espace-sante').getByRole('button', { name: /^Plus proches$/ }).click();
   // itinéraire vers le premier
   const routeBtn = page.locator('#espace-sante article:visible').first().getByRole('button', { name: /Itinéraire/ });
   if (await routeBtn.isEnabled()) {
@@ -93,9 +112,11 @@ await section('Parcours mobile', async () => {
     await page.screenshot({ path: `${OUT}/sante-itineraire.png` });
   }
   // aucun résultat : service rare + rayon 2 km au centre de Témara
+  await modifier();
   await page.getByText('Urgences déclarées uniquement').click();
   await page.getByRole('button', { name: /^Témara/ }).first().click();
   await wait(1200);
+  await modifier();
   await page.getByRole('button', { name: /^2 ?km$/ }).last().click();
   const opts = await page.locator('#sante-service option').evaluateAll((o) => o.map((x) => x.value));
   if (opts.includes('nuclear')) await page.locator('#sante-service').selectOption('nuclear');
