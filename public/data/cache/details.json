@@ -5729,6 +5729,11 @@
    "longitude": -6.8976293,
    "history": [
     {
+     "start": "2026-10-21",
+     "end": "2026-10-22",
+     "label": "Garde Jour et Nuit"
+    },
+    {
      "start": "2026-10-18",
      "end": "2026-10-19",
      "label": "Garde Jour et Nuit"
@@ -5771,16 +5776,11 @@
     {
      "start": "2026-02-21",
      "end": "2026-02-22",
-     "label": "Garde Jour et Nuit"
-    },
-    {
-     "start": "2026-02-05",
-     "end": "2026-02-06",
      "label": "Garde Jour et Nuit Services / Spécialités : P"
     }
    ]
   },
-  "fetchedAt": "2026-10-19T00:41:26.371Z"
+  "fetchedAt": "2026-10-21T10:35:15.505Z"
  },
  "s13066": {
   "detail": {
@@ -7760,5 +7760,1019 @@
    ]
   },
   "fetchedAt": "2026-10-20T10:31:58.728Z"
+ },
+ "s241505": {
+  "detail": {
+   "name": "Pharmacie Ibn Khatab",
+   "address": "angle av omar bin khattab et av abtal (en face arribat centerentrée bershka)",
+   "phone": "+212537775781",
+   "latitude": 34.0023226,
+   "longitude": -6.8481478,
+   "history": [
+    {
+     "start": "2026-10-21",
+     "end": "2026-10-22",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-09-01",
+     "end": "2026-09-02",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-08-20",
+     "end": "2026-08-21",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-07-26",
+     "end": "2026-07-27",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-07-25",
+     "end": "2026-07-26",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-07-20",
+     "end": "2026-07-21",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-06-02",
+     "end": "2026-06-03",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-04-13",
+     "end": "2026-04-14",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-03-17",
+     "end": "2026-03-18",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-01-26",
+     "end": "2026-01-27",
+     "label": "Garde Jour et Nuit FAQ Questions fréquentes s"
+    }
+   ]
+  },
+  "fetchedAt": "2026-10-21T10:34:48.642Z"
+ },
+ "s57231": {
+  "detail": {
+   "name": "Pharmacie Ben Omar",
+   "address": null,
+   "phone": "+212537769930",
+   "latitude": 34.0154464,
+   "longitude": -6.8271746,
+   "history": [
+    {
+     "start": "2026-10-21",
+     "end": "2026-10-22",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-09-18",
+     "end": "2026-09-19",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-08-13",
+     "end": "2026-08-14",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-08-02",
+     "end": "2026-08-03",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-08-01",
+     "end": "2026-08-02",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-07-10",
+     "end": "2026-07-11",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-06-17",
+     "end": "2026-06-18",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-06-08",
+     "end": "2026-06-09",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-03-31",
+     "end": "2026-04-01",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-02-25",
+     "end": "2026-02-26",
+     "label": "Garde Jour et Nuit FAQ Questions fréquentes s"
+    }
+   ]
+  },
+  "fetchedAt": "2026-10-21T10:34:49.905Z"
+ },
+ "s255191": {
+  "detail": {
+   "name": "Pharmacie",
+   "address": "Coordonnées",
+   "phone": null,
+   "latitude": 28.3347722,
+   "longitude": -10.3713379,
+   "history": [
+    {
+     "start": "2026-10-21",
+     "end": "2026-10-22",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-09-16",
+     "end": "2026-09-17",
+     "label": "Garde Jour et Nuit Avis sur Pharmacie Noter e"
+    }
+   ]
+  },
+  "fetchedAt": "2026-10-21T10:34:51.367Z"
+ },
+ "s237247": {
+  "detail": {
+   "name": "Pharmacie Ibn Nafis",
+   "address": "12, rue Jazirat Al Arab",
+   "phone": "+212537720657",
+   "latitude": 34.02270126,
+   "longitude": -6.84247017,
+   "history": [
+    {
+     "start": "2026-10-21",
+     "end": "2026-10-22",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-10-11",
+     "end": "2026-10-12",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-10-10",
+     "end": "2026-10-11",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-09-08",
+     "end": "2026-09-09",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-07-20",
+     "end": "2026-07-21",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-07-12",
+     "end": "2026-07-13",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-07-11",
+     "end": "2026-07-12",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-06-04",
+     "end": "2026-06-05",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-04-17",
+     "end": "2026-04-18",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-04-12",
+     "end": "2026-04-13",
+     "label": "Garde Jour FAQ Questions fréquentes sur Pharm"
+    }
+   ]
+  },
+  "fetchedAt": "2026-10-21T10:34:52.879Z"
+ },
+ "s137602": {
+  "detail": {
+   "name": "Pharmacie Assabah",
+   "address": null,
+   "phone": "+212537790375",
+   "latitude": 33.9925698,
+   "longitude": -6.8818687,
+   "history": [
+    {
+     "start": "2026-10-21",
+     "end": "2026-10-22",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-09-17",
+     "end": "2026-09-18",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-08-30",
+     "end": "2026-08-31",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-08-29",
+     "end": "2026-08-30",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-08-11",
+     "end": "2026-08-12",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-07-07",
+     "end": "2026-07-08",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-06-02",
+     "end": "2026-06-03",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-04-24",
+     "end": "2026-04-25",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-03-23",
+     "end": "2026-03-24",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-03-15",
+     "end": "2026-03-16",
+     "label": "Garde Jour FAQ Questions fréquentes sur Pharm"
+    }
+   ]
+  },
+  "fetchedAt": "2026-10-21T10:34:54.365Z"
+ },
+ "s243442": {
+  "detail": {
+   "name": "Pharmacie El Kouass",
+   "address": "732 j5 boulevard al massira al khadra c.y.m",
+   "phone": "+212537794099",
+   "latitude": 33.9823688,
+   "longitude": -6.8809463,
+   "history": [
+    {
+     "start": "2026-10-21",
+     "end": "2026-10-22",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-09-17",
+     "end": "2026-09-18",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-08-30",
+     "end": "2026-08-31",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-08-29",
+     "end": "2026-08-30",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-08-11",
+     "end": "2026-08-12",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-07-07",
+     "end": "2026-07-08",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-06-02",
+     "end": "2026-06-03",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-04-24",
+     "end": "2026-04-25",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-03-23",
+     "end": "2026-03-24",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-03-15",
+     "end": "2026-03-16",
+     "label": "Garde Jour FAQ Questions fréquentes sur Pharm"
+    }
+   ]
+  },
+  "fetchedAt": "2026-10-21T10:34:55.867Z"
+ },
+ "s253988": {
+  "detail": {
+   "name": "Pharmacie L 039 Avenir",
+   "address": "23, m3 av el majd hay el fath c.y.m",
+   "phone": "+212537798871",
+   "latitude": 34.0218454,
+   "longitude": -6.8408929,
+   "history": [
+    {
+     "start": "2026-10-21",
+     "end": "2026-10-22",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-09-17",
+     "end": "2026-09-18",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-08-30",
+     "end": "2026-08-31",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-08-29",
+     "end": "2026-08-30",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-08-11",
+     "end": "2026-08-12",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-07-07",
+     "end": "2026-07-08",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-06-02",
+     "end": "2026-06-03",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-04-24",
+     "end": "2026-04-25",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-03-23",
+     "end": "2026-03-24",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-03-15",
+     "end": "2026-03-16",
+     "label": "Garde Jour et Nuit FAQ Questions fréquentes s"
+    }
+   ]
+  },
+  "fetchedAt": "2026-10-21T10:34:57.368Z"
+ },
+ "s237256": {
+  "detail": {
+   "name": "Pharmacie Sakani",
+   "address": "rte de Kénitra, quartier Bouchouk résidence sakani 2",
+   "phone": "+212537846070",
+   "latitude": 34.04489899,
+   "longitude": -6.81402016,
+   "history": [
+    {
+     "start": "2026-10-21",
+     "end": "2026-10-22",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-10-01",
+     "end": "2026-10-02",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-09-11",
+     "end": "2026-09-12",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-08-30",
+     "end": "2026-08-31",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-08-29",
+     "end": "2026-08-30",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-08-24",
+     "end": "2026-08-25",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-08-04",
+     "end": "2026-08-05",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-07-30",
+     "end": "2026-07-31",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-07-14",
+     "end": "2026-07-15",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-06-04",
+     "end": "2026-06-05",
+     "label": "Garde Jour et Nuit FAQ Questions fréquentes s"
+    }
+   ]
+  },
+  "fetchedAt": "2026-10-21T10:35:00.464Z"
+ },
+ "s236298": {
+  "detail": {
+   "name": "Pharmacie AlHanane",
+   "address": "18, rue Abda, résid. Idriss II Bettana",
+   "phone": "+212537801585",
+   "latitude": 34.0309216,
+   "longitude": -6.7990198,
+   "history": [
+    {
+     "start": "2026-10-21",
+     "end": "2026-10-22",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-10-02",
+     "end": "2026-10-03",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-09-15",
+     "end": "2026-09-16",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-08-27",
+     "end": "2026-08-28",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-08-05",
+     "end": "2026-08-06",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-08-02",
+     "end": "2026-08-03",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-08-01",
+     "end": "2026-08-02",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-07-16",
+     "end": "2026-07-17",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-06-29",
+     "end": "2026-06-30",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-06-09",
+     "end": "2026-06-10",
+     "label": "Garde Jour FAQ Questions fréquentes sur Pharm"
+    }
+   ]
+  },
+  "fetchedAt": "2026-10-21T10:35:03.025Z"
+ },
+ "s252724": {
+  "detail": {
+   "name": "Pharmacie Docteur Hilal",
+   "address": "av. ismailia assoualem, hay alamal 2, n°486, ( à côté de résidences bayt almostakbal 2 lotissement sidi abdellah) laayayda 11050",
+   "phone": "+212538909650",
+   "latitude": 34.0808594,
+   "longitude": -6.7678709,
+   "history": [
+    {
+     "start": "2026-10-21",
+     "end": "2026-10-22",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-09-17",
+     "end": "2026-09-18",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-08-30",
+     "end": "2026-08-31",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-08-29",
+     "end": "2026-08-30",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-08-17",
+     "end": "2026-08-18",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-07-14",
+     "end": "2026-07-15",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-06-10",
+     "end": "2026-06-11",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-04-03",
+     "end": "2026-04-04",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-03-17",
+     "end": "2026-03-18",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-03-15",
+     "end": "2026-03-16",
+     "label": "Garde Jour et Nuit FAQ Questions fréquentes s"
+    }
+   ]
+  },
+  "fetchedAt": "2026-10-21T10:35:03.843Z"
+ },
+ "s241344": {
+  "detail": {
+   "name": "Pharmacie La Base",
+   "address": "cité de l'air 7/9 1er bafra(en face de la base aérienne)",
+   "phone": "+212537805774",
+   "latitude": 34.0445077,
+   "longitude": -6.7769645,
+   "history": [
+    {
+     "start": "2026-10-21",
+     "end": "2026-10-22",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-09-29",
+     "end": "2026-09-30",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-09-07",
+     "end": "2026-09-08",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-09-06",
+     "end": "2026-09-07",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-09-05",
+     "end": "2026-09-06",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-07-22",
+     "end": "2026-07-23",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-06-30",
+     "end": "2026-07-01",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-06-08",
+     "end": "2026-06-09",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-04-21",
+     "end": "2026-04-22",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-03-30",
+     "end": "2026-03-31",
+     "label": "Garde Jour FAQ Questions fréquentes sur Pharm"
+    }
+   ]
+  },
+  "fetchedAt": "2026-10-21T10:35:05.324Z"
+ },
+ "s241717": {
+  "detail": {
+   "name": "Pharmacie El Ouedghiri De Sale",
+   "address": "av 20 aout sect 11bis (prés du terminus 15.14)",
+   "phone": "+212537801479",
+   "latitude": 34.0444132,
+   "longitude": -6.7811508,
+   "history": [
+    {
+     "start": "2026-10-21",
+     "end": "2026-10-22",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-09-23",
+     "end": "2026-09-24",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-09-06",
+     "end": "2026-09-07",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-09-05",
+     "end": "2026-09-06",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-08-28",
+     "end": "2026-08-29",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-08-04",
+     "end": "2026-08-05",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-07-08",
+     "end": "2026-07-09",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-06-12",
+     "end": "2026-06-13",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-04-21",
+     "end": "2026-04-22",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-04-12",
+     "end": "2026-04-13",
+     "label": "Garde Jour et Nuit FAQ Questions fréquentes s"
+    }
+   ]
+  },
+  "fetchedAt": "2026-10-21T10:35:06.487Z"
+ },
+ "s253806": {
+  "detail": {
+   "name": "Pharmacie Elkharras",
+   "address": "résidence émeraude hssain ouled hlal maamoura",
+   "phone": "+212530384838",
+   "latitude": 34.0515706,
+   "longitude": -6.8125429,
+   "history": [
+    {
+     "start": "2026-10-21",
+     "end": "2026-10-22",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-09-17",
+     "end": "2026-09-18",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-08-25",
+     "end": "2026-08-26",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-08-13",
+     "end": "2026-08-14",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-07-09",
+     "end": "2026-07-10",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-06-05",
+     "end": "2026-06-06",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-03-26",
+     "end": "2026-03-27",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-02-18",
+     "end": "2026-02-19",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-01-15",
+     "end": "2026-01-16",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2025-12-12",
+     "end": "2025-12-13",
+     "label": "Garde Jour FAQ Questions fréquentes sur Pharm"
+    }
+   ]
+  },
+  "fetchedAt": "2026-10-21T10:35:07.991Z"
+ },
+ "s236240": {
+  "detail": {
+   "name": "Pharmacie Bayti",
+   "address": "av mohamed v g28 mag n°1.28 bayti 2",
+   "phone": "+212537533359",
+   "latitude": 33.9943675,
+   "longitude": -6.7289503,
+   "history": [
+    {
+     "start": "2026-10-21",
+     "end": "2026-10-22",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-09-25",
+     "end": "2026-09-26",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-09-01",
+     "end": "2026-09-02",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-08-05",
+     "end": "2026-08-06",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-07-09",
+     "end": "2026-07-10",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-06-21",
+     "end": "2026-06-22",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-06-20",
+     "end": "2026-06-21",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-06-15",
+     "end": "2026-06-16",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-04-21",
+     "end": "2026-04-22",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-03-26",
+     "end": "2026-03-27",
+     "label": "Garde Jour FAQ Questions fréquentes sur Pharm"
+    }
+   ]
+  },
+  "fetchedAt": "2026-10-21T10:35:09.515Z"
+ },
+ "s236321": {
+  "detail": {
+   "name": "Pharmacie Ibtissam",
+   "address": "3 et 4 lot sbihi avenue lalla amina",
+   "phone": "+212537862105",
+   "latitude": 34.04489899,
+   "longitude": -6.81402016,
+   "history": [
+    {
+     "start": "2026-10-21",
+     "end": "2026-10-22",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-09-07",
+     "end": "2026-09-08",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-07-22",
+     "end": "2026-07-23",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-06-28",
+     "end": "2026-06-29",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-06-27",
+     "end": "2026-06-28",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-06-08",
+     "end": "2026-06-09",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-04-21",
+     "end": "2026-04-22",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-02-04",
+     "end": "2026-02-05",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2025-12-22",
+     "end": "2025-12-23",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2025-11-06",
+     "end": "2025-11-07",
+     "label": "Garde Jour et Nuit FAQ Questions fréquentes s"
+    }
+   ]
+  },
+  "fetchedAt": "2026-10-21T10:35:10.954Z"
+ },
+ "s241605": {
+  "detail": {
+   "name": "Pharmacie Lahkim",
+   "address": "rés. al ghourfa route sidi yahia",
+   "phone": "+212537405742",
+   "latitude": 33.8974053,
+   "longitude": -6.9206869,
+   "history": [
+    {
+     "start": "2026-10-21",
+     "end": "2026-10-22",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-09-13",
+     "end": "2026-09-14",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-09-12",
+     "end": "2026-09-13",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-02-22",
+     "end": "2026-02-23",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-02-21",
+     "end": "2026-02-22",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2025-11-25",
+     "end": "2025-11-26",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2025-08-10",
+     "end": "2025-08-11",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2025-08-09",
+     "end": "2025-08-10",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2025-06-25",
+     "end": "2025-06-26",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2025-05-01",
+     "end": "2025-05-02",
+     "label": "Garde Jour et Nuit FAQ Questions fréquentes s"
+    }
+   ]
+  },
+  "fetchedAt": "2026-10-21T10:35:13.944Z"
+ },
+ "s241119": {
+  "detail": {
+   "name": "Pharmacie Tarik El Fellah",
+   "address": "km 4 route el fellah - harhoura",
+   "phone": "+212530005209",
+   "latitude": 33.9139845,
+   "longitude": -6.9619124,
+   "history": [
+    {
+     "start": "2026-10-21",
+     "end": "2026-10-22",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-09-15",
+     "end": "2026-09-16",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-08-07",
+     "end": "2026-08-08",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-07-01",
+     "end": "2026-07-02",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-04-26",
+     "end": "2026-04-27",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-04-25",
+     "end": "2026-04-26",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-04-15",
+     "end": "2026-04-16",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-03-09",
+     "end": "2026-03-10",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-01-30",
+     "end": "2026-01-31",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2025-12-25",
+     "end": "2025-12-26",
+     "label": "Garde Jour et Nuit FAQ Questions fréquentes s"
+    }
+   ]
+  },
+  "fetchedAt": "2026-10-21T10:35:16.950Z"
  }
 }
