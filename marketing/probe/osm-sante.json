@@ -1,0 +1,1183 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-21T20:59:21Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 2569037645,
+  "lat": 34.0102418,
+  "lon": -6.8613729,
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Hopital Moulay Youssef"
+  }
+},
+{
+  "type": "node",
+  "id": 3061023086,
+  "lat": 34.0207477,
+  "lon": -6.8230042,
+  "tags": {
+    "amenity": "clinic",
+    "healthcare": "clinic",
+    "name": "Polyclinique Internationale de Rabat"
+  }
+},
+{
+  "type": "node",
+  "id": 3190094380,
+  "lat": 34.0165850,
+  "lon": -6.8296770,
+  "tags": {
+    "addr:street": "Rue d'Annaba",
+    "amenity": "clinic",
+    "healthcare": "clinic",
+    "name": "Clinique du Chellah"
+  }
+},
+{
+  "type": "node",
+  "id": 3400339101,
+  "lat": 34.0143671,
+  "lon": -6.8312643,
+  "tags": {
+    "amenity": "clinic",
+    "healthcare": "clinic",
+    "name": "Clinique La Ménara"
+  }
+},
+{
+  "type": "node",
+  "id": 3410193818,
+  "lat": 34.0159318,
+  "lon": -6.8273553,
+  "tags": {
+    "amenity": "clinic",
+    "healthcare": "clinic",
+    "name": "D'ophtamologie Dc Rafi"
+  }
+},
+{
+  "type": "node",
+  "id": 3410193819,
+  "lat": 34.0156518,
+  "lon": -6.8271189,
+  "tags": {
+    "amenity": "clinic",
+    "healthcare": "clinic",
+    "name": "Dc Khachani"
+  }
+},
+{
+  "type": "node",
+  "id": 3449045268,
+  "lat": 33.9766467,
+  "lon": -6.8356290,
+  "tags": {
+    "amenity": "clinic",
+    "healthcare": "clinic",
+    "name": "Clinique Souissi",
+    "name:ar": "مصحة السويسي",
+    "name:ary": "كلينيك السويسي"
+  }
+},
+{
+  "type": "node",
+  "id": 3576723928,
+  "lat": 33.9879960,
+  "lon": -6.8533347,
+  "tags": {
+    "amenity": "clinic",
+    "healthcare": "clinic",
+    "name": "Ibnou Rochd"
+  }
+},
+{
+  "type": "node",
+  "id": 3702119358,
+  "lat": 33.9618647,
+  "lon": -6.8226646,
+  "tags": {
+    "amenity": "clinic",
+    "healthcare": "clinic",
+    "name": "Clinique des Ambassadeurs"
+  }
+},
+{
+  "type": "node",
+  "id": 3761843022,
+  "lat": 34.0209439,
+  "lon": -6.8234519,
+  "tags": {
+    "addr:street": "Rue Taza",
+    "amenity": "clinic",
+    "healthcare": "clinic",
+    "name": "Clinique du Bouregreg"
+  }
+},
+{
+  "type": "node",
+  "id": 3783575759,
+  "lat": 34.0224581,
+  "lon": -6.8255280,
+  "tags": {
+    "healthcare": "centre",
+    "healthcare:speciality": "radiology",
+    "name": "Centre de Radiologie Bouregreg"
+  }
+},
+{
+  "type": "node",
+  "id": 3810888773,
+  "lat": 34.0211375,
+  "lon": -6.8229674,
+  "tags": {
+    "amenity": "clinic",
+    "healthcare": "clinic",
+    "name": "Centre de Pédiatrie"
+  }
+},
+{
+  "type": "node",
+  "id": 4495228962,
+  "lat": 34.0743862,
+  "lon": -6.7859846,
+  "tags": {
+    "amenity": "clinic",
+    "healthcare": "clinic",
+    "name": "Hôpital Public Hay Said HAJJI"
+  }
+},
+{
+  "type": "node",
+  "id": 5360163261,
+  "lat": 34.0018731,
+  "lon": -6.8270427,
+  "tags": {
+    "addr:street": "Avenue Mohammed VI",
+    "amenity": "clinic",
+    "healthcare": "clinic",
+    "name": "Clinique Rabat Zaers",
+    "phone": "+212 5 37 65 65 65",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5779779499,
+  "lat": 34.0205982,
+  "lon": -6.8242519,
+  "tags": {
+    "addr:street": "Rue Zagora Hassan",
+    "amenity": "clinic",
+    "healthcare": "clinic",
+    "name": "Centre Ibtissam",
+    "source": "Kaart Ground Survey"
+  }
+},
+{
+  "type": "node",
+  "id": 5780208742,
+  "lat": 34.0103968,
+  "lon": -6.8596651,
+  "tags": {
+    "addr:street": "Avenue Sidi Mohammed Ben Abdellah",
+    "amenity": "clinic",
+    "healthcare": "clinic",
+    "name": "Cabinet Medicale",
+    "source": "Kaart Ground Survey"
+  }
+},
+{
+  "type": "node",
+  "id": 5782838132,
+  "lat": 34.0004260,
+  "lon": -6.8471438,
+  "tags": {
+    "addr:street": "Rue Oued Baht",
+    "amenity": "clinic",
+    "healthcare": "clinic",
+    "name": "Cabinet De Pêdiatrie",
+    "source": "Kaart Ground Survey"
+  }
+},
+{
+  "type": "node",
+  "id": 8741474717,
+  "lat": 34.0345106,
+  "lon": -6.8236692,
+  "tags": {
+    "amenity": "clinic",
+    "healthcare": "clinic",
+    "name": "مصحة طب الأعين الشيخ مول العينين",
+    "name:fr": "Clinique Ophtalmologique Cheikh Maouelainin",
+    "phone": "+212 5 37 88 27 96"
+  }
+},
+{
+  "type": "node",
+  "id": 9267256647,
+  "lat": 33.9665247,
+  "lon": -6.9026010,
+  "tags": {
+    "addr:city": "الرباط",
+    "addr:street": "شارع الفتح",
+    "amenity": "clinic",
+    "healthcare": "clinic",
+    "healthcare:speciality": "general",
+    "name": "عزيزي فاطمة",
+    "name:ar": "عزيزي فاطمة",
+    "name:en": "Azizi Fatima"
+  }
+},
+{
+  "type": "node",
+  "id": 10542584127,
+  "lat": 34.0054819,
+  "lon": -6.8502791,
+  "tags": {
+    "addr:city": "Rabat",
+    "addr:postcode": "10090",
+    "addr:street": "Rue Dayet Aoua زنقة ضاية عوا",
+    "amenity": "clinic",
+    "description": "CITY DOCTOR vous propose une panoplie de services d’assistance médicaux: SOS Médecin à Domicile Urgences Médicales Ambulance Simple Ambulance Médicalisée Prélèvement à Domicile (Test PCR Covid-19 & Bilan de Santé) Consultation Spécialiste à Domicile Infir",
+    "healthcare": "clinic",
+    "name": "SOS Medecin Rabat",
+    "name:fr": "Medecin a Domicile",
+    "website": "https://www.citydoctor.ma/assistance-médicale"
+  }
+},
+{
+  "type": "node",
+  "id": 10657551507,
+  "lat": 33.9690306,
+  "lon": -6.8689470,
+  "tags": {
+    "amenity": "clinic",
+    "healthcare": "clinic",
+    "name:fr": "Clinique VIP"
+  }
+},
+{
+  "type": "node",
+  "id": 10657551508,
+  "lat": 33.9698703,
+  "lon": -6.8673722,
+  "tags": {
+    "amenity": "clinic",
+    "healthcare": "clinic",
+    "name:fr": "CENTRE DE CARDIOLOGIE"
+  }
+},
+{
+  "type": "node",
+  "id": 10657554106,
+  "lat": 33.9698292,
+  "lon": -6.8707789,
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "المستعجلات",
+    "name:fr": "URGENCES"
+  }
+},
+{
+  "type": "node",
+  "id": 11677022685,
+  "lat": 33.9858078,
+  "lon": -6.8881045,
+  "tags": {
+    "addr:city": "Rabat",
+    "addr:street": "Rue Ibn Katir",
+    "healthcare": "centre",
+    "healthcare:speciality": "community",
+    "name": "AL FATH"
+  }
+},
+{
+  "type": "node",
+  "id": 12015175569,
+  "lat": 33.9764220,
+  "lon": -6.8700317,
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name:fr": "rhumatologie"
+  }
+},
+{
+  "type": "node",
+  "id": 12783286334,
+  "lat": 34.0107368,
+  "lon": -6.8416030,
+  "tags": {
+    "amenity": "clinic",
+    "healthcare": "clinic",
+    "name": "Polyclinique Belvédère",
+    "website": "https://www.cliniquebelvedere.ma"
+  }
+},
+{
+  "type": "node",
+  "id": 12791594168,
+  "lat": 33.9937023,
+  "lon": -6.8506909,
+  "tags": {
+    "healthcare": "centre",
+    "healthcare:speciality": "nephrology",
+    "name": "Centre des Maladies Rénales Bellevue",
+    "operator": "Dr. Nadia Bekaddour El Bacha",
+    "phone": "+212 5 37 67 33 44"
+  }
+},
+{
+  "type": "node",
+  "id": 13697849845,
+  "lat": 34.0263046,
+  "lon": -6.7535900,
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Moulay Abdellah"
+  }
+},
+{
+  "type": "node",
+  "id": 13823665002,
+  "lat": 33.9840190,
+  "lon": -6.8246300,
+  "tags": {
+    "amenity": "hospital",
+    "name": "المركز الصحي التقدم"
+  }
+},
+{
+  "type": "node",
+  "id": 13834175204,
+  "lat": 34.0197920,
+  "lon": -6.7451550,
+  "tags": {
+    "amenity": "hospital",
+    "name": "المركز الصحي حصاين"
+  }
+},
+{
+  "type": "node",
+  "id": 13935735711,
+  "lat": 34.0186692,
+  "lon": -6.8309926,
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital"
+  }
+},
+{
+  "type": "node",
+  "id": 14100848801,
+  "lat": 34.0523780,
+  "lon": -6.7979603,
+  "tags": {
+    "amenity": "hospital",
+    "name": "Hôpital Tabriquet",
+    "opening_hours": "24/7"
+  }
+},
+{
+  "type": "node",
+  "id": 14182630390,
+  "lat": 34.0336792,
+  "lon": -6.8236557,
+  "tags": {
+    "amenity": "hospital",
+    "name": "Centre de néphrologie hémodialyse R'Mel"
+  }
+},
+{
+  "type": "node",
+  "id": 14188943413,
+  "lat": 33.9984001,
+  "lon": -6.8509227,
+  "tags": {
+    "amenity": "hospital",
+    "name": "Complexe médico-social Prince M'y Abdellah"
+  }
+},
+{
+  "type": "node",
+  "id": 14232782440,
+  "lat": 33.9893082,
+  "lon": -6.8488236,
+  "tags": {
+    "amenity": "clinic",
+    "name": "Centre d'anatomie pathologique Nations Unies"
+  }
+},
+{
+  "type": "node",
+  "id": 14306264035,
+  "lat": 33.9946079,
+  "lon": -6.8762693,
+  "tags": {
+    "healthcare": "hospital",
+    "healthcare:speciality": "general",
+    "name": "Centre de santé Bouhlal",
+    "operator": "Public",
+    "phone": "0661707613"
+  }
+},
+{
+  "type": "way",
+  "id": 152610310,
+  "center": {
+    "lat": 33.9697158,
+    "lon": -6.8703091
+  },
+  "tags": {
+    "addr:city": "Rabat ⵔⴱⴰⵟ الرباط",
+    "amenity": "hospital",
+    "emergency": "yes",
+    "healthcare": "hospital",
+    "name": "Hôpital Militaire Mohammed V - المستشفى العسكري محمد الخامس",
+    "name:ar": "المستشفى العسكري الدراسي محمد الخامس",
+    "name:en": "Mohammed V Military Hospital",
+    "name:fr": "Hôpital Militaire Mohammed V"
+  }
+},
+{
+  "type": "way",
+  "id": 171435524,
+  "center": {
+    "lat": 33.9864541,
+    "lon": -6.8542771
+  },
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Hôpital Des Enfants Du CHU Ibn Sina"
+  }
+},
+{
+  "type": "way",
+  "id": 171435526,
+  "center": {
+    "lat": 33.9873368,
+    "lon": -6.8554080
+  },
+  "tags": {
+    "amenity": "hospital",
+    "designation": "Gynecology & obstetrics hospital",
+    "emergency": "yes",
+    "healthcare": "hospital",
+    "name": "Maternite du Souissi / CHU Ibn SIna"
+  }
+},
+{
+  "type": "way",
+  "id": 176276373,
+  "center": {
+    "lat": 33.9976450,
+    "lon": -6.7463229
+  },
+  "tags": {
+    "amenity": "hospital",
+    "emergency": "no",
+    "healthcare": "hospital"
+  }
+},
+{
+  "type": "way",
+  "id": 221101263,
+  "center": {
+    "lat": 34.0457237,
+    "lon": -6.7972527
+  },
+  "tags": {
+    "amenity": "hospital",
+    "building": "yes",
+    "emergency": "no",
+    "healthcare": "hospital",
+    "name": "Centre de santé"
+  }
+},
+{
+  "type": "way",
+  "id": 234798834,
+  "center": {
+    "lat": 34.0107422,
+    "lon": -6.8416074
+  },
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "healthcare:speciality": "cardiology",
+    "name": "Clinique Belvedere Centre De Cardiologie"
+  }
+},
+{
+  "type": "way",
+  "id": 250293101,
+  "center": {
+    "lat": 34.0262886,
+    "lon": -6.7536010
+  },
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Nouveau Hopital My Abdellah"
+  }
+},
+{
+  "type": "way",
+  "id": 250293879,
+  "center": {
+    "lat": 34.0232931,
+    "lon": -6.7668810
+  },
+  "tags": {
+    "addr:city": "سلا salé",
+    "addr:postcode": "11004",
+    "addr:street": "Avenue Moulay Abdellah",
+    "building": "hospital",
+    "healthcare": "hospital",
+    "healthcare:speciality": "general",
+    "name": "مستوصف القرية  hôpital d'El Karia",
+    "operator": "مستشفى عمومي"
+  }
+},
+{
+  "type": "way",
+  "id": 278585583,
+  "center": {
+    "lat": 34.0167844,
+    "lon": -6.8282204
+  },
+  "tags": {
+    "amenity": "hospital",
+    "building": "yes",
+    "healthcare": "hospital",
+    "name": "La Capitale"
+  }
+},
+{
+  "type": "way",
+  "id": 289025339,
+  "center": {
+    "lat": 33.9774766,
+    "lon": -6.8696998
+  },
+  "tags": {
+    "addr:city": "Rabat ⵔⴱⴰⵟ الرباط",
+    "addr:postcode": "10000",
+    "addr:street": "Avenue Allal Fassi شارع علال الفاسي",
+    "alt_name": "Hôpital Sheikh Zaid",
+    "amenity": "hospital",
+    "email": "contact@hcz.ma",
+    "emergency": "yes",
+    "healthcare": "hospital",
+    "healthcare:speciality": "emergency;general;biology;orthopaedics;gynaecology;surgery;cardiology;oncology;radiology",
+    "name": "Hôpital Cheikh Zaid مستشفي الشيخ زايد بالرباط",
+    "name:ar": "مستشفي الشيخ زايد بالرباط",
+    "name:en": "Cheikh Zaid Hospital",
+    "name:fr": "Hôpital Cheikh Zaid",
+    "operator": "Fondation Cheikh Zaïd",
+    "operator:type": "private_non_profit",
+    "phone": "+212 5 37 68 38 48",
+    "website": "https://www.hcz.ma/contact/"
+  }
+},
+{
+  "type": "way",
+  "id": 329761817,
+  "center": {
+    "lat": 34.0136649,
+    "lon": -6.8415558
+  },
+  "tags": {
+    "addr:street": "Rue Houssali",
+    "amenity": "clinic",
+    "building": "commercial",
+    "healthcare": "clinic",
+    "name": "Clinique Atlas",
+    "source": "knowledge"
+  }
+},
+{
+  "type": "way",
+  "id": 330105045,
+  "center": {
+    "lat": 34.0174238,
+    "lon": -6.8422696
+  },
+  "tags": {
+    "amenity": "clinic",
+    "building": "yes",
+    "healthcare": "clinic",
+    "name": "Clinique des orangers",
+    "name:fr": "Clinique des orangers"
+  }
+},
+{
+  "type": "way",
+  "id": 395408474,
+  "center": {
+    "lat": 34.0130329,
+    "lon": -6.8226153
+  },
+  "tags": {
+    "amenity": "hospital",
+    "building": "yes",
+    "healthcare": "hospital",
+    "name": "Clinique El Amal"
+  }
+},
+{
+  "type": "way",
+  "id": 395421845,
+  "center": {
+    "lat": 34.0151703,
+    "lon": -6.8238999
+  },
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Clinique Benjelloum"
+  }
+},
+{
+  "type": "way",
+  "id": 395421904,
+  "center": {
+    "lat": 34.0158258,
+    "lon": -6.8213203
+  },
+  "tags": {
+    "addr:city": "Rabat ⵔⴱⴰⵟ الرباط",
+    "addr:housename": "Centre Hémodialyse Idriss Al Akbar - Dr Oualim Zouhair",
+    "addr:housenumber": "23",
+    "addr:postcode": "10020",
+    "addr:street": "Avenue Tariq Ibn Ziyad شارع طارق بن زياد",
+    "amenity": "clinic",
+    "building": "yes",
+    "healthcare": "dialysis",
+    "healthcare:speciality": "nephrology",
+    "name": "Centre Hémodialyse Idriss Al Akbar - Dr Oualim Zouhair",
+    "operator": "Dr OUALIM",
+    "operator:type": "private"
+  }
+},
+{
+  "type": "way",
+  "id": 449075020,
+  "center": {
+    "lat": 33.9956497,
+    "lon": -6.8510137
+  },
+  "tags": {
+    "addr:street": "Avenue Ibn Sina",
+    "amenity": "hospital",
+    "building": "yes",
+    "emergency": "yes",
+    "healthcare": "hospital",
+    "name": "Clinique Agdal"
+  }
+},
+{
+  "type": "way",
+  "id": 453127434,
+  "center": {
+    "lat": 34.0324632,
+    "lon": -6.8243995
+  },
+  "tags": {
+    "amenity": "clinic",
+    "building": "yes",
+    "healthcare": "clinic",
+    "name": "Clinique Beauséjour",
+    "phone": "+212 5 37 78 13 13"
+  }
+},
+{
+  "type": "way",
+  "id": 456862639,
+  "center": {
+    "lat": 34.0072877,
+    "lon": -6.8442143
+  },
+  "tags": {
+    "amenity": "clinic",
+    "building": "yes",
+    "healthcare": "clinic",
+    "name": "Clinique De La Vision de Rabat",
+    "phone": "+212 537 676666"
+  }
+},
+{
+  "type": "way",
+  "id": 456863021,
+  "center": {
+    "lat": 34.0067677,
+    "lon": -6.8442429
+  },
+  "tags": {
+    "addr:city": "Rabat",
+    "addr:housenumber": "32",
+    "addr:postcode": "10090",
+    "addr:street": "Avenue Ibn Khaldoun شارع ابن خلدون",
+    "amenity": "clinic",
+    "building": "yes",
+    "healthcare": "clinic",
+    "healthcare:speciality": "surgery;general;cardiology",
+    "name": "Clinique Ibn Khaldoun مصحة إبن خلدون",
+    "name:ar": "مصحة إبن خلدون",
+    "name:fr": "Clinique Ibn Khaldoun",
+    "phone": "+212 537 776767"
+  }
+},
+{
+  "type": "way",
+  "id": 482745706,
+  "center": {
+    "lat": 33.9893298,
+    "lon": -6.8490697
+  },
+  "tags": {
+    "addr:city": "Rabat ⵔⴱⴰⵟ الرباط",
+    "amenity": "clinic",
+    "building": "hospital",
+    "healthcare": "clinic",
+    "name": "Clinique des Nations Unies",
+    "operator:type": "private",
+    "website": "https://cliniquenationsunies.com/"
+  }
+},
+{
+  "type": "way",
+  "id": 482745795,
+  "center": {
+    "lat": 33.9867479,
+    "lon": -6.8545196
+  },
+  "tags": {
+    "amenity": "hospital",
+    "designation": "Pediatric hospital",
+    "emergency": "yes",
+    "healthcare": "hospital",
+    "name": "Hopital Des Enfants/ CHU Ibn Sina"
+  }
+},
+{
+  "type": "way",
+  "id": 590876055,
+  "center": {
+    "lat": 33.9464626,
+    "lon": -6.8662661
+  },
+  "tags": {
+    "amenity": "clinic",
+    "building": "yes",
+    "healthcare": "clinic",
+    "name": "Clinique Pasteur"
+  }
+},
+{
+  "type": "way",
+  "id": 608744800,
+  "center": {
+    "lat": 34.0158041,
+    "lon": -6.8326974
+  },
+  "tags": {
+    "addr:street": "Rue Tissa",
+    "amenity": "clinic",
+    "building": "commercial",
+    "building:levels": "4",
+    "healthcare": "clinic",
+    "name": "Top Medical",
+    "source": "Kaart Ground Survey"
+  }
+},
+{
+  "type": "way",
+  "id": 608744802,
+  "center": {
+    "lat": 34.0163653,
+    "lon": -6.8319725
+  },
+  "tags": {
+    "addr:street": "Rue Tobrouk",
+    "amenity": "clinic",
+    "building": "commercial",
+    "building:levels": "5",
+    "healthcare": "clinic",
+    "name": "Actilab Matériel Médical",
+    "source": "Kaart Ground Survey"
+  }
+},
+{
+  "type": "way",
+  "id": 611285434,
+  "center": {
+    "lat": 33.9708873,
+    "lon": -6.8468768
+  },
+  "tags": {
+    "amenity": "clinic",
+    "building": "commercial",
+    "healthcare": "clinic",
+    "name": "Red Med",
+    "source": "Kaart Ground Survey"
+  }
+},
+{
+  "type": "way",
+  "id": 611698620,
+  "center": {
+    "lat": 34.0505248,
+    "lon": -6.7892240
+  },
+  "tags": {
+    "addr:street": "Avenue Assalam",
+    "amenity": "clinic",
+    "building": "yes",
+    "building:levels": "4",
+    "healthcare": "clinic",
+    "name": "Cabinet Medical",
+    "source": "Kaart Ground Survey 2018"
+  }
+},
+{
+  "type": "way",
+  "id": 650064966,
+  "center": {
+    "lat": 34.0459802,
+    "lon": -6.7998223
+  },
+  "tags": {
+    "addr:city": "Salé سلا",
+    "addr:postcode": "11010",
+    "addr:street": "Avenue Al Salwa",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "healthcare:speciality": "general",
+    "name": "Cabinet Docteur Amar - Généraliste",
+    "operator": "Dr.Fouad Amar"
+  }
+},
+{
+  "type": "way",
+  "id": 738368993,
+  "center": {
+    "lat": 33.9044385,
+    "lon": -6.9383922
+  },
+  "tags": {
+    "addr:city": "Témara تمارة",
+    "amenity": "hospital",
+    "emergency": "yes",
+    "healthcare": "hospital",
+    "healthcare:speciality": "general",
+    "name": "Hospital sidi lahcen",
+    "operator": "Public"
+  }
+},
+{
+  "type": "way",
+  "id": 745643960,
+  "center": {
+    "lat": 33.9751527,
+    "lon": -6.8186826
+  },
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital"
+  }
+},
+{
+  "type": "way",
+  "id": 789176305,
+  "center": {
+    "lat": 33.9820234,
+    "lon": -6.8580191
+  },
+  "tags": {
+    "amenity": "hospital",
+    "designation": "Specialized hospital Head and neck",
+    "emergency": "yes",
+    "healthcare": "hospital",
+    "name": "Hopital Des Spécialités / HCU Ibn Sina"
+  }
+},
+{
+  "type": "way",
+  "id": 789197947,
+  "center": {
+    "lat": 33.9373530,
+    "lon": -6.9201872
+  },
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Polyclinique"
+  }
+},
+{
+  "type": "way",
+  "id": 789268675,
+  "center": {
+    "lat": 33.9063780,
+    "lon": -6.9206231
+  },
+  "tags": {
+    "addr:city": "TEMARA",
+    "addr:postcode": "12000",
+    "amenity": "hospital",
+    "emergency": "no",
+    "healthcare": "hospital",
+    "name": "Hôpital Fath El Kheir",
+    "name:fr": "Hôpital Fath El Kheir",
+    "operator": "Public"
+  }
+},
+{
+  "type": "way",
+  "id": 789273095,
+  "center": {
+    "lat": 34.0374682,
+    "lon": -6.8125956
+  },
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Hopital Moulay Abdallah"
+  }
+},
+{
+  "type": "way",
+  "id": 789273401,
+  "center": {
+    "lat": 34.0346468,
+    "lon": -6.8259071
+  },
+  "tags": {
+    "amenity": "hospital",
+    "emergency": "no",
+    "healthcare": "hospital",
+    "healthcare:speciality": "Rhumatologie_-_Médecine_physique_et_réadaptation",
+    "name": "مستشفي العياشي",
+    "name:ar": "مستشفي العياشي",
+    "name:en": "Hopital AL AYACHI",
+    "operator": "CHU Ibn Sina"
+  }
+},
+{
+  "type": "way",
+  "id": 789274364,
+  "center": {
+    "lat": 34.0352228,
+    "lon": -6.8242486
+  },
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Croix rouge"
+  }
+},
+{
+  "type": "way",
+  "id": 789801885,
+  "center": {
+    "lat": 33.9438300,
+    "lon": -6.8848079
+  },
+  "tags": {
+    "addr:city": "Témara تمارة",
+    "addr:housenumber": "villa A48",
+    "addr:postcode": "10160",
+    "addr:street": "résidence Ouhoud Guich oudaya",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "healthcare:speciality": "nephrology",
+    "name": "Centre de dialyse Guich Oudaya",
+    "source": "streetlevel imagery"
+  }
+},
+{
+  "type": "way",
+  "id": 911506121,
+  "center": {
+    "lat": 33.9882152,
+    "lon": -6.8533026
+  },
+  "tags": {
+    "amenity": "clinic",
+    "building": "yes",
+    "healthcare": "clinic",
+    "name": "Ibn Rochd",
+    "phone": "+212 5 37 67 03 04"
+  }
+},
+{
+  "type": "way",
+  "id": 1037424831,
+  "center": {
+    "lat": 33.9723284,
+    "lon": -6.8731815
+  },
+  "tags": {
+    "addr:city": "الرباط",
+    "addr:housenumber": "المعهد الوطني للانكلوجيا سيدي محمد بن عبد الله",
+    "addr:postcode": "10000",
+    "addr:street": "شارع علال الفاسي",
+    "amenity": "hospital",
+    "emergency": "yes",
+    "healthcare": "hospital",
+    "healthcare:speciality": "oncology",
+    "name": "المعهد الوطني للانكولوجيا",
+    "name:ar": "المعهد الوطني للانكلوجيا سيدي محمد بن عبد الله",
+    "name:en": "National Institute of Oncology Sidi Mohamed Ben Abdallah",
+    "name:fr": "Institut National d'Oncologie Sidi Mohamed Ben Abdallah"
+  }
+},
+{
+  "type": "way",
+  "id": 1101751339,
+  "center": {
+    "lat": 33.9802059,
+    "lon": -6.8423539
+  },
+  "tags": {
+    "addr:city": "Rabat ⵔⴱⴰⵟ الرباط",
+    "addr:housenumber": "22",
+    "addr:street": "Avenue Ahmed Balafrej شارع أحمد بلافريج",
+    "amenity": "clinic",
+    "building": "yes",
+    "healthcare": "clinic",
+    "healthcare:speciality": "oncology",
+    "name": "Clinique 16 Novembre",
+    "operator:type": "private_for_profit",
+    "phone": "+212 5 37 67 17 17",
+    "source": "microsoft/BuildingFootprints",
+    "website": "https://clinique-oncologie.ma/"
+  }
+},
+{
+  "type": "way",
+  "id": 1104464770,
+  "center": {
+    "lat": 34.0106763,
+    "lon": -6.8619786
+  },
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital"
+  }
+},
+{
+  "type": "way",
+  "id": 1248303519,
+  "center": {
+    "lat": 33.9283820,
+    "lon": -6.9023329
+  },
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Hôpital wlad bennasser",
+    "name:ar": "مستشفى ولاد بن ناصر"
+  }
+},
+{
+  "type": "way",
+  "id": 1555330006,
+  "center": {
+    "lat": 34.0044385,
+    "lon": -6.8474373
+  },
+  "tags": {
+    "building": "hospital",
+    "healthcare": "hospital",
+    "name:fr": "Hôpital privé Ibn Yassine"
+  }
+},
+{
+  "type": "way",
+  "id": 1563648221,
+  "center": {
+    "lat": 33.9892246,
+    "lon": -6.8488578
+  },
+  "tags": {
+    "amenity": "clinic",
+    "building": "hospital",
+    "healthcare:speciality": "radiology",
+    "name": "Cabinet de radiologie Agdal"
+  }
+},
+{
+  "type": "way",
+  "id": 1570390611,
+  "center": {
+    "lat": 33.9946100,
+    "lon": -6.8762710
+  },
+  "tags": {
+    "addr:city": "Rabat",
+    "addr:housename": "Centre de santé Bouhlal",
+    "addr:street": "Av. Sidi Mohamed Ben Abdellah",
+    "building": "hospital",
+    "building:levels": "2",
+    "healthcare": "hospital",
+    "height": "7",
+    "name": "Centre de santé Bouhlal"
+  }
+},
+{
+  "type": "relation",
+  "id": 21685401,
+  "center": {
+    "lat": 33.9801324,
+    "lon": -6.8570673
+  },
+  "tags": {
+    "amenity": "hospital",
+    "emergency": "yes",
+    "healthcare": "hospital",
+    "healthcare:speciality": "cardiology;oncology;neurology;orthopaedics;trauma;gynaecology;pulmonology;gastroenterology;nephrology;endocrinology;internal;infectious_diseases;vascular_surgery;plastic_surgery;cardiothoracic_surgery;nuclear;dentistry",
+    "name": "Hôpital universitaire Mohammed VI des Sciences et de la Santé",
+    "operator": "Fondation Mohammed VI des Sciences et de la Santé (FM6SS)",
+    "operator:type": "private_non_profit",
+    "operator:wikipedia": "fr:Fondation Mohammed VI des sciences et de la santé",
+    "phone": "+212 530440441",
+    "type": "multipolygon",
+    "website": "https://hm6.ma/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "relation",
+  "id": 21685408,
+  "center": {
+    "lat": 33.9826974,
+    "lon": -6.8521972
+  },
+  "tags": {
+    "amenity": "hospital",
+    "building": "hospital",
+    "designation": "Ibn sina General hospital for adults",
+    "emergency": "yes",
+    "healthcare": "hospital",
+    "name": "Hopital Ibn Sina /CHU Ibn SIna",
+    "type": "multipolygon",
+    "wheelchair": "yes",
+    "wikipedia": "fr:CHU Ibn Sina"
+  }
+}
+
+  ]
+}
