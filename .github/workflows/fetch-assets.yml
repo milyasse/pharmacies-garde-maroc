@@ -19,7 +19,7 @@ jobs:
           mkdir -p marketing/stock
           for item in $URLS; do
             case "$item" in *=https://*) name="${item%%=https://*}"; u="https://${item#*=https://}";; *) u="$item"; name="$(basename "${u%%\?*}")";; esac
-            case "$u" in https://storage.orshot.com/*|https://images.unsplash.com/*) ;; *) echo "URL refusée: $u"; exit 1;; esac
+            case "$u" in https://storage.orshot.com/*|https://images.unsplash.com/*|https://data.gov.ma/*) ;; *) echo "URL refusée: $u"; exit 1;; esac
             case "$name" in *[!A-Za-z0-9._-]*|"") echo "Nom refusé: $name"; exit 1;; esac
             curl -fsSL -o "marketing/stock/$name" "$u"
           done
