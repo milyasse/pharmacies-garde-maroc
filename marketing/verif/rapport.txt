@@ -1,4 +1,4 @@
-écran de lancement retiré après 7.1 s
+écran de lancement retiré après 7.2 s
 OK  — onglet « Pharmacies de garde » actif par défaut (URL inchangée)
 OK  — pharmacies : pas de recherche automatique après changement de rayon
 OK  — pharmacies : résultats affichés (« 13 pharmacies de garde »)

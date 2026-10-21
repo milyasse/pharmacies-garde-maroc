@@ -14,8 +14,8 @@ computing gzip size...
 [2mdist/[22m[2massets/[22m[35mindex-CiGAZmKz.css               [39m[1m[2m 40.87 kB[22m[1m[22m[2m │ gzip:  12.10 kB[22m
 [2mdist/[22m[2massets/[22m[36mreact-DHz4kLit.js                [39m[1m[2m 12.46 kB[22m[1m[22m[2m │ gzip:   4.37 kB[22m
 [2mdist/[22m[2massets/[22m[36mleaflet-DCIffZry.js              [39m[1m[2m149.58 kB[22m[1m[22m[2m │ gzip:  43.34 kB[22m
-[2mdist/[22m[2massets/[22m[36mindex-Bc6WR3Qj.js                [39m[1m[2m380.60 kB[22m[1m[22m[2m │ gzip: 123.08 kB[22m
-[32m✓ built in 1.65s[39m
+[2mdist/[22m[2massets/[22m[36mindex-DNKYCFLy.js                [39m[1m[2m380.60 kB[22m[1m[22m[2m │ gzip: 123.08 kB[22m
+[32m✓ built in 2.18s[39m
 
 [36mPWA v1.3.0[39m
 mode      [35mgenerateSW[39m
