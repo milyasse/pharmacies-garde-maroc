@@ -23,3 +23,28 @@ Si une autre source publie une information différente pour la même pharmacie, 
 ## Format JSON (alternative)
 
 Un fichier par date `AAAA-MM-JJ.json` — voir `exemple.json.txt`.
+
+## Cliniques et hôpitaux : informations vérifiées (`sante.json`)
+
+L'espace « Cliniques et hôpitaux » affiche ce que publient OpenStreetMap et la liste officielle du ministère de la Santé.
+Pour ajouter une information **vérifiée** (horaires confirmés par l'établissement, urgences confirmées, désignation
+officielle de garde publiée par une autorité), complétez `manual/sante.json`. Chaque entrée désigne l'établissement par
+son identifiant OpenStreetMap (`"osm": "way/123456"`, visible dans le lien « OpenStreetMap » de la fiche) ou par son nom exact.
+
+```json
+{
+  "etablissements": [
+    {
+      "osm": "way/738368993",
+      "telephone": "05 37 00 00 00",
+      "urgences": { "statut": "oui", "source": "Site officiel de l'hôpital", "url": "https://…", "verifieLe": "2026-10-21" },
+      "horaires": { "texte": "Urgences 24h/24", "source": "Appel à l'accueil (référence)", "url": "https://…", "verifieLe": "2026-10-21" },
+      "garde": [ { "du": "2026-10-25", "au": "2026-10-26", "source": "Délégation provinciale de la Santé", "url": "https://…" } ]
+    }
+  ]
+}
+```
+
+- **Garde** : n'ajoutez une désignation que si une source **officielle** la publie (délégation, direction régionale, établissement).
+  Sans elle, l'application n'affiche jamais un établissement comme « de garde ».
+- Une entrée sans source ou sans date est ignorée et signalée dans le journal de la collecte.

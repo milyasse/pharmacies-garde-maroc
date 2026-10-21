@@ -1,0 +1,107 @@
+{
+  "source": "Ministère de la Santé et de la Protection sociale — « Liste des hôpitaux 2022 » (Liste nominative des établissements hospitaliers par catégorie 2022)",
+  "jeuDeDonnees": "https://data.gov.ma/data/fr/dataset/la-liste-des-hopitaux",
+  "fichier": "https://data.gov.ma/data/fr/dataset/2932e8a4-272c-4101-80ef-85519de47e7c/resource/7ac78092-9ef1-4389-a54f-06ac95efae8e/download/repartition-des-hopitaux-par-region-et-province-2022.xlsx",
+  "licence": "Open Data Commons Open Database License (ODbL)",
+  "donneesMisesAJourLe": "2023-11-14",
+  "extraitLe": "2026-10-21",
+  "perimetre": "Délégations Rabat, Salé et Skhirate-Témara (lignes recopiées sans modification)",
+  "hopitaux": [
+    {
+      "nom": "Ibn Sina",
+      "categorie": "HIR",
+      "categorieLibelle": "Hospital Interrégional",
+      "delegation": "Rabat",
+      "commune": "Agdal Riyad (Arrond.)",
+      "ville": "rabat"
+    },
+    {
+      "nom": "Hôpital Des Spécialités",
+      "categorie": "HIR",
+      "categorieLibelle": "Hospital Interrégional",
+      "delegation": "Rabat",
+      "commune": "Agdal Riyad (Arrond.)",
+      "ville": "rabat"
+    },
+    {
+      "nom": "Maternité Souissi",
+      "categorie": "HIR",
+      "categorieLibelle": "Hospital Interrégional",
+      "delegation": "Rabat",
+      "commune": "Agdal Riyad (Arrond.)",
+      "ville": "rabat"
+    },
+    {
+      "nom": "Hôpital D'enfants",
+      "categorie": "HIR",
+      "categorieLibelle": "Hospital Interrégional",
+      "delegation": "Rabat",
+      "commune": "Agdal Riyad (Arrond.)",
+      "ville": "rabat"
+    },
+    {
+      "nom": "Maternité Orangers",
+      "categorie": "HIR",
+      "categorieLibelle": "Hospital Interrégional",
+      "delegation": "Rabat",
+      "commune": "Agdal Riyad (Arrond.)",
+      "ville": "rabat"
+    },
+    {
+      "nom": "Med Ben Abdellah",
+      "categorie": "HIR",
+      "categorieLibelle": "Hospital Interrégional",
+      "delegation": "Rabat",
+      "commune": "Agdal Riyad (Arrond.)",
+      "ville": "rabat"
+    },
+    {
+      "nom": "My Youssef",
+      "categorie": "HIR",
+      "categorieLibelle": "Hospital Interrégional",
+      "delegation": "Rabat",
+      "commune": "Hassan (Arrond.)",
+      "ville": "rabat"
+    },
+    {
+      "nom": "Moulay Youssef (Ancien hôpital de Rabat)",
+      "categorie": "HR",
+      "categorieLibelle": "Hôpital Régional",
+      "delegation": "Rabat",
+      "commune": "Hassan (Arrond.)",
+      "ville": "rabat"
+    },
+    {
+      "nom": "El Ayachi",
+      "categorie": "HIR",
+      "categorieLibelle": "Hospital Interrégional",
+      "delegation": "Salé",
+      "commune": "Bab Lamrissa (Arrond.)",
+      "ville": "sale"
+    },
+    {
+      "nom": "Moulay Abdellah (Hôp.préféctoral)",
+      "categorie": "HP",
+      "categorieLibelle": "Hôpital Provincial/Préfectoral",
+      "delegation": "Salé",
+      "commune": "Hssaine (Arrond.)",
+      "ville": "sale"
+    },
+    {
+      "nom": "Arrazi",
+      "categorie": "CPU",
+      "categorieLibelle": "Centre Psychiatrique Universitaire",
+      "delegation": "Salé",
+      "commune": "Tabriquet (Arrond.)",
+      "ville": "sale"
+    },
+    {
+      "nom": "Princesse Lalla Aicha (Ancien Sidi Lahcen)",
+      "categorie": "HP",
+      "categorieLibelle": "Hôpital Provincial/Préfectoral",
+      "delegation": "Skhirate-Temara",
+      "commune": "Témara (Mun.)",
+      "ville": "temara"
+    }
+  ]
+}

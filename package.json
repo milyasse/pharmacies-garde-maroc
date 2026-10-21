@@ -14,7 +14,8 @@
     "typecheck": "tsc --noEmit",
     "test": "node --experimental-strip-types --no-warnings --test tests/*.test.ts",
     "collect": "node --experimental-strip-types --no-warnings scripts/collect.ts",
-    "check:sources": "node --experimental-strip-types --no-warnings scripts/collect.ts --dry-run --verbose --strict"
+    "check:sources": "node --experimental-strip-types --no-warnings scripts/collect.ts --dry-run --verbose --strict",
+    "collect:sante": "node --experimental-strip-types --no-warnings scripts/collect-health.ts"
   },
   "dependencies": {
     "gsap": "^3.13.0",

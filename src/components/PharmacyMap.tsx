@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { CONFIG } from '../config.ts';
-import type { Pharmacy } from '../shared/types.ts';
+import type { VerificationStatus } from '../shared/types.ts';
 import { formatKm, formatMinutes } from '../shared/distance.ts';
 import { STATUS_LABEL } from '../shared/status.ts';
 import { rankColor } from '../utils/colors.ts';
@@ -11,9 +11,25 @@ import type { RouteResult } from '../services/routing.ts';
 import type { Origin } from './SearchPanel.tsx';
 import { CloseIcon, ExpandIcon, GpsIcon, RouteIcon } from './icons.tsx';
 
+/** Élément affichable sur la carte : une pharmacie ou un établissement de santé. */
+export interface MapItem {
+  id: string;
+  name: string;
+  rank: number | null;
+  latitude: number | null;
+  longitude: number | null;
+  distanceStraightLineKm: number | null;
+  distanceRoadKm: number | null;
+  estimatedTravelMinutes: number | null;
+  coordinatesSource?: string | null;
+  verificationStatus?: VerificationStatus;
+  /** Libellé de statut affiché dans la bulle (sinon : statut de garde de la pharmacie). */
+  statusLabel?: string;
+}
+
 const esc = (s: string) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]!);
 
-function pinIcon(p: Pharmacy, selected: boolean) {
+function pinIcon(p: MapItem, selected: boolean) {
   const c = rankColor(p.rank);
   const cls = ['rank-pin', selected ? 'is-selected' : '', p.verificationStatus === 'expired' ? 'is-expired' : '', p.coordinatesSource === 'district' ? 'is-approx' : ''].join(' ');
   return L.divIcon({
@@ -25,13 +41,13 @@ function pinIcon(p: Pharmacy, selected: boolean) {
   });
 }
 
-function popupHtml(p: Pharmacy, mode: 'car' | 'foot') {
+function popupHtml(p: MapItem, mode: 'car' | 'foot') {
   const road = p.distanceRoadKm !== null
     ? `<div>${formatKm(p.distanceRoadKm)} par la route · ${formatMinutes(p.estimatedTravelMinutes)} ${mode === 'car' ? 'en voiture' : 'à pied'}</div>`
     : '<div style="color:#5b6b63">Distance routière : tracez l’itinéraire</div>';
   return `<div style="min-width:180px">
     <div style="font-weight:800;font-size:14px">${p.rank ? `${p.rank}. ` : ''}${esc(p.name)}</div>
-    <div style="font-size:12px;margin-top:2px">${STATUS_LABEL[p.verificationStatus]}</div>
+    <div style="font-size:12px;margin-top:2px">${esc(p.statusLabel ?? (p.verificationStatus ? STATUS_LABEL[p.verificationStatus] : ''))}</div>
     <div style="font-size:12px;margin-top:4px">${p.coordinatesSource === 'district' ? '≈ ' : ''}${formatKm(p.distanceStraightLineKm)} à vol d’oiseau</div>
     ${p.coordinatesSource === 'district' ? '<div style="font-size:11px;color:#b45309">Position approximative (centre du quartier)</div>' : ''}
     <div style="font-size:12px">${road}</div>
@@ -41,8 +57,10 @@ function popupHtml(p: Pharmacy, mode: 'car' | 'foot') {
 export function PharmacyMap(props: {
   origin: Origin | null;
   radiusKm: number;
-  pharmacies: Pharmacy[];
+  pharmacies: MapItem[];
   selectedId: string | null;
+  /** Nom accessible de la carte. */
+  ariaLabel?: string;
   routes: Record<string, RouteResult>;
   visibleRouteIds: string[];
   mode: 'car' | 'foot';
@@ -237,7 +255,7 @@ export function PharmacyMap(props: {
 
   return (
     <div className={`${full ? 'fixed inset-0 z-[900] bg-bg' : 'relative h-full w-full'} ${props.picking ? 'map-picking' : ''}`}>
-      <div ref={el} className="h-full w-full" role="application" aria-label="Carte des pharmacies de garde" />
+      <div ref={el} className="h-full w-full" role="application" aria-label={props.ariaLabel ?? 'Carte des pharmacies de garde'} />
       {hint && (
         <div className="pointer-events-none absolute inset-0 z-[600] flex items-center justify-center bg-black/35 p-6 text-center text-sm font-bold text-white">
           Utilisez deux doigts pour déplacer la carte, ou ouvrez-la en plein écran ⤢

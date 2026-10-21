@@ -37,6 +37,11 @@ jobs:
         continue-on-error: true
         run: npm run collect -- --strict
 
+      - name: Collecte des cliniques et hôpitaux (OpenStreetMap ≤ 1 fois/jour + liste du ministère)
+        id: collect_sante
+        continue-on-error: true
+        run: npm run collect:sante
+
       - name: Signaler une source en erreur
         if: steps.collect.outcome == 'failure'
         run: echo "::warning title=Source de garde en erreur::Au moins une source n'a pas pu être lue. Voir le journal de l'étape « Collecte » et public/data/status.json."

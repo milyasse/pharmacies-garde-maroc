@@ -52,3 +52,9 @@ export const SpinnerIcon = ({ size = 18 }: { size?: number }) => (
 export const ExpandIcon = ({ size, ...p }: P) => (
   <svg {...base(size)} {...p}><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" /></svg>
 );
+export const HospitalIcon = ({ size, ...p }: P) => (
+  <svg {...base(size)} {...p}><path d="M4 21V7l8-4 8 4v14" /><path d="M9 21v-5h6v5" /><path d="M12 7.5v5M9.5 10h5" /><path d="M2 21h20" /></svg>
+);
+export const PillIcon = ({ size, ...p }: P) => (
+  <svg {...base(size)} {...p}><rect x="2.5" y="8.5" width="19" height="7" rx="3.5" transform="rotate(-45 12 12)" /><path d="m8.5 8.5 7 7" /></svg>
+);
