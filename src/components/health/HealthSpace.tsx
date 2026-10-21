@@ -289,7 +289,7 @@ export function HealthSpace(props: {
             canShowRoutes={Object.keys(routes).length > 0}
           />
         </div>
-        <div className="bg-white px-4 py-2"><MapLegend count={list.length || 5} /></div>
+        <div className="bg-white px-4 py-2"><MapLegend count={list.length || 5} approx={false} /></div>
         <div className="lg:hidden">{renderResults()}</div>
       </div>
     </main>

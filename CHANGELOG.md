@@ -1,5 +1,12 @@
 # Historique des versions
 
+## 1.6.0 — 21/10/2026
+- **Nouvel espace « Cliniques et hôpitaux »** (onglet en haut de l'écran, lien direct `#/cliniques`) : recherche par ville, position ou adresse, rayon en km, filtres par type d'établissement, service et urgences déclarées, tri par distance croissante ou décroissante, carte et liste synchronisées, itinéraire, appel.
+- Données issues de la **liste officielle des hôpitaux du ministère de la Santé** (data.gov.ma) et d'**OpenStreetMap**, rapprochées à la main ; collecte automatique quotidienne.
+- Quatre niveaux d'information distincts : répertorié, urgences déclarées, horaires vérifiés, désignation officielle de garde (jamais affichée sans source officielle).
+- Les blocs « Position de départ », « Rayon » et la carte sont désormais partagés par les deux espaces (aucun changement pour les pharmacies).
+
+
 ## 1.5.3 — 15/10/2026
 - Écran de lancement plus court : environ 7 s à la première ouverture (au lieu de 8), environ 2,6 s ensuite ; toucher l'écran le fait passer immédiatement, à tout moment.
 

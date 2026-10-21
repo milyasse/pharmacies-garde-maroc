@@ -84,11 +84,11 @@ await section('Parcours mobile', async () => {
   check(nu > 0 && nu <= n, `cliniques : filtre « urgences déclarées » → ${nu} établissement(s)`);
   await page.screenshot({ path: `${OUT}/sante-urgences.png` });
   // itinéraire vers le premier
-  const routeBtn = page.locator('#espace-sante article').first().getByRole('button', { name: /Itinéraire/ });
+  const routeBtn = page.locator('#espace-sante article:visible').first().getByRole('button', { name: /Itinéraire/ });
   if (await routeBtn.isEnabled()) {
     await routeBtn.click();
     await wait(6000);
-    const card = await page.locator('#espace-sante article').first().innerText();
+    const card = await page.locator('#espace-sante article:visible').first().innerText();
     check(/\d+(,\d)? km\s*\n?par la route/.test(card) || /Moteur d’itinéraire|Aucun itinéraire/.test(card), 'cliniques : itinéraire calculé (ou erreur explicite)');
     await page.screenshot({ path: `${OUT}/sante-itineraire.png` });
   }

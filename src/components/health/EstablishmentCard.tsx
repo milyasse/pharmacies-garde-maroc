@@ -102,7 +102,7 @@ export const EstablishmentCard = forwardRef<HTMLElement, {
 
       <dl className="mt-2 space-y-1 text-[13px]">
         <div className="flex gap-1.5">
-          <dt className="font-bold">Urgences :</dt>
+          <dt className="shrink-0 font-bold">Urgences :</dt>
           <dd>
             {e.emergency === 'yes' ? <>service d’urgences déclaré <span className="text-muted">({INFO_SOURCE_LABEL[e.emergencySource ?? 'osm']})</span></>
               : e.emergency === 'no' ? <>pas de service d’urgences <span className="text-muted">(selon {INFO_SOURCE_LABEL[e.emergencySource ?? 'osm']})</span></>
@@ -110,7 +110,7 @@ export const EstablishmentCard = forwardRef<HTMLElement, {
           </dd>
         </div>
         <div className="flex gap-1.5">
-          <dt className="font-bold">Horaires :</dt>
+          <dt className="shrink-0 font-bold">Horaires :</dt>
           <dd>
             {e.hours ? (
               e.hours.verified
@@ -120,7 +120,7 @@ export const EstablishmentCard = forwardRef<HTMLElement, {
           </dd>
         </div>
         <div className="flex gap-1.5">
-          <dt className="font-bold">Garde :</dt>
+          <dt className="shrink-0 font-bold">Garde :</dt>
           <dd>
             {e.levels.officialOnDuty || nextDuty
               ? <>{e.levels.officialOnDuty ? 'désigné de garde aujourd’hui' : `désigné de garde du ${formatShortDate(nextDuty!.from)} au ${formatShortDate(nextDuty!.to)}`} — <a href={(nextDuty ?? e.duty[0]).sourceUrl} target="_blank" rel="noopener noreferrer" className="underline" onClick={(ev) => ev.stopPropagation()}>{(nextDuty ?? e.duty[0]).sourceName}</a></>
