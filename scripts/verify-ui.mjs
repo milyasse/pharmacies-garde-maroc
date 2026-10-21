@@ -20,9 +20,11 @@ const base = {
 };
 
 // ---------- 1. Écran de lancement + Pharmacies ----------
-{
+const section = async (name, fn) => { try { await fn(); } catch (e) { check(false, `${name} : ${String(e?.message || e).split('\n')[0]}`); } };
+await section('Parcours mobile', async () => {
   const ctx = await browser.newContext({ ...base, geolocation: { latitude: 33.9985, longitude: -6.8520, accuracy: 25 }, permissions: ['geolocation'], recordVideo: { dir: `${OUT}/raw`, size: { width: 390, height: 844 } } });
   const page = await ctx.newPage();
+  page.setDefaultTimeout(12000);
   page.on('pageerror', (e) => { note('pageerror: ' + e.message); failures++; });
   const t0 = Date.now();
   await page.goto(URL, { waitUntil: 'domcontentloaded' });
@@ -107,10 +109,10 @@ const base = {
   await wait(1000);
   check(await page.locator('#espace-pharmacies').count() === 1 && !page.url().includes('#/cliniques'), 'retour à l’espace Pharmacies (URL d’origine)');
   await ctx.close();
-}
+});
 
 // ---------- 3. Géolocalisation refusée ----------
-{
+await section('Géolocalisation refusée', async () => {
   const ctx = await browser.newContext({ ...base, permissions: [] });
   const page = await ctx.newPage();
   await page.goto(URL + '#/cliniques', { waitUntil: 'domcontentloaded' });
@@ -126,10 +128,10 @@ const base = {
   check((await page.locator('#espace-sante').innerText()).includes('Indiquez une position de départ'), 'sans position : la recherche demande une position de départ');
   await page.screenshot({ path: `${OUT}/sante-geoloc-refusee.png` });
   await ctx.close();
-}
+});
 
 // ---------- 4. Ordinateur ----------
-{
+await section('Ordinateur', async () => {
   const ctx = await browser.newContext({ viewport: { width: 1366, height: 860 }, locale: 'fr-FR', timezoneId: 'Africa/Casablanca' });
   const page = await ctx.newPage();
   await page.goto(URL + '#/cliniques', { waitUntil: 'domcontentloaded' });
@@ -139,7 +141,7 @@ const base = {
   await wait(3000);
   await page.screenshot({ path: `${OUT}/sante-ordinateur.png` });
   await ctx.close();
-}
+});
 
 await browser.close();
 const vids = await readdir(`${OUT}/raw`);
