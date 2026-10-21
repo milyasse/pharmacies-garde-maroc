@@ -1,0 +1,6 @@
+
+> pharmacies-garde-maroc@1.5.3 collect:sante
+> node --experimental-strip-types --no-warnings scripts/collect-health.ts --force
+
+[sante] OpenStreetMap : 79 objets (base du 2026-10-21T21:12:23Z)
+[sante] 47 établissements (42 positionnés, 10 avec urgences déclarées).

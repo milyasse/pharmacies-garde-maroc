@@ -1,0 +1,1831 @@
+{
+ "generatedAt": "2026-10-21T21:14:10.874Z",
+ "osmBase": "2026-10-21T21:12:23Z",
+ "ministryDataDate": "2023-11-14",
+ "lastError": null,
+ "establishments": [
+  {
+   "id": "osm-w1101751339",
+   "name": "Clinique 16 Novembre",
+   "nameAr": null,
+   "type": "private_clinic",
+   "typeSource": "osm",
+   "officialCategory": null,
+   "address": "22 Avenue Ahmed Balafrej شارع أحمد بلافريج",
+   "city": "rabat",
+   "district": null,
+   "latitude": 33.9802059,
+   "longitude": -6.8423539,
+   "phone": "+212537671717",
+   "website": "https://clinique-oncologie.ma/",
+   "services": [
+    {
+     "id": "oncology",
+     "source": "osm"
+    }
+   ],
+   "emergency": null,
+   "emergencySource": null,
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/way/1101751339",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "way/1101751339"
+   ],
+   "notes": []
+  },
+  {
+   "id": "osm-w449075020",
+   "name": "Clinique Agdal",
+   "nameAr": null,
+   "type": "private_clinic",
+   "typeSource": "nom",
+   "officialCategory": null,
+   "address": "Avenue Ibn Sina",
+   "city": null,
+   "district": null,
+   "latitude": 33.9956497,
+   "longitude": -6.8510137,
+   "phone": null,
+   "website": null,
+   "services": [
+    {
+     "id": "emergency",
+     "source": "osm"
+    }
+   ],
+   "emergency": "yes",
+   "emergencySource": "osm",
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/way/449075020",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "way/449075020"
+   ],
+   "notes": []
+  },
+  {
+   "id": "osm-w329761817",
+   "name": "Clinique Atlas",
+   "nameAr": null,
+   "type": "private_clinic",
+   "typeSource": "nom",
+   "officialCategory": null,
+   "address": "Rue Houssali",
+   "city": null,
+   "district": null,
+   "latitude": 34.0136649,
+   "longitude": -6.8415558,
+   "phone": null,
+   "website": null,
+   "services": [],
+   "emergency": null,
+   "emergencySource": null,
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/way/329761817",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "way/329761817"
+   ],
+   "notes": []
+  },
+  {
+   "id": "osm-w453127434",
+   "name": "Clinique Beauséjour",
+   "nameAr": null,
+   "type": "private_clinic",
+   "typeSource": "nom",
+   "officialCategory": null,
+   "address": null,
+   "city": null,
+   "district": null,
+   "latitude": 34.0324632,
+   "longitude": -6.8243995,
+   "phone": "+212537781313",
+   "website": null,
+   "services": [],
+   "emergency": null,
+   "emergencySource": null,
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/way/453127434",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "way/453127434"
+   ],
+   "notes": []
+  },
+  {
+   "id": "osm-w234798834",
+   "name": "Clinique Belvedere Centre De Cardiologie",
+   "nameAr": null,
+   "type": "private_clinic",
+   "typeSource": "nom",
+   "officialCategory": null,
+   "address": null,
+   "city": null,
+   "district": null,
+   "latitude": 34.0107422,
+   "longitude": -6.8416074,
+   "phone": null,
+   "website": null,
+   "services": [
+    {
+     "id": "cardiology",
+     "source": "osm"
+    }
+   ],
+   "emergency": null,
+   "emergencySource": null,
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/way/234798834",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "way/234798834"
+   ],
+   "notes": []
+  },
+  {
+   "id": "osm-w395421845",
+   "name": "Clinique Benjelloum",
+   "nameAr": null,
+   "type": "private_clinic",
+   "typeSource": "nom",
+   "officialCategory": null,
+   "address": null,
+   "city": null,
+   "district": null,
+   "latitude": 34.0151703,
+   "longitude": -6.8238999,
+   "phone": null,
+   "website": null,
+   "services": [],
+   "emergency": null,
+   "emergencySource": null,
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/way/395421845",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "way/395421845"
+   ],
+   "notes": []
+  },
+  {
+   "id": "osm-w456862639",
+   "name": "Clinique De La Vision de Rabat",
+   "nameAr": null,
+   "type": "private_clinic",
+   "typeSource": "nom",
+   "officialCategory": null,
+   "address": null,
+   "city": null,
+   "district": null,
+   "latitude": 34.0072877,
+   "longitude": -6.8442143,
+   "phone": "+212537676666",
+   "website": null,
+   "services": [
+    {
+     "id": "ophthalmology",
+     "source": "nom"
+    }
+   ],
+   "emergency": null,
+   "emergencySource": null,
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/way/456862639",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "way/456862639"
+   ],
+   "notes": []
+  },
+  {
+   "id": "osm-n3702119358",
+   "name": "Clinique des Ambassadeurs",
+   "nameAr": null,
+   "type": "private_clinic",
+   "typeSource": "nom",
+   "officialCategory": null,
+   "address": null,
+   "city": null,
+   "district": null,
+   "latitude": 33.9618647,
+   "longitude": -6.8226646,
+   "phone": null,
+   "website": null,
+   "services": [],
+   "emergency": null,
+   "emergencySource": null,
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/3702119358",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "node/3702119358"
+   ],
+   "notes": []
+  },
+  {
+   "id": "osm-w482745706",
+   "name": "Clinique des Nations Unies",
+   "nameAr": null,
+   "type": "private_clinic",
+   "typeSource": "osm",
+   "officialCategory": null,
+   "address": null,
+   "city": "rabat",
+   "district": null,
+   "latitude": 33.9893298,
+   "longitude": -6.8490697,
+   "phone": null,
+   "website": "https://cliniquenationsunies.com/",
+   "services": [],
+   "emergency": null,
+   "emergencySource": null,
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/way/482745706",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "way/482745706"
+   ],
+   "notes": []
+  },
+  {
+   "id": "osm-w330105045",
+   "name": "Clinique des orangers",
+   "nameAr": null,
+   "type": "private_clinic",
+   "typeSource": "nom",
+   "officialCategory": null,
+   "address": null,
+   "city": null,
+   "district": null,
+   "latitude": 34.0174238,
+   "longitude": -6.8422696,
+   "phone": null,
+   "website": null,
+   "services": [],
+   "emergency": null,
+   "emergencySource": null,
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/way/330105045",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "way/330105045"
+   ],
+   "notes": []
+  },
+  {
+   "id": "osm-n3761843022",
+   "name": "Clinique du Bouregreg",
+   "nameAr": null,
+   "type": "private_clinic",
+   "typeSource": "nom",
+   "officialCategory": null,
+   "address": "Rue Taza",
+   "city": null,
+   "district": null,
+   "latitude": 34.0209439,
+   "longitude": -6.8234519,
+   "phone": null,
+   "website": null,
+   "services": [],
+   "emergency": null,
+   "emergencySource": null,
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/3761843022",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "node/3761843022"
+   ],
+   "notes": []
+  },
+  {
+   "id": "osm-n3190094380",
+   "name": "Clinique du Chellah",
+   "nameAr": null,
+   "type": "private_clinic",
+   "typeSource": "nom",
+   "officialCategory": null,
+   "address": "Rue d'Annaba",
+   "city": null,
+   "district": null,
+   "latitude": 34.016585,
+   "longitude": -6.829677,
+   "phone": null,
+   "website": null,
+   "services": [],
+   "emergency": null,
+   "emergencySource": null,
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/3190094380",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "node/3190094380"
+   ],
+   "notes": []
+  },
+  {
+   "id": "osm-w395408474",
+   "name": "Clinique El Amal",
+   "nameAr": null,
+   "type": "private_clinic",
+   "typeSource": "nom",
+   "officialCategory": null,
+   "address": null,
+   "city": null,
+   "district": null,
+   "latitude": 34.0130329,
+   "longitude": -6.8226153,
+   "phone": null,
+   "website": null,
+   "services": [],
+   "emergency": null,
+   "emergencySource": null,
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/way/395408474",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "way/395408474"
+   ],
+   "notes": []
+  },
+  {
+   "id": "osm-w456863021",
+   "name": "Clinique Ibn Khaldoun",
+   "nameAr": "مصحة إبن خلدون",
+   "type": "private_clinic",
+   "typeSource": "nom",
+   "officialCategory": null,
+   "address": "32 Avenue Ibn Khaldoun شارع ابن خلدون, 10090",
+   "city": "rabat",
+   "district": null,
+   "latitude": 34.0067677,
+   "longitude": -6.8442429,
+   "phone": "+212537776767",
+   "website": null,
+   "services": [
+    {
+     "id": "surgery",
+     "source": "osm"
+    },
+    {
+     "id": "general",
+     "source": "osm"
+    },
+    {
+     "id": "cardiology",
+     "source": "osm"
+    }
+   ],
+   "emergency": null,
+   "emergencySource": null,
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/way/456863021",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "way/456863021"
+   ],
+   "notes": []
+  },
+  {
+   "id": "osm-n3400339101",
+   "name": "Clinique La Ménara",
+   "nameAr": null,
+   "type": "private_clinic",
+   "typeSource": "nom",
+   "officialCategory": null,
+   "address": null,
+   "city": null,
+   "district": null,
+   "latitude": 34.0143671,
+   "longitude": -6.8312643,
+   "phone": null,
+   "website": null,
+   "services": [],
+   "emergency": null,
+   "emergencySource": null,
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/3400339101",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "node/3400339101"
+   ],
+   "notes": []
+  },
+  {
+   "id": "osm-n8741474717",
+   "name": "Clinique Ophtalmologique Cheikh Maouelainin",
+   "nameAr": "مصحة طب الأعين الشيخ مول العينين",
+   "type": "private_clinic",
+   "typeSource": "nom",
+   "officialCategory": null,
+   "address": null,
+   "city": null,
+   "district": null,
+   "latitude": 34.0345106,
+   "longitude": -6.8236692,
+   "phone": "+212537882796",
+   "website": null,
+   "services": [
+    {
+     "id": "ophthalmology",
+     "source": "nom"
+    }
+   ],
+   "emergency": null,
+   "emergencySource": null,
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/8741474717",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "node/8741474717"
+   ],
+   "notes": []
+  },
+  {
+   "id": "osm-w590876055",
+   "name": "Clinique Pasteur",
+   "nameAr": null,
+   "type": "private_clinic",
+   "typeSource": "nom",
+   "officialCategory": null,
+   "address": null,
+   "city": null,
+   "district": null,
+   "latitude": 33.9464626,
+   "longitude": -6.8662661,
+   "phone": null,
+   "website": null,
+   "services": [],
+   "emergency": null,
+   "emergencySource": null,
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/way/590876055",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "way/590876055"
+   ],
+   "notes": []
+  },
+  {
+   "id": "osm-n5360163261",
+   "name": "Clinique Rabat Zaers",
+   "nameAr": null,
+   "type": "private_clinic",
+   "typeSource": "nom",
+   "officialCategory": null,
+   "address": "Avenue Mohammed VI",
+   "city": null,
+   "district": null,
+   "latitude": 34.0018731,
+   "longitude": -6.8270427,
+   "phone": "+212537656565",
+   "website": null,
+   "services": [],
+   "emergency": null,
+   "emergencySource": null,
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/5360163261",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "node/5360163261"
+   ],
+   "notes": []
+  },
+  {
+   "id": "osm-n3449045268",
+   "name": "Clinique Souissi",
+   "nameAr": "مصحة السويسي",
+   "type": "private_clinic",
+   "typeSource": "nom",
+   "officialCategory": null,
+   "address": null,
+   "city": null,
+   "district": null,
+   "latitude": 33.9766467,
+   "longitude": -6.835629,
+   "phone": null,
+   "website": null,
+   "services": [],
+   "emergency": null,
+   "emergencySource": null,
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/3449045268",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "node/3449045268"
+   ],
+   "notes": []
+  },
+  {
+   "id": "osm-n10657551507",
+   "name": "Clinique VIP",
+   "nameAr": null,
+   "type": "private_clinic",
+   "typeSource": "nom",
+   "officialCategory": null,
+   "address": null,
+   "city": null,
+   "district": null,
+   "latitude": 33.9690306,
+   "longitude": -6.868947,
+   "phone": null,
+   "website": null,
+   "services": [],
+   "emergency": null,
+   "emergencySource": null,
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/10657551507",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "node/10657551507"
+   ],
+   "notes": []
+  },
+  {
+   "id": "osm-n14188943413",
+   "name": "Complexe médico-social Prince M'y Abdellah",
+   "nameAr": null,
+   "type": "hospital",
+   "typeSource": "osm",
+   "officialCategory": null,
+   "address": null,
+   "city": null,
+   "district": null,
+   "latitude": 33.9984001,
+   "longitude": -6.8509227,
+   "phone": null,
+   "website": null,
+   "services": [],
+   "emergency": null,
+   "emergencySource": null,
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/14188943413",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "node/14188943413"
+   ],
+   "notes": []
+  },
+  {
+   "id": "ms-arrazi",
+   "name": "Hôpital Arrazi",
+   "nameAr": null,
+   "type": "public_hospital",
+   "typeSource": "ministere",
+   "officialCategory": "Centre Psychiatrique Universitaire",
+   "address": null,
+   "city": "sale",
+   "district": "Tabriquet",
+   "latitude": null,
+   "longitude": null,
+   "phone": null,
+   "website": null,
+   "services": [
+    {
+     "id": "psychiatry",
+     "source": "ministere"
+    }
+   ],
+   "emergency": null,
+   "emergencySource": null,
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "ministere-sante",
+     "name": "Ministère de la Santé — liste des hôpitaux (data.gov.ma)",
+     "url": "https://data.gov.ma/data/fr/dataset/la-liste-des-hopitaux",
+     "license": "Open Data Commons Open Database License (ODbL)",
+     "dataDate": "2023-11-14"
+    }
+   ],
+   "osmIds": [],
+   "notes": [
+    "Position non publiée par les sources consultées."
+   ]
+  },
+  {
+   "id": "osm-w289025339",
+   "name": "Hôpital Cheikh Zaid",
+   "nameAr": "مستشفي الشيخ زايد بالرباط",
+   "type": "private_hospital",
+   "typeSource": "osm",
+   "officialCategory": null,
+   "address": "Avenue Allal Fassi شارع علال الفاسي, 10000",
+   "city": "rabat",
+   "district": null,
+   "latitude": 33.9774766,
+   "longitude": -6.8696998,
+   "phone": "+212537683848",
+   "website": "https://www.hcz.ma/contact/",
+   "services": [
+    {
+     "id": "emergency",
+     "source": "osm"
+    },
+    {
+     "id": "general",
+     "source": "osm"
+    },
+    {
+     "id": "biology",
+     "source": "osm"
+    },
+    {
+     "id": "orthopaedics",
+     "source": "osm"
+    },
+    {
+     "id": "gynaecology",
+     "source": "osm"
+    },
+    {
+     "id": "surgery",
+     "source": "osm"
+    },
+    {
+     "id": "cardiology",
+     "source": "osm"
+    },
+    {
+     "id": "oncology",
+     "source": "osm"
+    },
+    {
+     "id": "radiology",
+     "source": "osm"
+    }
+   ],
+   "emergency": "yes",
+   "emergencySource": "osm",
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/way/289025339",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "way/289025339"
+   ],
+   "notes": []
+  },
+  {
+   "id": "ms-hopital-d-enfants",
+   "name": "Hôpital d’Enfants",
+   "nameAr": null,
+   "type": "public_hospital",
+   "typeSource": "ministere",
+   "officialCategory": "Hospital Interrégional",
+   "address": null,
+   "city": "rabat",
+   "district": "Agdal Riyad",
+   "latitude": 33.9864541,
+   "longitude": -6.8542771,
+   "phone": null,
+   "website": null,
+   "services": [
+    {
+     "id": "paediatrics",
+     "source": "nom"
+    },
+    {
+     "id": "emergency",
+     "source": "osm"
+    }
+   ],
+   "emergency": "yes",
+   "emergencySource": "osm",
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "ministere-sante",
+     "name": "Ministère de la Santé — liste des hôpitaux (data.gov.ma)",
+     "url": "https://data.gov.ma/data/fr/dataset/la-liste-des-hopitaux",
+     "license": "Open Data Commons Open Database License (ODbL)",
+     "dataDate": "2023-11-14"
+    },
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/way/171435524",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    },
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/way/482745795",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "way/171435524",
+    "way/482745795"
+   ],
+   "notes": []
+  },
+  {
+   "id": "ms-hopital-des-specialites",
+   "name": "Hôpital des Spécialités",
+   "nameAr": null,
+   "type": "public_hospital",
+   "typeSource": "ministere",
+   "officialCategory": "Hospital Interrégional",
+   "address": null,
+   "city": "rabat",
+   "district": "Agdal Riyad",
+   "latitude": 33.9820234,
+   "longitude": -6.8580191,
+   "phone": null,
+   "website": null,
+   "services": [
+    {
+     "id": "emergency",
+     "source": "osm"
+    }
+   ],
+   "emergency": "yes",
+   "emergencySource": "osm",
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "ministere-sante",
+     "name": "Ministère de la Santé — liste des hôpitaux (data.gov.ma)",
+     "url": "https://data.gov.ma/data/fr/dataset/la-liste-des-hopitaux",
+     "license": "Open Data Commons Open Database License (ODbL)",
+     "dataDate": "2023-11-14"
+    },
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/way/789176305",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "way/789176305"
+   ],
+   "notes": []
+  },
+  {
+   "id": "ms-el-ayachi",
+   "name": "Hôpital El Ayachi",
+   "nameAr": "مستشفي العياشي",
+   "type": "public_hospital",
+   "typeSource": "ministere",
+   "officialCategory": "Hospital Interrégional",
+   "address": null,
+   "city": "sale",
+   "district": "Bab Lamrissa",
+   "latitude": 34.0346468,
+   "longitude": -6.8259071,
+   "phone": null,
+   "website": null,
+   "services": [],
+   "emergency": "no",
+   "emergencySource": "osm",
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "ministere-sante",
+     "name": "Ministère de la Santé — liste des hôpitaux (data.gov.ma)",
+     "url": "https://data.gov.ma/data/fr/dataset/la-liste-des-hopitaux",
+     "license": "Open Data Commons Open Database License (ODbL)",
+     "dataDate": "2023-11-14"
+    },
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/way/789273401",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "way/789273401"
+   ],
+   "notes": []
+  },
+  {
+   "id": "osm-w789268675",
+   "name": "Hôpital Fath El Kheir",
+   "nameAr": null,
+   "type": "hospital",
+   "typeSource": "osm",
+   "officialCategory": null,
+   "address": "12000",
+   "city": "temara",
+   "district": null,
+   "latitude": 33.906378,
+   "longitude": -6.9206231,
+   "phone": null,
+   "website": null,
+   "services": [],
+   "emergency": "no",
+   "emergencySource": "osm",
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/way/789268675",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "way/789268675"
+   ],
+   "notes": []
+  },
+  {
+   "id": "ms-ibn-sina",
+   "name": "Hôpital Ibn Sina",
+   "nameAr": null,
+   "type": "public_hospital",
+   "typeSource": "ministere",
+   "officialCategory": "Hospital Interrégional",
+   "address": null,
+   "city": "rabat",
+   "district": "Agdal Riyad",
+   "latitude": 33.9826974,
+   "longitude": -6.8521972,
+   "phone": null,
+   "website": null,
+   "services": [
+    {
+     "id": "emergency",
+     "source": "osm"
+    }
+   ],
+   "emergency": "yes",
+   "emergencySource": "osm",
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "ministere-sante",
+     "name": "Ministère de la Santé — liste des hôpitaux (data.gov.ma)",
+     "url": "https://data.gov.ma/data/fr/dataset/la-liste-des-hopitaux",
+     "license": "Open Data Commons Open Database License (ODbL)",
+     "dataDate": "2023-11-14"
+    },
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/relation/21685408",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "relation/21685408"
+   ],
+   "notes": []
+  },
+  {
+   "id": "osm-w152610310",
+   "name": "Hôpital Militaire Mohammed V",
+   "nameAr": "المستشفى العسكري الدراسي محمد الخامس",
+   "type": "military_hospital",
+   "typeSource": "nom",
+   "officialCategory": null,
+   "address": null,
+   "city": "rabat",
+   "district": null,
+   "latitude": 33.9697158,
+   "longitude": -6.8703091,
+   "phone": null,
+   "website": null,
+   "services": [
+    {
+     "id": "emergency",
+     "source": "osm"
+    }
+   ],
+   "emergency": "yes",
+   "emergencySource": "osm",
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/way/152610310",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "way/152610310"
+   ],
+   "notes": []
+  },
+  {
+   "id": "osm-w789273095",
+   "name": "Hopital Moulay Abdallah",
+   "nameAr": null,
+   "type": "hospital",
+   "typeSource": "osm",
+   "officialCategory": null,
+   "address": null,
+   "city": null,
+   "district": null,
+   "latitude": 34.0374682,
+   "longitude": -6.8125956,
+   "phone": null,
+   "website": null,
+   "services": [],
+   "emergency": null,
+   "emergencySource": null,
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/way/789273095",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "way/789273095"
+   ],
+   "notes": []
+  },
+  {
+   "id": "ms-moulay-abdellah-hop-prefectoral",
+   "name": "Hôpital Moulay Abdellah",
+   "nameAr": null,
+   "type": "public_hospital",
+   "typeSource": "ministere",
+   "officialCategory": "Hôpital Provincial/Préfectoral",
+   "address": null,
+   "city": "sale",
+   "district": "Hssaine",
+   "latitude": null,
+   "longitude": null,
+   "phone": null,
+   "website": null,
+   "services": [],
+   "emergency": null,
+   "emergencySource": null,
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "ministere-sante",
+     "name": "Ministère de la Santé — liste des hôpitaux (data.gov.ma)",
+     "url": "https://data.gov.ma/data/fr/dataset/la-liste-des-hopitaux",
+     "license": "Open Data Commons Open Database License (ODbL)",
+     "dataDate": "2023-11-14"
+    }
+   ],
+   "osmIds": [],
+   "notes": [
+    "Position non publiée par les sources consultées."
+   ]
+  },
+  {
+   "id": "osm-n2569037645",
+   "name": "Hopital Moulay Youssef",
+   "nameAr": null,
+   "type": "hospital",
+   "typeSource": "osm",
+   "officialCategory": null,
+   "address": null,
+   "city": null,
+   "district": null,
+   "latitude": 34.0102418,
+   "longitude": -6.8613729,
+   "phone": null,
+   "website": null,
+   "services": [],
+   "emergency": null,
+   "emergencySource": null,
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/2569037645",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "node/2569037645"
+   ],
+   "notes": []
+  },
+  {
+   "id": "ms-my-youssef",
+   "name": "Hôpital Moulay Youssef",
+   "nameAr": null,
+   "type": "public_hospital",
+   "typeSource": "ministere",
+   "officialCategory": "Hospital Interrégional",
+   "address": null,
+   "city": "rabat",
+   "district": "Hassan",
+   "latitude": null,
+   "longitude": null,
+   "phone": null,
+   "website": null,
+   "services": [],
+   "emergency": null,
+   "emergencySource": null,
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "ministere-sante",
+     "name": "Ministère de la Santé — liste des hôpitaux (data.gov.ma)",
+     "url": "https://data.gov.ma/data/fr/dataset/la-liste-des-hopitaux",
+     "license": "Open Data Commons Open Database License (ODbL)",
+     "dataDate": "2023-11-14"
+    }
+   ],
+   "osmIds": [],
+   "notes": [
+    "Position non publiée par les sources consultées."
+   ]
+  },
+  {
+   "id": "ms-moulay-youssef-ancien-hopital-de-rabat",
+   "name": "Hôpital Moulay Youssef (ancien hôpital de Rabat)",
+   "nameAr": null,
+   "type": "public_hospital",
+   "typeSource": "ministere",
+   "officialCategory": "Hôpital Régional",
+   "address": null,
+   "city": "rabat",
+   "district": "Hassan",
+   "latitude": null,
+   "longitude": null,
+   "phone": null,
+   "website": null,
+   "services": [],
+   "emergency": null,
+   "emergencySource": null,
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "ministere-sante",
+     "name": "Ministère de la Santé — liste des hôpitaux (data.gov.ma)",
+     "url": "https://data.gov.ma/data/fr/dataset/la-liste-des-hopitaux",
+     "license": "Open Data Commons Open Database License (ODbL)",
+     "dataDate": "2023-11-14"
+    }
+   ],
+   "osmIds": [],
+   "notes": [
+    "Position non publiée par les sources consultées."
+   ]
+  },
+  {
+   "id": "ms-princesse-lalla-aicha-ancien-sidi-lahcen",
+   "name": "Hôpital Princesse Lalla Aicha (ancien Sidi Lahcen)",
+   "nameAr": null,
+   "type": "public_hospital",
+   "typeSource": "ministere",
+   "officialCategory": "Hôpital Provincial/Préfectoral",
+   "address": null,
+   "city": "temara",
+   "district": "Témara",
+   "latitude": 33.9044385,
+   "longitude": -6.9383922,
+   "phone": null,
+   "website": null,
+   "services": [
+    {
+     "id": "general",
+     "source": "osm"
+    },
+    {
+     "id": "emergency",
+     "source": "osm"
+    }
+   ],
+   "emergency": "yes",
+   "emergencySource": "osm",
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "ministere-sante",
+     "name": "Ministère de la Santé — liste des hôpitaux (data.gov.ma)",
+     "url": "https://data.gov.ma/data/fr/dataset/la-liste-des-hopitaux",
+     "license": "Open Data Commons Open Database License (ODbL)",
+     "dataDate": "2023-11-14"
+    },
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/way/738368993",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "way/738368993"
+   ],
+   "notes": []
+  },
+  {
+   "id": "osm-w1555330006",
+   "name": "Hôpital privé Ibn Yassine",
+   "nameAr": null,
+   "type": "private_hospital",
+   "typeSource": "nom",
+   "officialCategory": null,
+   "address": null,
+   "city": null,
+   "district": null,
+   "latitude": 34.0044385,
+   "longitude": -6.8474373,
+   "phone": null,
+   "website": null,
+   "services": [],
+   "emergency": null,
+   "emergencySource": null,
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/way/1555330006",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "way/1555330006"
+   ],
+   "notes": []
+  },
+  {
+   "id": "osm-n4495228962",
+   "name": "Hôpital Public Hay Said HAJJI",
+   "nameAr": null,
+   "type": "public_hospital",
+   "typeSource": "nom",
+   "officialCategory": null,
+   "address": null,
+   "city": null,
+   "district": null,
+   "latitude": 34.0743862,
+   "longitude": -6.7859846,
+   "phone": null,
+   "website": null,
+   "services": [],
+   "emergency": null,
+   "emergencySource": null,
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/4495228962",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "node/4495228962"
+   ],
+   "notes": []
+  },
+  {
+   "id": "osm-n14100848801",
+   "name": "Hôpital Tabriquet",
+   "nameAr": null,
+   "type": "hospital",
+   "typeSource": "osm",
+   "officialCategory": null,
+   "address": null,
+   "city": null,
+   "district": null,
+   "latitude": 34.052378,
+   "longitude": -6.7979603,
+   "phone": null,
+   "website": null,
+   "services": [],
+   "emergency": null,
+   "emergencySource": null,
+   "hours": {
+    "text": "24/7",
+    "source": "osm",
+    "verified": false,
+    "verifiedAt": null,
+    "sourceUrl": "https://www.openstreetmap.org/node/14100848801"
+   },
+   "duty": [],
+   "sources": [
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/14100848801",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "node/14100848801"
+   ],
+   "notes": []
+  },
+  {
+   "id": "osm-r21685401",
+   "name": "Hôpital universitaire Mohammed VI des Sciences et de la Santé",
+   "nameAr": null,
+   "type": "private_hospital",
+   "typeSource": "osm",
+   "officialCategory": null,
+   "address": null,
+   "city": null,
+   "district": null,
+   "latitude": 33.9801324,
+   "longitude": -6.8570673,
+   "phone": "+212530440441",
+   "website": "https://hm6.ma/",
+   "services": [
+    {
+     "id": "cardiology",
+     "source": "osm"
+    },
+    {
+     "id": "oncology",
+     "source": "osm"
+    },
+    {
+     "id": "neurology",
+     "source": "osm"
+    },
+    {
+     "id": "orthopaedics",
+     "source": "osm"
+    },
+    {
+     "id": "trauma",
+     "source": "osm"
+    },
+    {
+     "id": "gynaecology",
+     "source": "osm"
+    },
+    {
+     "id": "pulmonology",
+     "source": "osm"
+    },
+    {
+     "id": "gastroenterology",
+     "source": "osm"
+    },
+    {
+     "id": "nephrology",
+     "source": "osm"
+    },
+    {
+     "id": "endocrinology",
+     "source": "osm"
+    },
+    {
+     "id": "internal",
+     "source": "osm"
+    },
+    {
+     "id": "infectious",
+     "source": "osm"
+    },
+    {
+     "id": "surgery",
+     "source": "osm"
+    },
+    {
+     "id": "nuclear",
+     "source": "osm"
+    },
+    {
+     "id": "dentistry",
+     "source": "osm"
+    },
+    {
+     "id": "emergency",
+     "source": "osm"
+    }
+   ],
+   "emergency": "yes",
+   "emergencySource": "osm",
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/relation/21685401",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "relation/21685401"
+   ],
+   "notes": []
+  },
+  {
+   "id": "osm-w1248303519",
+   "name": "Hôpital wlad bennasser",
+   "nameAr": "مستشفى ولاد بن ناصر",
+   "type": "hospital",
+   "typeSource": "osm",
+   "officialCategory": null,
+   "address": null,
+   "city": null,
+   "district": null,
+   "latitude": 33.928382,
+   "longitude": -6.9023329,
+   "phone": null,
+   "website": null,
+   "services": [],
+   "emergency": null,
+   "emergencySource": null,
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/way/1248303519",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "way/1248303519"
+   ],
+   "notes": []
+  },
+  {
+   "id": "ms-med-ben-abdellah",
+   "name": "Institut national d'oncologie Sidi Mohamed Ben Abdellah",
+   "nameAr": "المعهد الوطني للانكلوجيا سيدي محمد بن عبد الله",
+   "type": "public_hospital",
+   "typeSource": "ministere",
+   "officialCategory": "Hospital Interrégional",
+   "address": "المعهد الوطني للانكلوجيا سيدي محمد بن عبد الله شارع علال الفاسي, 10000",
+   "city": "rabat",
+   "district": "Agdal Riyad",
+   "latitude": 33.9723284,
+   "longitude": -6.8731815,
+   "phone": null,
+   "website": null,
+   "services": [
+    {
+     "id": "oncology",
+     "source": "osm"
+    },
+    {
+     "id": "emergency",
+     "source": "osm"
+    }
+   ],
+   "emergency": "yes",
+   "emergencySource": "osm",
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "ministere-sante",
+     "name": "Ministère de la Santé — liste des hôpitaux (data.gov.ma)",
+     "url": "https://data.gov.ma/data/fr/dataset/la-liste-des-hopitaux",
+     "license": "Open Data Commons Open Database License (ODbL)",
+     "dataDate": "2023-11-14"
+    },
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/way/1037424831",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "way/1037424831"
+   ],
+   "notes": []
+  },
+  {
+   "id": "osm-w278585583",
+   "name": "La Capitale",
+   "nameAr": null,
+   "type": "hospital",
+   "typeSource": "osm",
+   "officialCategory": null,
+   "address": null,
+   "city": null,
+   "district": null,
+   "latitude": 34.0167844,
+   "longitude": -6.8282204,
+   "phone": null,
+   "website": null,
+   "services": [],
+   "emergency": null,
+   "emergencySource": null,
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/way/278585583",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "way/278585583"
+   ],
+   "notes": []
+  },
+  {
+   "id": "ms-maternite-orangers",
+   "name": "Maternité Orangers",
+   "nameAr": null,
+   "type": "public_hospital",
+   "typeSource": "ministere",
+   "officialCategory": "Hospital Interrégional",
+   "address": null,
+   "city": "rabat",
+   "district": "Agdal Riyad",
+   "latitude": null,
+   "longitude": null,
+   "phone": null,
+   "website": null,
+   "services": [
+    {
+     "id": "maternity",
+     "source": "nom"
+    }
+   ],
+   "emergency": null,
+   "emergencySource": null,
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "ministere-sante",
+     "name": "Ministère de la Santé — liste des hôpitaux (data.gov.ma)",
+     "url": "https://data.gov.ma/data/fr/dataset/la-liste-des-hopitaux",
+     "license": "Open Data Commons Open Database License (ODbL)",
+     "dataDate": "2023-11-14"
+    }
+   ],
+   "osmIds": [],
+   "notes": [
+    "Position non publiée par les sources consultées."
+   ]
+  },
+  {
+   "id": "ms-maternite-souissi",
+   "name": "Maternité Souissi",
+   "nameAr": null,
+   "type": "public_hospital",
+   "typeSource": "ministere",
+   "officialCategory": "Hospital Interrégional",
+   "address": null,
+   "city": "rabat",
+   "district": "Agdal Riyad",
+   "latitude": 33.9873368,
+   "longitude": -6.855408,
+   "phone": null,
+   "website": null,
+   "services": [
+    {
+     "id": "maternity",
+     "source": "nom"
+    },
+    {
+     "id": "emergency",
+     "source": "osm"
+    }
+   ],
+   "emergency": "yes",
+   "emergencySource": "osm",
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "ministere-sante",
+     "name": "Ministère de la Santé — liste des hôpitaux (data.gov.ma)",
+     "url": "https://data.gov.ma/data/fr/dataset/la-liste-des-hopitaux",
+     "license": "Open Data Commons Open Database License (ODbL)",
+     "dataDate": "2023-11-14"
+    },
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/way/171435526",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "way/171435526"
+   ],
+   "notes": []
+  },
+  {
+   "id": "osm-n13697849845",
+   "name": "Nouveau Hopital My Abdellah",
+   "nameAr": null,
+   "type": "hospital",
+   "typeSource": "osm",
+   "officialCategory": null,
+   "address": null,
+   "city": null,
+   "district": null,
+   "latitude": 34.0263046,
+   "longitude": -6.75359,
+   "phone": null,
+   "website": null,
+   "services": [],
+   "emergency": null,
+   "emergencySource": null,
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/13697849845",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    },
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/way/250293101",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "node/13697849845",
+    "way/250293101"
+   ],
+   "notes": []
+  },
+  {
+   "id": "osm-n12783286334",
+   "name": "Polyclinique Belvédère",
+   "nameAr": null,
+   "type": "private_clinic",
+   "typeSource": "nom",
+   "officialCategory": null,
+   "address": null,
+   "city": null,
+   "district": null,
+   "latitude": 34.0107368,
+   "longitude": -6.841603,
+   "phone": null,
+   "website": "https://www.cliniquebelvedere.ma",
+   "services": [],
+   "emergency": null,
+   "emergencySource": null,
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/12783286334",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "node/12783286334"
+   ],
+   "notes": []
+  },
+  {
+   "id": "osm-n3061023086",
+   "name": "Polyclinique Internationale de Rabat",
+   "nameAr": null,
+   "type": "private_clinic",
+   "typeSource": "nom",
+   "officialCategory": null,
+   "address": null,
+   "city": null,
+   "district": null,
+   "latitude": 34.0207477,
+   "longitude": -6.8230042,
+   "phone": null,
+   "website": null,
+   "services": [],
+   "emergency": null,
+   "emergencySource": null,
+   "hours": null,
+   "duty": [],
+   "sources": [
+    {
+     "id": "osm",
+     "name": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/3061023086",
+     "license": "ODbL — © contributeurs OpenStreetMap",
+     "dataDate": "2026-10-21"
+    }
+   ],
+   "osmIds": [
+    "node/3061023086"
+   ],
+   "notes": []
+  }
+ ]
+}
