@@ -10,7 +10,7 @@ export function SpaceTabs({ space, onChange }: { space: Space; onChange: (s: Spa
     { id: 'sante', label: 'Cliniques et hôpitaux', icon: <HospitalIcon size={18} /> },
   ];
   return (
-    <nav aria-label="Espaces" className="border-b border-line bg-white">
+    <nav aria-label="Espaces" className="sticky top-0 z-[800] border-b border-line bg-white/95 shadow-[0_1px_6px_rgba(13,26,20,0.06)] backdrop-blur">
       <div role="tablist" className="grid grid-cols-2 lg:flex lg:px-6">
         {tabs.map((t) => {
           const on = t.id === space;

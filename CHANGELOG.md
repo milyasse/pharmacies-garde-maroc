@@ -1,5 +1,16 @@
 # Historique des versions
 
+## 1.7.0 — 21/10/2026
+- **Cliniques et hôpitaux : « Calculer les trajets »**, comme pour les pharmacies : itinéraires routiers des 12 établissements les plus proches, tri par **durée de trajet**, option **« Tous les itinéraires »** sur la carte. Tri : Plus proches · Plus éloignés · Durée.
+- Ergonomie (deux espaces) :
+  - formulaire replié en résumé après une recherche (bouton « Modifier »), et sur téléphone la carte et les résultats viennent à l'écran ;
+  - squelettes de chargement à la place du simple message d'attente ;
+  - onglets « Pharmacies / Cliniques et hôpitaux » toujours visibles en haut de l'écran ;
+  - fiches d'établissement plus lisibles : informations essentielles en premier, coordonnées et sources dans « Détails et sources » ;
+  - liste de résultats rendue une seule fois (plus légère, défilement vers la fiche sélectionnée fiable) ;
+  - retour tactile sur les boutons.
+
+
 ## 1.6.0 — 21/10/2026
 - **Nouvel espace « Cliniques et hôpitaux »** (onglet en haut de l'écran, lien direct `#/cliniques`) : recherche par ville, position ou adresse, rayon en km, filtres par type d'établissement, service et urgences déclarées, tri par distance croissante ou décroissante, carte et liste synchronisées, itinéraire, appel.
 - Données issues de la **liste officielle des hôpitaux du ministère de la Santé** (data.gov.ma) et d'**OpenStreetMap**, rapprochées à la main ; collecte automatique quotidienne.

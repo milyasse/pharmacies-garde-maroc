@@ -7,13 +7,18 @@ import { RadiusPicker } from '../search/RadiusPicker.tsx';
 import { PharmacyMap, type MapItem } from '../PharmacyMap.tsx';
 import { MapLegend } from '../MapLegend.tsx';
 import type { RouteState } from '../PharmacyCard.tsx';
-import { EstablishmentList } from './EstablishmentList.tsx';
+import { EstablishmentList, type HealthSort } from './EstablishmentList.tsx';
+import { ResultsSkeleton } from '../ResultsSkeleton.tsx';
+import { useMediaQuery, DESKTOP } from '../../hooks/useMediaQuery.ts';
+import { sortByDuration } from '../../shared/search.ts';
+import { CONFIG } from '../../config.ts';
+import { TYPE_LABEL } from '../../shared/health/labels.ts';
 import { levelLabel } from './EstablishmentCard.tsx';
 import { HospitalIcon, SpinnerIcon } from '../icons.tsx';
 import { searchPlace } from '../../services/geocoding.ts';
 import { getRoute, type RouteResult, type TravelMode } from '../../services/routing.ts';
 import { loadHealthDataset } from '../../services/healthData.ts';
-import { availableServices, searchEstablishments, type HealthOutcome, type SortOrder } from '../../shared/health/search.ts';
+import { availableServices, searchEstablishments, type HealthOutcome } from '../../shared/health/search.ts';
 import { SERVICE_LABEL, TYPE_FILTERS } from '../../shared/health/labels.ts';
 import type { EstablishmentResult, EstablishmentType, HealthDataset, ServiceId } from '../../shared/health/types.ts';
 import { CITIES } from '../../shared/connectors/registry.ts';
@@ -47,7 +52,12 @@ export function HealthSpace(props: {
   const [types, setTypes] = useState<EstablishmentType[]>([]);
   const [service, setService] = useState<ServiceId | null>(null);
   const [emergencyOnly, setEmergencyOnly] = useState(false);
-  const [sort, setSort] = useState<SortOrder>('asc');
+  const [sort, setSort] = useState<HealthSort>('asc');
+  const [showAllRoutes, setShowAllRoutes] = useState(false);
+  const [computingAll, setComputingAll] = useState(false);
+  const [collapsed, setCollapsed] = useState(false);
+  const routeAbort = useRef<AbortController | null>(null);
+  const isDesktop = useMediaQuery(DESKTOP);
   const [picking, setPicking] = useState(false);
   const [originError, setOriginError] = useState<string | null>(null);
   const [radiusErr, setRadiusErr] = useState<string | null>(null);
@@ -89,8 +99,11 @@ export function HealthSpace(props: {
     }
     setOriginError(null);
     setSearch({ state: 'loading' });
+    routeAbort.current?.abort();
+    setComputingAll(false);
     setRoutes({});
     setRouteStates({});
+    if (sort === 'duration') setSort('asc');
     const d = force || !dataset ? await loadData(force) : dataset;
     if (!d) {
       setSearch({ state: 'error', error: dataError ?? 'Données indisponibles.' });
@@ -99,7 +112,10 @@ export function HealthSpace(props: {
     const outcome = searchEstablishments(d.establishments, { origin, radiusKm, types, service, emergencyOnly, date: moroccoDate(), sort: 'asc' });
     setSearch({ state: 'done', outcome, key: queryKey, radiusKm, filtersActive: types.length > 0 || !!service || emergencyOnly });
     setSelectedId(outcome.ranked[0]?.id ?? null); // le plus proche
-  }, [origin, dataset, loadData, dataError, radiusKm, types, service, emergencyOnly, queryKey]);
+    setCollapsed(true);
+    // sur téléphone : amener la carte et les résultats à l'écran
+    if (!window.matchMedia(DESKTOP).matches) setTimeout(() => mapBox.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 80);
+  }, [origin, dataset, loadData, dataError, radiusKm, types, service, emergencyOnly, queryKey, sort]);
 
   const runRef = useRef(runSearch);
   runRef.current = runSearch;
@@ -107,31 +123,49 @@ export function HealthSpace(props: {
 
   // Le tri s'applique immédiatement aux résultats affichés (pas de nouvelle recherche)
   const outcome = search.state === 'done' ? search.outcome : null;
-  const ordered = useMemo(() => {
-    if (!outcome) return [];
-    const asc = [...outcome.ranked].sort((a, b) => (a.rank ?? 0) - (b.rank ?? 0));
-    return sort === 'asc' ? asc : asc.reverse();
-  }, [outcome, sort]);
-
   const withRoutes = useCallback((list: EstablishmentResult[]) => list.map((e) => (routes[e.id] ? { ...e, distanceRoadKm: routes[e.id].distanceKm, estimatedTravelMinutes: routes[e.id].durationMin } : e)), [routes]);
-  const list = useMemo(() => withRoutes(ordered), [ordered, withRoutes]);
+  const list = useMemo(() => {
+    if (!outcome) return [];
+    const asc = withRoutes([...outcome.ranked].sort((a, b) => (a.rank ?? 0) - (b.rank ?? 0)));
+    if (sort === 'duration') return sortByDuration(asc);
+    return sort === 'asc' ? asc : asc.reverse();
+  }, [outcome, sort, withRoutes]);
   const unlocated = outcome?.unlocated ?? [];
   const mapItems: MapItem[] = useMemo(() => list.map((e) => ({ ...e, statusLabel: levelLabel(e) })), [list]);
   const criteriaChanged = search.state === 'done' && search.key !== queryKey;
 
   // ---------- Itinéraires (même moteur OSRM que les pharmacies)
-  const computeRoute = useCallback(async (id: string) => {
+  const computeRoute = useCallback(async (id: string, signal?: AbortSignal) => {
     const e = list.find((x) => x.id === id);
     if (!e || !origin || e.latitude === null || e.longitude === null || routes[id]) return;
     setRouteStates((s) => ({ ...s, [id]: { loading: true } }));
     try {
-      const r = await getRoute(origin, { lat: e.latitude, lng: e.longitude }, mode);
+      const r = await getRoute(origin, { lat: e.latitude, lng: e.longitude }, mode, signal);
       setRoutes((m) => ({ ...m, [id]: r }));
       setRouteStates((s) => ({ ...s, [id]: {} }));
     } catch (err) {
+      if ((err as Error).name === 'AbortError') { setRouteStates((s) => ({ ...s, [id]: {} })); return; }
       setRouteStates((s) => ({ ...s, [id]: { error: `${(err as Error).message} Utilisez « Ouvrir dans Google Maps ».` } }));
     }
   }, [list, origin, mode, routes]);
+
+  // « Calculer les trajets » : itinéraires routiers des établissements les plus proches, un par un (service public ménagé)
+  async function computeAll() {
+    if (!outcome || !origin) return;
+    routeAbort.current?.abort();
+    const ac = new AbortController();
+    routeAbort.current = ac;
+    setComputingAll(true);
+    const nearest = [...outcome.ranked].sort((a, b) => (a.rank ?? 0) - (b.rank ?? 0)).slice(0, CONFIG.maxRoutesBatch);
+    for (const e of nearest) {
+      if (ac.signal.aborted) break;
+      if (routes[e.id]) continue;
+      await computeRoute(e.id, ac.signal);
+      await new Promise((r) => setTimeout(r, 350));
+    }
+    setComputingAll(false);
+  }
+  const visibleRouteIds = useMemo(() => (showAllRoutes ? Object.keys(routes) : selectedId ? [selectedId] : []), [showAllRoutes, routes, selectedId]);
 
   useEffect(() => {
     if (!selectedId || !origin || search.state !== 'done') return;
@@ -205,7 +239,16 @@ export function HealthSpace(props: {
           {dataError && <p role="alert" className="mt-2 text-sm font-semibold text-danger-600">{dataError}</p>}
         </section>
 
-        {/* Formulaire */}
+        {/* Formulaire (replié en résumé après une recherche, comme l'espace Pharmacies) */}
+        {collapsed && search.state === 'done' ? (
+          <div className="flex items-center gap-3 bg-white px-4 py-3 lg:px-6">
+            <p className="min-w-0 flex-1 text-sm">
+              <b>{origin?.kind === 'gps' ? 'Ma position' : origin?.kind === 'map' ? 'Point sur la carte' : origin?.kind === 'city' ? origin.label.replace('Centre de ', '') : origin?.label.split(',')[0]}</b>
+              <span className="text-muted"> · {radiusKm} km · {types.length ? types.map((t) => TYPE_LABEL[t]).join(', ') : 'tous types'}{service ? ` · ${SERVICE_LABEL[service]}` : ''}{emergencyOnly ? ' · urgences déclarées' : ''}</span>
+            </p>
+            <button type="button" onClick={() => setCollapsed(false)} className="rounded-xl bg-brand-50 px-3 py-2 text-sm font-bold text-brand-700">Modifier</button>
+          </div>
+        ) : (
         <section aria-label="Recherche" className="space-y-4 bg-white p-4 lg:px-6">
           <OriginPicker
             idPrefix="sante-"
@@ -265,12 +308,13 @@ export function HealthSpace(props: {
             {search.state === 'loading' ? <SpinnerIcon /> : <HospitalIcon size={18} />} Rechercher les établissements
           </button>
         </section>
+        )}
 
-        <div className="hidden lg:block">{renderResults()}</div>
+        {isDesktop && renderResults()}
       </div>
 
       <div className="flex flex-col lg:min-h-0">
-        <div ref={mapBox} className="relative h-[48vh] min-h-[300px] scroll-mt-2 lg:h-auto lg:flex-1">
+        <div ref={mapBox} className="relative h-[48vh] min-h-[300px] scroll-mt-14 lg:h-auto lg:flex-1">
           <PharmacyMap
             ariaLabel="Carte des cliniques et hôpitaux"
             origin={origin}
@@ -278,7 +322,7 @@ export function HealthSpace(props: {
             pharmacies={mapItems}
             selectedId={selectedId}
             routes={routes}
-            visibleRouteIds={selectedId ? [selectedId] : []}
+            visibleRouteIds={visibleRouteIds}
             mode={mode}
             picking={picking}
             onPick={(lat, lng) => { setOrigin({ lat, lng, label: 'Point choisi sur la carte', kind: 'map' }); setPicking(false); }}
@@ -290,7 +334,7 @@ export function HealthSpace(props: {
           />
         </div>
         <div className="bg-white px-4 py-2"><MapLegend count={list.length || 5} approx={false} /></div>
-        <div className="lg:hidden">{renderResults()}</div>
+        {!isDesktop && renderResults()}
       </div>
     </main>
   );
@@ -309,7 +353,7 @@ export function HealthSpace(props: {
       );
     }
     if (search.state === 'loading') {
-      return <p className="flex items-center gap-2 p-4 text-sm font-semibold lg:px-6" role="status"><SpinnerIcon /> Recherche des établissements…</p>;
+      return <ResultsSkeleton label="Recherche des établissements…" />;
     }
     if (search.state === 'error') {
       return (
@@ -328,7 +372,11 @@ export function HealthSpace(props: {
         filteredOut={search.outcome.filteredOut}
         filtersActive={search.filtersActive}
         sort={sort}
-        onSort={setSort}
+        onSort={(s) => { setSort(s); if (s === 'duration') void computeAll(); }}
+        onComputeAll={() => void computeAll()}
+        computingAll={computingAll}
+        showAllRoutes={showAllRoutes}
+        onShowAllRoutes={setShowAllRoutes}
         selectedId={selectedId}
         origin={origin}
         mode={mode}

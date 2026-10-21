@@ -47,3 +47,11 @@ body { @apply bg-bg text-ink antialiased; -webkit-tap-highlight-color: transpare
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
 }
+
+/* Retour tactile discret sur les boutons */
+button:not(:disabled), a[role="button"] { transition: transform .08s ease, background-color .15s ease, color .15s ease; }
+button:not(:disabled):active { transform: scale(.97); }
+/* Détails repliables des fiches */
+details > summary { list-style: none; }
+details > summary::-webkit-details-marker { display: none; }
+details[open] > summary .chev { transform: rotate(180deg); }
