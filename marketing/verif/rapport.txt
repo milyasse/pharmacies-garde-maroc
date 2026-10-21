@@ -1,4 +1,4 @@
-écran de lancement retiré après 7.0 s
+écran de lancement retiré après 7.1 s
 OK  — onglet « Pharmacies de garde » actif par défaut (URL inchangée)
 OK  — pharmacies : pas de recherche automatique après changement de rayon
 OK  — pharmacies : résultats affichés (« 13 pharmacies de garde »)
@@ -9,11 +9,13 @@ OK  — cliniques : aucun établissement « de garde » sans source officielle
 OK  — cliniques : 39 marqueurs pour 39 fiches
 OK  — cliniques : tri décroissant (premier : 8,6 km contre 391 m)
 OK  — cliniques : filtre « urgences déclarées » → 9 établissement(s)
-ÉCHEC — Parcours mobile : locator.isEnabled: Timeout 12000ms exceeded.
+OK  — cliniques : itinéraire calculé (ou erreur explicite)
+OK  — cliniques : cas « aucun établissement trouvé » avec actions proposées
+OK  — retour à l’espace Pharmacies (URL d’origine)
 OK  — lien direct #/cliniques ouvre l’espace Cliniques
 OK  — géolocalisation refusée : message affiché (« 📍 L’accès à votre position est bloqué pour ce site.
 
 ✕
 Ordinateur : cliquez sur l’icône à gauche de l’adresse → Positio »)
 OK  — sans position : la recherche demande une position de départ
-1 vérification(s) en échec
+toutes les vérifications sont passées
