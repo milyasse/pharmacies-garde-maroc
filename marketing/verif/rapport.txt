@@ -1,6 +1,19 @@
-GSAP actif : true
-écran retiré après 7.2 s
-requêtes de données après « Ma position » (formulaire) : 0 ; après changement de rayon : 0 (attendu 0)
-message « critères modifiés » visible : false
-requêtes après clic sur « Rechercher » : 0 (attendu ≥ 0, résultats affichés)
-résultats affichés : true
+écran de lancement retiré après 7.0 s
+OK  — onglet « Pharmacies de garde » actif par défaut (URL inchangée)
+OK  — pharmacies : pas de recherche automatique après changement de rayon
+OK  — pharmacies : résultats affichés (« 13 pharmacies de garde »)
+OK  — espace Cliniques : URL #/cliniques
+OK  — cliniques : recherche par ville (Rabat) → « 39 établissements »
+OK  — cliniques : fiche avec statuts, urgences, garde et source
+OK  — cliniques : aucun établissement « de garde » sans source officielle
+OK  — cliniques : 39 marqueurs pour 39 fiches
+OK  — cliniques : tri décroissant (premier : 8,6 km contre 391 m)
+OK  — cliniques : filtre « urgences déclarées » → 9 établissement(s)
+ÉCHEC — Parcours mobile : locator.isEnabled: Timeout 12000ms exceeded.
+OK  — lien direct #/cliniques ouvre l’espace Cliniques
+OK  — géolocalisation refusée : message affiché (« 📍 L’accès à votre position est bloqué pour ce site.
+
+✕
+Ordinateur : cliquez sur l’icône à gauche de l’adresse → Positio »)
+OK  — sans position : la recherche demande une position de départ
+1 vérification(s) en échec

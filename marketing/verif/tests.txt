@@ -6,307 +6,307 @@ TAP version 13
 # Subtest: collecteur : fichiers produits, statuts, aucune donnée inventée
 ok 1 - collecteur : fichiers produits, statuts, aucune donnée inventée
   ---
-  duration_ms: 269.20783
+  duration_ms: 166.519298
   type: 'test'
   ...
 # Subtest: collecteur : deuxième passage idempotent (pas de doublons)
 ok 2 - collecteur : deuxième passage idempotent (pas de doublons)
   ---
-  duration_ms: 352.992051
+  duration_ms: 197.821674
   type: 'test'
   ...
 # Subtest: collecteur : saisie manuelle fusionnée, contradiction détectée
 ok 3 - collecteur : saisie manuelle fusionnée, contradiction détectée
   ---
-  duration_ms: 167.881012
+  duration_ms: 97.202236
   type: 'test'
   ...
 # Subtest: recherche : rayon, rang, filtre par type, expirées séparées
 ok 4 - recherche : rayon, rang, filtre par type, expirées séparées
   ---
-  duration_ms: 172.710375
+  duration_ms: 100.466773
   type: 'test'
   ...
 # Subtest: compteurs par ville : actives et répartition par type
 ok 5 - compteurs par ville : actives et répartition par type
   ---
-  duration_ms: 158.260461
+  duration_ms: 107.247892
   type: 'test'
   ...
 # Subtest: collecteur : tableau CSV à venir enrichi par les pharmacies connues
 ok 6 - collecteur : tableau CSV à venir enrichi par les pharmacies connues
   ---
-  duration_ms: 320.980442
+  duration_ms: 197.56728
   type: 'test'
   ...
 # Subtest: OSM : on écarte cabinets, laboratoires, centres de santé, noms génériques et objets sans nom
 ok 7 - OSM : on écarte cabinets, laboratoires, centres de santé, noms génériques et objets sans nom
   ---
-  duration_ms: 9.264545
+  duration_ms: 1.475788
   type: 'test'
   ...
 # Subtest: OSM : type déduit de l’opérateur déclaré, sinon du nom, sinon « statut non publié »
 ok 8 - OSM : type déduit de l’opérateur déclaré, sinon du nom, sinon « statut non publié »
   ---
-  duration_ms: 0.752754
+  duration_ms: 0.408557
   type: 'test'
   ...
 # Subtest: OSM : téléphone normalisé, urgences et spécialités seulement si déclarées
 ok 9 - OSM : téléphone normalisé, urgences et spécialités seulement si déclarées
   ---
-  duration_ms: 5.094284
+  duration_ms: 1.092519
   type: 'test'
   ...
 # Subtest: OSM : doublons (même nom, < 300 m) fusionnés, nom le plus descriptif conservé
 ok 10 - OSM : doublons (même nom, < 300 m) fusionnés, nom le plus descriptif conservé
   ---
-  duration_ms: 1.323153
+  duration_ms: 0.736683
   type: 'test'
   ...
 # Subtest: Liste officielle : noms lisibles
 ok 11 - Liste officielle : noms lisibles
   ---
-  duration_ms: 3.77064
+  duration_ms: 0.439213
   type: 'test'
   ...
 # Subtest: Données réelles (OSM 21/10/2026 + ministère) : fusion, aucune garde sans source officielle
 ok 12 - Données réelles (OSM 21/10/2026 + ministère) : fusion, aucune garde sans source officielle
   ---
-  duration_ms: 22.738591
+  duration_ms: 12.141991
   type: 'test'
   ...
 # Subtest: Saisie manuelle : garde et horaires vérifiés uniquement avec source et date
 ok 13 - Saisie manuelle : garde et horaires vérifiés uniquement avec source et date
   ---
-  duration_ms: 7.587048
+  duration_ms: 3.541487
   type: 'test'
   ...
 # Subtest: Recherche : filtres, rayon, tri croissant/décroissant, sans position à part
 ok 14 - Recherche : filtres, rayon, tri croissant/décroissant, sans position à part
   ---
-  duration_ms: 6.881095
+  duration_ms: 3.687197
   type: 'test'
   ...
 # Subtest: Un établissement sans information reste sans information
 ok 15 - Un établissement sans information reste sans information
   ---
-  duration_ms: 0.489658
+  duration_ms: 0.346793
   type: 'test'
   ...
 # Subtest: Haversine : Rabat (gare Agdal) → Témara centre ≈ 9 km
 ok 16 - Haversine : Rabat (gare Agdal) → Témara centre ≈ 9 km
   ---
-  duration_ms: 4.559939
+  duration_ms: 1.047842
   type: 'test'
   ...
 # Subtest: Haversine : distance nulle et symétrie
 ok 17 - Haversine : distance nulle et symétrie
   ---
-  duration_ms: 0.262405
+  duration_ms: 0.151739
   type: 'test'
   ...
 # Subtest: Haversine : 1° de latitude ≈ 111,2 km
 ok 18 - Haversine : 1° de latitude ≈ 111,2 km
   ---
-  duration_ms: 0.163246
+  duration_ms: 0.096305
   type: 'test'
   ...
 # Subtest: filtrage par rayon + classement croissant + rangs 1..n
 ok 19 - filtrage par rayon + classement croissant + rangs 1..n
   ---
-  duration_ms: 1.078725
+  duration_ms: 0.717333
   type: 'test'
   ...
 # Subtest: coordonnées (0,0) ou hors bornes rejetées
 ok 20 - coordonnées (0,0) ou hors bornes rejetées
   ---
-  duration_ms: 0.168063
+  duration_ms: 0.099981
   type: 'test'
   ...
 # Subtest: format des distances
 ok 21 - format des distances
   ---
-  duration_ms: 0.188273
+  duration_ms: 0.122425
   type: 'test'
   ...
 # Subtest: parseFrenchDate
 ok 22 - parseFrenchDate
   ---
-  duration_ms: 1.125265
+  duration_ms: 0.820338
   type: 'test'
   ...
 # Subtest: date du Maroc calculée par fuseau (pas de décalage en dur)
 ok 23 - date du Maroc calculée par fuseau (pas de décalage en dur)
   ---
-  duration_ms: 23.114787
+  duration_ms: 33.016577
   type: 'test'
   ...
 # Subtest: plages horaires publiées
 ok 24 - plages horaires publiées
   ---
-  duration_ms: 1.125856
+  duration_ms: 0.764164
   type: 'test'
   ...
 # Subtest: classification du type de garde
 ok 25 - classification du type de garde
   ---
-  duration_ms: 0.903911
+  duration_ms: 0.478041
   type: 'test'
   ...
 # Subtest: téléphones marocains : normalisation, masqués refusés
 ok 26 - téléphones marocains : normalisation, masqués refusés
   ---
-  duration_ms: 1.694592
+  duration_ms: 0.249356
   type: 'test'
   ...
 # Subtest: liste Témara : date « mise à jour le », 3 entrées, quartiers, coordonnées
 ok 27 - liste Témara : date « mise à jour le », 3 entrées, quartiers, coordonnées
   ---
-  duration_ms: 5.713716
+  duration_ms: 3.931656
   type: 'test'
   ...
 # Subtest: liste Rabat : date tirée du titre « Aujourd’hui … »
 ok 28 - liste Rabat : date tirée du titre « Aujourd’hui … »
   ---
-  duration_ms: 3.131226
+  duration_ms: 3.44392
   type: 'test'
   ...
 # Subtest: liste Salé vide signalée comme vide (pas une erreur de parseur)
 ok 29 - liste Salé vide signalée comme vide (pas une erreur de parseur)
   ---
-  duration_ms: 0.350668
+  duration_ms: 0.218891
   type: 'test'
   ...
 # Subtest: fiche : téléphone (1er lien tel:), coordonnées, historique trié
 ok 30 - fiche : téléphone (1er lien tel:), coordonnées, historique trié
   ---
-  duration_ms: 1.745028
+  duration_ms: 0.889944
   type: 'test'
   ...
 # Subtest: fiche JSON-LD prioritaire
 ok 31 - fiche JSON-LD prioritaire
   ---
-  duration_ms: 0.607014
+  duration_ms: 0.330889
   type: 'test'
   ...
 # Subtest: fiche sans téléphone ni coordonnées : null, rien d’inventé
 ok 32 - fiche sans téléphone ni coordonnées : null, rien d’inventé
   ---
-  duration_ms: 0.797271
+  duration_ms: 0.497651
   type: 'test'
   ...
 # Subtest: historique : lignes invalides ignorées
 ok 33 - historique : lignes invalides ignorées
   ---
-  duration_ms: 0.278519
+  duration_ms: 0.168835
   type: 'test'
   ...
 # Subtest: statut : liste datée du jour + historique → Confirmée (confiance moyenne)
 ok 34 - statut : liste datée du jour + historique → Confirmée (confiance moyenne)
   ---
-  duration_ms: 0.817711
+  duration_ms: 0.502629
   type: 'test'
   ...
 # Subtest: statut : page périmée et pas d’historique → À confirmer
 ok 35 - statut : page périmée et pas d’historique → À confirmer
   ---
-  duration_ms: 0.32574
+  duration_ms: 0.154473
   type: 'test'
   ...
 # Subtest: statut : page datée mais collectée un autre jour → pas de confirmation par la liste
 ok 36 - statut : page datée mais collectée un autre jour → pas de confirmation par la liste
   ---
-  duration_ms: 0.29223
+  duration_ms: 0.118278
   type: 'test'
   ...
 # Subtest: statut : deux sources en désaccord → Sources contradictoires
 ok 37 - statut : deux sources en désaccord → Sources contradictoires
   ---
-  duration_ms: 0.505442
+  duration_ms: 0.148455
   type: 'test'
   ...
 # Subtest: statut : deux sources datées concordantes → confiance élevée
 ok 38 - statut : deux sources datées concordantes → confiance élevée
   ---
-  duration_ms: 0.461515
+  duration_ms: 0.14574
   type: 'test'
   ...
 # Subtest: expiration : fin publiée passée → Expirée
 ok 39 - expiration : fin publiée passée → Expirée
   ---
-  duration_ms: 0.428325
+  duration_ms: 0.216206
   type: 'test'
   ...
 # Subtest: expiration : garde de jour 9h-23h après 23h → Expirée
 ok 40 - expiration : garde de jour 9h-23h après 23h → Expirée
   ---
-  duration_ms: 1.208731
+  duration_ms: 0.61596
   type: 'test'
   ...
 # Subtest: sélection : garde de nuit de la veille incluse le matin, exclue des gardes de jour
 ok 41 - sélection : garde de nuit de la veille incluse le matin, exclue des gardes de jour
   ---
-  duration_ms: 0.836279
+  duration_ms: 0.423279
   type: 'test'
   ...
 # Subtest: sélection : fenêtre publiée qui ne couvre pas la date → exclue
 ok 42 - sélection : fenêtre publiée qui ne couvre pas la date → exclue
   ---
-  duration_ms: 0.159941
+  duration_ms: 0.074683
   type: 'test'
   ...
 # Subtest: doublons : même pharmacie, noms écrits différemment → fusion des sources
 ok 43 - doublons : même pharmacie, noms écrits différemment → fusion des sources
   ---
-  duration_ms: 1.921435
+  duration_ms: 0.949733
   type: 'test'
   ...
 # Subtest: doublons : homonymes éloignés de plusieurs km → non fusionnés
 ok 44 - doublons : homonymes éloignés de plusieurs km → non fusionnés
   ---
-  duration_ms: 0.532061
+  duration_ms: 0.204188
   type: 'test'
   ...
 # Subtest: similarité de noms
 ok 45 - similarité de noms
   ---
-  duration_ms: 0.204188
+  duration_ms: 0.097417
   type: 'test'
   ...
 # Subtest: couleurs de rang : 1 vert foncé, 2 vert clair, 3 bleu, 4 orange, 5 violet, 6+ distinctes
 ok 46 - couleurs de rang : 1 vert foncé, 2 vert clair, 3 bleu, 4 orange, 5 violet, 6+ distinctes
   ---
-  duration_ms: 0.197407
+  duration_ms: 0.081042
   type: 'test'
   ...
 # Subtest: structure réelle observée (cartes ag_pharmacy_card, 13/10/2026)
 ok 47 - structure réelle observée (cartes ag_pharmacy_card, 13/10/2026)
   ---
-  duration_ms: 3.017635
+  duration_ms: 8.039357
   type: 'test'
   ...
 # Subtest: import CSV d’un tableau de garde officiel (jours à venir)
 ok 48 - import CSV d’un tableau de garde officiel (jours à venir)
   ---
-  duration_ms: 3.502777
+  duration_ms: 5.693035
   type: 'test'
   ...
 # Subtest: guidepharmacies : planning hebdomadaire, jours, types, centre de quartier
 ok 49 - guidepharmacies : planning hebdomadaire, jours, types, centre de quartier
   ---
-  duration_ms: 14.772943
+  duration_ms: 17.771411
   type: 'test'
   ...
 # Subtest: guidepharmacies : fiche (adresse + téléphone)
 ok 50 - guidepharmacies : fiche (adresse + téléphone)
   ---
-  duration_ms: 1.451747
+  duration_ms: 1.034452
   type: 'test'
   ...
 # Subtest: fusion : position exacte prioritaire sur le centre de quartier, pas de faux conflit de fin de garde
 ok 51 - fusion : position exacte prioritaire sur le centre de quartier, pas de faux conflit de fin de garde
   ---
-  duration_ms: 0.894196
+  duration_ms: 0.647147
   type: 'test'
   ...
 1..51
@@ -317,5 +317,5 @@ ok 51 - fusion : position exacte prioritaire sur le centre de quartier, pas de f
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 1620.794219
+# duration_ms 970.100899
 TESTS OK
