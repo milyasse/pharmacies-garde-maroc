@@ -1,0 +1,29 @@
+name: Sonde OpenStreetMap (établissements de santé)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Requête Overpass
+        run: |
+          mkdir -p marketing/probe
+          Q='[out:json][timeout:90];(nwr["amenity"~"^(hospital|clinic)$"](33.85,-6.98,34.12,-6.70);nwr["healthcare"~"^(hospital|clinic|centre)$"](33.85,-6.98,34.12,-6.70););out center tags;'
+          for host in overpass-api.de overpass.private.coffee; do
+            if curl -fsS -m 120 -A "PharmaciesGardeMaroc/1.0 (+https://github.com/${{ github.repository }})" --data-urlencode "data=$Q" "https://$host/api/interpreter" -o marketing/probe/osm-sante.json; then echo "ok $host"; break; fi
+            sleep 30
+          done
+          ls -la marketing/probe
+      - name: Enregistrer
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
+          git add marketing/probe
+          git commit -m "Sonde OSM santé [skip ci]" || exit 0
+          git pull --rebase origin main && git push origin HEAD:main
