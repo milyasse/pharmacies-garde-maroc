@@ -1,6 +1,6 @@
 {
  "date": "2026-10-21",
- "generatedAt": "2026-10-22T20:31:16.168Z",
+ "generatedAt": "2026-10-22T22:29:58.375Z",
  "records": [
   {
    "id": "rabat-sans-nom",
@@ -779,7 +779,7 @@
    "phone": "+212537560866",
    "dutyDate": "2026-10-21",
    "dutyType": "day",
-   "dutyLabel": "Garde Jour",
+   "dutyLabel": "Garde de jour",
    "hoursText": "9h-23h",
    "dutyStartDate": "2026-10-21",
    "dutyEndDate": "2026-10-21",
@@ -805,14 +805,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-annassiha-s236856.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-10-22",
-     "lastCheckedAt": "2026-10-22T20:31:18.059Z",
+     "lastCheckedAt": "2026-10-22T22:30:00.633Z",
      "historyMatch": {
       "start": "2026-10-21",
       "end": "2026-10-22",
       "label": "Garde Jour"
      },
      "dutyType": "day",
-     "dutyLabel": "Garde Jour"
+     "dutyLabel": "Garde de jour"
     }
    ],
    "verificationStatus": "confirmed",
@@ -883,7 +883,7 @@
    "phone": "+212537013065",
    "dutyDate": "2026-10-21",
    "dutyType": "day",
-   "dutyLabel": "Garde Jour",
+   "dutyLabel": "Garde de jour",
    "hoursText": "9h-23h",
    "dutyStartDate": "2026-10-21",
    "dutyEndDate": "2026-10-21",
@@ -909,14 +909,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/la-grande-pharmacie-de-tamesna-s242718.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-10-22",
-     "lastCheckedAt": "2026-10-22T20:31:18.059Z",
+     "lastCheckedAt": "2026-10-22T22:30:00.633Z",
      "historyMatch": {
       "start": "2026-10-21",
       "end": "2026-10-22",
       "label": "Garde Jour"
      },
      "dutyType": "day",
-     "dutyLabel": "Garde Jour"
+     "dutyLabel": "Garde de jour"
     }
    ],
    "verificationStatus": "confirmed",

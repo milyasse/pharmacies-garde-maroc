@@ -1,6 +1,6 @@
 {
  "date": "2026-10-22",
- "generatedAt": "2026-10-22T20:31:16.168Z",
+ "generatedAt": "2026-10-22T22:29:58.375Z",
  "records": [
   {
    "id": "rabat-hikma",
@@ -25,7 +25,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-al-hikma-r-00h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-22T20:31:19.701Z",
+     "lastCheckedAt": "2026-10-22T22:30:02.569Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-22",
@@ -40,14 +40,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-al-hikma-s237804.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
      "sourcePublishedAt": "2026-10-22",
-     "lastCheckedAt": "2026-10-22T20:31:16.199Z",
+     "lastCheckedAt": "2026-10-22T22:29:58.400Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
       "label": "Garde Jour"
      },
      "dutyType": "day",
-     "dutyLabel": "Garde Jour"
+     "dutyLabel": "Garde de jour"
     }
    ],
    "verificationStatus": "confirmed",
@@ -77,7 +77,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-arrayhane.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-22T20:31:19.701Z",
+     "lastCheckedAt": "2026-10-22T22:30:02.569Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
@@ -92,7 +92,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-arrayhane-s238093.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
      "sourcePublishedAt": "2026-10-22",
-     "lastCheckedAt": "2026-10-22T20:31:16.199Z",
+     "lastCheckedAt": "2026-10-22T22:29:58.400Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
@@ -129,7 +129,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-avenue-dalger-hassan-24h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-22T20:31:19.701Z",
+     "lastCheckedAt": "2026-10-22T22:30:02.569Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
@@ -144,7 +144,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-avenue-d-rsquo-alger-hassan-s254050.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
      "sourcePublishedAt": "2026-10-22",
-     "lastCheckedAt": "2026-10-22T20:31:16.199Z",
+     "lastCheckedAt": "2026-10-22T22:29:58.400Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
@@ -181,7 +181,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-chbanat-24h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-22T20:31:19.701Z",
+     "lastCheckedAt": "2026-10-22T22:30:02.569Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
@@ -196,7 +196,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-chbanat-s142176.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
      "sourcePublishedAt": "2026-10-22",
-     "lastCheckedAt": "2026-10-22T20:31:16.199Z",
+     "lastCheckedAt": "2026-10-22T22:29:58.400Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
@@ -233,7 +233,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-ksar-labhar-00h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-22T20:31:19.701Z",
+     "lastCheckedAt": "2026-10-22T22:30:02.569Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-22",
@@ -248,14 +248,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-ksar-labhar-s241171.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
      "sourcePublishedAt": "2026-10-22",
-     "lastCheckedAt": "2026-10-22T20:31:16.199Z",
+     "lastCheckedAt": "2026-10-22T22:29:58.400Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
       "label": "Garde Jour"
      },
      "dutyType": "day",
-     "dutyLabel": "Garde Jour"
+     "dutyLabel": "Garde de jour"
     }
    ],
    "verificationStatus": "confirmed",
@@ -285,7 +285,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-michlifen.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-22T20:31:19.701Z",
+     "lastCheckedAt": "2026-10-22T22:30:02.569Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
@@ -300,7 +300,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-michlifen-s241249.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
      "sourcePublishedAt": "2026-10-22",
-     "lastCheckedAt": "2026-10-22T20:31:16.199Z",
+     "lastCheckedAt": "2026-10-22T22:29:58.400Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
@@ -337,7 +337,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-al-hikma.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-22T20:31:22.929Z",
+     "lastCheckedAt": "2026-10-22T22:30:06.301Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-22",
@@ -352,14 +352,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-al-hikma-s236980.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
      "sourcePublishedAt": "2026-10-22",
-     "lastCheckedAt": "2026-10-22T20:31:17.452Z",
+     "lastCheckedAt": "2026-10-22T22:30:00.199Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
       "label": "Garde Jour"
      },
      "dutyType": "day",
-     "dutyLabel": "Garde Jour"
+     "dutyLabel": "Garde de jour"
     }
    ],
    "verificationStatus": "confirmed",
@@ -389,7 +389,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-bettana.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-22T20:31:22.929Z",
+     "lastCheckedAt": "2026-10-22T22:30:06.301Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-22",
@@ -404,14 +404,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-bettana-s236297.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
      "sourcePublishedAt": "2026-10-22",
-     "lastCheckedAt": "2026-10-22T20:31:17.452Z",
+     "lastCheckedAt": "2026-10-22T22:30:00.199Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
       "label": "Garde Jour"
      },
      "dutyType": "day",
-     "dutyLabel": "Garde Jour"
+     "dutyLabel": "Garde de jour"
     }
    ],
    "verificationStatus": "confirmed",
@@ -441,7 +441,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-du-myrte-00h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-22T20:31:22.929Z",
+     "lastCheckedAt": "2026-10-22T22:30:06.301Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-22",
@@ -456,14 +456,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-du-myrte-s236914.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
      "sourcePublishedAt": "2026-10-22",
-     "lastCheckedAt": "2026-10-22T20:31:17.452Z",
+     "lastCheckedAt": "2026-10-22T22:30:00.199Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
       "label": "Garde Jour"
      },
      "dutyType": "day",
-     "dutyLabel": "Garde Jour"
+     "dutyLabel": "Garde de jour"
     }
    ],
    "verificationStatus": "confirmed",
@@ -493,7 +493,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-hajji-24h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-22T20:31:22.929Z",
+     "lastCheckedAt": "2026-10-22T22:30:06.301Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-22",
@@ -508,14 +508,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-hajji-s238568.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
      "sourcePublishedAt": "2026-10-22",
-     "lastCheckedAt": "2026-10-22T20:31:17.452Z",
+     "lastCheckedAt": "2026-10-22T22:30:00.199Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
       "label": "Garde Jour"
      },
      "dutyType": "day",
-     "dutyLabel": "Garde Jour"
+     "dutyLabel": "Garde de jour"
     }
    ],
    "verificationStatus": "confirmed",
@@ -545,7 +545,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-lopera.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-22T20:31:22.929Z",
+     "lastCheckedAt": "2026-10-22T22:30:06.301Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
@@ -560,7 +560,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-l-039-opera-s254063.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
      "sourcePublishedAt": "2026-10-22",
-     "lastCheckedAt": "2026-10-22T20:31:17.452Z",
+     "lastCheckedAt": "2026-10-22T22:30:00.199Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
@@ -597,7 +597,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-nassiha.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-22T20:31:22.929Z",
+     "lastCheckedAt": "2026-10-22T22:30:06.301Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
@@ -612,7 +612,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-nassiha-s240998.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
      "sourcePublishedAt": "2026-10-22",
-     "lastCheckedAt": "2026-10-22T20:31:17.452Z",
+     "lastCheckedAt": "2026-10-22T22:30:00.199Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
@@ -649,7 +649,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-parc-addoha.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-22T20:31:22.929Z",
+     "lastCheckedAt": "2026-10-22T22:30:06.301Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
@@ -664,7 +664,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-parc-addoha-s236337.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
      "sourcePublishedAt": "2026-10-22",
-     "lastCheckedAt": "2026-10-22T20:31:17.452Z",
+     "lastCheckedAt": "2026-10-22T22:30:00.199Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
@@ -701,7 +701,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-annassiha-jeu.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-22T20:31:25.963Z",
+     "lastCheckedAt": "2026-10-22T22:30:09.198Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-22",
@@ -755,7 +755,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-du-conseil-s254080.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-10-22",
-     "lastCheckedAt": "2026-10-22T20:31:18.059Z",
+     "lastCheckedAt": "2026-10-22T22:30:00.633Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
@@ -792,7 +792,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-echoumoue.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-22T20:31:25.963Z",
+     "lastCheckedAt": "2026-10-22T22:30:09.198Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-22",
@@ -831,7 +831,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/la-grande-pharmacie-de-tamesna-jeu.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-22T20:31:25.963Z",
+     "lastCheckedAt": "2026-10-22T22:30:09.198Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-22",
@@ -870,7 +870,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-moulay-idriss.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-22T20:31:25.963Z",
+     "lastCheckedAt": "2026-10-22T22:30:09.198Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-22",
@@ -885,7 +885,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-moulay-idriss-s237896.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-10-22",
-     "lastCheckedAt": "2026-10-22T20:31:18.059Z",
+     "lastCheckedAt": "2026-10-22T22:30:00.633Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
@@ -922,7 +922,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-regragui.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html",
      "sourcePublishedAt": "2026-10-19",
-     "lastCheckedAt": "2026-10-22T20:31:25.963Z",
+     "lastCheckedAt": "2026-10-22T22:30:09.198Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-22",
@@ -937,7 +937,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-regragui-s241148.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-10-22",
-     "lastCheckedAt": "2026-10-22T20:31:18.059Z",
+     "lastCheckedAt": "2026-10-22T22:30:00.633Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
