@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-22T06:39:58.711Z",
+ "generatedAt": "2026-10-22T08:15:10.369Z",
  "todayMorocco": "2026-10-22",
  "dates": [
   "2026-10-12",
@@ -34,7 +34,7 @@
    "pageDate": "2026-10-22",
    "count": 7,
    "error": null,
-   "checkedAt": "2026-10-22T06:39:58.728Z"
+   "checkedAt": "2026-10-22T08:15:10.388Z"
   },
   {
    "sourceId": "annuaire-gratuit",
@@ -45,7 +45,7 @@
    "pageDate": "2026-10-22",
    "count": 8,
    "error": null,
-   "checkedAt": "2026-10-22T06:40:00.096Z"
+   "checkedAt": "2026-10-22T08:15:12.027Z"
   },
   {
    "sourceId": "annuaire-gratuit",
@@ -56,7 +56,7 @@
    "pageDate": "2026-10-22",
    "count": 5,
    "error": null,
-   "checkedAt": "2026-10-22T06:40:00.668Z"
+   "checkedAt": "2026-10-22T08:15:12.332Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -67,7 +67,7 @@
    "pageDate": null,
    "count": 0,
    "error": "Planning illisible : la structure de la page a peut-être changé.",
-   "checkedAt": "2026-10-22T06:40:03.539Z"
+   "checkedAt": "2026-10-22T08:15:13.999Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -78,7 +78,7 @@
    "pageDate": null,
    "count": 0,
    "error": "Planning illisible : la structure de la page a peut-être changé.",
-   "checkedAt": "2026-10-22T06:40:04.443Z"
+   "checkedAt": "2026-10-22T08:15:18.084Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -89,7 +89,7 @@
    "pageDate": null,
    "count": 0,
    "error": "Planning illisible : la structure de la page a peut-être changé.",
-   "checkedAt": "2026-10-22T06:40:05.163Z"
+   "checkedAt": "2026-10-22T08:15:18.232Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -100,7 +100,7 @@
    "pageDate": null,
    "count": 0,
    "error": "Planning illisible : la structure de la page a peut-être changé.",
-   "checkedAt": "2026-10-22T06:40:06.663Z"
+   "checkedAt": "2026-10-22T08:15:19.732Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -111,7 +111,7 @@
    "pageDate": null,
    "count": 0,
    "error": "Planning illisible : la structure de la page a peut-être changé.",
-   "checkedAt": "2026-10-22T06:40:08.164Z"
+   "checkedAt": "2026-10-22T08:15:21.232Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -122,7 +122,7 @@
    "pageDate": null,
    "count": 0,
    "error": "Planning illisible : la structure de la page a peut-être changé.",
-   "checkedAt": "2026-10-22T06:40:09.664Z"
+   "checkedAt": "2026-10-22T08:15:22.733Z"
   }
  ],
  "connectors": [
