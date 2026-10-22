@@ -1,6 +1,6 @@
 {
  "date": "2026-10-21",
- "generatedAt": "2026-10-22T08:38:30.979Z",
+ "generatedAt": "2026-10-22T16:35:42.647Z",
  "records": [
   {
    "id": "rabat-sans-nom",
@@ -505,9 +505,7 @@
    ],
    "verificationStatus": "confirmed",
    "confidenceLevel": "high",
-   "notes": [
-    "Numéros de téléphone différents selon les sources."
-   ]
+   "notes": []
   },
   {
    "id": "sale-ouedghiri-sale",
@@ -781,7 +779,7 @@
    "phone": "+212537560866",
    "dutyDate": "2026-10-21",
    "dutyType": "day",
-   "dutyLabel": "Garde de jour",
+   "dutyLabel": "Garde Jour",
    "hoursText": "9h-23h",
    "dutyStartDate": "2026-10-21",
    "dutyEndDate": "2026-10-21",
@@ -807,14 +805,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-annassiha-s236856.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-10-22",
-     "lastCheckedAt": "2026-10-22T08:38:32.848Z",
+     "lastCheckedAt": "2026-10-22T16:36:04.374Z",
      "historyMatch": {
       "start": "2026-10-21",
       "end": "2026-10-22",
       "label": "Garde Jour"
      },
      "dutyType": "day",
-     "dutyLabel": "Garde de jour"
+     "dutyLabel": "Garde Jour"
     }
    ],
    "verificationStatus": "confirmed",
@@ -885,7 +883,7 @@
    "phone": "+212537013065",
    "dutyDate": "2026-10-21",
    "dutyType": "day",
-   "dutyLabel": "Garde de jour",
+   "dutyLabel": "Garde Jour",
    "hoursText": "9h-23h",
    "dutyStartDate": "2026-10-21",
    "dutyEndDate": "2026-10-21",
@@ -911,14 +909,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/la-grande-pharmacie-de-tamesna-s242718.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-10-22",
-     "lastCheckedAt": "2026-10-22T08:38:32.848Z",
+     "lastCheckedAt": "2026-10-22T16:36:04.374Z",
      "historyMatch": {
       "start": "2026-10-21",
       "end": "2026-10-22",
       "label": "Garde Jour"
      },
      "dutyType": "day",
-     "dutyLabel": "Garde de jour"
+     "dutyLabel": "Garde Jour"
     }
    ],
    "verificationStatus": "confirmed",
@@ -975,9 +973,7 @@
    ],
    "verificationStatus": "confirmed",
    "confidenceLevel": "high",
-   "notes": [
-    "Numéros de téléphone différents selon les sources."
-   ]
+   "notes": []
   },
   {
    "id": "temara-tarik-fellah",
