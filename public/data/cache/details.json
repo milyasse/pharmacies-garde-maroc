@@ -5915,6 +5915,11 @@
    "longitude": -6.9003893,
    "history": [
     {
+     "start": "2026-10-21",
+     "end": "2026-10-22",
+     "label": "Garde Jour"
+    },
+    {
      "start": "2026-10-20",
      "end": "2026-10-21",
      "label": "Garde Jour"
@@ -5957,16 +5962,11 @@
     {
      "start": "2026-09-05",
      "end": "2026-09-06",
-     "label": "Garde Jour"
-    },
-    {
-     "start": "2026-07-31",
-     "end": "2026-08-01",
      "label": "Garde Jour FAQ Questions fréquentes sur Pharm"
     }
    ]
   },
-  "fetchedAt": "2026-10-21T00:40:09.689Z"
+  "fetchedAt": "2026-10-22T00:41:31.965Z"
  },
  "s254312": {
   "detail": {
@@ -7708,6 +7708,11 @@
    "longitude": -6.9248441,
    "history": [
     {
+     "start": "2026-10-21",
+     "end": "2026-10-22",
+     "label": "Garde Jour"
+    },
+    {
      "start": "2026-10-20",
      "end": "2026-10-21",
      "label": "Garde Jour"
@@ -7750,16 +7755,11 @@
     {
      "start": "2025-12-25",
      "end": "2025-12-26",
-     "label": "Garde Jour"
-    },
-    {
-     "start": "2025-12-24",
-     "end": "2025-12-25",
      "label": "Garde Jour FAQ Questions fréquentes sur La Gr"
     }
    ]
   },
-  "fetchedAt": "2026-10-20T10:31:58.728Z"
+  "fetchedAt": "2026-10-22T00:41:33.122Z"
  },
  "s241505": {
   "detail": {
