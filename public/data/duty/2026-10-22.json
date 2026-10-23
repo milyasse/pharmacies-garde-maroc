@@ -1,6 +1,6 @@
 {
  "date": "2026-10-22",
- "generatedAt": "2026-10-23T08:35:20.912Z",
+ "generatedAt": "2026-10-23T10:32:14.647Z",
  "records": [
   {
    "id": "rabat-hikma",
@@ -468,9 +468,7 @@
    ],
    "verificationStatus": "confirmed",
    "confidenceLevel": "high",
-   "notes": [
-    "Numéros de téléphone différents selon les sources."
-   ]
+   "notes": []
   },
   {
    "id": "sale-hajji",
@@ -692,7 +690,7 @@
    "phone": "+212537560866",
    "dutyDate": "2026-10-22",
    "dutyType": "day",
-   "dutyLabel": "Garde de jour",
+   "dutyLabel": "Garde Jour",
    "hoursText": "9h-23h",
    "dutyStartDate": "2026-10-22",
    "dutyEndDate": "2026-10-22",
@@ -718,14 +716,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-annassiha-s236856.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-10-23",
-     "lastCheckedAt": "2026-10-23T08:35:22.726Z",
+     "lastCheckedAt": "2026-10-23T10:32:43.545Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
       "label": "Garde Jour"
      },
      "dutyType": "day",
-     "dutyLabel": "Garde de jour"
+     "dutyLabel": "Garde Jour"
     }
    ],
    "verificationStatus": "confirmed",
@@ -835,7 +833,7 @@
    "phone": "+212537013065",
    "dutyDate": "2026-10-22",
    "dutyType": "day",
-   "dutyLabel": "Garde de jour",
+   "dutyLabel": "Garde Jour",
    "hoursText": "9h-23h",
    "dutyStartDate": "2026-10-22",
    "dutyEndDate": "2026-10-22",
@@ -861,14 +859,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/la-grande-pharmacie-de-tamesna-s242718.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-10-23",
-     "lastCheckedAt": "2026-10-23T08:35:22.726Z",
+     "lastCheckedAt": "2026-10-23T10:32:43.545Z",
      "historyMatch": {
       "start": "2026-10-22",
       "end": "2026-10-23",
       "label": "Garde Jour"
      },
      "dutyType": "day",
-     "dutyLabel": "Garde de jour"
+     "dutyLabel": "Garde Jour"
     }
    ],
    "verificationStatus": "confirmed",
