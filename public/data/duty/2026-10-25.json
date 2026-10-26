@@ -1,6 +1,6 @@
 {
  "date": "2026-10-25",
- "generatedAt": "2026-10-26T20:33:39.531Z",
+ "generatedAt": "2026-10-26T22:34:02.399Z",
  "records": [
   {
    "id": "rabat-akkari",
@@ -1106,7 +1106,7 @@
    "phone": "+212663455044",
    "dutyDate": "2026-10-25",
    "dutyType": "day",
-   "dutyLabel": "Garde Jour",
+   "dutyLabel": "Garde de jour",
    "hoursText": "9h-23h",
    "dutyStartDate": "2026-10-25",
    "dutyEndDate": "2026-10-25",
@@ -1132,14 +1132,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-al-masjid-s237000.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-10-26",
-     "lastCheckedAt": "2026-10-26T20:33:41.494Z",
+     "lastCheckedAt": "2026-10-26T22:34:04.354Z",
      "historyMatch": {
       "start": "2026-10-25",
       "end": "2026-10-26",
       "label": "Garde Jour"
      },
      "dutyType": "day",
-     "dutyLabel": "Garde Jour"
+     "dutyLabel": "Garde de jour"
     }
    ],
    "verificationStatus": "confirmed",
