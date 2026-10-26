@@ -1568,5 +1568,175 @@
   "address": "N°885 C2 Lot Villas Sala Al Jadida, Prés Hammam Sofia",
   "phone": "+212537531331",
   "at": "2026-10-26T00:52:58.542Z"
+ },
+ "sale|pharmacie al jazira": {
+  "address": "حي اشماعو، طريق مهدية (قرب مركز التكوين المهني)",
+  "phone": "+212537878087",
+  "at": "2026-10-26T02:35:12.167Z"
+ },
+ "sale|pharmacie rostane": {
+  "address": "759 Av du Sahara Sect 8",
+  "phone": "+212537863186",
+  "at": "2026-10-26T02:35:13.651Z"
+ },
+ "sale|pharmacie sabi": {
+  "address": "N° 144 Lot, Sabi, Sect Nahda Laayayda",
+  "phone": "+212537876356",
+  "at": "2026-10-26T02:35:15.208Z"
+ },
+ "sale|pharmacie centre de sante": {
+  "address": "965 Rue Bouregreg Secteur D Hay Rahma, Près dépôt Levure Germa",
+  "phone": "+212537871715",
+  "at": "2026-10-26T02:35:16.661Z"
+ },
+ "sale|pharmacie sebati medical": {
+  "address": "Avenue Outa Hssain Résidence Al Osra 3",
+  "phone": "+212537534862",
+  "at": "2026-10-26T02:35:18.204Z"
+ },
+ "sale|pharmacie el amrani": {
+  "address": "رقم 132 زنقة جمعة لمسيد سكتور القدس - لعيايدة",
+  "phone": "+212530027782",
+  "at": "2026-10-26T02:35:19.747Z"
+ },
+ "sale|pharmacie quartier industriel": {
+  "address": "Angle Rue ourkziz et Av Ibn Khatib, Dar Hamra",
+  "phone": "+212537871069",
+  "at": "2026-10-26T02:35:21.201Z"
+ },
+ "sale|pharmacie al amana": {
+  "address": "349 Secteur 11 Bloc 16",
+  "phone": "+212537807606",
+  "at": "2026-10-26T02:35:22.697Z"
+ },
+ "sale|pharmacie de l'aube": {
+  "address": "47 Av Abdelkhalik Torres (En face pointage Taxi), Sahb al kayad",
+  "phone": "+212537855600",
+  "at": "2026-10-26T02:35:24.171Z"
+ },
+ "sale|pharmacie l'oasis": {
+  "address": "Sect 7",
+  "phone": "+212537834144",
+  "at": "2026-10-26T02:35:25.676Z"
+ },
+ "sale|pharmacie yahia ex: bismillah": {
+  "address": "lot. sidi abdelah N960 laayayda",
+  "phone": "+212537821833",
+  "at": "2026-10-26T02:35:27.165Z"
+ },
+ "sale|pharmacie ibn al haytam": {
+  "address": "N° 186 Ang Avenue Med 5 et, Rue Al ayoubiyine (قرب السوبير)",
+  "phone": "+212537873017",
+  "at": "2026-10-26T02:35:28.686Z"
+ },
+ "sale|pharmacie al hayat": {
+  "address": null,
+  "phone": "+212537808401",
+  "at": "2026-10-26T02:35:30.241Z"
+ },
+ "sale|pharmacie centrale": {
+  "address": "Angle de l'avenue Med ben al Hassan et de, l'avenue Hassan II Imm 44A.C4",
+  "phone": "+212537530691",
+  "at": "2026-10-26T02:35:31.676Z"
+ },
+ "sale|pharmacie sbihi": {
+  "address": "Rue Sidi Belabbas, Rue Khayriya et Mosquée Ramandan",
+  "phone": "+212537786858",
+  "at": "2026-10-26T02:35:33.186Z"
+ },
+ "sale|pharmacie salah eddine el ayoubi": {
+  "address": "Lot Dadda N°1 (Dérrière Centrale Laitière), Route Mehdia",
+  "phone": "+212537885859",
+  "at": "2026-10-26T02:35:34.766Z"
+ },
+ "sale|pharmacie al amal": {
+  "address": "24, Bis Av Benaboud - El Mellah",
+  "phone": "+212537781877",
+  "at": "2026-10-26T02:35:36.222Z"
+ },
+ "sale|pharmacie annaim": {
+  "address": "وسط إقامة الضحى تابريكت قرب المدرسة الغابوية للمهندسين سلا",
+  "phone": "+212537786313",
+  "at": "2026-10-26T02:35:37.746Z"
+ },
+ "temara|pharmacie abouab al wifaq": {
+  "address": "3212 Lot Wifak Erac",
+  "phone": "+212537643080",
+  "at": "2026-10-26T02:35:42.198Z"
+ },
+ "temara|pharmacie rim": {
+  "address": "496 Guich Oudayas (En Face BIM et à 150M, de la mosquée belbachir et attijariwafa bank)",
+  "phone": "+212537561813",
+  "at": "2026-10-26T02:35:43.669Z"
+ },
+ "temara|pharmacie de la famille": {
+  "address": "Av Tarik Ibn Zyad Hay Massira 2",
+  "phone": "+212537600690",
+  "at": "2026-10-26T02:35:45.194Z"
+ },
+ "temara|pharmacie al zahrawi": {
+  "address": "Résidence Mesk Ellil, Commerce 36 Avenue Mohamed V",
+  "phone": "+212537415672",
+  "at": "2026-10-26T02:35:46.671Z"
+ },
+ "temara|pharmacie fidaa": {
+  "address": "Imm 23 Mag 15 Résidence Riad II",
+  "phone": "+212537610163",
+  "at": "2026-10-26T02:35:48.261Z"
+ },
+ "temara|pharmacie principale": {
+  "address": "Bd My Abdellah, Résidence Mouique, En face Plage Guyville Harhoura",
+  "phone": "+212537627568",
+  "at": "2026-10-26T02:35:49.745Z"
+ },
+ "temara|pharmacie al ihssan": {
+  "address": "Rue Imame Chettebi 1992 - Massira I",
+  "phone": "+212537608599",
+  "at": "2026-10-26T02:35:51.197Z"
+ },
+ "temara|pharmacie essaada": {
+  "address": "Centre commercial Lot Laayoune - Harhoura",
+  "phone": "+212537640764",
+  "at": "2026-10-26T02:35:52.714Z"
+ },
+ "temara|pharmacie 11 janvier": {
+  "address": "Lot El Ghazali N°9 – Témara",
+  "phone": "+212537640919",
+  "at": "2026-10-26T02:35:54.194Z"
+ },
+ "temara|pharmacie ali": {
+  "address": "199, Secteur 4 Oulad Benasser",
+  "phone": "+212537600032",
+  "at": "2026-10-26T02:35:55.751Z"
+ },
+ "temara|pharmacie sijilmassa": {
+  "address": "Lot Khiam 3 N°296",
+  "phone": "+212537641004",
+  "at": "2026-10-26T02:35:57.203Z"
+ },
+ "temara|pharmacie lamia": {
+  "address": "19 Lot Elhassania Hay Mansour Edahbi, Près collège Nejai et ecole Itihad Alarabi",
+  "phone": "+212537616478",
+  "at": "2026-10-26T02:35:58.724Z"
+ },
+ "temara|pharmacie al afaq": {
+  "address": "N°222, Avenue Ahmed El Hansali ,Hay Abbadi, à coté de Masjid AL FADILA",
+  "phone": "+212537587613",
+  "at": "2026-10-26T02:36:00.233Z"
+ },
+ "temara|pharmacie camelia": {
+  "address": "Rue Libye, lotissement Ibn Sina, N 76",
+  "phone": "+212537640769",
+  "at": "2026-10-26T02:36:01.688Z"
+ },
+ "temara|pharmacie noufa": {
+  "address": "Lot Wifak 1, N°2041",
+  "phone": "+212537640424",
+  "at": "2026-10-26T02:36:03.229Z"
+ },
+ "temara|pharmacie des cites": {
+  "address": "Lotissement Warda",
+  "phone": "+212537560335",
+  "at": "2026-10-26T02:36:04.673Z"
  }
 }
