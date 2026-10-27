@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-27T14:47:38.501Z",
+ "generatedAt": "2026-10-27T16:46:47.546Z",
  "todayMorocco": "2026-10-27",
  "dates": [
   "2026-10-12",
@@ -41,7 +41,7 @@
    "pageDate": "2026-10-27",
    "count": 8,
    "error": null,
-   "checkedAt": "2026-10-27T14:47:38.534Z"
+   "checkedAt": "2026-10-27T16:46:47.566Z"
   },
   {
    "sourceId": "annuaire-gratuit",
@@ -52,7 +52,7 @@
    "pageDate": "2026-10-27",
    "count": 8,
    "error": null,
-   "checkedAt": "2026-10-27T14:47:40.178Z"
+   "checkedAt": "2026-10-27T16:46:49.250Z"
   },
   {
    "sourceId": "annuaire-gratuit",
@@ -63,7 +63,7 @@
    "pageDate": "2026-10-27",
    "count": 5,
    "error": null,
-   "checkedAt": "2026-10-27T14:47:40.454Z"
+   "checkedAt": "2026-10-27T16:46:49.701Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -74,7 +74,7 @@
    "pageDate": "2026-10-26",
    "count": 52,
    "error": null,
-   "checkedAt": "2026-10-27T14:47:42.177Z"
+   "checkedAt": "2026-10-27T16:46:51.266Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -83,9 +83,9 @@
    "url": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-11-02",
    "ok": true,
    "pageDate": "2026-11-02",
-   "count": 58,
+   "count": 57,
    "error": null,
-   "checkedAt": "2026-10-27T14:47:45.467Z"
+   "checkedAt": "2026-10-27T16:46:53.869Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -96,7 +96,7 @@
    "pageDate": "2026-10-26",
    "count": 49,
    "error": null,
-   "checkedAt": "2026-10-27T14:47:46.461Z"
+   "checkedAt": "2026-10-27T16:46:54.709Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -107,7 +107,7 @@
    "pageDate": "2026-11-02",
    "count": 62,
    "error": null,
-   "checkedAt": "2026-10-27T14:47:47.878Z"
+   "checkedAt": "2026-10-27T16:46:56.189Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -118,7 +118,7 @@
    "pageDate": "2026-10-26",
    "count": 33,
    "error": null,
-   "checkedAt": "2026-10-27T14:47:49.426Z"
+   "checkedAt": "2026-10-27T16:46:57.790Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -129,7 +129,7 @@
    "pageDate": "2026-11-02",
    "count": 37,
    "error": null,
-   "checkedAt": "2026-10-27T14:47:50.943Z"
+   "checkedAt": "2026-10-27T16:46:59.160Z"
   }
  ],
  "connectors": [
