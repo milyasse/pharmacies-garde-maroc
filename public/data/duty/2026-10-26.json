@@ -1,6 +1,6 @@
 {
  "date": "2026-10-26",
- "generatedAt": "2026-10-27T20:36:55.051Z",
+ "generatedAt": "2026-10-27T22:36:36.002Z",
  "records": [
   {
    "id": "rabat-sans-nom",
@@ -764,7 +764,7 @@
    "phone": "+212663455044",
    "dutyDate": "2026-10-26",
    "dutyType": "day",
-   "dutyLabel": "Garde Jour",
+   "dutyLabel": "Garde de jour",
    "hoursText": "9h-23h",
    "dutyStartDate": "2026-10-26",
    "dutyEndDate": "2026-10-26",
@@ -790,14 +790,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-al-masjid-s237000.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-10-27",
-     "lastCheckedAt": "2026-10-27T20:36:56.848Z",
+     "lastCheckedAt": "2026-10-27T22:36:37.922Z",
      "historyMatch": {
       "start": "2026-10-26",
       "end": "2026-10-27",
       "label": "Garde Jour"
      },
      "dutyType": "day",
-     "dutyLabel": "Garde Jour"
+     "dutyLabel": "Garde de jour"
     }
    ],
    "verificationStatus": "confirmed",
@@ -818,7 +818,7 @@
    "phone": "+212537561393",
    "dutyDate": "2026-10-26",
    "dutyType": "day",
-   "dutyLabel": "Garde Jour",
+   "dutyLabel": "Garde de jour",
    "hoursText": "9h-23h",
    "dutyStartDate": "2026-10-26",
    "dutyEndDate": "2026-10-26",
@@ -844,14 +844,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-erraha-s252608.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-10-27",
-     "lastCheckedAt": "2026-10-27T20:36:56.848Z",
+     "lastCheckedAt": "2026-10-27T22:36:37.922Z",
      "historyMatch": {
       "start": "2026-10-26",
       "end": "2026-10-27",
       "label": "Garde Jour"
      },
      "dutyType": "day",
-     "dutyLabel": "Garde Jour"
+     "dutyLabel": "Garde de jour"
     }
    ],
    "verificationStatus": "confirmed",
