@@ -11569,6 +11569,11 @@
    "longitude": -6.8975754,
    "history": [
     {
+     "start": "2026-10-26",
+     "end": "2026-10-27",
+     "label": "Garde Jour"
+    },
+    {
      "start": "2026-10-25",
      "end": "2026-10-26",
      "label": "Garde Jour"
@@ -11611,16 +11616,11 @@
     {
      "start": "2026-09-12",
      "end": "2026-09-13",
-     "label": "Garde Jour"
-    },
-    {
-     "start": "2026-08-07",
-     "end": "2026-08-08",
      "label": "Garde Jour FAQ Questions fréquentes sur Pharm"
     }
    ]
   },
-  "fetchedAt": "2026-10-26T00:51:28.066Z"
+  "fetchedAt": "2026-10-27T00:40:53.368Z"
  },
  "s245316": {
   "detail": {
