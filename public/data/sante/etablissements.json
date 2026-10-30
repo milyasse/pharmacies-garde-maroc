@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-10-29T02:47:45.821Z",
- "osmBase": "2026-10-29T02:45:59Z",
+ "generatedAt": "2026-10-30T00:53:03.723Z",
+ "osmBase": "2026-10-30T00:51:21Z",
  "ministryDataDate": "2023-11-14",
  "lastError": null,
  "establishments": [
@@ -34,7 +34,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/way/1101751339",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -72,7 +72,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/way/449075020",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -105,7 +105,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/way/329761817",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -138,7 +138,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/way/453127434",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -176,7 +176,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/way/234798834",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -209,7 +209,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/way/395421845",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -247,7 +247,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/way/456862639",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -280,7 +280,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/node/3702119358",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -313,7 +313,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/way/482745706",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -346,7 +346,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/way/330105045",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -379,7 +379,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/node/3761843022",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -412,7 +412,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/node/3190094380",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -445,7 +445,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/way/395408474",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -491,7 +491,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/way/456863021",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -524,7 +524,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/node/3400339101",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -562,7 +562,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/node/8741474717",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -595,7 +595,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/way/590876055",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -628,7 +628,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/node/5360163261",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -661,7 +661,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/node/3449045268",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -694,7 +694,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/node/10657551507",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -727,7 +727,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/node/14188943413",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -835,7 +835,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/way/289025339",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -884,14 +884,14 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/way/171435524",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     },
     {
      "id": "osm",
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/way/482745795",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -937,7 +937,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/way/789176305",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -977,7 +977,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/way/789273401",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -1010,7 +1010,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/way/789268675",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -1055,7 +1055,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/relation/21685408",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -1093,7 +1093,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/way/152610310",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -1126,7 +1126,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/way/789273095",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -1192,7 +1192,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/node/2569037645",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -1307,7 +1307,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/way/738368993",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -1340,7 +1340,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/way/1555330006",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -1373,7 +1373,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/node/4495228962",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -1412,7 +1412,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/node/14100848801",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -1510,7 +1510,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/relation/21685401",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -1543,7 +1543,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/way/1248303519",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -1592,7 +1592,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/way/1037424831",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -1625,7 +1625,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/way/278585583",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -1712,7 +1712,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/way/171435526",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -1745,14 +1745,14 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/node/13697849845",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     },
     {
      "id": "osm",
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/way/250293101",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -1786,7 +1786,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/node/12783286334",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
@@ -1819,7 +1819,7 @@
      "name": "OpenStreetMap",
      "url": "https://www.openstreetmap.org/node/3061023086",
      "license": "ODbL — © contributeurs OpenStreetMap",
-     "dataDate": "2026-10-29"
+     "dataDate": "2026-10-30"
     }
    ],
    "osmIds": [
