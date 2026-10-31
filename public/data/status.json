@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-31T10:36:00.482Z",
+ "generatedAt": "2026-10-31T12:45:13.503Z",
  "todayMorocco": "2026-10-31",
  "dates": [
   "2026-10-12",
@@ -37,33 +37,33 @@
    "sourceName": "annuaire-gratuit.ma",
    "city": "rabat",
    "url": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
-   "ok": true,
-   "pageDate": "2026-10-31",
-   "count": 11,
-   "error": null,
-   "checkedAt": "2026-10-31T10:36:00.509Z"
+   "ok": false,
+   "pageDate": null,
+   "count": 0,
+   "error": "Page inaccessible : HTTP 500",
+   "checkedAt": "2026-10-31T12:45:13.525Z"
   },
   {
    "sourceId": "annuaire-gratuit",
    "sourceName": "annuaire-gratuit.ma",
    "city": "sale",
    "url": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
-   "ok": true,
-   "pageDate": "2026-10-31",
-   "count": 7,
-   "error": null,
-   "checkedAt": "2026-10-31T10:36:17.946Z"
+   "ok": false,
+   "pageDate": null,
+   "count": 0,
+   "error": "Page inaccessible : HTTP 500",
+   "checkedAt": "2026-10-31T12:45:45.672Z"
   },
   {
    "sourceId": "annuaire-gratuit",
    "sourceName": "annuaire-gratuit.ma",
    "city": "temara",
    "url": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
-   "ok": true,
-   "pageDate": "2026-10-31",
-   "count": 7,
-   "error": null,
-   "checkedAt": "2026-10-31T10:36:29.952Z"
+   "ok": false,
+   "pageDate": null,
+   "count": 0,
+   "error": "Page inaccessible : HTTP 500",
+   "checkedAt": "2026-10-31T12:46:16.954Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -74,7 +74,7 @@
    "pageDate": "2026-10-26",
    "count": 22,
    "error": null,
-   "checkedAt": "2026-10-31T10:36:41.964Z"
+   "checkedAt": "2026-10-31T12:46:48.665Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -85,7 +85,7 @@
    "pageDate": "2026-11-02",
    "count": 58,
    "error": null,
-   "checkedAt": "2026-10-31T10:36:44.705Z"
+   "checkedAt": "2026-10-31T12:46:50.256Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -94,9 +94,9 @@
    "url": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
    "ok": true,
    "pageDate": "2026-10-26",
-   "count": 14,
+   "count": 16,
    "error": null,
-   "checkedAt": "2026-10-31T10:36:45.562Z"
+   "checkedAt": "2026-10-31T12:46:50.997Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -107,7 +107,7 @@
    "pageDate": "2026-11-02",
    "count": 62,
    "error": null,
-   "checkedAt": "2026-10-31T10:36:46.964Z"
+   "checkedAt": "2026-10-31T12:46:55.021Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -118,7 +118,7 @@
    "pageDate": "2026-10-26",
    "count": 16,
    "error": null,
-   "checkedAt": "2026-10-31T10:36:48.474Z"
+   "checkedAt": "2026-10-31T12:46:57.061Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -129,7 +129,7 @@
    "pageDate": "2026-11-02",
    "count": 40,
    "error": null,
-   "checkedAt": "2026-10-31T10:36:49.925Z"
+   "checkedAt": "2026-10-31T12:46:58.524Z"
   }
  ],
  "connectors": [
