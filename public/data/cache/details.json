@@ -17461,5 +17461,89 @@
    ]
   },
   "fetchedAt": "2026-10-31T10:36:41.952Z"
+ },
+ "s254347": {
+  "detail": {
+   "name": "Pharmacie Baassine",
+   "address": "lot zahrat attakwa gh4 imm3",
+   "phone": "+212661406943",
+   "latitude": 34.044889,
+   "longitude": -6.814017,
+   "history": [
+    {
+     "start": "2026-11-01",
+     "end": "2026-11-02",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2025-11-09",
+     "end": "2025-11-10",
+     "label": "Garde Jour et Nuit FAQ Questions fréquentes s"
+    }
+   ]
+  },
+  "fetchedAt": "2026-11-01T10:38:19.800Z"
+ },
+ "s138949": {
+  "detail": {
+   "name": "Pharmacie Al Fajr",
+   "address": null,
+   "phone": "+212537601592",
+   "latitude": 33.9272298,
+   "longitude": -6.8968234,
+   "history": [
+    {
+     "start": "2026-11-01",
+     "end": "2026-11-02",
+     "label": "Garde Jour"
+    },
+    {
+     "start": "2026-09-18",
+     "end": "2026-09-19",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-07-22",
+     "end": "2026-07-23",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-05-30",
+     "end": "2026-06-01",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-03-31",
+     "end": "2026-04-01",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-02-27",
+     "end": "2026-02-28",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2026-01-05",
+     "end": "2026-01-06",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2025-12-28",
+     "end": "2025-12-29",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2025-12-27",
+     "end": "2025-12-28",
+     "label": "Garde Jour et Nuit"
+    },
+    {
+     "start": "2025-11-10",
+     "end": "2025-11-11",
+     "label": "Garde Jour et Nuit FAQ Questions fréquentes s"
+    }
+   ]
+  },
+  "fetchedAt": "2026-11-01T10:38:22.315Z"
  }
 }
