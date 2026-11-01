@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-01T16:37:24.190Z",
+ "generatedAt": "2026-11-01T18:40:41.012Z",
  "todayMorocco": "2026-11-01",
  "dates": [
   "2026-10-12",
@@ -37,33 +37,33 @@
    "sourceName": "annuaire-gratuit.ma",
    "city": "rabat",
    "url": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
-   "ok": true,
-   "pageDate": "2026-11-01",
-   "count": 10,
-   "error": null,
-   "checkedAt": "2026-11-01T16:37:24.221Z"
+   "ok": false,
+   "pageDate": null,
+   "count": 0,
+   "error": "Page inaccessible : fetch failed",
+   "checkedAt": "2026-11-01T18:40:41.039Z"
   },
   {
    "sourceId": "annuaire-gratuit",
    "sourceName": "annuaire-gratuit.ma",
    "city": "sale",
    "url": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
-   "ok": true,
-   "pageDate": "2026-11-01",
-   "count": 8,
-   "error": null,
-   "checkedAt": "2026-11-01T16:37:25.123Z"
+   "ok": false,
+   "pageDate": null,
+   "count": 0,
+   "error": "Page inaccessible : fetch failed",
+   "checkedAt": "2026-11-01T18:41:23.142Z"
   },
   {
    "sourceId": "annuaire-gratuit",
    "sourceName": "annuaire-gratuit.ma",
    "city": "temara",
    "url": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
-   "ok": true,
-   "pageDate": "2026-11-01",
-   "count": 8,
-   "error": null,
-   "checkedAt": "2026-11-01T16:37:26.000Z"
+   "ok": false,
+   "pageDate": null,
+   "count": 0,
+   "error": "Page inaccessible : fetch failed",
+   "checkedAt": "2026-11-01T18:42:05.199Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -74,7 +74,7 @@
    "pageDate": "2026-10-26",
    "count": 11,
    "error": null,
-   "checkedAt": "2026-11-01T16:37:27.466Z"
+   "checkedAt": "2026-11-01T18:42:47.270Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -85,7 +85,7 @@
    "pageDate": "2026-11-02",
    "count": 58,
    "error": null,
-   "checkedAt": "2026-11-01T16:37:30.433Z"
+   "checkedAt": "2026-11-01T18:42:48.909Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -96,7 +96,7 @@
    "pageDate": "2026-10-26",
    "count": 8,
    "error": null,
-   "checkedAt": "2026-11-01T16:37:31.291Z"
+   "checkedAt": "2026-11-01T18:42:49.887Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -107,7 +107,7 @@
    "pageDate": "2026-11-02",
    "count": 63,
    "error": null,
-   "checkedAt": "2026-11-01T16:37:32.661Z"
+   "checkedAt": "2026-11-01T18:42:51.219Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -118,7 +118,7 @@
    "pageDate": "2026-10-26",
    "count": 8,
    "error": null,
-   "checkedAt": "2026-11-01T16:37:34.329Z"
+   "checkedAt": "2026-11-01T18:42:52.676Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -129,7 +129,7 @@
    "pageDate": "2026-11-02",
    "count": 40,
    "error": null,
-   "checkedAt": "2026-11-01T16:37:35.691Z"
+   "checkedAt": "2026-11-01T18:42:54.189Z"
   }
  ],
  "connectors": [
