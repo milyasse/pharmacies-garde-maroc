@@ -1753,5 +1753,205 @@
   "address": "Lot azzahra 1 Attakwa gh4 Imm3 Bouchouk",
   "phone": "+212661406943",
   "at": "2026-10-31T12:46:53.953Z"
+ },
+ "rabat|pharmacie ibn sina": {
+  "address": "Angle Av Fal Oueld Oumeir et Av.Atlas",
+  "phone": "+212537672016",
+  "at": "2026-11-02T00:59:14.218Z"
+ },
+ "rabat|pharmacie napoli": {
+  "address": "N°2, Rue Bamako",
+  "phone": "+212530474131",
+  "at": "2026-11-02T00:59:17.252Z"
+ },
+ "rabat|pharmacie mecca": {
+  "address": "Av Ailanthus, Sec 23, Résidence « les chênes »",
+  "phone": "+212537565875",
+  "at": "2026-11-02T00:59:20.234Z"
+ },
+ "rabat|pharmacie abtal": {
+  "address": "53 Groupe Zouhour (En Face Dar Chabab)",
+  "phone": "+212537653710",
+  "at": "2026-11-02T00:59:23.278Z"
+ },
+ "rabat|pharmacie el manzeh al manal": {
+  "address": "Hay El Manzeh, 964, Avenue El Massira C.Y.M",
+  "phone": "+212537281122",
+  "at": "2026-11-02T00:59:26.279Z"
+ },
+ "rabat|pharmacie mourad": {
+  "address": "Bloc TZ N°1B Douar Rjafallah C.Y.M",
+  "phone": "+212537695390",
+  "at": "2026-11-02T00:59:29.345Z"
+ },
+ "rabat|pharmacie al kifah": {
+  "address": "Angle Boulevard Al Kifah Et Avenue Al Majd,, En Face Rond-Point - C.Y.M",
+  "phone": "+212537796856",
+  "at": "2026-11-02T00:59:32.245Z"
+ },
+ "rabat|pharmacie des facultes": {
+  "address": "Av Ibn Khatab En face cite universitaire Agdal",
+  "phone": "+212537773440",
+  "at": "2026-11-02T00:59:35.304Z"
+ },
+ "rabat|pharmacie lotus": {
+  "address": "Bd des FAR N°342 Quartier El Menzeh C.Y.M",
+  "phone": "+212537281883",
+  "at": "2026-11-02T00:59:38.255Z"
+ },
+ "rabat|pharmacie al fadila": {
+  "address": "9 Avenue Annour Kamra, En face lycée Abdelkrim Khatabi",
+  "phone": "+212537690742",
+  "at": "2026-11-02T00:59:41.289Z"
+ },
+ "rabat|pharmacie tarik elmehdi": {
+  "address": "Av El Massira N°16 Amal 4 ext C.Y.M",
+  "phone": "+212537798347",
+  "at": "2026-11-02T00:59:44.618Z"
+ },
+ "rabat|pharmacie des nations unies": {
+  "address": "Avenue des nations unies Rue Jabal Al Ayachi, à côté de station OLA Energy",
+  "phone": "+212537670719",
+  "at": "2026-11-02T00:59:47.322Z"
+ },
+ "rabat|pharmacie al faraj": {
+  "address": "21 bis rue Mohammed El mollakh - Akkari",
+  "phone": "+212537692746",
+  "at": "2026-11-02T00:59:50.337Z"
+ },
+ "rabat|pharmacie nakhil": {
+  "address": "Sect 9 Ilot 19 Lot 10 Résidence Zahrat RYAD, Derrière la Douane",
+  "phone": "+212537714747",
+  "at": "2026-11-02T00:59:53.322Z"
+ },
+ "rabat|pharmacie mosquee o.l.m": {
+  "address": "Rue Hamza Bnou Amr, O.L.M, Souissi II",
+  "phone": "+212537638119",
+  "at": "2026-11-02T00:59:56.324Z"
+ },
+ "rabat|pharmacie sofia": {
+  "address": "1205 Bis Avenue Al Massira Hay El Menzeh",
+  "phone": "+212537282928",
+  "at": "2026-11-02T00:59:59.283Z"
+ },
+ "rabat|pharmacie al kawthar": {
+  "address": "18 Rue Inbiat C.Y.M",
+  "phone": "+212537794018",
+  "at": "2026-11-02T01:00:00.871Z"
+ },
+ "rabat|pharmacie bab marrakech": {
+  "address": "Rue Al Achàari (face au monument Bab Marrakech)",
+  "phone": "+212537779500",
+  "at": "2026-11-02T01:00:02.628Z"
+ },
+ "rabat|pharmacie el amine": {
+  "address": "281, Av Hassan II - Diour Jamaa, Prés Palais Kabbaj",
+  "phone": "+212537726932",
+  "at": "2026-11-02T01:00:03.909Z"
+ },
+ "rabat|pharmacie moulay ismail": {
+  "address": "24. Av Mly Ismail, 4 Bis Hassan",
+  "phone": "+212537203781",
+  "at": "2026-11-02T01:00:05.357Z"
+ },
+ "rabat|pharmacie ait youssa": {
+  "address": "Route D1 N°6 Hay Bouregreg",
+  "phone": "+212537659910",
+  "at": "2026-11-02T01:00:06.856Z"
+ },
+ "rabat|pharmacie ar-rahman": {
+  "address": "Groupe 20, 15 Bis Bouitat C.Y.M",
+  "phone": "+212530500721",
+  "at": "2026-11-02T01:00:08.343Z"
+ },
+ "rabat|pharmacie berbich": {
+  "address": "12 bis, avenue alghazali quartier les orangers, En face du Centre Commercial Les Orangers",
+  "phone": "+212537260772",
+  "at": "2026-11-02T01:00:09.898Z"
+ },
+ "rabat|pharmacie des cliniques": {
+  "address": "N°9 Avenue Ouazane - Hassan",
+  "phone": "+212537203364",
+  "at": "2026-11-02T01:00:11.213Z"
+ },
+ "rabat|pharmacie avenue mohamed vi": {
+  "address": "Centre commercial Ambassador Km 5.Av Mohamed VI",
+  "phone": "+212537650674",
+  "at": "2026-11-02T01:00:12.809Z"
+ },
+ "rabat|pharmacie al mountazah": {
+  "address": "Avenue Al majd, Près de Aswak Assalam C.Y.M",
+  "phone": "+212537790016",
+  "at": "2026-11-02T01:00:14.280Z"
+ },
+ "rabat|pharmacie centre de transfusion sanguine": {
+  "address": "Résidence Aribat N°9 entre Av Hassan II, et Douar Rjaf Laah C.Y.M",
+  "phone": "+212537692469",
+  "at": "2026-11-02T01:00:15.747Z"
+ },
+ "rabat|pharmacie anzi": {
+  "address": "N°4 Angle Av Hassan II et rue Abbas Ibn Farnas, En Face De La Gare Rabat AGDAL Sur L'avenue Hassan II.",
+  "phone": "+212537691313",
+  "at": "2026-11-02T01:00:17.356Z"
+ },
+ "rabat|pharmacie carre sante beaute": {
+  "address": "Avenue Mehdi Ben Berka chaumiere 1 N°2",
+  "phone": "+212537717127",
+  "at": "2026-11-02T01:00:18.697Z"
+ },
+ "rabat|pharmacie el mellah": {
+  "address": "7,Rue El assouli (Mosquée El Mellah)",
+  "phone": "+212537201802",
+  "at": "2026-11-02T01:00:20.256Z"
+ },
+ "rabat|pharmacie des orangers": {
+  "address": "189 Avenue Hassan II",
+  "phone": "+212537260227",
+  "at": "2026-11-02T01:00:21.791Z"
+ },
+ "rabat|pharmacie hyper carrefour": {
+  "address": "Centre Commercial Carrefour Gourmet, Av Mohamed VI (Route des Zaers)",
+  "phone": "+212537755555",
+  "at": "2026-11-02T01:00:23.259Z"
+ },
+ "rabat|pharmacie aboubakr assedik": {
+  "address": "Rue Chaouia, Imm J N°5 Mabella",
+  "phone": "+212537651874",
+  "at": "2026-11-02T01:00:24.742Z"
+ },
+ "sale|pharmacie atrassi": {
+  "address": "رقم 2 تجزئة رقم 2553 المازة سيدي عبد الله - لعيايدة",
+  "phone": "+212530515221",
+  "at": "2026-11-02T01:00:29.250Z"
+ },
+ "sale|pharmacie abid": {
+  "address": "قطاع د رقم 11 قرب بيم. أمام شركة, سانديكو القديمة وقرب شركة الروكاني",
+  "phone": "+212537871525",
+  "at": "2026-11-02T01:00:30.730Z"
+ },
+ "sale|pharmacie kamil": {
+  "address": "N° 145, Lot Maamoura, Hssain, Sala Al Jadida",
+  "phone": "+212537828056",
+  "at": "2026-11-02T01:00:32.223Z"
+ },
+ "sale|pharmacie tahiri": {
+  "address": "إقامة البستان4 طريق القنيطرة تجزئة سعيد حجي, على بعد 1100متر من حي اشماعو, و 1200 متر من شركة كوكاكولا (قرب المحطة الأخيرة للطاكسيات )",
+  "phone": "+212537878176",
+  "at": "2026-11-02T01:00:33.799Z"
+ },
+ "sale|pharmacie la pépinière": {
+  "address": "ي 128 شارع المزرعة بلوك لام رقم 15 تابريكت",
+  "phone": "+212537863720",
+  "at": "2026-11-02T01:00:35.194Z"
+ },
+ "sale|pharmacie ibn sina": {
+  "address": "Av Sidi Mohamed Rue Ain Assaa N°1, Hay El Farah",
+  "phone": "+212537828223",
+  "at": "2026-11-02T01:00:36.689Z"
+ },
+ "sale|pharmacie zohour": {
+  "address": "284 Sect D Hay Arrahma",
+  "phone": "+212537872535",
+  "at": "2026-11-02T01:00:38.232Z"
  }
 }
