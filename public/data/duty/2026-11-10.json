@@ -1,6 +1,6 @@
 {
  "date": "2026-11-10",
- "generatedAt": "2026-11-02T18:54:21.801Z",
+ "generatedAt": "2026-11-02T20:19:52.147Z",
  "records": [
   {
    "id": "rabat-fadila",
@@ -25,7 +25,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-al-fadila-00h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-11-09",
      "sourcePublishedAt": "2026-11-09",
-     "lastCheckedAt": "2026-11-02T18:54:27.813Z",
+     "lastCheckedAt": "2026-11-02T20:20:00.355Z",
      "historyMatch": {
       "start": "2026-11-10",
       "end": "2026-11-10",
@@ -64,7 +64,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-des-facultes.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-11-09",
      "sourcePublishedAt": "2026-11-09",
-     "lastCheckedAt": "2026-11-02T18:54:27.813Z",
+     "lastCheckedAt": "2026-11-02T20:20:00.355Z",
      "historyMatch": {
       "start": "2026-11-10",
       "end": "2026-11-11",
@@ -72,6 +72,45 @@
      },
      "dutyType": "continuous",
      "dutyLabel": "Agdal 24h/24h"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "low",
+   "notes": [
+    "Planning publié à l’avance : à revérifier le jour même."
+   ]
+  },
+  {
+   "id": "rabat-oumnia",
+   "name": "Pharmacie El Oumnia",
+   "address": "81,Av Med VI (Entre Groupe Scolaire Ghosn, Et Azzaitoun et Restaurant Recto Verso) Tél: 0645 71 55 50, 0537 65 73 25",
+   "city": "rabat",
+   "district": "Takadoum & Souissi",
+   "latitude": 33.988,
+   "longitude": -6.818,
+   "coordinatesSource": "district",
+   "phone": "+212645715550",
+   "dutyDate": "2026-11-10",
+   "dutyType": "day",
+   "dutyLabel": "Takadoum & Souissi (9h à 00h00)",
+   "hoursText": "9h-24h",
+   "dutyStartDate": "2026-11-10",
+   "dutyEndDate": "2026-11-10",
+   "sources": [
+    {
+     "sourceId": "guidepharmacies",
+     "sourceName": "guidepharmacies.ma",
+     "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-el-oumnia.html",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-11-09",
+     "sourcePublishedAt": "2026-11-09",
+     "lastCheckedAt": "2026-11-02T20:20:00.355Z",
+     "historyMatch": {
+      "start": "2026-11-10",
+      "end": "2026-11-10",
+      "label": "Planning hebdomadaire publié"
+     },
+     "dutyType": "day",
+     "dutyLabel": "Takadoum & Souissi (9h à 00h00)"
     }
    ],
    "verificationStatus": "confirmed",
@@ -103,7 +142,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-la-corniche-00hh.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-11-09",
      "sourcePublishedAt": "2026-11-09",
-     "lastCheckedAt": "2026-11-02T18:54:27.813Z",
+     "lastCheckedAt": "2026-11-02T20:20:00.355Z",
      "historyMatch": {
       "start": "2026-11-10",
       "end": "2026-11-10",
@@ -142,7 +181,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-lotus-24h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-11-09",
      "sourcePublishedAt": "2026-11-09",
-     "lastCheckedAt": "2026-11-02T18:54:27.813Z",
+     "lastCheckedAt": "2026-11-02T20:20:00.355Z",
      "historyMatch": {
       "start": "2026-11-10",
       "end": "2026-11-11",
@@ -181,7 +220,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-prestigia.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-11-09",
      "sourcePublishedAt": "2026-11-09",
-     "lastCheckedAt": "2026-11-02T18:54:27.813Z",
+     "lastCheckedAt": "2026-11-02T20:20:00.355Z",
      "historyMatch": {
       "start": "2026-11-10",
       "end": "2026-11-11",
@@ -220,7 +259,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-tarik-elmehdi-00h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-11-09",
      "sourcePublishedAt": "2026-11-09",
-     "lastCheckedAt": "2026-11-02T18:54:27.813Z",
+     "lastCheckedAt": "2026-11-02T20:20:00.355Z",
      "historyMatch": {
       "start": "2026-11-10",
       "end": "2026-11-10",
@@ -259,7 +298,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-universelle-00h-dim.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-11-09",
      "sourcePublishedAt": "2026-11-09",
-     "lastCheckedAt": "2026-11-02T18:54:27.813Z",
+     "lastCheckedAt": "2026-11-02T20:20:00.355Z",
      "historyMatch": {
       "start": "2026-11-10",
       "end": "2026-11-11",
@@ -298,7 +337,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-assabil-00h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-11-09",
      "sourcePublishedAt": "2026-11-09",
-     "lastCheckedAt": "2026-11-02T18:54:30.155Z",
+     "lastCheckedAt": "2026-11-02T20:20:05.604Z",
      "historyMatch": {
       "start": "2026-11-10",
       "end": "2026-11-10",
@@ -337,7 +376,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-bettana.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-11-09",
      "sourcePublishedAt": "2026-11-09",
-     "lastCheckedAt": "2026-11-02T18:54:30.155Z",
+     "lastCheckedAt": "2026-11-02T20:20:05.604Z",
      "historyMatch": {
       "start": "2026-11-10",
       "end": "2026-11-10",
@@ -376,7 +415,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-ellimoune-hssain-24h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-11-09",
      "sourcePublishedAt": "2026-11-09",
-     "lastCheckedAt": "2026-11-02T18:54:30.155Z",
+     "lastCheckedAt": "2026-11-02T20:20:05.604Z",
      "historyMatch": {
       "start": "2026-11-10",
       "end": "2026-11-11",
@@ -415,7 +454,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-ibn-sina-24h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-11-09",
      "sourcePublishedAt": "2026-11-09",
-     "lastCheckedAt": "2026-11-02T18:54:30.155Z",
+     "lastCheckedAt": "2026-11-02T20:20:05.604Z",
      "historyMatch": {
       "start": "2026-11-10",
       "end": "2026-11-11",
@@ -454,7 +493,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-koutoubia-s-24h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-11-09",
      "sourcePublishedAt": "2026-11-09",
-     "lastCheckedAt": "2026-11-02T18:54:30.155Z",
+     "lastCheckedAt": "2026-11-02T20:20:05.604Z",
      "historyMatch": {
       "start": "2026-11-10",
       "end": "2026-11-10",
@@ -493,7 +532,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-sakani.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-11-09",
      "sourcePublishedAt": "2026-11-09",
-     "lastCheckedAt": "2026-11-02T18:54:30.155Z",
+     "lastCheckedAt": "2026-11-02T20:20:05.604Z",
      "historyMatch": {
       "start": "2026-11-10",
       "end": "2026-11-11",
@@ -532,7 +571,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-sidi-abdellah-ben-hassoun.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-11-09",
      "sourcePublishedAt": "2026-11-09",
-     "lastCheckedAt": "2026-11-02T18:54:30.155Z",
+     "lastCheckedAt": "2026-11-02T20:20:05.604Z",
      "historyMatch": {
       "start": "2026-11-10",
       "end": "2026-11-11",
@@ -571,7 +610,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-zohour.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-11-09",
      "sourcePublishedAt": "2026-11-09",
-     "lastCheckedAt": "2026-11-02T18:54:30.155Z",
+     "lastCheckedAt": "2026-11-02T20:20:05.604Z",
      "historyMatch": {
       "start": "2026-11-10",
       "end": "2026-11-10",
@@ -610,7 +649,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-el-guich-mar.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html?date=2026-11-09",
      "sourcePublishedAt": "2026-11-09",
-     "lastCheckedAt": "2026-11-02T18:54:33.133Z",
+     "lastCheckedAt": "2026-11-02T20:20:08.571Z",
      "historyMatch": {
       "start": "2026-11-10",
       "end": "2026-11-10",
@@ -649,7 +688,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-ennassim.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html?date=2026-11-09",
      "sourcePublishedAt": "2026-11-09",
-     "lastCheckedAt": "2026-11-02T18:54:33.133Z",
+     "lastCheckedAt": "2026-11-02T20:20:08.571Z",
      "historyMatch": {
       "start": "2026-11-10",
       "end": "2026-11-10",
@@ -688,7 +727,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-granada-t-mar.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html?date=2026-11-09",
      "sourcePublishedAt": "2026-11-09",
-     "lastCheckedAt": "2026-11-02T18:54:33.133Z",
+     "lastCheckedAt": "2026-11-02T20:20:08.571Z",
      "historyMatch": {
       "start": "2026-11-10",
       "end": "2026-11-10",
@@ -727,7 +766,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-kenzy.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html?date=2026-11-09",
      "sourcePublishedAt": "2026-11-09",
-     "lastCheckedAt": "2026-11-02T18:54:33.133Z",
+     "lastCheckedAt": "2026-11-02T20:20:08.571Z",
      "historyMatch": {
       "start": "2026-11-10",
       "end": "2026-11-10",
