@@ -1953,5 +1953,125 @@
   "address": "284 Sect D Hay Arrahma",
   "phone": "+212537872535",
   "at": "2026-11-02T01:00:38.232Z"
+ },
+ "sale|pharmacie ellimoune hssain": {
+  "address": "Lotissement Rida N°4 Hssain en Face Ecole Achbal Karaouiene",
+  "phone": "+212537830449",
+  "at": "2026-11-02T02:50:53.948Z"
+ },
+ "sale|pharmacie koutoubia": {
+  "address": "Lot Koutoubia II N°41 App 1 Route de Mehdia",
+  "phone": "+212537784633",
+  "at": "2026-11-02T02:50:55.497Z"
+ },
+ "sale|pharmacie ifriquia": {
+  "address": "43 Avenue Ifriquia Hay saffa (Sect 3)",
+  "phone": "+212537833443",
+  "at": "2026-11-02T02:50:56.990Z"
+ },
+ "sale|pharmacie ibn al baytar": {
+  "address": "28, lot ryad sala, 9ita3 el Qods,, route sidi brahim boulaajoul, laayayda Tél: 0641 02 77 03",
+  "phone": "+212641027703",
+  "at": "2026-11-02T02:50:58.453Z"
+ },
+ "sale|pharmacie ilham": {
+  "address": "Hay arrahma Seteur E N°1789, Prés de la salle Cheradi",
+  "phone": "+212537873236",
+  "at": "2026-11-02T02:50:59.935Z"
+ },
+ "sale|pharmacie al abridi": {
+  "address": "Rés. Dalal, Imb 4 Mag 12 Ouled Hlal Hssain",
+  "phone": "+212537831886",
+  "at": "2026-11-02T02:51:01.426Z"
+ },
+ "sale|pharmacie amar": {
+  "address": "Avenue Mohamed V",
+  "phone": "+212537862094",
+  "at": "2026-11-02T02:51:03.138Z"
+ },
+ "sale|pharmacie bayt al mostakbal 2": {
+  "address": "بيت المستقبل 2. حي الأمل 2 العيايدة سيدي عبد الله, دوار الميكة قرب المدرسة الإبتدائية أحمد معنينوا, الهاتف 87 52 87 0537 0625 94 58 76",
+  "phone": "+212537875287",
+  "at": "2026-11-02T02:51:04.473Z"
+ },
+ "sale|pharmacie hamza": {
+  "address": "N° 526 Av. Abou Dar El Ghaffari, secteur E HAY ERRAHMA",
+  "phone": "+212537873134",
+  "at": "2026-11-02T02:51:06.173Z"
+ },
+ "sale|pharmacie bayt assiha": {
+  "address": "Avenue Zarbia, lot Issam,immeuble 13 mag2",
+  "phone": "+212666089268",
+  "at": "2026-11-02T02:51:07.504Z"
+ },
+ "sale|pharmacie moulay ismail": {
+  "address": "73 Secteur 1 Hay Moulay Ismail",
+  "phone": "+212537800874",
+  "at": "2026-11-02T02:51:09.077Z"
+ },
+ "sale|pharmacie al hambra": {
+  "address": "13 lot mektouba Sala al jadida, Prés du nouvel l'hôpital Moulay Abdallah",
+  "phone": "+212537833344",
+  "at": "2026-11-02T02:51:10.445Z"
+ },
+ "sale|pharmacie beausejour": {
+  "address": "Mme ALAMI SOUNNI Adiba, N°8 Av De la resistance Quartier Rmel, A côté soludia Maghreb",
+  "phone": "+212537780686",
+  "at": "2026-11-02T02:51:11.990Z"
+ },
+ "sale|pharmacie belhaj": {
+  "address": "Avenue Lalla Asmae N°19, (Derrière de la perception \"Dar Dariba\", et prés du café verre d'or)",
+  "phone": "+212537861648",
+  "at": "2026-11-02T02:51:13.557Z"
+ },
+ "temara|pharmacie zahrat al amal": {
+  "address": "Lot Zahrat Al Amal Imm 20 N°2 (Route Ain Hallouf)",
+  "phone": "+212537642423",
+  "at": "2026-11-02T02:51:17.958Z"
+ },
+ "temara|pharmacie kenzy": {
+  "address": "4420, Lot Al Wifak - ERAC",
+  "phone": "+212537645036",
+  "at": "2026-11-02T02:51:19.567Z"
+ },
+ "temara|pharmacie ennassim": {
+  "address": "266 Lot 5.(HA) Hay El Maghrib El Arabi",
+  "phone": "+212537609790",
+  "at": "2026-11-02T02:51:20.972Z"
+ },
+ "temara|pharmacie international": {
+  "address": "Avenue Amina Bent Wahb N° 31 Wifak II",
+  "phone": "+212537645972",
+  "at": "2026-11-02T02:51:22.567Z"
+ },
+ "temara|pharmacie de palma": {
+  "address": "Résidence Shem’s Av Prince Moulay Abdellah, En face de Chez Paul (Sur rond point des gendarmes)",
+  "phone": "+212537747006",
+  "at": "2026-11-02T02:51:24.040Z"
+ },
+ "temara|pharmacie centrale annasr": {
+  "address": "Lot N°80 Hay Annasr",
+  "phone": "+212537622710",
+  "at": "2026-11-02T02:51:25.600Z"
+ },
+ "temara|pharmacie al maarifa": {
+  "address": "240 Avenue Mohamed 5",
+  "phone": "+212537641237",
+  "at": "2026-11-02T02:51:27.026Z"
+ },
+ "temara|pharmacie wardat lyassmine": {
+  "address": "Av Tarik Ibn Zyad, Qods 2 Imm. C",
+  "phone": "+212701312269",
+  "at": "2026-11-02T02:51:28.526Z"
+ },
+ "temara|pharmacie ibn nafiss": {
+  "address": "Av Moulay Ali Cherif 288 Massira 1",
+  "phone": "+212537609439",
+  "at": "2026-11-02T02:51:30.088Z"
+ },
+ "temara|pharmacie madar nour": {
+  "address": "Mag N°OC1 L325 GH 29 Annour - Tamesna",
+  "phone": "+212537013239",
+  "at": "2026-11-02T02:51:31.467Z"
  }
 }
