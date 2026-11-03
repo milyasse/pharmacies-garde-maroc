@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-03T08:55:49.198Z",
+ "generatedAt": "2026-11-03T10:54:30.518Z",
  "todayMorocco": "2026-11-03",
  "dates": [
   "2026-10-12",
@@ -48,7 +48,7 @@
    "pageDate": "2026-11-03",
    "count": 7,
    "error": null,
-   "checkedAt": "2026-11-03T08:55:49.227Z"
+   "checkedAt": "2026-11-03T10:54:30.546Z"
   },
   {
    "sourceId": "annuaire-gratuit",
@@ -57,9 +57,9 @@
    "url": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
    "ok": true,
    "pageDate": "2026-11-03",
-   "count": 6,
+   "count": 8,
    "error": null,
-   "checkedAt": "2026-11-03T08:55:50.070Z"
+   "checkedAt": "2026-11-03T10:54:41.971Z"
   },
   {
    "sourceId": "annuaire-gratuit",
@@ -70,7 +70,7 @@
    "pageDate": "2026-11-03",
    "count": 5,
    "error": null,
-   "checkedAt": "2026-11-03T08:55:51.017Z"
+   "checkedAt": "2026-11-03T10:54:55.471Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -79,9 +79,9 @@
    "url": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html",
    "ok": true,
    "pageDate": "2026-11-02",
-   "count": 55,
+   "count": 51,
    "error": null,
-   "checkedAt": "2026-11-03T08:55:52.599Z"
+   "checkedAt": "2026-11-03T10:54:59.985Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -92,7 +92,7 @@
    "pageDate": "2026-11-09",
    "count": 54,
    "error": null,
-   "checkedAt": "2026-11-03T08:55:55.244Z"
+   "checkedAt": "2026-11-03T10:55:03.448Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -101,9 +101,9 @@
    "url": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
    "ok": true,
    "pageDate": "2026-11-02",
-   "count": 63,
+   "count": 57,
    "error": null,
-   "checkedAt": "2026-11-03T08:55:55.946Z"
+   "checkedAt": "2026-11-03T10:55:04.582Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -114,7 +114,7 @@
    "pageDate": "2026-11-09",
    "count": 60,
    "error": null,
-   "checkedAt": "2026-11-03T08:55:57.435Z"
+   "checkedAt": "2026-11-03T10:55:06.003Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -123,9 +123,9 @@
    "url": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html",
    "ok": true,
    "pageDate": "2026-11-02",
-   "count": 37,
+   "count": 35,
    "error": null,
-   "checkedAt": "2026-11-03T08:55:58.905Z"
+   "checkedAt": "2026-11-03T10:55:07.446Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -136,7 +136,7 @@
    "pageDate": "2026-11-09",
    "count": 31,
    "error": null,
-   "checkedAt": "2026-11-03T08:56:00.483Z"
+   "checkedAt": "2026-11-03T10:55:08.848Z"
   }
  ],
  "connectors": [
