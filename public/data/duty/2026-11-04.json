@@ -1,6 +1,6 @@
 {
  "date": "2026-11-04",
- "generatedAt": "2026-11-05T08:57:35.577Z",
+ "generatedAt": "2026-11-05T10:59:59.676Z",
  "records": [
   {
    "id": "rabat-bouchra",
@@ -624,9 +624,7 @@
    ],
    "verificationStatus": "confirmed",
    "confidenceLevel": "high",
-   "notes": [
-    "Numéros de téléphone différents selon les sources."
-   ]
+   "notes": []
   },
   {
    "id": "sale-touti",
@@ -770,14 +768,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-al-zahrawi-s258080.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-11-05",
-     "lastCheckedAt": "2026-11-05T08:57:37.461Z",
+     "lastCheckedAt": "2026-11-05T11:00:54.358Z",
      "historyMatch": {
       "start": "2026-11-04",
       "end": "2026-11-05",
       "label": "Garde Jour"
      },
-     "dutyType": "day",
-     "dutyLabel": "Garde de jour"
+     "dutyType": null,
+     "dutyLabel": null
     }
    ],
    "verificationStatus": "confirmed",
@@ -874,14 +872,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-l-olivier-s254004.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-11-05",
-     "lastCheckedAt": "2026-11-05T08:57:37.461Z",
+     "lastCheckedAt": "2026-11-05T11:00:54.358Z",
      "historyMatch": {
       "start": "2026-11-04",
       "end": "2026-11-05",
       "label": "Garde Jour"
      },
-     "dutyType": "day",
-     "dutyLabel": "Garde de jour"
+     "dutyType": null,
+     "dutyLabel": null
     }
    ],
    "verificationStatus": "confirmed",
@@ -978,14 +976,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-rim-s241532.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-11-05",
-     "lastCheckedAt": "2026-11-05T08:57:37.461Z",
+     "lastCheckedAt": "2026-11-05T11:00:54.358Z",
      "historyMatch": {
       "start": "2026-11-04",
       "end": "2026-11-05",
       "label": "Garde Jour"
      },
-     "dutyType": "day",
-     "dutyLabel": "Garde de jour"
+     "dutyType": null,
+     "dutyLabel": null
     }
    ],
    "verificationStatus": "confirmed",

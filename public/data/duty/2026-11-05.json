@@ -1,6 +1,6 @@
 {
  "date": "2026-11-05",
- "generatedAt": "2026-11-05T08:57:35.577Z",
+ "generatedAt": "2026-11-05T10:59:59.676Z",
  "records": [
   {
    "id": "rabat-massira",
@@ -8,9 +8,9 @@
    "address": "1081, Av Al Massira C.Y.M",
    "city": "rabat",
    "district": "Yacoub El Mansour",
-   "latitude": 33.984,
-   "longitude": -6.876,
-   "coordinatesSource": "district",
+   "latitude": 33.973265,
+   "longitude": -6.8912384,
+   "coordinatesSource": "source",
    "phone": "+212537795061",
    "dutyDate": "2026-11-05",
    "dutyType": "continuous",
@@ -25,7 +25,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-al-massira-24h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html",
      "sourcePublishedAt": "2026-11-02",
-     "lastCheckedAt": "2026-11-05T08:57:38.838Z",
+     "lastCheckedAt": "2026-11-05T11:00:58.865Z",
      "historyMatch": {
       "start": "2026-11-05",
       "end": "2026-11-06",
@@ -33,13 +33,26 @@
      },
      "dutyType": "continuous",
      "dutyLabel": "Yacoub El Mansour (24h/24h)"
+    },
+    {
+     "sourceId": "annuaire-gratuit",
+     "sourceName": "annuaire-gratuit.ma",
+     "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-al-massira-s241102.html",
+     "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
+     "sourcePublishedAt": "2026-11-05",
+     "lastCheckedAt": "2026-11-05T10:59:59.697Z",
+     "historyMatch": {
+      "start": "2026-11-05",
+      "end": "2026-11-06",
+      "label": "Garde Jour et Nuit"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "Ouvert 24h/24"
     }
    ],
    "verificationStatus": "confirmed",
-   "confidenceLevel": "low",
-   "notes": [
-    "Garde publiée dans le planning hebdomadaire de la source."
-   ]
+   "confidenceLevel": "high",
+   "notes": []
   },
   {
    "id": "rabat-bouchra-oum",
@@ -47,9 +60,9 @@
    "address": "Cité Chbanat, 502 C.Y.M",
    "city": "rabat",
    "district": "Yacoub El Mansour",
-   "latitude": 33.984,
-   "longitude": -6.876,
-   "coordinatesSource": "district",
+   "latitude": 33.9839537,
+   "longitude": -6.8885808,
+   "coordinatesSource": "source",
    "phone": "+212537291245",
    "dutyDate": "2026-11-05",
    "dutyType": "day",
@@ -64,7 +77,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-bouchra-al-oum-24h-dim.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html",
      "sourcePublishedAt": "2026-11-02",
-     "lastCheckedAt": "2026-11-05T08:57:38.838Z",
+     "lastCheckedAt": "2026-11-05T11:00:58.865Z",
      "historyMatch": {
       "start": "2026-11-05",
       "end": "2026-11-05",
@@ -72,13 +85,26 @@
      },
      "dutyType": "day",
      "dutyLabel": "Yacoub El Mansour (9h à 00h00)"
+    },
+    {
+     "sourceId": "annuaire-gratuit",
+     "sourceName": "annuaire-gratuit.ma",
+     "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-bouchra-al-oum-s241134.html",
+     "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
+     "sourcePublishedAt": "2026-11-05",
+     "lastCheckedAt": "2026-11-05T10:59:59.697Z",
+     "historyMatch": {
+      "start": "2026-11-05",
+      "end": "2026-11-06",
+      "label": "Garde Jour"
+     },
+     "dutyType": null,
+     "dutyLabel": null
     }
    ],
    "verificationStatus": "confirmed",
-   "confidenceLevel": "low",
-   "notes": [
-    "Garde publiée dans le planning hebdomadaire de la source."
-   ]
+   "confidenceLevel": "high",
+   "notes": []
   },
   {
    "id": "rabat-parc",
@@ -86,9 +112,9 @@
    "address": "57 Av Mohamed VI - Aviation",
    "city": "rabat",
    "district": "Takadoum & Souissi",
-   "latitude": 33.988,
-   "longitude": -6.818,
-   "coordinatesSource": "district",
+   "latitude": 33.9985868,
+   "longitude": -6.8295244,
+   "coordinatesSource": "source",
    "phone": "+212537751497",
    "dutyDate": "2026-11-05",
    "dutyType": "continuous",
@@ -103,7 +129,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-du-parc.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html",
      "sourcePublishedAt": "2026-11-02",
-     "lastCheckedAt": "2026-11-05T08:57:38.838Z",
+     "lastCheckedAt": "2026-11-05T11:00:58.865Z",
      "historyMatch": {
       "start": "2026-11-05",
       "end": "2026-11-06",
@@ -111,13 +137,26 @@
      },
      "dutyType": "continuous",
      "dutyLabel": "Takadoum & Souissi (24h/24h)"
+    },
+    {
+     "sourceId": "annuaire-gratuit",
+     "sourceName": "annuaire-gratuit.ma",
+     "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-du-parc-s236281.html",
+     "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
+     "sourcePublishedAt": "2026-11-05",
+     "lastCheckedAt": "2026-11-05T10:59:59.697Z",
+     "historyMatch": {
+      "start": "2026-11-05",
+      "end": "2026-11-06",
+      "label": "Garde Jour et Nuit"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "Ouvert 24h/24"
     }
    ],
    "verificationStatus": "confirmed",
-   "confidenceLevel": "low",
-   "notes": [
-    "Garde publiée dans le planning hebdomadaire de la source."
-   ]
+   "confidenceLevel": "high",
+   "notes": []
   },
   {
    "id": "rabat-ibn-rochd",
@@ -125,9 +164,9 @@
    "address": "2, Avenue ES-SALAM C.Y.M",
    "city": "rabat",
    "district": "Yacoub El Mansour",
-   "latitude": 33.984,
-   "longitude": -6.876,
-   "coordinatesSource": "district",
+   "latitude": 34.004061,
+   "longitude": -6.8655531,
+   "coordinatesSource": "source",
    "phone": "+212537690119",
    "dutyDate": "2026-11-05",
    "dutyType": "day",
@@ -142,7 +181,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-ibn-rochd-00h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html",
      "sourcePublishedAt": "2026-11-02",
-     "lastCheckedAt": "2026-11-05T08:57:38.838Z",
+     "lastCheckedAt": "2026-11-05T11:00:58.865Z",
      "historyMatch": {
       "start": "2026-11-05",
       "end": "2026-11-05",
@@ -150,13 +189,26 @@
      },
      "dutyType": "day",
      "dutyLabel": "Yacoub El Mansour (9h à 00h00)"
+    },
+    {
+     "sourceId": "annuaire-gratuit",
+     "sourceName": "annuaire-gratuit.ma",
+     "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-ibn-rochd-s241101.html",
+     "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
+     "sourcePublishedAt": "2026-11-05",
+     "lastCheckedAt": "2026-11-05T10:59:59.697Z",
+     "historyMatch": {
+      "start": "2026-11-05",
+      "end": "2026-11-06",
+      "label": "Garde Jour"
+     },
+     "dutyType": null,
+     "dutyLabel": null
     }
    ],
    "verificationStatus": "confirmed",
-   "confidenceLevel": "low",
-   "notes": [
-    "Garde publiée dans le planning hebdomadaire de la source."
-   ]
+   "confidenceLevel": "high",
+   "notes": []
   },
   {
    "id": "rabat-ibn-toumerte",
@@ -164,9 +216,9 @@
    "address": "Bd Ibn Toumerte Les Orangers, Près clinique Al Boustane et l'école Badr",
    "city": "rabat",
    "district": "Akkari-Ocean-Orangers",
-   "latitude": 34.0273,
-   "longitude": -6.833,
-   "coordinatesSource": "district",
+   "latitude": 34.0162516,
+   "longitude": -6.8391515,
+   "coordinatesSource": "source",
    "phone": "+212537702095",
    "dutyDate": "2026-11-05",
    "dutyType": "day",
@@ -181,7 +233,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-ibn-toumerte-00h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html",
      "sourcePublishedAt": "2026-11-02",
-     "lastCheckedAt": "2026-11-05T08:57:38.838Z",
+     "lastCheckedAt": "2026-11-05T11:00:58.865Z",
      "historyMatch": {
       "start": "2026-11-05",
       "end": "2026-11-05",
@@ -189,13 +241,26 @@
      },
      "dutyType": "day",
      "dutyLabel": "Akkari-Ocean-Orangers (9h à 00h00)"
+    },
+    {
+     "sourceId": "annuaire-gratuit",
+     "sourceName": "annuaire-gratuit.ma",
+     "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-ibn-toumerte-s236270.html",
+     "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
+     "sourcePublishedAt": "2026-11-05",
+     "lastCheckedAt": "2026-11-05T10:59:59.697Z",
+     "historyMatch": {
+      "start": "2026-11-05",
+      "end": "2026-11-06",
+      "label": "Garde Jour"
+     },
+     "dutyType": null,
+     "dutyLabel": null
     }
    ],
    "verificationStatus": "confirmed",
-   "confidenceLevel": "low",
-   "notes": [
-    "Garde publiée dans le planning hebdomadaire de la source."
-   ]
+   "confidenceLevel": "high",
+   "notes": []
   },
   {
    "id": "rabat-hopital-militaire",
@@ -203,9 +268,9 @@
    "address": "Angle Av Al Arz et Av AL Hour",
    "city": "rabat",
    "district": "Hay Riad",
-   "latitude": 33.95688,
-   "longitude": -6.877675,
-   "coordinatesSource": "district",
+   "latitude": 34.0218454,
+   "longitude": -6.8408929,
+   "coordinatesSource": "source",
    "phone": "+212537565030",
    "dutyDate": "2026-11-05",
    "dutyType": "continuous",
@@ -220,7 +285,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-lhopital-militaire.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html",
      "sourcePublishedAt": "2026-11-02",
-     "lastCheckedAt": "2026-11-05T08:57:38.838Z",
+     "lastCheckedAt": "2026-11-05T11:00:58.865Z",
      "historyMatch": {
       "start": "2026-11-05",
       "end": "2026-11-06",
@@ -228,13 +293,26 @@
      },
      "dutyType": "continuous",
      "dutyLabel": "Hay Riad 24h/24h"
+    },
+    {
+     "sourceId": "annuaire-gratuit",
+     "sourceName": "annuaire-gratuit.ma",
+     "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-l-039-hopital-militaire-s254039.html",
+     "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
+     "sourcePublishedAt": "2026-11-05",
+     "lastCheckedAt": "2026-11-05T10:59:59.697Z",
+     "historyMatch": {
+      "start": "2026-11-05",
+      "end": "2026-11-06",
+      "label": "Garde Jour et Nuit"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "Ouvert 24h/24"
     }
    ],
    "verificationStatus": "confirmed",
-   "confidenceLevel": "low",
-   "notes": [
-    "Garde publiée dans le planning hebdomadaire de la source."
-   ]
+   "confidenceLevel": "high",
+   "notes": []
   },
   {
    "id": "rabat-oasis",
@@ -242,9 +320,9 @@
    "address": "8, Avenue Oqba, a coté du 3ème arrondissement de police",
    "city": "rabat",
    "district": "Agdal",
-   "latitude": 33.9983,
-   "longitude": -6.8543,
-   "coordinatesSource": "district",
+   "latitude": 34.0218454,
+   "longitude": -6.8408929,
+   "coordinatesSource": "source",
    "phone": "+212537682503",
    "dutyDate": "2026-11-05",
    "dutyType": "continuous",
@@ -259,7 +337,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-loasis.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html",
      "sourcePublishedAt": "2026-11-02",
-     "lastCheckedAt": "2026-11-05T08:57:38.838Z",
+     "lastCheckedAt": "2026-11-05T11:00:58.865Z",
      "historyMatch": {
       "start": "2026-11-05",
       "end": "2026-11-06",
@@ -267,13 +345,26 @@
      },
      "dutyType": "continuous",
      "dutyLabel": "Agdal 24h/24h"
+    },
+    {
+     "sourceId": "annuaire-gratuit",
+     "sourceName": "annuaire-gratuit.ma",
+     "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-l-039-oasis-s254148.html",
+     "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
+     "sourcePublishedAt": "2026-11-05",
+     "lastCheckedAt": "2026-11-05T10:59:59.697Z",
+     "historyMatch": {
+      "start": "2026-11-05",
+      "end": "2026-11-06",
+      "label": "Garde Jour et Nuit"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "Ouvert 24h/24"
     }
    ],
    "verificationStatus": "confirmed",
-   "confidenceLevel": "low",
-   "notes": [
-    "Garde publiée dans le planning hebdomadaire de la source."
-   ]
+   "confidenceLevel": "high",
+   "notes": []
   },
   {
    "id": "rabat-marjane",
@@ -298,7 +389,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-marjane-24h.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html",
      "sourcePublishedAt": "2026-11-02",
-     "lastCheckedAt": "2026-11-05T08:57:38.838Z",
+     "lastCheckedAt": "2026-11-05T11:00:58.865Z",
      "historyMatch": {
       "start": "2026-11-05",
       "end": "2026-11-05",
@@ -306,13 +397,26 @@
      },
      "dutyType": "day",
      "dutyLabel": "Centre Ville (9h à 22h00)"
+    },
+    {
+     "sourceId": "annuaire-gratuit",
+     "sourceName": "annuaire-gratuit.ma",
+     "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-marjane-s236863.html",
+     "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
+     "sourcePublishedAt": "2026-11-05",
+     "lastCheckedAt": "2026-11-05T10:59:59.697Z",
+     "historyMatch": {
+      "start": "2026-11-05",
+      "end": "2026-11-06",
+      "label": "Garde Jour"
+     },
+     "dutyType": null,
+     "dutyLabel": null
     }
    ],
    "verificationStatus": "confirmed",
-   "confidenceLevel": "low",
-   "notes": [
-    "Garde publiée dans le planning hebdomadaire de la source."
-   ]
+   "confidenceLevel": "high",
+   "notes": []
   },
   {
    "id": "sale-amana",
@@ -337,7 +441,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-al-amana.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
      "sourcePublishedAt": "2026-11-02",
-     "lastCheckedAt": "2026-11-05T08:57:42.562Z",
+     "lastCheckedAt": "2026-11-05T11:01:03.383Z",
      "historyMatch": {
       "start": "2026-11-05",
       "end": "2026-11-06",
@@ -345,13 +449,26 @@
      },
      "dutyType": "continuous",
      "dutyLabel": "Hay Essalam 24h/24h"
+    },
+    {
+     "sourceId": "annuaire-gratuit",
+     "sourceName": "annuaire-gratuit.ma",
+     "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-al-amana-s241559.html",
+     "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
+     "sourcePublishedAt": "2026-11-05",
+     "lastCheckedAt": "2026-11-05T11:00:43.947Z",
+     "historyMatch": {
+      "start": "2026-11-05",
+      "end": "2026-11-06",
+      "label": "Garde Jour et Nuit"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "Ouvert 24h/24"
     }
    ],
    "verificationStatus": "confirmed",
-   "confidenceLevel": "low",
-   "notes": [
-    "Garde publiée dans le planning hebdomadaire de la source."
-   ]
+   "confidenceLevel": "high",
+   "notes": []
   },
   {
    "id": "sale-omrane",
@@ -376,7 +493,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-al-omrane.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
      "sourcePublishedAt": "2026-11-02",
-     "lastCheckedAt": "2026-11-05T08:57:42.562Z",
+     "lastCheckedAt": "2026-11-05T11:01:03.383Z",
      "historyMatch": {
       "start": "2026-11-05",
       "end": "2026-11-05",
@@ -384,13 +501,26 @@
      },
      "dutyType": "day",
      "dutyLabel": "Bettana (9h à 00h00)"
+    },
+    {
+     "sourceId": "annuaire-gratuit",
+     "sourceName": "annuaire-gratuit.ma",
+     "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-al-omrane-s250921.html",
+     "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
+     "sourcePublishedAt": "2026-11-05",
+     "lastCheckedAt": "2026-11-05T11:00:43.947Z",
+     "historyMatch": {
+      "start": "2026-11-05",
+      "end": "2026-11-06",
+      "label": "Garde Jour"
+     },
+     "dutyType": null,
+     "dutyLabel": null
     }
    ],
    "verificationStatus": "confirmed",
-   "confidenceLevel": "low",
-   "notes": [
-    "Garde publiée dans le planning hebdomadaire de la source."
-   ]
+   "confidenceLevel": "high",
+   "notes": []
   },
   {
    "id": "sale-bouchouk",
@@ -415,7 +545,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-bouchouk.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
      "sourcePublishedAt": "2026-11-02",
-     "lastCheckedAt": "2026-11-05T08:57:42.562Z",
+     "lastCheckedAt": "2026-11-05T11:01:03.383Z",
      "historyMatch": {
       "start": "2026-11-05",
       "end": "2026-11-06",
@@ -423,13 +553,26 @@
      },
      "dutyType": "continuous",
      "dutyLabel": "Al Mohit Abouab Sala 24h/24h"
+    },
+    {
+     "sourceId": "annuaire-gratuit",
+     "sourceName": "annuaire-gratuit.ma",
+     "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-bouchouk-s238863.html",
+     "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
+     "sourcePublishedAt": "2026-11-05",
+     "lastCheckedAt": "2026-11-05T11:00:43.947Z",
+     "historyMatch": {
+      "start": "2026-11-05",
+      "end": "2026-11-06",
+      "label": "Garde Jour et Nuit"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "Ouvert 24h/24"
     }
    ],
    "verificationStatus": "confirmed",
-   "confidenceLevel": "low",
-   "notes": [
-    "Garde publiée dans le planning hebdomadaire de la source."
-   ]
+   "confidenceLevel": "high",
+   "notes": []
   },
   {
    "id": "sale-aube",
@@ -437,9 +580,9 @@
    "address": "47 Av Abdelkhalik Torres (En face pointage Taxi), Sahb al kayad",
    "city": "sale",
    "district": "Tabriquet",
-   "latitude": 34.05448,
-   "longitude": -6.815334,
-   "coordinatesSource": "district",
+   "latitude": 34.044889,
+   "longitude": -6.814017,
+   "coordinatesSource": "source",
    "phone": "+212537855600",
    "dutyDate": "2026-11-05",
    "dutyType": "day",
@@ -454,7 +597,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-de-laube.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
      "sourcePublishedAt": "2026-11-02",
-     "lastCheckedAt": "2026-11-05T08:57:42.562Z",
+     "lastCheckedAt": "2026-11-05T11:01:03.383Z",
      "historyMatch": {
       "start": "2026-11-05",
       "end": "2026-11-05",
@@ -462,13 +605,26 @@
      },
      "dutyType": "day",
      "dutyLabel": "Tabriquet (9h à 00h00)"
+    },
+    {
+     "sourceId": "annuaire-gratuit",
+     "sourceName": "annuaire-gratuit.ma",
+     "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-de-l-039-aube-s254100.html",
+     "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
+     "sourcePublishedAt": "2026-11-05",
+     "lastCheckedAt": "2026-11-05T11:00:43.947Z",
+     "historyMatch": {
+      "start": "2026-11-05",
+      "end": "2026-11-06",
+      "label": "Garde Jour"
+     },
+     "dutyType": null,
+     "dutyLabel": null
     }
    ],
    "verificationStatus": "confirmed",
-   "confidenceLevel": "low",
-   "notes": [
-    "Garde publiée dans le planning hebdomadaire de la source."
-   ]
+   "confidenceLevel": "high",
+   "notes": []
   },
   {
    "id": "sale-amrani",
@@ -476,9 +632,9 @@
    "address": "رقم 132 زنقة جمعة لمسيد سكتور القدس - لعيايدة",
    "city": "sale",
    "district": "El Mazza Sidi Abdellah",
-   "latitude": 34.08102,
-   "longitude": -6.772859,
-   "coordinatesSource": "district",
+   "latitude": 34.065195,
+   "longitude": -6.7514801,
+   "coordinatesSource": "source",
    "phone": "+212530027782",
    "dutyDate": "2026-11-05",
    "dutyType": "continuous",
@@ -493,7 +649,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-el-amrani.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
      "sourcePublishedAt": "2026-11-02",
-     "lastCheckedAt": "2026-11-05T08:57:42.562Z",
+     "lastCheckedAt": "2026-11-05T11:01:03.383Z",
      "historyMatch": {
       "start": "2026-11-05",
       "end": "2026-11-06",
@@ -501,13 +657,26 @@
      },
      "dutyType": "continuous",
      "dutyLabel": "El Mazza Sidi Abdellah 24h/24h"
+    },
+    {
+     "sourceId": "annuaire-gratuit",
+     "sourceName": "annuaire-gratuit.ma",
+     "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-el-amrani-s245415.html",
+     "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
+     "sourcePublishedAt": "2026-11-05",
+     "lastCheckedAt": "2026-11-05T11:00:43.947Z",
+     "historyMatch": {
+      "start": "2026-11-05",
+      "end": "2026-11-06",
+      "label": "Garde Jour et Nuit"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "Ouvert 24h/24"
     }
    ],
    "verificationStatus": "confirmed",
-   "confidenceLevel": "low",
-   "notes": [
-    "Garde publiée dans le planning hebdomadaire de la source."
-   ]
+   "confidenceLevel": "high",
+   "notes": []
   },
   {
    "id": "sale-quartier-industriel",
@@ -515,9 +684,9 @@
    "address": "Angle Rue ourkziz et Av Ibn Khatib, Dar Hamra",
    "city": "sale",
    "district": "Hay Arrahma",
-   "latitude": 34.057518,
-   "longitude": -6.798233,
-   "coordinatesSource": "district",
+   "latitude": 34.0586227,
+   "longitude": -6.7889443,
+   "coordinatesSource": "source",
    "phone": "+212537871069",
    "dutyDate": "2026-11-05",
    "dutyType": "continuous",
@@ -532,7 +701,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-quartier-industriel.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
      "sourcePublishedAt": "2026-11-02",
-     "lastCheckedAt": "2026-11-05T08:57:42.562Z",
+     "lastCheckedAt": "2026-11-05T11:01:03.383Z",
      "historyMatch": {
       "start": "2026-11-05",
       "end": "2026-11-06",
@@ -540,13 +709,26 @@
      },
      "dutyType": "continuous",
      "dutyLabel": "Hay Arrahma (24h/24h)"
+    },
+    {
+     "sourceId": "annuaire-gratuit",
+     "sourceName": "annuaire-gratuit.ma",
+     "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-quartier-industriel-s241763.html",
+     "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
+     "sourcePublishedAt": "2026-11-05",
+     "lastCheckedAt": "2026-11-05T11:00:43.947Z",
+     "historyMatch": {
+      "start": "2026-11-05",
+      "end": "2026-11-06",
+      "label": "Garde Jour et Nuit"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "Ouvert 24h/24"
     }
    ],
    "verificationStatus": "confirmed",
-   "confidenceLevel": "low",
-   "notes": [
-    "Garde publiée dans le planning hebdomadaire de la source."
-   ]
+   "confidenceLevel": "high",
+   "notes": []
   },
   {
    "id": "temara-11-janvier",
@@ -554,12 +736,12 @@
    "address": "Lot El Ghazali N°9 – Témara",
    "city": "temara",
    "district": "Centre",
-   "latitude": 33.924566,
-   "longitude": -6.922465,
-   "coordinatesSource": "district",
+   "latitude": 33.9174581,
+   "longitude": -6.9106104,
+   "coordinatesSource": "source",
    "phone": "+212537640919",
    "dutyDate": "2026-11-05",
-   "dutyType": null,
+   "dutyType": "continuous",
    "dutyLabel": "Centre",
    "hoursText": null,
    "dutyStartDate": "2026-11-05",
@@ -571,7 +753,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-11-janvier.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html",
      "sourcePublishedAt": "2026-11-02",
-     "lastCheckedAt": "2026-11-05T08:57:45.453Z",
+     "lastCheckedAt": "2026-11-05T11:01:07.310Z",
      "historyMatch": {
       "start": "2026-11-05",
       "end": "2026-11-05",
@@ -579,13 +761,26 @@
      },
      "dutyType": null,
      "dutyLabel": "Centre"
+    },
+    {
+     "sourceId": "annuaire-gratuit",
+     "sourceName": "annuaire-gratuit.ma",
+     "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-11-janvier-s238269.html",
+     "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
+     "sourcePublishedAt": "2026-11-05",
+     "lastCheckedAt": "2026-11-05T11:00:54.358Z",
+     "historyMatch": {
+      "start": "2026-11-05",
+      "end": "2026-11-06",
+      "label": "Garde Jour et Nuit"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "Ouvert 24h/24"
     }
    ],
    "verificationStatus": "confirmed",
-   "confidenceLevel": "low",
-   "notes": [
-    "Garde publiée dans le planning hebdomadaire de la source."
-   ]
+   "confidenceLevel": "high",
+   "notes": []
   },
   {
    "id": "temara-zahrawi",
@@ -610,7 +805,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-al-zahrawi-jeu.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html",
      "sourcePublishedAt": "2026-11-02",
-     "lastCheckedAt": "2026-11-05T08:57:45.453Z",
+     "lastCheckedAt": "2026-11-05T11:01:07.310Z",
      "historyMatch": {
       "start": "2026-11-05",
       "end": "2026-11-05",
@@ -632,12 +827,12 @@
    "address": "199, Secteur 4 Oulad Benasser",
    "city": "temara",
    "district": "El Massira",
-   "latitude": 33.931567,
-   "longitude": -6.901402,
-   "coordinatesSource": "district",
+   "latitude": 33.9316675,
+   "longitude": -6.9090848,
+   "coordinatesSource": "source",
    "phone": "+212537600032",
    "dutyDate": "2026-11-05",
-   "dutyType": null,
+   "dutyType": "continuous",
    "dutyLabel": "El Massira",
    "hoursText": null,
    "dutyStartDate": "2026-11-05",
@@ -649,7 +844,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-ali.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html",
      "sourcePublishedAt": "2026-11-02",
-     "lastCheckedAt": "2026-11-05T08:57:45.453Z",
+     "lastCheckedAt": "2026-11-05T11:01:07.310Z",
      "historyMatch": {
       "start": "2026-11-05",
       "end": "2026-11-05",
@@ -657,13 +852,26 @@
      },
      "dutyType": null,
      "dutyLabel": "El Massira"
+    },
+    {
+     "sourceId": "annuaire-gratuit",
+     "sourceName": "annuaire-gratuit.ma",
+     "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-ali-s238872.html",
+     "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
+     "sourcePublishedAt": "2026-11-05",
+     "lastCheckedAt": "2026-11-05T11:00:54.358Z",
+     "historyMatch": {
+      "start": "2026-11-05",
+      "end": "2026-11-06",
+      "label": "Garde Jour et Nuit"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "Ouvert 24h/24"
     }
    ],
    "verificationStatus": "confirmed",
-   "confidenceLevel": "low",
-   "notes": [
-    "Garde publiée dans le planning hebdomadaire de la source."
-   ]
+   "confidenceLevel": "high",
+   "notes": []
   },
   {
    "id": "temara-olivier",
@@ -688,7 +896,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-lolivier-jeu.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html",
      "sourcePublishedAt": "2026-11-02",
-     "lastCheckedAt": "2026-11-05T08:57:45.453Z",
+     "lastCheckedAt": "2026-11-05T11:01:07.310Z",
      "historyMatch": {
       "start": "2026-11-05",
       "end": "2026-11-05",
@@ -727,7 +935,7 @@
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-rim-jeu.html",
      "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html",
      "sourcePublishedAt": "2026-11-02",
-     "lastCheckedAt": "2026-11-05T08:57:45.453Z",
+     "lastCheckedAt": "2026-11-05T11:01:07.310Z",
      "historyMatch": {
       "start": "2026-11-05",
       "end": "2026-11-05",
