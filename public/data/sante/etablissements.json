@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-11-05T13:05:34.520Z",
+ "generatedAt": "2026-11-06T11:01:15.614Z",
  "osmBase": "2026-11-05T13:04:34Z",
  "ministryDataDate": "2023-11-14",
- "lastError": null,
+ "lastError": "OpenStreetMap indisponible (fetch failed) : données précédentes conservées.",
  "establishments": [
   {
    "id": "osm-w1101751339",
