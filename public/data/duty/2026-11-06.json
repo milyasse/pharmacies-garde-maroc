@@ -1,6 +1,6 @@
 {
  "date": "2026-11-06",
- "generatedAt": "2026-11-07T08:50:01.660Z",
+ "generatedAt": "2026-11-07T10:41:02.748Z",
  "records": [
   {
    "id": "rabat-amane",
@@ -878,7 +878,7 @@
    "phone": "+212537873017",
    "dutyDate": "2026-11-06",
    "dutyType": "continuous",
-   "dutyLabel": "Hay Arrahma (24h/24h)",
+   "dutyLabel": "Ouvert 24h/24",
    "hoursText": "24h/24",
    "dutyStartDate": "2026-11-06",
    "dutyEndDate": "2026-11-07",
@@ -904,7 +904,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-ibn-al-haytam-s243943.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
      "sourcePublishedAt": "2026-11-07",
-     "lastCheckedAt": "2026-11-07T08:50:04.757Z",
+     "lastCheckedAt": "2026-11-07T10:41:18.779Z",
      "historyMatch": {
       "start": "2026-11-06",
       "end": "2026-11-07",
