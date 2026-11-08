@@ -20883,6 +20883,11 @@
    "longitude": -6.7782869,
    "history": [
     {
+     "start": "2026-11-07",
+     "end": "2026-11-08",
+     "label": "Garde Jour et Nuit"
+    },
+    {
      "start": "2026-11-06",
      "end": "2026-11-07",
      "label": "Garde Jour et Nuit"
@@ -20925,16 +20930,11 @@
     {
      "start": "2026-03-08",
      "end": "2026-03-09",
-     "label": "Garde Jour et Nuit"
-    },
-    {
-     "start": "2026-03-07",
-     "end": "2026-03-08",
      "label": "Garde Jour et Nuit FAQ Questions fréquentes s"
     }
    ]
   },
-  "fetchedAt": "2026-11-06T10:59:42.962Z"
+  "fetchedAt": "2026-11-08T00:58:08.617Z"
  },
  "s237848": {
   "detail": {
