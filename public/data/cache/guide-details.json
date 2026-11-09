@@ -2093,5 +2093,170 @@
   "address": "141 Av Sahel Rhône Oulad Mtaà, المشروع",
   "phone": "+212537614550",
   "at": "2026-11-06T18:50:43.959Z"
+ },
+ "rabat|pharmacie la muraille": {
+  "address": "14, Avenue Ibn Toumart",
+  "phone": "+212537708877",
+  "at": "2026-11-09T01:02:12.172Z"
+ },
+ "rabat|pharmacie du theatre": {
+  "address": "11 Rue Haj Abdeslam Kabbaj, Ex Rue Al Marj",
+  "phone": "+212537702794",
+  "at": "2026-11-09T01:02:15.193Z"
+ },
+ "rabat|pharmacie de la resistance": {
+  "address": "32 Avenue de la résistance - Ocean",
+  "phone": "+212537724055",
+  "at": "2026-11-09T01:02:18.141Z"
+ },
+ "rabat|pharmacie jnane ennahda": {
+  "address": "Imm, 8 N°6 Lot, G1 Résidence Jnane Ennahda",
+  "phone": "+212537756101",
+  "at": "2026-11-09T01:02:21.177Z"
+ },
+ "rabat|pharmacie fleming": {
+  "address": "1 Rue Sahel Km 6,6 Avenue Mohammed VI, 2éme Feu Rouge à droite Aprés Ambassade USA",
+  "phone": "+212537757075",
+  "at": "2026-11-09T01:02:24.312Z"
+ },
+ "rabat|pharmacie chems": {
+  "address": "Akkari – Diour Al Phosphate",
+  "phone": "+212632322026",
+  "at": "2026-11-09T01:02:27.211Z"
+ },
+ "rabat|pharmacie errahma": {
+  "address": "Hay Al Maouadda N°63 - Route Al Oulja, Prés de l'ancien mini parc",
+  "phone": "+212537638226",
+  "at": "2026-11-09T01:02:30.341Z"
+ },
+ "rabat|pharmacie maghrebine (ex: hôpital)": {
+  "address": "18 Place des alliés Océan",
+  "phone": "+212537725368",
+  "at": "2026-11-09T01:02:33.261Z"
+ },
+ "rabat|pharmacie secteur 15": {
+  "address": "10 Avenue Mohamed El Yazidi, Bloc F, Secteur 15",
+  "phone": "+212530361161",
+  "at": "2026-11-09T01:02:36.244Z"
+ },
+ "rabat|pharmacie les iris": {
+  "address": "33 Avenue Ibn Sina, Entre Clinique Agdal Et Ecole Mohammadia Des Ingénieurs",
+  "phone": "+212537776290",
+  "at": "2026-11-09T01:02:39.228Z"
+ },
+ "rabat|pharmacie de la medina": {
+  "address": "6 Bis Rue Bab Chellah",
+  "phone": "+212537727062",
+  "at": "2026-11-09T01:02:42.583Z"
+ },
+ "rabat|pharmacie al amana": {
+  "address": "425 Bd Hassan II n°7 Diour Jamâa, Prés Hôtel OSCAR",
+  "phone": "+212537262773",
+  "at": "2026-11-09T01:02:45.646Z"
+ },
+ "rabat|pharmacie les lilas": {
+  "address": "61D, Rue Bani Abeid Nahda 2",
+  "phone": "+212537756273",
+  "at": "2026-11-09T01:02:48.266Z"
+ },
+ "rabat|pharmacie du cedre": {
+  "address": "5, Avenue Ouled M'rah Youssoufia, En face Résidence Fattouma",
+  "phone": "+212537655541",
+  "at": "2026-11-09T01:02:51.702Z"
+ },
+ "sale|pharmacie sidi benacher": {
+  "address": "Hay Errahma Secteur E (Douar Jdid), Avenue Ali Ibn Abi Taleb",
+  "phone": "+212537871658",
+  "at": "2026-11-09T01:02:57.136Z"
+ },
+ "sale|pharmacie chafia": {
+  "address": "Cité Safâa 4 imm 23 app 7 sala al jadida",
+  "phone": "+212628314848",
+  "at": "2026-11-09T01:03:00.215Z"
+ },
+ "sale|pharmacie al wafae": {
+  "address": "ش 177 شارع مولاي رشيد حي الفرح سكتور4, قرب مقبرة سيدي الضاوي وإعدادية العيون ومستشفى مولاي عبد الله",
+  "phone": "+212537832771",
+  "at": "2026-11-09T01:03:01.780Z"
+ },
+ "sale|pharmacie inbiat": {
+  "address": "31 Zankate Ameur Av Essalam, Douar Cheikh lamfadel, Face à Souk Assalihine",
+  "phone": "+212537853724",
+  "at": "2026-11-09T01:03:03.353Z"
+ },
+ "sale|pharmacie al khadraa": {
+  "address": "46 Lot Al Jazira Al Khadra, Magasin 2, Hay Chmaou",
+  "phone": "+212537878527",
+  "at": "2026-11-09T01:03:05.062Z"
+ },
+ "sale|pharmacie dyar": {
+  "address": "9 Avenue Mohamed V",
+  "phone": "+212537860301",
+  "at": "2026-11-09T01:03:07.870Z"
+ },
+ "sale|pharmacie guelzim": {
+  "address": "120 Rue Ouargane Hay Cheikh Lamfadel",
+  "phone": "+212537812736",
+  "at": "2026-11-09T01:03:08.598Z"
+ },
+ "sale|pharmacie grande pharmacie de sale": {
+  "address": "Mme Z. Baaj Benomar, 2 Rue 11 janvier",
+  "phone": "+212537780012",
+  "at": "2026-11-09T01:03:10.455Z"
+ },
+ "temara|pharmacie oum hani": {
+  "address": "56 Lotissement Oum Hani, Wifak",
+  "phone": "+212537646465",
+  "at": "2026-11-09T01:03:14.581Z"
+ },
+ "temara|pharmacie acima harhoura": {
+  "address": "Mag 12, Résidence Saad II, Av Moulay Abdellah, Harhoura",
+  "phone": "+212537646898",
+  "at": "2026-11-09T01:03:16.094Z"
+ },
+ "temara|pharmacie line": {
+  "address": "Local 27, Avenue Tarik Ibn Ziyad,, Résidence Qods1 Bloc B Immeuble 6",
+  "phone": "+212537402506",
+  "at": "2026-11-09T01:03:17.634Z"
+ },
+ "temara|pharmacie 2000": {
+  "address": "245 Av Moulay Ali Cherif Massira 1",
+  "phone": "+212537602312",
+  "at": "2026-11-09T01:03:19.412Z"
+ },
+ "temara|pharmacie bensaid": {
+  "address": "Résidence Rif 3 Bloc 1 Av Tarik Ibn Zyad",
+  "phone": "+212537641870",
+  "at": "2026-11-09T01:03:20.667Z"
+ },
+ "temara|pharmacie sami": {
+  "address": "N°22 Lot Ennakhil, Wifak",
+  "phone": "+212537627184",
+  "at": "2026-11-09T01:03:22.122Z"
+ },
+ "temara|pharmacie al mostaocef": {
+  "address": "N°74, hay maghreb arabi. bloc D, Rue sebta Massira 2",
+  "phone": "+212537604971",
+  "at": "2026-11-09T01:03:23.698Z"
+ },
+ "temara|pharmacie beni hachem": {
+  "address": "Av Moulay Ali Cherif 288 Massira 1",
+  "phone": "+212537609439",
+  "at": "2026-11-09T01:03:25.502Z"
+ },
+ "temara|pharmacie khizrane": {
+  "address": "228 Hay Oued Eddahab",
+  "phone": "+212537640443",
+  "at": "2026-11-09T01:03:26.949Z"
+ },
+ "temara|pharmacie mosquee zahra": {
+  "address": "21 Av Hassan 1er,, à coté de Al akhawayne 2. Lot Abbadi",
+  "phone": "+212537644775",
+  "at": "2026-11-09T01:03:28.429Z"
+ },
+ "temara|pharmacie el fadi": {
+  "address": "Lot 164,Rue imtinane (Sidi M'ghar) Wifak",
+  "phone": "+212537641656",
+  "at": "2026-11-09T01:03:29.998Z"
  }
 }

@@ -1,0 +1,1059 @@
+{
+ "date": "2026-11-21",
+ "generatedAt": "2026-11-09T01:01:17.382Z",
+ "records": [
+  {
+   "id": "rabat-amana",
+   "name": "Pharmacie Al Amana",
+   "address": "425 Bd Hassan II n°7 Diour Jamâa, Prés Hôtel OSCAR",
+   "city": "rabat",
+   "district": "Ocean-Orangers",
+   "latitude": 34.021,
+   "longitude": -6.843,
+   "coordinatesSource": "district",
+   "phone": "+212537262773",
+   "dutyDate": "2026-11-21",
+   "dutyType": "day",
+   "dutyLabel": "Ocean-Orangers (9h à 00h00)",
+   "hoursText": "9h-24h",
+   "dutyStartDate": "2026-11-21",
+   "dutyEndDate": "2026-11-21",
+   "sources": [
+    {
+     "sourceId": "guidepharmacies",
+     "sourceName": "guidepharmacies.ma",
+     "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-al-amana-24hh.html",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-11-16",
+     "sourcePublishedAt": "2026-11-16",
+     "lastCheckedAt": "2026-11-09T01:02:09.912Z",
+     "historyMatch": {
+      "start": "2026-11-21",
+      "end": "2026-11-21",
+      "label": "Planning hebdomadaire publié"
+     },
+     "dutyType": "day",
+     "dutyLabel": "Ocean-Orangers (9h à 00h00)"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "low",
+   "notes": [
+    "Planning publié à l’avance : à revérifier le jour même."
+   ]
+  },
+  {
+   "id": "rabat-kawthar",
+   "name": "Pharmacie Al Kawthar",
+   "address": "18 Rue Inbiat C.Y.M",
+   "city": "rabat",
+   "district": "Yacoub El Mansour",
+   "latitude": 33.984,
+   "longitude": -6.876,
+   "coordinatesSource": "district",
+   "phone": "+212537794018",
+   "dutyDate": "2026-11-21",
+   "dutyType": "day",
+   "dutyLabel": "Yacoub El Mansour (9h à 00h00)",
+   "hoursText": "9h-24h",
+   "dutyStartDate": "2026-11-21",
+   "dutyEndDate": "2026-11-21",
+   "sources": [
+    {
+     "sourceId": "guidepharmacies",
+     "sourceName": "guidepharmacies.ma",
+     "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-al-kawthar-24h.html",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-11-16",
+     "sourcePublishedAt": "2026-11-16",
+     "lastCheckedAt": "2026-11-09T01:02:09.912Z",
+     "historyMatch": {
+      "start": "2026-11-21",
+      "end": "2026-11-21",
+      "label": "Planning hebdomadaire publié"
+     },
+     "dutyType": "day",
+     "dutyLabel": "Yacoub El Mansour (9h à 00h00)"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "low",
+   "notes": [
+    "Planning publié à l’avance : à revérifier le jour même."
+   ]
+  },
+  {
+   "id": "rabat-medina",
+   "name": "Pharmacie De La Medina",
+   "address": "6 Bis Rue Bab Chellah",
+   "city": "rabat",
+   "district": "Medina",
+   "latitude": 34.019368,
+   "longitude": -6.827768,
+   "coordinatesSource": "district",
+   "phone": "+212537727062",
+   "dutyDate": "2026-11-21",
+   "dutyType": "day",
+   "dutyLabel": "Medina (9h à 22h30)",
+   "hoursText": "9h-22h30",
+   "dutyStartDate": "2026-11-21",
+   "dutyEndDate": "2026-11-21",
+   "sources": [
+    {
+     "sourceId": "guidepharmacies",
+     "sourceName": "guidepharmacies.ma",
+     "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-de-la-medina-sam.html",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-11-16",
+     "sourcePublishedAt": "2026-11-16",
+     "lastCheckedAt": "2026-11-09T01:02:09.912Z",
+     "historyMatch": {
+      "start": "2026-11-21",
+      "end": "2026-11-21",
+      "label": "Planning hebdomadaire publié"
+     },
+     "dutyType": "day",
+     "dutyLabel": "Medina (9h à 22h30)"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "low",
+   "notes": [
+    "Planning publié à l’avance : à revérifier le jour même."
+   ]
+  },
+  {
+   "id": "rabat-cliniques",
+   "name": "Pharmacie Des Cliniques",
+   "address": "N°9 Avenue Ouazane - Hassan",
+   "city": "rabat",
+   "district": "Centre Ville",
+   "latitude": 34.0210034,
+   "longitude": -6.823656,
+   "coordinatesSource": "source",
+   "phone": "+212537203364",
+   "dutyDate": "2026-11-21",
+   "dutyType": "day",
+   "dutyLabel": "Centre Ville (9h à 00h00)",
+   "hoursText": "9h-24h",
+   "dutyStartDate": "2026-11-21",
+   "dutyEndDate": "2026-11-21",
+   "sources": [
+    {
+     "sourceId": "guidepharmacies",
+     "sourceName": "guidepharmacies.ma",
+     "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-des-cliniques-00h.html",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-11-16",
+     "sourcePublishedAt": "2026-11-16",
+     "lastCheckedAt": "2026-11-09T01:02:09.912Z",
+     "historyMatch": {
+      "start": "2026-11-21",
+      "end": "2026-11-21",
+      "label": "Planning hebdomadaire publié"
+     },
+     "dutyType": "day",
+     "dutyLabel": "Centre Ville (9h à 00h00)"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "low",
+   "notes": [
+    "Planning publié à l’avance : à revérifier le jour même."
+   ]
+  },
+  {
+   "id": "rabat-cedre",
+   "name": "Pharmacie Du Cedre",
+   "address": "5, Avenue Ouled M'rah Youssoufia, En face Résidence Fattouma",
+   "city": "rabat",
+   "district": "Takadoum & Souissi",
+   "latitude": 33.988,
+   "longitude": -6.818,
+   "coordinatesSource": "district",
+   "phone": "+212537655541",
+   "dutyDate": "2026-11-21",
+   "dutyType": "continuous",
+   "dutyLabel": "Takadoum & Souissi (24h/24h)",
+   "hoursText": "24h/24",
+   "dutyStartDate": "2026-11-21",
+   "dutyEndDate": "2026-11-22",
+   "sources": [
+    {
+     "sourceId": "guidepharmacies",
+     "sourceName": "guidepharmacies.ma",
+     "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-du-cedre-sam.html",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-11-16",
+     "sourcePublishedAt": "2026-11-16",
+     "lastCheckedAt": "2026-11-09T01:02:09.912Z",
+     "historyMatch": {
+      "start": "2026-11-21",
+      "end": "2026-11-22",
+      "label": "Planning hebdomadaire publié"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "Takadoum & Souissi (24h/24h)"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "low",
+   "notes": [
+    "Planning publié à l’avance : à revérifier le jour même."
+   ]
+  },
+  {
+   "id": "rabat-fellat",
+   "name": "Pharmacie Fellat",
+   "address": "16 place de Russie Ocean",
+   "city": "rabat",
+   "district": "Akkari-Ocean",
+   "latitude": 34.0218454,
+   "longitude": -6.8408929,
+   "coordinatesSource": "source",
+   "phone": "+212537720887",
+   "dutyDate": "2026-11-21",
+   "dutyType": "day",
+   "dutyLabel": "Akkari-Ocean (9h à 00h00)",
+   "hoursText": "9h-24h",
+   "dutyStartDate": "2026-11-21",
+   "dutyEndDate": "2026-11-21",
+   "sources": [
+    {
+     "sourceId": "guidepharmacies",
+     "sourceName": "guidepharmacies.ma",
+     "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-fellat-00hh.html",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-11-16",
+     "sourcePublishedAt": "2026-11-16",
+     "lastCheckedAt": "2026-11-09T01:02:09.912Z",
+     "historyMatch": {
+      "start": "2026-11-21",
+      "end": "2026-11-21",
+      "label": "Planning hebdomadaire publié"
+     },
+     "dutyType": "day",
+     "dutyLabel": "Akkari-Ocean (9h à 00h00)"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "low",
+   "notes": [
+    "Planning publié à l’avance : à revérifier le jour même."
+   ]
+  },
+  {
+   "id": "rabat-iris",
+   "name": "Pharmacie Les Iris",
+   "address": "33 Avenue Ibn Sina, Entre Clinique Agdal Et Ecole Mohammadia Des Ingénieurs",
+   "city": "rabat",
+   "district": "Agdal",
+   "latitude": 33.9983,
+   "longitude": -6.8543,
+   "coordinatesSource": "district",
+   "phone": "+212537776290",
+   "dutyDate": "2026-11-21",
+   "dutyType": "continuous",
+   "dutyLabel": "Agdal 24h/24h",
+   "hoursText": "24h/24",
+   "dutyStartDate": "2026-11-21",
+   "dutyEndDate": "2026-11-22",
+   "sources": [
+    {
+     "sourceId": "guidepharmacies",
+     "sourceName": "guidepharmacies.ma",
+     "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-les-iris-sam.html",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-11-16",
+     "sourcePublishedAt": "2026-11-16",
+     "lastCheckedAt": "2026-11-09T01:02:09.912Z",
+     "historyMatch": {
+      "start": "2026-11-21",
+      "end": "2026-11-22",
+      "label": "Planning hebdomadaire publié"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "Agdal 24h/24h"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "low",
+   "notes": [
+    "Planning publié à l’avance : à revérifier le jour même."
+   ]
+  },
+  {
+   "id": "rabat-lilas",
+   "name": "Pharmacie Les Lilas",
+   "address": "61D, Rue Bani Abeid Nahda 2",
+   "city": "rabat",
+   "district": "Takadoum & Souissi",
+   "latitude": 33.988,
+   "longitude": -6.818,
+   "coordinatesSource": "district",
+   "phone": "+212537756273",
+   "dutyDate": "2026-11-21",
+   "dutyType": "continuous",
+   "dutyLabel": "Takadoum & Souissi (24h/24h)",
+   "hoursText": "24h/24",
+   "dutyStartDate": "2026-11-21",
+   "dutyEndDate": "2026-11-22",
+   "sources": [
+    {
+     "sourceId": "guidepharmacies",
+     "sourceName": "guidepharmacies.ma",
+     "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-les-lilas-sam.html",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-11-16",
+     "sourcePublishedAt": "2026-11-16",
+     "lastCheckedAt": "2026-11-09T01:02:09.912Z",
+     "historyMatch": {
+      "start": "2026-11-21",
+      "end": "2026-11-22",
+      "label": "Planning hebdomadaire publié"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "Takadoum & Souissi (24h/24h)"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "low",
+   "notes": [
+    "Planning publié à l’avance : à revérifier le jour même."
+   ]
+  },
+  {
+   "id": "rabat-secteur-15",
+   "name": "Pharmacie Secteur 15",
+   "address": "10 Avenue Mohamed El Yazidi, Bloc F, Secteur 15",
+   "city": "rabat",
+   "district": "Hay Riad",
+   "latitude": 33.95688,
+   "longitude": -6.877675,
+   "coordinatesSource": "district",
+   "phone": "+212530361161",
+   "dutyDate": "2026-11-21",
+   "dutyType": "continuous",
+   "dutyLabel": "Hay Riad 24h/24h",
+   "hoursText": "24h/24",
+   "dutyStartDate": "2026-11-21",
+   "dutyEndDate": "2026-11-22",
+   "sources": [
+    {
+     "sourceId": "guidepharmacies",
+     "sourceName": "guidepharmacies.ma",
+     "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-secteur-15-sam.html",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-11-16",
+     "sourcePublishedAt": "2026-11-16",
+     "lastCheckedAt": "2026-11-09T01:02:09.912Z",
+     "historyMatch": {
+      "start": "2026-11-21",
+      "end": "2026-11-22",
+      "label": "Planning hebdomadaire publié"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "Hay Riad 24h/24h"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "low",
+   "notes": [
+    "Planning publié à l’avance : à revérifier le jour même."
+   ]
+  },
+  {
+   "id": "rabat-sofia",
+   "name": "Pharmacie Sofia",
+   "address": "1205 Bis Avenue Al Massira Hay El Menzeh",
+   "city": "rabat",
+   "district": "Yacoub El Mansour",
+   "latitude": 33.984,
+   "longitude": -6.876,
+   "coordinatesSource": "district",
+   "phone": "+212537282928",
+   "dutyDate": "2026-11-21",
+   "dutyType": "continuous",
+   "dutyLabel": "Yacoub El Mansour (24h/24h)",
+   "hoursText": "24h/24",
+   "dutyStartDate": "2026-11-21",
+   "dutyEndDate": "2026-11-22",
+   "sources": [
+    {
+     "sourceId": "guidepharmacies",
+     "sourceName": "guidepharmacies.ma",
+     "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-sofia-sam.html",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-11-16",
+     "sourcePublishedAt": "2026-11-16",
+     "lastCheckedAt": "2026-11-09T01:02:09.912Z",
+     "historyMatch": {
+      "start": "2026-11-21",
+      "end": "2026-11-22",
+      "label": "Planning hebdomadaire publié"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "Yacoub El Mansour (24h/24h)"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "low",
+   "notes": [
+    "Planning publié à l’avance : à revérifier le jour même."
+   ]
+  },
+  {
+   "id": "sale-achouhadaa",
+   "name": "Pharmacie Achouhadaa",
+   "address": "425 Avenue achouhadaa Secteur 2",
+   "city": "sale",
+   "district": "Hay Essalam",
+   "latitude": 34.0703243,
+   "longitude": -6.797964,
+   "coordinatesSource": "source",
+   "phone": "+212537811518",
+   "dutyDate": "2026-11-21",
+   "dutyType": "continuous",
+   "dutyLabel": "Hay Essalam 24h/24h",
+   "hoursText": "24h/24",
+   "dutyStartDate": "2026-11-21",
+   "dutyEndDate": "2026-11-22",
+   "sources": [
+    {
+     "sourceId": "guidepharmacies",
+     "sourceName": "guidepharmacies.ma",
+     "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-achouhadaa-sam.html",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-11-16",
+     "sourcePublishedAt": "2026-11-16",
+     "lastCheckedAt": "2026-11-09T01:02:54.182Z",
+     "historyMatch": {
+      "start": "2026-11-21",
+      "end": "2026-11-22",
+      "label": "Planning hebdomadaire publié"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "Hay Essalam 24h/24h"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "low",
+   "notes": [
+    "Planning publié à l’avance : à revérifier le jour même."
+   ]
+  },
+  {
+   "id": "sale-a-araf",
+   "name": "Pharmacie Al A'Araf",
+   "address": "Avenue Atlas Al Kabir 26,, Rue Al Fadl Hay Chafaa",
+   "city": "sale",
+   "district": "Bettana",
+   "latitude": 34.044889,
+   "longitude": -6.814017,
+   "coordinatesSource": "source",
+   "phone": "+212537808724",
+   "dutyDate": "2026-11-21",
+   "dutyType": "continuous",
+   "dutyLabel": "Bettana 24h/24h",
+   "hoursText": "24h/24",
+   "dutyStartDate": "2026-11-21",
+   "dutyEndDate": "2026-11-22",
+   "sources": [
+    {
+     "sourceId": "guidepharmacies",
+     "sourceName": "guidepharmacies.ma",
+     "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-al-aaraf-sam.html",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-11-16",
+     "sourcePublishedAt": "2026-11-16",
+     "lastCheckedAt": "2026-11-09T01:02:54.182Z",
+     "historyMatch": {
+      "start": "2026-11-21",
+      "end": "2026-11-22",
+      "label": "Planning hebdomadaire publié"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "Bettana 24h/24h"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "low",
+   "notes": [
+    "Planning publié à l’avance : à revérifier le jour même."
+   ]
+  },
+  {
+   "id": "sale-darshabab",
+   "name": "Pharmacie Darshabab",
+   "address": "شارع بوسكورة بويبلان حي وادي الذهب لعيايدة, Av. bouskoura bouiblane ,Hay oued dahab laayayda",
+   "city": "sale",
+   "district": "Laayayda",
+   "latitude": 34.044889,
+   "longitude": -6.814017,
+   "coordinatesSource": "source",
+   "phone": "+212537874444",
+   "dutyDate": "2026-11-21",
+   "dutyType": "continuous",
+   "dutyLabel": "Laayayda 24h/24h",
+   "hoursText": "24h/24",
+   "dutyStartDate": "2026-11-21",
+   "dutyEndDate": "2026-11-22",
+   "sources": [
+    {
+     "sourceId": "guidepharmacies",
+     "sourceName": "guidepharmacies.ma",
+     "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-darshabab-sam.html",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-11-16",
+     "sourcePublishedAt": "2026-11-16",
+     "lastCheckedAt": "2026-11-09T01:02:54.182Z",
+     "historyMatch": {
+      "start": "2026-11-21",
+      "end": "2026-11-22",
+      "label": "Planning hebdomadaire publié"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "Laayayda 24h/24h"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "low",
+   "notes": [
+    "Planning publié à l’avance : à revérifier le jour même."
+   ]
+  },
+  {
+   "id": "sale-myrte",
+   "name": "Pharmacie Du Myrte",
+   "address": "Mag N° 6 Imm N° 6 Résidence Rouihiyene Al Omrane, Prés Mosquée Mohamed VI et Piscine Sala Al Jadida",
+   "city": "sale",
+   "district": "Sala El Jadida",
+   "latitude": 34.0018608,
+   "longitude": -6.7349035,
+   "coordinatesSource": "source",
+   "phone": "+212537535117",
+   "dutyDate": "2026-11-21",
+   "dutyType": "continuous",
+   "dutyLabel": "Sala El Jadida (24h/24h)",
+   "hoursText": "24h/24",
+   "dutyStartDate": "2026-11-21",
+   "dutyEndDate": "2026-11-22",
+   "sources": [
+    {
+     "sourceId": "guidepharmacies",
+     "sourceName": "guidepharmacies.ma",
+     "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-du-myrte-24h.html",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-11-16",
+     "sourcePublishedAt": "2026-11-16",
+     "lastCheckedAt": "2026-11-09T01:02:54.182Z",
+     "historyMatch": {
+      "start": "2026-11-21",
+      "end": "2026-11-22",
+      "label": "Planning hebdomadaire publié"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "Sala El Jadida (24h/24h)"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "low",
+   "notes": [
+    "Planning publié à l’avance : à revérifier le jour même."
+   ]
+  },
+  {
+   "id": "sale-grande-sale",
+   "name": "Pharmacie Grande Pharmacie De Sale",
+   "address": "Mme Z. Baaj Benomar, 2 Rue 11 janvier",
+   "city": "sale",
+   "district": "Salé Médina",
+   "latitude": 34.037,
+   "longitude": -6.819,
+   "coordinatesSource": "district",
+   "phone": "+212537780012",
+   "dutyDate": "2026-11-21",
+   "dutyType": "continuous",
+   "dutyLabel": "Salé Médina 24h/24h",
+   "hoursText": "24h/24",
+   "dutyStartDate": "2026-11-21",
+   "dutyEndDate": "2026-11-22",
+   "sources": [
+    {
+     "sourceId": "guidepharmacies",
+     "sourceName": "guidepharmacies.ma",
+     "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/grande-pharmacie-de-sale-sam.html",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-11-16",
+     "sourcePublishedAt": "2026-11-16",
+     "lastCheckedAt": "2026-11-09T01:02:54.182Z",
+     "historyMatch": {
+      "start": "2026-11-21",
+      "end": "2026-11-22",
+      "label": "Planning hebdomadaire publié"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "Salé Médina 24h/24h"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "low",
+   "notes": [
+    "Planning publié à l’avance : à revérifier le jour même."
+   ]
+  },
+  {
+   "id": "sale-hay-karima",
+   "name": "Pharmacie Hay Karima",
+   "address": "46 avenue Med V Hay Karima",
+   "city": "sale",
+   "district": "Hay Arrahma",
+   "latitude": 34.0552124,
+   "longitude": -6.7934053,
+   "coordinatesSource": "source",
+   "phone": "+212537855058",
+   "dutyDate": "2026-11-21",
+   "dutyType": "continuous",
+   "dutyLabel": "Hay Arrahma (24h/24h)",
+   "hoursText": "24h/24",
+   "dutyStartDate": "2026-11-21",
+   "dutyEndDate": "2026-11-22",
+   "sources": [
+    {
+     "sourceId": "guidepharmacies",
+     "sourceName": "guidepharmacies.ma",
+     "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-hay-karima-sam.html",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-11-16",
+     "sourcePublishedAt": "2026-11-16",
+     "lastCheckedAt": "2026-11-09T01:02:54.182Z",
+     "historyMatch": {
+      "start": "2026-11-21",
+      "end": "2026-11-22",
+      "label": "Planning hebdomadaire publié"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "Hay Arrahma (24h/24h)"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "low",
+   "notes": [
+    "Planning publié à l’avance : à revérifier le jour même."
+   ]
+  },
+  {
+   "id": "sale-jardins-maamoura",
+   "name": "Pharmacie Jardins Maamoura",
+   "address": "Résidence jardins maamoura imm 230 magasin 1",
+   "city": "sale",
+   "district": "Sala El Jadida",
+   "latitude": 34.044889,
+   "longitude": -6.814017,
+   "coordinatesSource": "source",
+   "phone": "+212537536274",
+   "dutyDate": "2026-11-21",
+   "dutyType": "day",
+   "dutyLabel": "Sala El Jadida (9h à 00h00)",
+   "hoursText": "9h-24h",
+   "dutyStartDate": "2026-11-21",
+   "dutyEndDate": "2026-11-21",
+   "sources": [
+    {
+     "sourceId": "guidepharmacies",
+     "sourceName": "guidepharmacies.ma",
+     "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-jardins-maamoura-00h.html",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-11-16",
+     "sourcePublishedAt": "2026-11-16",
+     "lastCheckedAt": "2026-11-09T01:02:54.182Z",
+     "historyMatch": {
+      "start": "2026-11-21",
+      "end": "2026-11-21",
+      "label": "Planning hebdomadaire publié"
+     },
+     "dutyType": "day",
+     "dutyLabel": "Sala El Jadida (9h à 00h00)"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "low",
+   "notes": [
+    "Planning publié à l’avance : à revérifier le jour même."
+   ]
+  },
+  {
+   "id": "sale-jumelles-ex-village",
+   "name": "Pharmacie LES JUMELLES Ex: Village",
+   "address": "55, Avenue Hassan 2",
+   "city": "sale",
+   "district": "EL Karia",
+   "latitude": 34.258981,
+   "longitude": -6.5805727,
+   "coordinatesSource": "source",
+   "phone": "+212537829500",
+   "dutyDate": "2026-11-21",
+   "dutyType": "continuous",
+   "dutyLabel": "EL Karia 24h/24h",
+   "hoursText": "24h/24",
+   "dutyStartDate": "2026-11-21",
+   "dutyEndDate": "2026-11-22",
+   "sources": [
+    {
+     "sourceId": "guidepharmacies",
+     "sourceName": "guidepharmacies.ma",
+     "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-les-jumelles-sam.html",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-11-16",
+     "sourcePublishedAt": "2026-11-16",
+     "lastCheckedAt": "2026-11-09T01:02:54.182Z",
+     "historyMatch": {
+      "start": "2026-11-21",
+      "end": "2026-11-22",
+      "label": "Planning hebdomadaire publié"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "EL Karia 24h/24h"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "low",
+   "notes": [
+    "Planning publié à l’avance : à revérifier le jour même."
+   ]
+  },
+  {
+   "id": "sale-moulay-ismail",
+   "name": "Pharmacie Moulay Ismail",
+   "address": "73 Secteur 1 Hay Moulay Ismail",
+   "city": "sale",
+   "district": "My Ismail",
+   "latitude": 34.027588,
+   "longitude": -6.791149,
+   "coordinatesSource": "district",
+   "phone": "+212537800874",
+   "dutyDate": "2026-11-21",
+   "dutyType": "continuous",
+   "dutyLabel": "My Ismail 24h/24h",
+   "hoursText": "24h/24",
+   "dutyStartDate": "2026-11-21",
+   "dutyEndDate": "2026-11-22",
+   "sources": [
+    {
+     "sourceId": "guidepharmacies",
+     "sourceName": "guidepharmacies.ma",
+     "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-moulay-ismail-s-sam.html",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-11-16",
+     "sourcePublishedAt": "2026-11-16",
+     "lastCheckedAt": "2026-11-09T01:02:54.182Z",
+     "historyMatch": {
+      "start": "2026-11-21",
+      "end": "2026-11-22",
+      "label": "Planning hebdomadaire publié"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "My Ismail 24h/24h"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "low",
+   "notes": [
+    "Planning publié à l’avance : à revérifier le jour même."
+   ]
+  },
+  {
+   "id": "sale-route-mehdia",
+   "name": "Pharmacie Route Mehdia",
+   "address": "Avenue Abdelkarim Al Khatib, Résidence El Yassamine, Mag 09 Imm 07 Said Hajji Route Cotière",
+   "city": "sale",
+   "district": "Al Mohit Abouab Sala",
+   "latitude": 34.0843302,
+   "longitude": -6.7878168,
+   "coordinatesSource": "source",
+   "phone": "+212538423735",
+   "dutyDate": "2026-11-21",
+   "dutyType": "continuous",
+   "dutyLabel": "Al Mohit Abouab Sala 24h/24h",
+   "hoursText": "24h/24",
+   "dutyStartDate": "2026-11-21",
+   "dutyEndDate": "2026-11-22",
+   "sources": [
+    {
+     "sourceId": "guidepharmacies",
+     "sourceName": "guidepharmacies.ma",
+     "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-route-mehdia-sam.html",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-11-16",
+     "sourcePublishedAt": "2026-11-16",
+     "lastCheckedAt": "2026-11-09T01:02:54.182Z",
+     "historyMatch": {
+      "start": "2026-11-21",
+      "end": "2026-11-22",
+      "label": "Planning hebdomadaire publié"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "Al Mohit Abouab Sala 24h/24h"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "low",
+   "notes": [
+    "Planning publié à l’avance : à revérifier le jour même."
+   ]
+  },
+  {
+   "id": "sale-yahia-ex-bismillah",
+   "name": "Pharmacie YAHIA Ex: BISMILLAH",
+   "address": "lot. sidi abdelah N960 laayayda",
+   "city": "sale",
+   "district": "El Mazza Sidi Abdellah",
+   "latitude": 34.044889,
+   "longitude": -6.814017,
+   "coordinatesSource": "source",
+   "phone": "+212537821833",
+   "dutyDate": "2026-11-21",
+   "dutyType": "continuous",
+   "dutyLabel": "El Mazza Sidi Abdellah 24h/24h",
+   "hoursText": "24h/24",
+   "dutyStartDate": "2026-11-21",
+   "dutyEndDate": "2026-11-22",
+   "sources": [
+    {
+     "sourceId": "guidepharmacies",
+     "sourceName": "guidepharmacies.ma",
+     "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-yahia-sam.html",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-11-16",
+     "sourcePublishedAt": "2026-11-16",
+     "lastCheckedAt": "2026-11-09T01:02:54.182Z",
+     "historyMatch": {
+      "start": "2026-11-21",
+      "end": "2026-11-22",
+      "label": "Planning hebdomadaire publié"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "El Mazza Sidi Abdellah 24h/24h"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "low",
+   "notes": [
+    "Planning publié à l’avance : à revérifier le jour même."
+   ]
+  },
+  {
+   "id": "temara-2000",
+   "name": "Pharmacie 2000",
+   "address": "245 Av Moulay Ali Cherif Massira 1",
+   "city": "temara",
+   "district": "El Massira",
+   "latitude": 33.931567,
+   "longitude": -6.901402,
+   "coordinatesSource": "district",
+   "phone": "+212537602312",
+   "dutyDate": "2026-11-21",
+   "dutyType": "continuous",
+   "dutyLabel": "El Massira (24h/24h)",
+   "hoursText": "24h/24",
+   "dutyStartDate": "2026-11-21",
+   "dutyEndDate": "2026-11-22",
+   "sources": [
+    {
+     "sourceId": "guidepharmacies",
+     "sourceName": "guidepharmacies.ma",
+     "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-2000-sam.html",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html?date=2026-11-16",
+     "sourcePublishedAt": "2026-11-16",
+     "lastCheckedAt": "2026-11-09T01:03:11.589Z",
+     "historyMatch": {
+      "start": "2026-11-21",
+      "end": "2026-11-22",
+      "label": "Planning hebdomadaire publié"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "El Massira (24h/24h)"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "low",
+   "notes": [
+    "Planning publié à l’avance : à revérifier le jour même."
+   ]
+  },
+  {
+   "id": "temara-atlantique",
+   "name": "Pharmacie Atlantique",
+   "address": "257, Rue Casablanca (En face Restaurant Miramar)",
+   "city": "temara",
+   "district": "Harhoura",
+   "latitude": 33.914435,
+   "longitude": -6.97026,
+   "coordinatesSource": "district",
+   "phone": "+212537747728",
+   "dutyDate": "2026-11-21",
+   "dutyType": "continuous",
+   "dutyLabel": "Harhoura 24h/24h",
+   "hoursText": "24h/24",
+   "dutyStartDate": "2026-11-21",
+   "dutyEndDate": "2026-11-22",
+   "sources": [
+    {
+     "sourceId": "guidepharmacies",
+     "sourceName": "guidepharmacies.ma",
+     "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-atlantique-sam.html",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html?date=2026-11-16",
+     "sourcePublishedAt": "2026-11-16",
+     "lastCheckedAt": "2026-11-09T01:03:11.589Z",
+     "historyMatch": {
+      "start": "2026-11-21",
+      "end": "2026-11-22",
+      "label": "Planning hebdomadaire publié"
+     },
+     "dutyType": "continuous",
+     "dutyLabel": "Harhoura 24h/24h"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "low",
+   "notes": [
+    "Planning publié à l’avance : à revérifier le jour même."
+   ]
+  },
+  {
+   "id": "temara-ennassim",
+   "name": "Pharmacie Ennassim",
+   "address": "266 Lot 5.(HA) Hay El Maghrib El Arabi",
+   "city": "temara",
+   "district": "El Massira",
+   "latitude": 33.96986,
+   "longitude": -6.897895,
+   "coordinatesSource": "district",
+   "phone": "+212537609790",
+   "dutyDate": "2026-11-21",
+   "dutyType": "day",
+   "dutyLabel": "El Massira (9h à 00h00)",
+   "hoursText": "9h-24h",
+   "dutyStartDate": "2026-11-21",
+   "dutyEndDate": "2026-11-21",
+   "sources": [
+    {
+     "sourceId": "guidepharmacies",
+     "sourceName": "guidepharmacies.ma",
+     "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-ennassim-dim.html",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html?date=2026-11-16",
+     "sourcePublishedAt": "2026-11-16",
+     "lastCheckedAt": "2026-11-09T01:03:11.589Z",
+     "historyMatch": {
+      "start": "2026-11-21",
+      "end": "2026-11-21",
+      "label": "Planning hebdomadaire publié"
+     },
+     "dutyType": "day",
+     "dutyLabel": "El Massira (9h à 00h00)"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "low",
+   "notes": [
+    "Planning publié à l’avance : à revérifier le jour même."
+   ]
+  },
+  {
+   "id": "temara-khizrane",
+   "name": "Pharmacie Khizrane",
+   "address": "228 Hay Oued Eddahab",
+   "city": "temara",
+   "district": "Centre",
+   "latitude": 33.924566,
+   "longitude": -6.922465,
+   "coordinatesSource": "district",
+   "phone": "+212537640443",
+   "dutyDate": "2026-11-21",
+   "dutyType": "day",
+   "dutyLabel": "Centre (9h à 00h00)",
+   "hoursText": "9h-24h",
+   "dutyStartDate": "2026-11-21",
+   "dutyEndDate": "2026-11-21",
+   "sources": [
+    {
+     "sourceId": "guidepharmacies",
+     "sourceName": "guidepharmacies.ma",
+     "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-khizrane-sam.html",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html?date=2026-11-16",
+     "sourcePublishedAt": "2026-11-16",
+     "lastCheckedAt": "2026-11-09T01:03:11.589Z",
+     "historyMatch": {
+      "start": "2026-11-21",
+      "end": "2026-11-21",
+      "label": "Planning hebdomadaire publié"
+     },
+     "dutyType": "day",
+     "dutyLabel": "Centre (9h à 00h00)"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "low",
+   "notes": [
+    "Planning publié à l’avance : à revérifier le jour même."
+   ]
+  },
+  {
+   "id": "temara-mosquee-zahra",
+   "name": "Pharmacie Mosquee Zahra",
+   "address": "21 Av Hassan 1er,, à coté de Al akhawayne 2. Lot Abbadi",
+   "city": "temara",
+   "district": "Centre",
+   "latitude": 33.924566,
+   "longitude": -6.922465,
+   "coordinatesSource": "district",
+   "phone": "+212537644775",
+   "dutyDate": "2026-11-21",
+   "dutyType": "day",
+   "dutyLabel": "Centre (9h à 00h00)",
+   "hoursText": "9h-24h",
+   "dutyStartDate": "2026-11-21",
+   "dutyEndDate": "2026-11-21",
+   "sources": [
+    {
+     "sourceId": "guidepharmacies",
+     "sourceName": "guidepharmacies.ma",
+     "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-mosquee-zahra-dim.html",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html?date=2026-11-16",
+     "sourcePublishedAt": "2026-11-16",
+     "lastCheckedAt": "2026-11-09T01:03:11.589Z",
+     "historyMatch": {
+      "start": "2026-11-21",
+      "end": "2026-11-21",
+      "label": "Planning hebdomadaire publié"
+     },
+     "dutyType": "day",
+     "dutyLabel": "Centre (9h à 00h00)"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "low",
+   "notes": [
+    "Planning publié à l’avance : à revérifier le jour même."
+   ]
+  },
+  {
+   "id": "temara-soussan",
+   "name": "Pharmacie Soussan",
+   "address": "Bd Abdallah Ben Yacine , résid. Al Omran la Vigne tranche 3, imm. 16 mag. C1",
+   "city": "temara",
+   "district": "Tamesna",
+   "latitude": 33.831981,
+   "longitude": -6.920345,
+   "coordinatesSource": "district",
+   "phone": "+212537619055",
+   "dutyDate": "2026-11-21",
+   "dutyType": "day",
+   "dutyLabel": "Tamesna (9h à 00h00)",
+   "hoursText": "9h-24h",
+   "dutyStartDate": "2026-11-21",
+   "dutyEndDate": "2026-11-21",
+   "sources": [
+    {
+     "sourceId": "guidepharmacies",
+     "sourceName": "guidepharmacies.ma",
+     "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-soussan-sam.html",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html?date=2026-11-16",
+     "sourcePublishedAt": "2026-11-16",
+     "lastCheckedAt": "2026-11-09T01:03:11.589Z",
+     "historyMatch": {
+      "start": "2026-11-21",
+      "end": "2026-11-21",
+      "label": "Planning hebdomadaire publié"
+     },
+     "dutyType": "day",
+     "dutyLabel": "Tamesna (9h à 00h00)"
+    }
+   ],
+   "verificationStatus": "confirmed",
+   "confidenceLevel": "low",
+   "notes": [
+    "Planning publié à l’avance : à revérifier le jour même."
+   ]
+  }
+ ]
+}
