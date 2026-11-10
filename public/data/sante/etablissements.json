@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-11-09T05:03:05.304Z",
+ "generatedAt": "2026-11-10T09:41:13.559Z",
  "osmBase": "2026-11-09T05:01:48Z",
  "ministryDataDate": "2023-11-14",
- "lastError": null,
+ "lastError": "OpenStreetMap indisponible (https://overpass.private.coffee/api/interpreter : HTTP 504) : données précédentes conservées.",
  "establishments": [
   {
    "id": "osm-w1101751339",
