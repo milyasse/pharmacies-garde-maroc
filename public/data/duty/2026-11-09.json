@@ -1,6 +1,6 @@
 {
  "date": "2026-11-09",
- "generatedAt": "2026-11-10T17:40:19.942Z",
+ "generatedAt": "2026-11-10T23:09:54.149Z",
  "records": [
   {
    "id": "rabat-abtal",
@@ -976,7 +976,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-el-guich-s251653.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-11-10",
-     "lastCheckedAt": "2026-11-10T17:40:21.714Z",
+     "lastCheckedAt": "2026-11-10T23:09:56.163Z",
      "historyMatch": {
       "start": "2026-11-09",
       "end": "2026-11-10",
@@ -1028,14 +1028,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-granada-s236248.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-11-10",
-     "lastCheckedAt": "2026-11-10T17:40:21.714Z",
+     "lastCheckedAt": "2026-11-10T23:09:56.163Z",
      "historyMatch": {
       "start": "2026-11-09",
       "end": "2026-11-10",
       "label": "Garde Jour"
      },
-     "dutyType": null,
-     "dutyLabel": null
+     "dutyType": "day",
+     "dutyLabel": "Garde de jour"
     }
    ],
    "verificationStatus": "confirmed",
@@ -1080,14 +1080,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-soussan-s254635.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-11-10",
-     "lastCheckedAt": "2026-11-10T17:40:21.714Z",
+     "lastCheckedAt": "2026-11-10T23:09:56.163Z",
      "historyMatch": {
       "start": "2026-11-09",
       "end": "2026-11-10",
       "label": "Garde Jour"
      },
-     "dutyType": null,
-     "dutyLabel": null
+     "dutyType": "day",
+     "dutyLabel": "Garde de jour"
     }
    ],
    "verificationStatus": "confirmed",
