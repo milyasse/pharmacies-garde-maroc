@@ -1,6 +1,6 @@
 {
  "date": "2026-11-10",
- "generatedAt": "2026-11-11T05:56:36.671Z",
+ "generatedAt": "2026-11-11T14:02:16.841Z",
  "records": [
   {
    "id": "rabat-fadila",
@@ -156,9 +156,7 @@
    ],
    "verificationStatus": "confirmed",
    "confidenceLevel": "high",
-   "notes": [
-    "Numéros de téléphone différents selon les sources."
-   ]
+   "notes": []
   },
   {
    "id": "rabat-corniche",
@@ -509,9 +507,7 @@
    ],
    "verificationStatus": "confirmed",
    "confidenceLevel": "high",
-   "notes": [
-    "Numéros de téléphone différents selon les sources."
-   ]
+   "notes": []
   },
   {
    "id": "sale-bettana",
@@ -954,7 +950,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-el-guich-s251653.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-11-11",
-     "lastCheckedAt": "2026-11-11T05:56:38.916Z",
+     "lastCheckedAt": "2026-11-11T14:02:41.674Z",
      "historyMatch": {
       "start": "2026-11-10",
       "end": "2026-11-11",
@@ -1058,14 +1054,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-granada-s236248.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-11-11",
-     "lastCheckedAt": "2026-11-11T05:56:38.916Z",
+     "lastCheckedAt": "2026-11-11T14:02:41.674Z",
      "historyMatch": {
       "start": "2026-11-10",
       "end": "2026-11-11",
       "label": "Garde Jour"
      },
-     "dutyType": "day",
-     "dutyLabel": "Garde de jour"
+     "dutyType": null,
+     "dutyLabel": null
     }
    ],
    "verificationStatus": "confirmed",
@@ -1162,14 +1158,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacie-soussan-s254635.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-11-11",
-     "lastCheckedAt": "2026-11-11T05:56:38.916Z",
+     "lastCheckedAt": "2026-11-11T14:02:41.674Z",
      "historyMatch": {
       "start": "2026-11-10",
       "end": "2026-11-11",
       "label": "Garde Jour"
      },
-     "dutyType": "day",
-     "dutyLabel": "Garde de jour"
+     "dutyType": null,
+     "dutyLabel": null
     }
    ],
    "verificationStatus": "confirmed",
