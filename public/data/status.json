@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-13T00:40:23.302Z",
+ "generatedAt": "2026-11-13T02:32:18.808Z",
  "todayMorocco": "2026-11-13",
  "dates": [
   "2026-10-12",
@@ -55,7 +55,7 @@
    "pageDate": "2026-11-13",
    "count": 6,
    "error": null,
-   "checkedAt": "2026-11-13T00:40:23.333Z"
+   "checkedAt": "2026-11-13T02:32:18.827Z"
   },
   {
    "sourceId": "annuaire-gratuit",
@@ -66,7 +66,7 @@
    "pageDate": "2026-11-13",
    "count": 7,
    "error": null,
-   "checkedAt": "2026-11-13T00:40:24.390Z"
+   "checkedAt": "2026-11-13T02:32:20.050Z"
   },
   {
    "sourceId": "annuaire-gratuit",
@@ -77,7 +77,7 @@
    "pageDate": "2026-11-13",
    "count": 6,
    "error": null,
-   "checkedAt": "2026-11-13T00:40:25.196Z"
+   "checkedAt": "2026-11-13T02:32:20.826Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -88,7 +88,7 @@
    "pageDate": "2026-11-09",
    "count": 30,
    "error": null,
-   "checkedAt": "2026-11-13T00:40:31.135Z"
+   "checkedAt": "2026-11-13T02:32:22.243Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -99,7 +99,7 @@
    "pageDate": "2026-11-16",
    "count": 60,
    "error": null,
-   "checkedAt": "2026-11-13T00:40:34.416Z"
+   "checkedAt": "2026-11-13T02:32:25.118Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -110,7 +110,7 @@
    "pageDate": "2026-11-09",
    "count": 34,
    "error": null,
-   "checkedAt": "2026-11-13T00:40:35.186Z"
+   "checkedAt": "2026-11-13T02:32:26.093Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -121,7 +121,7 @@
    "pageDate": "2026-11-16",
    "count": 63,
    "error": null,
-   "checkedAt": "2026-11-13T00:40:36.633Z"
+   "checkedAt": "2026-11-13T02:32:27.538Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -132,7 +132,7 @@
    "pageDate": "2026-11-09",
    "count": 20,
    "error": null,
-   "checkedAt": "2026-11-13T00:40:38.301Z"
+   "checkedAt": "2026-11-13T02:32:29.119Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -143,7 +143,7 @@
    "pageDate": "2026-11-16",
    "count": 39,
    "error": null,
-   "checkedAt": "2026-11-13T00:40:39.639Z"
+   "checkedAt": "2026-11-13T02:32:30.723Z"
   }
  ],
  "connectors": [
