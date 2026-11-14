@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-14T08:52:52.580Z",
+ "generatedAt": "2026-11-14T14:26:53.050Z",
  "todayMorocco": "2026-11-14",
  "dates": [
   "2026-10-12",
@@ -53,9 +53,9 @@
    "url": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
    "ok": true,
    "pageDate": "2026-11-14",
-   "count": 7,
+   "count": 9,
    "error": null,
-   "checkedAt": "2026-11-14T08:52:52.620Z"
+   "checkedAt": "2026-11-14T14:26:53.067Z"
   },
   {
    "sourceId": "annuaire-gratuit",
@@ -64,9 +64,9 @@
    "url": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
    "ok": true,
    "pageDate": "2026-11-14",
-   "count": 7,
+   "count": 10,
    "error": null,
-   "checkedAt": "2026-11-14T08:52:53.759Z"
+   "checkedAt": "2026-11-14T14:27:07.644Z"
   },
   {
    "sourceId": "annuaire-gratuit",
@@ -75,9 +75,9 @@
    "url": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
    "ok": true,
    "pageDate": "2026-11-14",
-   "count": 4,
+   "count": 7,
    "error": null,
-   "checkedAt": "2026-11-14T08:52:54.524Z"
+   "checkedAt": "2026-11-14T14:27:24.108Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -86,9 +86,9 @@
    "url": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html",
    "ok": true,
    "pageDate": "2026-11-09",
-   "count": 21,
+   "count": 18,
    "error": null,
-   "checkedAt": "2026-11-14T08:52:55.967Z"
+   "checkedAt": "2026-11-14T14:27:36.126Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -99,7 +99,7 @@
    "pageDate": "2026-11-16",
    "count": 60,
    "error": null,
-   "checkedAt": "2026-11-14T08:52:58.755Z"
+   "checkedAt": "2026-11-14T14:27:40.303Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -108,9 +108,9 @@
    "url": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
    "ok": true,
    "pageDate": "2026-11-09",
-   "count": 26,
+   "count": 22,
    "error": null,
-   "checkedAt": "2026-11-14T08:52:59.543Z"
+   "checkedAt": "2026-11-14T14:27:41.325Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -119,9 +119,9 @@
    "url": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-11-16",
    "ok": true,
    "pageDate": "2026-11-16",
-   "count": 63,
+   "count": 64,
    "error": null,
-   "checkedAt": "2026-11-14T08:53:01.062Z"
+   "checkedAt": "2026-11-14T14:27:45.072Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -132,7 +132,7 @@
    "pageDate": "2026-11-09",
    "count": 14,
    "error": null,
-   "checkedAt": "2026-11-14T08:53:02.605Z"
+   "checkedAt": "2026-11-14T14:27:47.658Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -143,7 +143,7 @@
    "pageDate": "2026-11-16",
    "count": 39,
    "error": null,
-   "checkedAt": "2026-11-14T08:53:03.955Z"
+   "checkedAt": "2026-11-14T14:27:48.983Z"
   }
  ],
  "connectors": [
