@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-11-14T23:20:12.383Z",
- "todayMorocco": "2026-11-14",
+ "generatedAt": "2026-11-15T06:12:10.114Z",
+ "todayMorocco": "2026-11-15",
  "dates": [
   "2026-10-12",
   "2026-10-13",
@@ -52,10 +52,10 @@
    "city": "rabat",
    "url": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
    "ok": true,
-   "pageDate": "2026-11-14",
+   "pageDate": "2026-11-15",
    "count": 9,
    "error": null,
-   "checkedAt": "2026-11-14T23:20:12.406Z"
+   "checkedAt": "2026-11-15T06:12:10.134Z"
   },
   {
    "sourceId": "annuaire-gratuit",
@@ -63,10 +63,10 @@
    "city": "sale",
    "url": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
    "ok": true,
-   "pageDate": "2026-11-14",
+   "pageDate": "2026-11-15",
    "count": 10,
    "error": null,
-   "checkedAt": "2026-11-14T23:20:13.394Z"
+   "checkedAt": "2026-11-15T06:12:10.973Z"
   },
   {
    "sourceId": "annuaire-gratuit",
@@ -74,76 +74,76 @@
    "city": "temara",
    "url": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
    "ok": true,
-   "pageDate": "2026-11-14",
+   "pageDate": "2026-11-15",
    "count": 7,
    "error": null,
-   "checkedAt": "2026-11-14T23:20:14.466Z"
+   "checkedAt": "2026-11-15T06:12:11.929Z"
   },
   {
    "sourceId": "guidepharmacies",
    "sourceName": "guidepharmacies.ma",
    "city": "rabat",
    "url": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html",
-   "ok": true,
-   "pageDate": "2026-11-09",
-   "count": 17,
-   "error": null,
-   "checkedAt": "2026-11-14T23:20:15.804Z"
+   "ok": false,
+   "pageDate": null,
+   "count": 0,
+   "error": "Planning illisible : la structure de la page a peut-être changé.",
+   "checkedAt": "2026-11-15T06:12:13.423Z"
   },
   {
    "sourceId": "guidepharmacies",
    "sourceName": "guidepharmacies.ma",
    "city": "rabat",
    "url": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-11-16",
-   "ok": true,
-   "pageDate": "2026-11-16",
-   "count": 60,
-   "error": null,
-   "checkedAt": "2026-11-14T23:20:18.004Z"
+   "ok": false,
+   "pageDate": null,
+   "count": 0,
+   "error": "Planning illisible : la structure de la page a peut-être changé.",
+   "checkedAt": "2026-11-15T06:12:15.246Z"
   },
   {
    "sourceId": "guidepharmacies",
    "sourceName": "guidepharmacies.ma",
    "city": "sale",
    "url": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
-   "ok": true,
-   "pageDate": "2026-11-09",
-   "count": 22,
-   "error": null,
-   "checkedAt": "2026-11-14T23:20:19.268Z"
+   "ok": false,
+   "pageDate": null,
+   "count": 0,
+   "error": "Planning illisible : la structure de la page a peut-être changé.",
+   "checkedAt": "2026-11-15T06:12:16.232Z"
   },
   {
    "sourceId": "guidepharmacies",
    "sourceName": "guidepharmacies.ma",
    "city": "sale",
    "url": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-11-16",
-   "ok": true,
-   "pageDate": "2026-11-16",
-   "count": 64,
-   "error": null,
-   "checkedAt": "2026-11-14T23:20:20.771Z"
+   "ok": false,
+   "pageDate": null,
+   "count": 0,
+   "error": "Planning illisible : la structure de la page a peut-être changé.",
+   "checkedAt": "2026-11-15T06:12:17.734Z"
   },
   {
    "sourceId": "guidepharmacies",
    "sourceName": "guidepharmacies.ma",
    "city": "temara",
    "url": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html",
-   "ok": true,
-   "pageDate": "2026-11-09",
-   "count": 14,
-   "error": null,
-   "checkedAt": "2026-11-14T23:20:22.446Z"
+   "ok": false,
+   "pageDate": null,
+   "count": 0,
+   "error": "Planning illisible : la structure de la page a peut-être changé.",
+   "checkedAt": "2026-11-15T06:12:19.233Z"
   },
   {
    "sourceId": "guidepharmacies",
    "sourceName": "guidepharmacies.ma",
    "city": "temara",
    "url": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html?date=2026-11-16",
-   "ok": true,
-   "pageDate": "2026-11-16",
-   "count": 39,
-   "error": null,
-   "checkedAt": "2026-11-14T23:20:23.596Z"
+   "ok": false,
+   "pageDate": null,
+   "count": 0,
+   "error": "Planning illisible : la structure de la page a peut-être changé.",
+   "checkedAt": "2026-11-15T06:12:20.737Z"
   }
  ],
  "connectors": [
