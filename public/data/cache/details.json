@@ -25917,5 +25917,22 @@
    ]
   },
   "fetchedAt": "2026-11-14T14:27:36.118Z"
+ },
+ "s258239": {
+  "detail": {
+   "name": "Pharmacie Machaallah",
+   "address": "rue fkih bensaleh n°1229 hay linbiat",
+   "phone": "+212537805858",
+   "latitude": 34.044889,
+   "longitude": -6.814017,
+   "history": [
+    {
+     "start": "2026-11-15",
+     "end": "2026-11-16",
+     "label": "Garde Jour FAQ Questions fréquentes sur Pharm"
+    }
+   ]
+  },
+  "fetchedAt": "2026-11-15T14:56:37.319Z"
  }
 }
