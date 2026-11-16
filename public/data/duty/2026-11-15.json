@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "generatedAt": "2026-11-16T09:26:51.884Z",
+ "generatedAt": "2026-11-16T17:23:51.805Z",
  "records": [
   {
    "id": "rabat-aboubakr-assedik",
@@ -156,9 +156,7 @@
    ],
    "verificationStatus": "confirmed",
    "confidenceLevel": "high",
-   "notes": [
-    "Numéros de téléphone différents selon les sources."
-   ]
+   "notes": []
   },
   {
    "id": "rabat-carre-sante-beaute",
@@ -262,9 +260,7 @@
    ],
    "verificationStatus": "confirmed",
    "confidenceLevel": "high",
-   "notes": [
-    "Numéros de téléphone différents selon les sources."
-   ]
+   "notes": []
   },
   {
    "id": "rabat-croissant",
@@ -680,9 +676,7 @@
    ],
    "verificationStatus": "confirmed",
    "confidenceLevel": "high",
-   "notes": [
-    "Numéros de téléphone différents selon les sources."
-   ]
+   "notes": []
   },
   {
    "id": "sale-maghreb-arabe",
@@ -957,9 +951,7 @@
    ],
    "verificationStatus": "confirmed",
    "confidenceLevel": "high",
-   "notes": [
-    "Numéros de téléphone différents selon les sources."
-   ]
+   "notes": []
   },
   {
    "id": "sale-moustawsaf-bettana",
@@ -1180,8 +1172,8 @@
    "coordinatesSource": "source",
    "phone": "+212537609439",
    "dutyDate": "2026-11-15",
-   "dutyType": "day",
-   "dutyLabel": "Garde de jour",
+   "dutyType": "continuous",
+   "dutyLabel": "Ouvert 24h/24",
    "hoursText": "9h-23h",
    "dutyStartDate": "2026-11-15",
    "dutyEndDate": "2026-11-15",
@@ -1207,19 +1199,21 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-ibn-nafiss-s162730.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-11-16",
-     "lastCheckedAt": "2026-11-16T09:26:53.767Z",
+     "lastCheckedAt": "2026-11-16T17:24:17.596Z",
      "historyMatch": {
       "start": "2026-11-15",
       "end": "2026-11-16",
       "label": "Garde Jour"
      },
-     "dutyType": "day",
-     "dutyLabel": "Garde de jour"
+     "dutyType": "continuous",
+     "dutyLabel": "Ouvert 24h/24"
     }
    ],
-   "verificationStatus": "confirmed",
-   "confidenceLevel": "high",
-   "notes": []
+   "verificationStatus": "conflicting",
+   "confidenceLevel": "low",
+   "notes": [
+    "Les sources ne publient pas le même type de garde."
+   ]
   },
   {
    "id": "temara-jardins-oudayas",
@@ -1259,14 +1253,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-jardins-des-oudayas-s236257.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-11-16",
-     "lastCheckedAt": "2026-11-16T09:26:53.767Z",
+     "lastCheckedAt": "2026-11-16T17:24:17.596Z",
      "historyMatch": {
       "start": "2026-11-15",
       "end": "2026-11-16",
       "label": "Garde Jour"
      },
-     "dutyType": "day",
-     "dutyLabel": "Garde de jour"
+     "dutyType": null,
+     "dutyLabel": null
     }
    ],
    "verificationStatus": "confirmed",
@@ -1427,9 +1421,7 @@
    ],
    "verificationStatus": "confirmed",
    "confidenceLevel": "high",
-   "notes": [
-    "Numéros de téléphone différents selon les sources."
-   ]
+   "notes": []
   }
  ]
 }
