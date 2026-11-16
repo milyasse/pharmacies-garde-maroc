@@ -2268,5 +2268,190 @@
   "address": "Rue Fkih Bensaleh N°1229 Hay Linbiat",
   "phone": "+212537805858",
   "at": "2026-11-14T14:27:44.265Z"
+ },
+ "rabat|pharmacie du minaret": {
+  "address": "ي 252 شارع الحسن الثاني أمام مسجد الأحباس (صقاف), ومطعم شليحة ديور الجامع",
+  "phone": "+212537726495",
+  "at": "2026-11-16T01:51:46.669Z"
+ },
+ "rabat|pharmacie city center": {
+  "address": "Centre Commerciale Marjane Market, Prés de la Mosquée Lalla Soukaina",
+  "phone": "+212537564244",
+  "at": "2026-11-16T01:51:49.835Z"
+ },
+ "rabat|pharmacie el wahda": {
+  "address": "69 Groupe El Wahda Nahda II Quartier industriel",
+  "phone": "+212537754991",
+  "at": "2026-11-16T01:51:52.879Z"
+ },
+ "rabat|pharmacie les ministeres d'agdal": {
+  "address": "11 Cité de la garde Agdal",
+  "phone": "+212537682562",
+  "at": "2026-11-16T01:51:55.810Z"
+ },
+ "rabat|pharmacie meskellil": {
+  "address": "Résidence Mesk Ellil, Imm 3, N°1 Av. Assabir, Sect 23",
+  "phone": "+212537714624",
+  "at": "2026-11-16T01:51:58.843Z"
+ },
+ "rabat|pharmacie al waha": {
+  "address": "Av Annahda Résidence Al Waha Prés du Stade FUS, Complexe sportif Moulay el Hassan",
+  "phone": "+212537639525",
+  "at": "2026-11-16T01:52:01.837Z"
+ },
+ "rabat|pharmacie du 16 novembre": {
+  "address": "16.Av du 16 Novembre - haut Agdal (prés Hammam El Fath)",
+  "phone": "+212537670024",
+  "at": "2026-11-16T01:52:04.895Z"
+ },
+ "rabat|pharmacie attannoub": {
+  "address": "Av Attannoub Hay Riad, 5D 11",
+  "phone": "+212537713885",
+  "at": "2026-11-16T01:52:07.709Z"
+ },
+ "rabat|pharmacie du golf": {
+  "address": null,
+  "phone": "+212537755257",
+  "at": "2026-11-16T01:52:10.814Z"
+ },
+ "rabat|pharmacie c.h.u": {
+  "address": "16.Av Ibnourochd (en face de l’hôpital d’enfant)",
+  "phone": "+212537672532",
+  "at": "2026-11-16T01:52:12.480Z"
+ },
+ "rabat|pharmacie borj": {
+  "address": "Imm. A. Résid,Al Borj Sect.14",
+  "phone": "+212537566783",
+  "at": "2026-11-16T01:52:15.403Z"
+ },
+ "rabat|pharmacie el irfane": {
+  "address": "Campus Madinat Al Irfane Av Allal El FASSI",
+  "phone": "+212537686317",
+  "at": "2026-11-16T01:52:18.342Z"
+ },
+ "rabat|pharmacie warda": {
+  "address": "7.Avenue Bir Kacem Souissi",
+  "phone": "+212537659977",
+  "at": "2026-11-16T01:52:21.409Z"
+ },
+ "rabat|pharmacie al manal": {
+  "address": "240 Rue Sedrata (A coté de hammam NAHDA)",
+  "phone": "+212537655554",
+  "at": "2026-11-16T01:52:24.441Z"
+ },
+ "rabat|pharmacie dar essalam": {
+  "address": "607, Hay Ennahda IG",
+  "phone": "+212537754111",
+  "at": "2026-11-16T01:52:27.400Z"
+ },
+ "rabat|pharmacie du bou-regreg": {
+  "address": "N°120 Bloc 60, Secteur B, Av Goundafa Youssoufia",
+  "phone": "+212537653588",
+  "at": "2026-11-16T01:52:30.357Z"
+ },
+ "sale|pharmacie l'oriental": {
+  "address": "858, Av. Mohamed V , Hay Rahma Sect B",
+  "phone": "+212537871412",
+  "at": "2026-11-16T01:52:36.291Z"
+ },
+ "sale|pharmacie des hôpitaux": {
+  "address": "Rue Ibn Rochd (En Face de l'hôpital Errazi, et l'ancien hôpital My Abdellah) Pépinière",
+  "phone": "+212537853858",
+  "at": "2026-11-16T01:52:37.820Z"
+ },
+ "sale|pharmacie al mohit": {
+  "address": "Lot Said Hajji n°1432 Mag N°2, Route de Kénitra",
+  "phone": "+212537878796",
+  "at": "2026-11-16T01:52:39.341Z"
+ },
+ "sale|pharmacie bentaleb hajar": {
+  "address": "180 Bd 6 Novembre Hay Al qods",
+  "phone": "+212537861111",
+  "at": "2026-11-16T01:52:40.758Z"
+ },
+ "sale|pharmacie aryad": {
+  "address": "وراء مكتب البريد مقابل سوق السمك تابريكت عمارات شماعو, جانب الدائرة الرابعة (المقاطعة)",
+  "phone": "+212537862734",
+  "at": "2026-11-16T01:52:42.401Z"
+ },
+ "sale|pharmacie loubna": {
+  "address": "N°83 Sect A Hay Arrahma, (en face lycée Fkih Mohamed El Hamdaoui Ex. lycée Tabriquet, et prés des usines Dar hamra)",
+  "phone": "+212537871922",
+  "at": "2026-11-16T01:52:43.778Z"
+ },
+ "sale|pharmacie les arceaux": {
+  "address": "Sortie des Arcs route de Kénitra N° 40",
+  "phone": "+212537781226",
+  "at": "2026-11-16T01:52:45.350Z"
+ },
+ "sale|pharmacie zakaria": {
+  "address": "Hay Rahma N°1262 (Sect C)",
+  "phone": "+212537855537",
+  "at": "2026-11-16T01:52:46.704Z"
+ },
+ "sale|pharmacie marzouka": {
+  "address": "Av Essalam 34 Hay Marzouka Route de Mehdia",
+  "phone": "+212665642998",
+  "at": "2026-11-16T01:52:48.187Z"
+ },
+ "sale|pharmacie chellaline": {
+  "address": "70 Bis, Rue Chellaline - Médina",
+  "phone": "+212537845872",
+  "at": "2026-11-16T01:52:49.683Z"
+ },
+ "temara|pharmacie nahda temara": {
+  "address": "Lot Ennassim N 4 Av, Mohamed Zertktouni Hay Nahda 2",
+  "phone": "+212537608008",
+  "at": "2026-11-16T01:52:54.210Z"
+ },
+ "temara|pharmacie azur": {
+  "address": "Lot 80 Dakhla 9 Guich Oudayas",
+  "phone": "+212537561592",
+  "at": "2026-11-16T01:52:55.861Z"
+ },
+ "temara|pharmacie la sante": {
+  "address": "80, Avenue Tariq Ibn Ziad Massira 2 , Hay Al Maghrib Al Arabi",
+  "phone": "+212537600414",
+  "at": "2026-11-16T01:52:57.290Z"
+ },
+ "temara|pharmacie annasr": {
+  "address": "Av Moulay Idriss al Akbar",
+  "phone": "+212537589213",
+  "at": "2026-11-16T01:52:58.836Z"
+ },
+ "temara|pharmacie ilias": {
+  "address": "N°7 Lotissement Chkail Mbarek; Rue Rabat, Hay Oued Eddahab",
+  "phone": "+212537611260",
+  "at": "2026-11-16T01:53:00.266Z"
+ },
+ "temara|pharmacie malak (carrefour)": {
+  "address": "Carrefour Market Bd Al Khansae, Hay El Wifak",
+  "phone": "+212537617489",
+  "at": "2026-11-16T01:53:01.893Z"
+ },
+ "temara|pharmacie naimi": {
+  "address": "844 Avenue aladarissa hay Maghreb arabie Massira 2",
+  "phone": "+212537605360",
+  "at": "2026-11-16T01:53:03.334Z"
+ },
+ "temara|pharmacie al khiam": {
+  "address": "Bd, Moulay Rachid,khiam6 N°6",
+  "phone": "+212537740198",
+  "at": "2026-11-16T01:53:04.788Z"
+ },
+ "temara|pharmacie rochdi": {
+  "address": "Hay Maamoura N°5 Sect 4 Massira 2",
+  "phone": "+212537402033",
+  "at": "2026-11-16T01:53:06.246Z"
+ },
+ "temara|pharmacie roudani": {
+  "address": "34 Hay El Ghazali Rue Jamaa Al Azhar",
+  "phone": "+212537640531",
+  "at": "2026-11-16T01:53:07.730Z"
+ },
+ "temara|pharmacie andaloussi": {
+  "address": "62 Avenue Mohamed V",
+  "phone": "+212537642712",
+  "at": "2026-11-16T01:53:09.425Z"
  }
 }
