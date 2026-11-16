@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "generatedAt": "2026-11-15T23:29:46.065Z",
+ "generatedAt": "2026-11-16T09:26:51.884Z",
  "records": [
   {
    "id": "rabat-melia",
@@ -23,9 +23,9 @@
      "sourceId": "guidepharmacies",
      "sourceName": "guidepharmacies.ma",
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-al-melia.html",
-     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-11-16",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html",
      "sourcePublishedAt": "2026-11-16",
-     "lastCheckedAt": "2026-11-15T23:29:52.993Z",
+     "lastCheckedAt": "2026-11-16T09:26:55.346Z",
      "historyMatch": {
       "start": "2026-11-16",
       "end": "2026-11-17",
@@ -36,10 +36,8 @@
     }
    ],
    "verificationStatus": "confirmed",
-   "confidenceLevel": "low",
-   "notes": [
-    "Planning publié à l’avance : à revérifier le jour même."
-   ]
+   "confidenceLevel": "medium",
+   "notes": []
   },
   {
    "id": "rabat-bekkari",
@@ -62,9 +60,9 @@
      "sourceId": "guidepharmacies",
      "sourceName": "guidepharmacies.ma",
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-bekkari-00h.html",
-     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-11-16",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html",
      "sourcePublishedAt": "2026-11-16",
-     "lastCheckedAt": "2026-11-15T23:29:52.993Z",
+     "lastCheckedAt": "2026-11-16T09:26:55.346Z",
      "historyMatch": {
       "start": "2026-11-16",
       "end": "2026-11-16",
@@ -75,10 +73,8 @@
     }
    ],
    "verificationStatus": "confirmed",
-   "confidenceLevel": "low",
-   "notes": [
-    "Planning publié à l’avance : à revérifier le jour même."
-   ]
+   "confidenceLevel": "medium",
+   "notes": []
   },
   {
    "id": "rabat-bin-ouidane",
@@ -101,9 +97,9 @@
      "sourceId": "guidepharmacies",
      "sourceName": "guidepharmacies.ma",
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-bin-el-ouidane.html",
-     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-11-16",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html",
      "sourcePublishedAt": "2026-11-16",
-     "lastCheckedAt": "2026-11-15T23:29:52.993Z",
+     "lastCheckedAt": "2026-11-16T09:26:55.346Z",
      "historyMatch": {
       "start": "2026-11-16",
       "end": "2026-11-17",
@@ -114,10 +110,8 @@
     }
    ],
    "verificationStatus": "confirmed",
-   "confidenceLevel": "low",
-   "notes": [
-    "Planning publié à l’avance : à revérifier le jour même."
-   ]
+   "confidenceLevel": "medium",
+   "notes": []
   },
   {
    "id": "rabat-parc",
@@ -140,9 +134,9 @@
      "sourceId": "guidepharmacies",
      "sourceName": "guidepharmacies.ma",
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-du-parc-sam.html",
-     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-11-16",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html",
      "sourcePublishedAt": "2026-11-16",
-     "lastCheckedAt": "2026-11-15T23:29:52.993Z",
+     "lastCheckedAt": "2026-11-16T09:26:55.346Z",
      "historyMatch": {
       "start": "2026-11-16",
       "end": "2026-11-17",
@@ -153,10 +147,8 @@
     }
    ],
    "verificationStatus": "confirmed",
-   "confidenceLevel": "low",
-   "notes": [
-    "Planning publié à l’avance : à revérifier le jour même."
-   ]
+   "confidenceLevel": "medium",
+   "notes": []
   },
   {
    "id": "rabat-theatre",
@@ -179,9 +171,9 @@
      "sourceId": "guidepharmacies",
      "sourceName": "guidepharmacies.ma",
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-du-theatre-24h.html",
-     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-11-16",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html",
      "sourcePublishedAt": "2026-11-16",
-     "lastCheckedAt": "2026-11-15T23:29:52.993Z",
+     "lastCheckedAt": "2026-11-16T09:26:55.346Z",
      "historyMatch": {
       "start": "2026-11-16",
       "end": "2026-11-17",
@@ -192,10 +184,8 @@
     }
    ],
    "verificationStatus": "confirmed",
-   "confidenceLevel": "low",
-   "notes": [
-    "Planning publié à l’avance : à revérifier le jour même."
-   ]
+   "confidenceLevel": "medium",
+   "notes": []
   },
   {
    "id": "rabat-hay-bouhlal",
@@ -218,9 +208,9 @@
      "sourceId": "guidepharmacies",
      "sourceName": "guidepharmacies.ma",
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-hay-bouhlal-00h.html",
-     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-11-16",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html",
      "sourcePublishedAt": "2026-11-16",
-     "lastCheckedAt": "2026-11-15T23:29:52.993Z",
+     "lastCheckedAt": "2026-11-16T09:26:55.346Z",
      "historyMatch": {
       "start": "2026-11-16",
       "end": "2026-11-16",
@@ -231,10 +221,8 @@
     }
    ],
    "verificationStatus": "confirmed",
-   "confidenceLevel": "low",
-   "notes": [
-    "Planning publié à l’avance : à revérifier le jour même."
-   ]
+   "confidenceLevel": "medium",
+   "notes": []
   },
   {
    "id": "rabat-muraille",
@@ -257,9 +245,9 @@
      "sourceId": "guidepharmacies",
      "sourceName": "guidepharmacies.ma",
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-la-muraille-24h.html",
-     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-11-16",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html",
      "sourcePublishedAt": "2026-11-16",
-     "lastCheckedAt": "2026-11-15T23:29:52.993Z",
+     "lastCheckedAt": "2026-11-16T09:26:55.346Z",
      "historyMatch": {
       "start": "2026-11-16",
       "end": "2026-11-16",
@@ -270,10 +258,8 @@
     }
    ],
    "verificationStatus": "confirmed",
-   "confidenceLevel": "low",
-   "notes": [
-    "Planning publié à l’avance : à revérifier le jour même."
-   ]
+   "confidenceLevel": "medium",
+   "notes": []
   },
   {
    "id": "rabat-mimosas",
@@ -296,9 +282,9 @@
      "sourceId": "guidepharmacies",
      "sourceName": "guidepharmacies.ma",
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat/pharmacie-mimosas-24h.html",
-     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html?date=2026-11-16",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html",
      "sourcePublishedAt": "2026-11-16",
-     "lastCheckedAt": "2026-11-15T23:29:52.993Z",
+     "lastCheckedAt": "2026-11-16T09:26:55.346Z",
      "historyMatch": {
       "start": "2026-11-16",
       "end": "2026-11-17",
@@ -309,10 +295,8 @@
     }
    ],
    "verificationStatus": "confirmed",
-   "confidenceLevel": "low",
-   "notes": [
-    "Planning publié à l’avance : à revérifier le jour même."
-   ]
+   "confidenceLevel": "medium",
+   "notes": []
   },
   {
    "id": "sale-annaim",
@@ -335,9 +319,9 @@
      "sourceId": "guidepharmacies",
      "sourceName": "guidepharmacies.ma",
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-annaim.html",
-     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-11-16",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
      "sourcePublishedAt": "2026-11-16",
-     "lastCheckedAt": "2026-11-15T23:29:55.712Z",
+     "lastCheckedAt": "2026-11-16T09:26:58.842Z",
      "historyMatch": {
       "start": "2026-11-16",
       "end": "2026-11-17",
@@ -348,10 +332,8 @@
     }
    ],
    "verificationStatus": "confirmed",
-   "confidenceLevel": "low",
-   "notes": [
-    "Planning publié à l’avance : à revérifier le jour même."
-   ]
+   "confidenceLevel": "medium",
+   "notes": []
   },
   {
    "id": "sale-annajah",
@@ -374,9 +356,9 @@
      "sourceId": "guidepharmacies",
      "sourceName": "guidepharmacies.ma",
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-annajah.html",
-     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-11-16",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
      "sourcePublishedAt": "2026-11-16",
-     "lastCheckedAt": "2026-11-15T23:29:55.712Z",
+     "lastCheckedAt": "2026-11-16T09:26:58.842Z",
      "historyMatch": {
       "start": "2026-11-16",
       "end": "2026-11-16",
@@ -387,10 +369,8 @@
     }
    ],
    "verificationStatus": "confirmed",
-   "confidenceLevel": "low",
-   "notes": [
-    "Planning publié à l’avance : à revérifier le jour même."
-   ]
+   "confidenceLevel": "medium",
+   "notes": []
   },
   {
    "id": "sale-atlas-kabir",
@@ -413,9 +393,9 @@
      "sourceId": "guidepharmacies",
      "sourceName": "guidepharmacies.ma",
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-atlas-al-kabir-sam.html",
-     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-11-16",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
      "sourcePublishedAt": "2026-11-16",
-     "lastCheckedAt": "2026-11-15T23:29:55.712Z",
+     "lastCheckedAt": "2026-11-16T09:26:58.842Z",
      "historyMatch": {
       "start": "2026-11-16",
       "end": "2026-11-17",
@@ -426,10 +406,8 @@
     }
    ],
    "verificationStatus": "confirmed",
-   "confidenceLevel": "low",
-   "notes": [
-    "Planning publié à l’avance : à revérifier le jour même."
-   ]
+   "confidenceLevel": "medium",
+   "notes": []
   },
   {
    "id": "sale-bayti",
@@ -452,9 +430,9 @@
      "sourceId": "guidepharmacies",
      "sourceName": "guidepharmacies.ma",
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-bayti-00h.html",
-     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-11-16",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
      "sourcePublishedAt": "2026-11-16",
-     "lastCheckedAt": "2026-11-15T23:29:55.712Z",
+     "lastCheckedAt": "2026-11-16T09:26:58.842Z",
      "historyMatch": {
       "start": "2026-11-16",
       "end": "2026-11-16",
@@ -465,10 +443,8 @@
     }
    ],
    "verificationStatus": "confirmed",
-   "confidenceLevel": "low",
-   "notes": [
-    "Planning publié à l’avance : à revérifier le jour même."
-   ]
+   "confidenceLevel": "medium",
+   "notes": []
   },
   {
    "id": "sale-chafia",
@@ -491,9 +467,9 @@
      "sourceId": "guidepharmacies",
      "sourceName": "guidepharmacies.ma",
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-chafia-24h.html",
-     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-11-16",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
      "sourcePublishedAt": "2026-11-16",
-     "lastCheckedAt": "2026-11-15T23:29:55.712Z",
+     "lastCheckedAt": "2026-11-16T09:26:58.842Z",
      "historyMatch": {
       "start": "2026-11-16",
       "end": "2026-11-17",
@@ -504,10 +480,8 @@
     }
    ],
    "verificationStatus": "confirmed",
-   "confidenceLevel": "low",
-   "notes": [
-    "Planning publié à l’avance : à revérifier le jour même."
-   ]
+   "confidenceLevel": "medium",
+   "notes": []
   },
   {
    "id": "sale-plateau",
@@ -530,9 +504,9 @@
      "sourceId": "guidepharmacies",
      "sourceName": "guidepharmacies.ma",
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-du-plateau.html",
-     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-11-16",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
      "sourcePublishedAt": "2026-11-16",
-     "lastCheckedAt": "2026-11-15T23:29:55.712Z",
+     "lastCheckedAt": "2026-11-16T09:26:58.842Z",
      "historyMatch": {
       "start": "2026-11-16",
       "end": "2026-11-16",
@@ -543,10 +517,8 @@
     }
    ],
    "verificationStatus": "confirmed",
-   "confidenceLevel": "low",
-   "notes": [
-    "Planning publié à l’avance : à revérifier le jour même."
-   ]
+   "confidenceLevel": "medium",
+   "notes": []
   },
   {
    "id": "sale-wahda",
@@ -569,9 +541,9 @@
      "sourceId": "guidepharmacies",
      "sourceName": "guidepharmacies.ma",
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-el-wahda-s.html",
-     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-11-16",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
      "sourcePublishedAt": "2026-11-16",
-     "lastCheckedAt": "2026-11-15T23:29:55.712Z",
+     "lastCheckedAt": "2026-11-16T09:26:58.842Z",
      "historyMatch": {
       "start": "2026-11-16",
       "end": "2026-11-16",
@@ -582,10 +554,8 @@
     }
    ],
    "verificationStatus": "confirmed",
-   "confidenceLevel": "low",
-   "notes": [
-    "Planning publié à l’avance : à revérifier le jour même."
-   ]
+   "confidenceLevel": "medium",
+   "notes": []
   },
   {
    "id": "sale-sidi-benacher",
@@ -608,9 +578,9 @@
      "sourceId": "guidepharmacies",
      "sourceName": "guidepharmacies.ma",
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale/pharmacie-sidi-benacher.html",
-     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html?date=2026-11-16",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/sale.html",
      "sourcePublishedAt": "2026-11-16",
-     "lastCheckedAt": "2026-11-15T23:29:55.712Z",
+     "lastCheckedAt": "2026-11-16T09:26:58.842Z",
      "historyMatch": {
       "start": "2026-11-16",
       "end": "2026-11-16",
@@ -621,10 +591,8 @@
     }
    ],
    "verificationStatus": "confirmed",
-   "confidenceLevel": "low",
-   "notes": [
-    "Planning publié à l’avance : à revérifier le jour même."
-   ]
+   "confidenceLevel": "medium",
+   "notes": []
   },
   {
    "id": "temara-acima-harhoura",
@@ -647,9 +615,9 @@
      "sourceId": "guidepharmacies",
      "sourceName": "guidepharmacies.ma",
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-acima-harhoura.html",
-     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html?date=2026-11-16",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html",
      "sourcePublishedAt": "2026-11-16",
-     "lastCheckedAt": "2026-11-15T23:29:58.678Z",
+     "lastCheckedAt": "2026-11-16T09:27:16.303Z",
      "historyMatch": {
       "start": "2026-11-16",
       "end": "2026-11-16",
@@ -660,10 +628,8 @@
     }
    ],
    "verificationStatus": "confirmed",
-   "confidenceLevel": "low",
-   "notes": [
-    "Planning publié à l’avance : à revérifier le jour même."
-   ]
+   "confidenceLevel": "medium",
+   "notes": []
   },
   {
    "id": "temara-mamoune",
@@ -686,9 +652,9 @@
      "sourceId": "guidepharmacies",
      "sourceName": "guidepharmacies.ma",
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-al-mamoune-lun.html",
-     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html?date=2026-11-16",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html",
      "sourcePublishedAt": "2026-11-16",
-     "lastCheckedAt": "2026-11-15T23:29:58.678Z",
+     "lastCheckedAt": "2026-11-16T09:27:16.303Z",
      "historyMatch": {
       "start": "2026-11-16",
       "end": "2026-11-16",
@@ -699,10 +665,8 @@
     }
    ],
    "verificationStatus": "confirmed",
-   "confidenceLevel": "low",
-   "notes": [
-    "Planning publié à l’avance : à revérifier le jour même."
-   ]
+   "confidenceLevel": "medium",
+   "notes": []
   },
   {
    "id": "temara-ibn-nafiss",
@@ -725,9 +689,9 @@
      "sourceId": "guidepharmacies",
      "sourceName": "guidepharmacies.ma",
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-ibn-nafiss.html",
-     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html?date=2026-11-16",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html",
      "sourcePublishedAt": "2026-11-16",
-     "lastCheckedAt": "2026-11-15T23:29:58.678Z",
+     "lastCheckedAt": "2026-11-16T09:27:16.303Z",
      "historyMatch": {
       "start": "2026-11-16",
       "end": "2026-11-16",
@@ -738,10 +702,8 @@
     }
    ],
    "verificationStatus": "confirmed",
-   "confidenceLevel": "low",
-   "notes": [
-    "Planning publié à l’avance : à revérifier le jour même."
-   ]
+   "confidenceLevel": "medium",
+   "notes": []
   },
   {
    "id": "temara-jardins-oudayas",
@@ -764,9 +726,9 @@
      "sourceId": "guidepharmacies",
      "sourceName": "guidepharmacies.ma",
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-jardins-des-oudayas-lun.html",
-     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html?date=2026-11-16",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html",
      "sourcePublishedAt": "2026-11-16",
-     "lastCheckedAt": "2026-11-15T23:29:58.678Z",
+     "lastCheckedAt": "2026-11-16T09:27:16.303Z",
      "historyMatch": {
       "start": "2026-11-16",
       "end": "2026-11-16",
@@ -777,10 +739,8 @@
     }
    ],
    "verificationStatus": "confirmed",
-   "confidenceLevel": "low",
-   "notes": [
-    "Planning publié à l’avance : à revérifier le jour même."
-   ]
+   "confidenceLevel": "medium",
+   "notes": []
   },
   {
    "id": "temara-oum-hani",
@@ -803,9 +763,9 @@
      "sourceId": "guidepharmacies",
      "sourceName": "guidepharmacies.ma",
      "sourceUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/ain-aouda/pharmacie-oum-hani-t.html",
-     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html?date=2026-11-16",
+     "listingUrl": "https://www.guidepharmacies.ma/pharmacies-de-garde/temara.html",
      "sourcePublishedAt": "2026-11-16",
-     "lastCheckedAt": "2026-11-15T23:29:58.678Z",
+     "lastCheckedAt": "2026-11-16T09:27:16.303Z",
      "historyMatch": {
       "start": "2026-11-16",
       "end": "2026-11-16",
@@ -816,10 +776,8 @@
     }
    ],
    "verificationStatus": "confirmed",
-   "confidenceLevel": "low",
-   "notes": [
-    "Planning publié à l’avance : à revérifier le jour même."
-   ]
+   "confidenceLevel": "medium",
+   "notes": []
   }
  ]
 }
