@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "generatedAt": "2026-11-17T17:02:14.407Z",
+ "generatedAt": "2026-11-17T23:27:25.792Z",
  "records": [
   {
    "id": "rabat-melia",
@@ -963,14 +963,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-al-mamoune-s250132.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-11-17",
-     "lastCheckedAt": "2026-11-17T17:02:17.055Z",
+     "lastCheckedAt": "2026-11-17T23:27:28.685Z",
      "historyMatch": {
       "start": "2026-11-16",
       "end": "2026-11-17",
       "label": "Garde Jour"
      },
-     "dutyType": null,
-     "dutyLabel": null
+     "dutyType": "day",
+     "dutyLabel": "Garde de jour"
     }
    ],
    "verificationStatus": "confirmed",
@@ -1067,14 +1067,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-jardins-des-oudayas-s236257.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-11-17",
-     "lastCheckedAt": "2026-11-17T17:02:17.055Z",
+     "lastCheckedAt": "2026-11-17T23:27:28.685Z",
      "historyMatch": {
       "start": "2026-11-16",
       "end": "2026-11-17",
       "label": "Garde Jour"
      },
-     "dutyType": null,
-     "dutyLabel": null
+     "dutyType": "day",
+     "dutyLabel": "Garde de jour"
     }
    ],
    "verificationStatus": "confirmed",
