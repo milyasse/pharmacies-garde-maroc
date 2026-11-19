@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "generatedAt": "2026-11-19T01:26:50.950Z",
+ "generatedAt": "2026-11-19T16:44:57.431Z",
  "records": [
   {
    "id": "rabat-kifah",
@@ -1028,14 +1028,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-al-mamoune-s250132.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-11-19",
-     "lastCheckedAt": "2026-11-19T01:26:52.896Z",
+     "lastCheckedAt": "2026-11-19T16:45:24.688Z",
      "historyMatch": {
       "start": "2026-11-18",
       "end": "2026-11-19",
       "label": "Garde Jour"
      },
-     "dutyType": "day",
-     "dutyLabel": "Garde de jour"
+     "dutyType": null,
+     "dutyLabel": null
     }
    ],
    "verificationStatus": "confirmed",

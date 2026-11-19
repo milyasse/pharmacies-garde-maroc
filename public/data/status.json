@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-19T10:09:51.563Z",
+ "generatedAt": "2026-11-19T16:44:57.431Z",
  "todayMorocco": "2026-11-19",
  "dates": [
   "2026-10-12",
@@ -58,33 +58,33 @@
    "sourceName": "annuaire-gratuit.ma",
    "city": "rabat",
    "url": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
-   "ok": false,
+   "ok": true,
    "pageDate": "2026-11-19",
-   "count": 0,
-   "error": "Aucune pharmacie extraite : la structure de la page a peut-être changé.",
-   "checkedAt": "2026-11-19T10:09:51.587Z"
+   "count": 7,
+   "error": null,
+   "checkedAt": "2026-11-19T16:44:57.451Z"
   },
   {
    "sourceId": "annuaire-gratuit",
    "sourceName": "annuaire-gratuit.ma",
    "city": "sale",
    "url": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
-   "ok": false,
+   "ok": true,
    "pageDate": "2026-11-19",
-   "count": 0,
-   "error": "Aucune pharmacie extraite : la structure de la page a peut-être changé.",
-   "checkedAt": "2026-11-19T10:09:53.013Z"
+   "count": 10,
+   "error": null,
+   "checkedAt": "2026-11-19T16:45:08.212Z"
   },
   {
    "sourceId": "annuaire-gratuit",
    "sourceName": "annuaire-gratuit.ma",
    "city": "temara",
    "url": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
-   "ok": false,
+   "ok": true,
    "pageDate": "2026-11-19",
-   "count": 0,
-   "error": "Aucune pharmacie extraite : la structure de la page a peut-être changé.",
-   "checkedAt": "2026-11-19T10:09:53.354Z"
+   "count": 5,
+   "error": null,
+   "checkedAt": "2026-11-19T16:45:24.688Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -95,7 +95,7 @@
    "pageDate": "2026-11-16",
    "count": 35,
    "error": null,
-   "checkedAt": "2026-11-19T10:09:54.913Z"
+   "checkedAt": "2026-11-19T16:45:32.191Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -106,7 +106,7 @@
    "pageDate": "2026-11-23",
    "count": 56,
    "error": null,
-   "checkedAt": "2026-11-19T10:09:59.041Z"
+   "checkedAt": "2026-11-19T16:45:35.449Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -117,7 +117,7 @@
    "pageDate": "2026-11-16",
    "count": 42,
    "error": null,
-   "checkedAt": "2026-11-19T10:10:00.826Z"
+   "checkedAt": "2026-11-19T16:45:36.855Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -128,7 +128,7 @@
    "pageDate": "2026-11-23",
    "count": 56,
    "error": null,
-   "checkedAt": "2026-11-19T10:10:02.734Z"
+   "checkedAt": "2026-11-19T16:45:37.996Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -139,7 +139,7 @@
    "pageDate": "2026-11-16",
    "count": 24,
    "error": null,
-   "checkedAt": "2026-11-19T10:10:06.277Z"
+   "checkedAt": "2026-11-19T16:45:39.595Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -150,7 +150,7 @@
    "pageDate": "2026-11-23",
    "count": 40,
    "error": null,
-   "checkedAt": "2026-11-19T10:10:08.794Z"
+   "checkedAt": "2026-11-19T16:45:40.828Z"
   }
  ],
  "connectors": [
