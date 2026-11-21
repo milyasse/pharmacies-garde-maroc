@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "generatedAt": "2026-11-21T20:27:16.788Z",
+ "generatedAt": "2026-11-21T23:54:29.937Z",
  "records": [
   {
    "id": "rabat-mountalak",
@@ -404,7 +404,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-secteur-15-s243828.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
      "sourcePublishedAt": "2026-11-21",
-     "lastCheckedAt": "2026-11-21T20:27:16.824Z",
+     "lastCheckedAt": "2026-11-21T23:54:29.973Z",
      "historyMatch": {
       "start": "2026-11-20",
       "end": "2026-11-21",
@@ -510,7 +510,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/grande-pharmacie-de-sale-s247752.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
      "sourcePublishedAt": "2026-11-21",
-     "lastCheckedAt": "2026-11-21T20:27:18.403Z",
+     "lastCheckedAt": "2026-11-21T23:54:31.427Z",
      "historyMatch": {
       "start": "2026-11-20",
       "end": "2026-11-21",
@@ -614,14 +614,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-jardins-maamoura-s254551.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
      "sourcePublishedAt": "2026-11-21",
-     "lastCheckedAt": "2026-11-21T20:27:18.403Z",
+     "lastCheckedAt": "2026-11-21T23:54:31.427Z",
      "historyMatch": {
       "start": "2026-11-20",
       "end": "2026-11-21",
       "label": "Garde Jour"
      },
-     "dutyType": null,
-     "dutyLabel": null
+     "dutyType": "day",
+     "dutyLabel": "Garde de jour"
     }
    ],
    "verificationStatus": "confirmed",
