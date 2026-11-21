@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "generatedAt": "2026-11-21T03:06:23.388Z",
+ "generatedAt": "2026-11-21T12:28:12.652Z",
  "records": [
   {
    "id": "rabat-mountalak",
@@ -378,7 +378,7 @@
    "phone": "+212530361161",
    "dutyDate": "2026-11-20",
    "dutyType": "continuous",
-   "dutyLabel": "Hay Riad 24h/24h",
+   "dutyLabel": "Ouvert 24h/24",
    "hoursText": "24h/24",
    "dutyStartDate": "2026-11-20",
    "dutyEndDate": "2026-11-21",
@@ -404,7 +404,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-secteur-15-s243828.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
      "sourcePublishedAt": "2026-11-21",
-     "lastCheckedAt": "2026-11-21T03:06:23.416Z",
+     "lastCheckedAt": "2026-11-21T12:28:12.675Z",
      "historyMatch": {
       "start": "2026-11-20",
       "end": "2026-11-21",
@@ -416,7 +416,9 @@
    ],
    "verificationStatus": "confirmed",
    "confidenceLevel": "high",
-   "notes": []
+   "notes": [
+    "Numéros de téléphone différents selon les sources."
+   ]
   },
   {
    "id": "sale-khemis",
@@ -482,7 +484,7 @@
    "phone": "+212537780012",
    "dutyDate": "2026-11-20",
    "dutyType": "continuous",
-   "dutyLabel": "Salé Medina & Sidi Moussa & Hay Chamou 24h/24h",
+   "dutyLabel": "Ouvert 24h/24",
    "hoursText": "24h/24",
    "dutyStartDate": "2026-11-20",
    "dutyEndDate": "2026-11-21",
@@ -508,7 +510,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/grande-pharmacie-de-sale-s247752.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
      "sourcePublishedAt": "2026-11-21",
-     "lastCheckedAt": "2026-11-21T03:06:24.655Z",
+     "lastCheckedAt": "2026-11-21T12:28:26.482Z",
      "historyMatch": {
       "start": "2026-11-20",
       "end": "2026-11-21",
@@ -612,14 +614,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-jardins-maamoura-s254551.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
      "sourcePublishedAt": "2026-11-21",
-     "lastCheckedAt": "2026-11-21T03:06:24.655Z",
+     "lastCheckedAt": "2026-11-21T12:28:26.482Z",
      "historyMatch": {
       "start": "2026-11-20",
       "end": "2026-11-21",
       "label": "Garde Jour"
      },
-     "dutyType": "day",
-     "dutyLabel": "Garde de jour"
+     "dutyType": null,
+     "dutyLabel": null
     }
    ],
    "verificationStatus": "confirmed",
