@@ -13315,6 +13315,11 @@
    "longitude": -6.814017,
    "history": [
     {
+     "start": "2026-11-21",
+     "end": "2026-11-22",
+     "label": "Garde Jour"
+    },
+    {
      "start": "2026-11-20",
      "end": "2026-11-21",
      "label": "Garde Jour"
@@ -13357,16 +13362,11 @@
     {
      "start": "2026-06-19",
      "end": "2026-06-20",
-     "label": "Garde Jour et Nuit"
-    },
-    {
-     "start": "2026-04-27",
-     "end": "2026-04-28",
-     "label": "Garde Jour FAQ Questions fréquentes sur Pharm"
+     "label": "Garde Jour et Nuit FAQ Questions fréquentes s"
     }
    ]
   },
-  "fetchedAt": "2026-11-20T12:44:23.083Z"
+  "fetchedAt": "2026-11-22T02:04:29.707Z"
  },
  "s237173": {
   "detail": {
@@ -27459,6 +27459,11 @@
    "longitude": -6.878533,
    "history": [
     {
+     "start": "2026-11-21",
+     "end": "2026-11-22",
+     "label": "Garde Jour et Nuit"
+    },
+    {
      "start": "2026-11-20",
      "end": "2026-11-21",
      "label": "Garde Jour et Nuit"
@@ -27501,16 +27506,11 @@
     {
      "start": "2025-10-29",
      "end": "2025-10-30",
-     "label": "Garde Jour et Nuit"
-    },
-    {
-     "start": "2025-09-01",
-     "end": "2025-09-02",
      "label": "Garde Jour et Nuit FAQ Questions fréquentes s"
     }
    ]
   },
-  "fetchedAt": "2026-11-20T12:44:03.824Z"
+  "fetchedAt": "2026-11-22T02:04:25.150Z"
  },
  "s237251": {
   "detail": {
@@ -27583,6 +27583,11 @@
    "longitude": -6.8246467,
    "history": [
     {
+     "start": "2026-11-21",
+     "end": "2026-11-22",
+     "label": "Garde Jour et Nuit"
+    },
+    {
      "start": "2026-11-20",
      "end": "2026-11-21",
      "label": "Garde Jour et Nuit"
@@ -27625,16 +27630,11 @@
     {
      "start": "2026-01-31",
      "end": "2026-02-01",
-     "label": "Garde Jour et Nuit"
-    },
-    {
-     "start": "2025-12-30",
-     "end": "2025-12-31",
      "label": "Garde Jour et Nuit FAQ Questions fréquentes s"
     }
    ]
   },
-  "fetchedAt": "2026-11-20T12:44:26.088Z"
+  "fetchedAt": "2026-11-22T02:04:28.207Z"
  },
  "s237149": {
   "detail": {
