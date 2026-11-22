@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "generatedAt": "2026-11-22T02:04:23.010Z",
+ "generatedAt": "2026-11-22T09:40:41.518Z",
  "records": [
   {
    "id": "rabat-amana",
@@ -40,7 +40,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-al-amana-s241100.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
      "sourcePublishedAt": "2026-11-22",
-     "lastCheckedAt": "2026-11-22T02:04:23.034Z",
+     "lastCheckedAt": "2026-11-22T09:40:41.551Z",
      "historyMatch": {
       "start": "2026-11-21",
       "end": "2026-11-22",
@@ -92,7 +92,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-al-kawthar-s237387.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
      "sourcePublishedAt": "2026-11-22",
-     "lastCheckedAt": "2026-11-22T02:04:23.034Z",
+     "lastCheckedAt": "2026-11-22T09:40:41.551Z",
      "historyMatch": {
       "start": "2026-11-21",
       "end": "2026-11-22",
@@ -146,7 +146,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-de-la-medina-s241040.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
      "sourcePublishedAt": "2026-11-22",
-     "lastCheckedAt": "2026-11-22T02:04:23.034Z",
+     "lastCheckedAt": "2026-11-22T09:40:41.551Z",
      "historyMatch": {
       "start": "2026-11-21",
       "end": "2026-11-22",
@@ -198,7 +198,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-des-cliniques-s237136.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
      "sourcePublishedAt": "2026-11-22",
-     "lastCheckedAt": "2026-11-22T02:04:23.034Z",
+     "lastCheckedAt": "2026-11-22T09:40:41.551Z",
      "historyMatch": {
       "start": "2026-11-21",
       "end": "2026-11-22",
@@ -224,7 +224,7 @@
    "phone": "+212537655541",
    "dutyDate": "2026-11-21",
    "dutyType": "continuous",
-   "dutyLabel": "Takadoum & Souissi (24h/24h)",
+   "dutyLabel": "Ouvert 24h/24",
    "hoursText": "24h/24",
    "dutyStartDate": "2026-11-21",
    "dutyEndDate": "2026-11-22",
@@ -250,7 +250,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-du-cedre-s254169.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
      "sourcePublishedAt": "2026-11-22",
-     "lastCheckedAt": "2026-11-22T02:04:23.034Z",
+     "lastCheckedAt": "2026-11-22T09:40:41.551Z",
      "historyMatch": {
       "start": "2026-11-21",
       "end": "2026-11-22",
@@ -302,7 +302,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-fellat-s254581.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
      "sourcePublishedAt": "2026-11-22",
-     "lastCheckedAt": "2026-11-22T02:04:23.034Z",
+     "lastCheckedAt": "2026-11-22T09:40:41.551Z",
      "historyMatch": {
       "start": "2026-11-21",
       "end": "2026-11-22",
@@ -328,7 +328,7 @@
    "phone": "+212537776290",
    "dutyDate": "2026-11-21",
    "dutyType": "continuous",
-   "dutyLabel": "Agdal 24h/24h",
+   "dutyLabel": "Ouvert 24h/24",
    "hoursText": "24h/24",
    "dutyStartDate": "2026-11-21",
    "dutyEndDate": "2026-11-22",
@@ -354,7 +354,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-les-iris-s238095.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
      "sourcePublishedAt": "2026-11-22",
-     "lastCheckedAt": "2026-11-22T02:04:23.034Z",
+     "lastCheckedAt": "2026-11-22T09:40:41.551Z",
      "historyMatch": {
       "start": "2026-11-21",
       "end": "2026-11-22",
@@ -380,7 +380,7 @@
    "phone": "+212537756273",
    "dutyDate": "2026-11-21",
    "dutyType": "continuous",
-   "dutyLabel": "Takadoum & Souissi (24h/24h)",
+   "dutyLabel": "Ouvert 24h/24",
    "hoursText": "24h/24",
    "dutyStartDate": "2026-11-21",
    "dutyEndDate": "2026-11-22",
@@ -406,7 +406,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-les-lilas-s147534.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
      "sourcePublishedAt": "2026-11-22",
-     "lastCheckedAt": "2026-11-22T02:04:23.034Z",
+     "lastCheckedAt": "2026-11-22T09:40:41.551Z",
      "historyMatch": {
       "start": "2026-11-21",
       "end": "2026-11-22",
@@ -432,7 +432,7 @@
    "phone": "+212530361161",
    "dutyDate": "2026-11-21",
    "dutyType": "continuous",
-   "dutyLabel": "Hay Riad 24h/24h",
+   "dutyLabel": "Ouvert 24h/24",
    "hoursText": "24h/24",
    "dutyStartDate": "2026-11-21",
    "dutyEndDate": "2026-11-22",
@@ -458,7 +458,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-secteur-15-s243828.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
      "sourcePublishedAt": "2026-11-22",
-     "lastCheckedAt": "2026-11-22T02:04:23.034Z",
+     "lastCheckedAt": "2026-11-22T09:40:41.551Z",
      "historyMatch": {
       "start": "2026-11-21",
       "end": "2026-11-22",
@@ -470,7 +470,9 @@
    ],
    "verificationStatus": "confirmed",
    "confidenceLevel": "high",
-   "notes": []
+   "notes": [
+    "Numéros de téléphone différents selon les sources."
+   ]
   },
   {
    "id": "rabat-sofia",
@@ -484,7 +486,7 @@
    "phone": "+212537282928",
    "dutyDate": "2026-11-21",
    "dutyType": "continuous",
-   "dutyLabel": "Yacoub El Mansour (24h/24h)",
+   "dutyLabel": "Ouvert 24h/24",
    "hoursText": "24h/24",
    "dutyStartDate": "2026-11-21",
    "dutyEndDate": "2026-11-22",
@@ -510,7 +512,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-sofia-s237386.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
      "sourcePublishedAt": "2026-11-22",
-     "lastCheckedAt": "2026-11-22T02:04:23.034Z",
+     "lastCheckedAt": "2026-11-22T09:40:41.551Z",
      "historyMatch": {
       "start": "2026-11-21",
       "end": "2026-11-22",
@@ -536,7 +538,7 @@
    "phone": "+212537811518",
    "dutyDate": "2026-11-21",
    "dutyType": "continuous",
-   "dutyLabel": "Hay Essalam 24h/24h",
+   "dutyLabel": "Ouvert 24h/24",
    "hoursText": "24h/24",
    "dutyStartDate": "2026-11-21",
    "dutyEndDate": "2026-11-22",
@@ -562,7 +564,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-achouhadaa-s237253.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
      "sourcePublishedAt": "2026-11-22",
-     "lastCheckedAt": "2026-11-22T02:04:25.150Z",
+     "lastCheckedAt": "2026-11-22T09:40:42.755Z",
      "historyMatch": {
       "start": "2026-11-21",
       "end": "2026-11-22",
@@ -588,7 +590,7 @@
    "phone": "+212537808724",
    "dutyDate": "2026-11-21",
    "dutyType": "continuous",
-   "dutyLabel": "Bettana 24h/24h",
+   "dutyLabel": "Ouvert 24h/24",
    "hoursText": "24h/24",
    "dutyStartDate": "2026-11-21",
    "dutyEndDate": "2026-11-22",
@@ -614,7 +616,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-al-a-039-araf-s254011.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
      "sourcePublishedAt": "2026-11-22",
-     "lastCheckedAt": "2026-11-22T02:04:25.150Z",
+     "lastCheckedAt": "2026-11-22T09:40:42.755Z",
      "historyMatch": {
       "start": "2026-11-21",
       "end": "2026-11-22",
@@ -666,7 +668,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-baassine-s254347.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
      "sourcePublishedAt": "2026-11-22",
-     "lastCheckedAt": "2026-11-22T02:04:25.150Z",
+     "lastCheckedAt": "2026-11-22T09:40:42.755Z",
      "historyMatch": {
       "start": "2026-11-21",
       "end": "2026-11-22",
@@ -692,7 +694,7 @@
    "phone": "+212537874444",
    "dutyDate": "2026-11-21",
    "dutyType": "continuous",
-   "dutyLabel": "Laayayda 24h/24h",
+   "dutyLabel": "Ouvert 24h/24",
    "hoursText": "24h/24",
    "dutyStartDate": "2026-11-21",
    "dutyEndDate": "2026-11-22",
@@ -718,7 +720,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-darshabab-s254959.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
      "sourcePublishedAt": "2026-11-22",
-     "lastCheckedAt": "2026-11-22T02:04:25.150Z",
+     "lastCheckedAt": "2026-11-22T09:40:42.755Z",
      "historyMatch": {
       "start": "2026-11-21",
       "end": "2026-11-22",
@@ -744,7 +746,7 @@
    "phone": "+212537535117",
    "dutyDate": "2026-11-21",
    "dutyType": "continuous",
-   "dutyLabel": "Sala El Jadida (24h/24h)",
+   "dutyLabel": "Ouvert 24h/24",
    "hoursText": "24h/24",
    "dutyStartDate": "2026-11-21",
    "dutyEndDate": "2026-11-22",
@@ -770,7 +772,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-du-myrte-s236914.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
      "sourcePublishedAt": "2026-11-22",
-     "lastCheckedAt": "2026-11-22T02:04:25.150Z",
+     "lastCheckedAt": "2026-11-22T09:40:42.755Z",
      "historyMatch": {
       "start": "2026-11-21",
       "end": "2026-11-22",
@@ -782,7 +784,9 @@
    ],
    "verificationStatus": "confirmed",
    "confidenceLevel": "high",
-   "notes": []
+   "notes": [
+    "Numéros de téléphone différents selon les sources."
+   ]
   },
   {
    "id": "sale-grande-sale",
@@ -796,7 +800,7 @@
    "phone": "+212537780012",
    "dutyDate": "2026-11-21",
    "dutyType": "continuous",
-   "dutyLabel": "Salé Médina 24h/24h",
+   "dutyLabel": "Ouvert 24h/24",
    "hoursText": "24h/24",
    "dutyStartDate": "2026-11-21",
    "dutyEndDate": "2026-11-22",
@@ -822,7 +826,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/grande-pharmacie-de-sale-s247752.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
      "sourcePublishedAt": "2026-11-22",
-     "lastCheckedAt": "2026-11-22T02:04:25.150Z",
+     "lastCheckedAt": "2026-11-22T09:40:42.755Z",
      "historyMatch": {
       "start": "2026-11-21",
       "end": "2026-11-22",
@@ -848,7 +852,7 @@
    "phone": "+212537855058",
    "dutyDate": "2026-11-21",
    "dutyType": "continuous",
-   "dutyLabel": "Hay Arrahma (24h/24h)",
+   "dutyLabel": "Ouvert 24h/24",
    "hoursText": "24h/24",
    "dutyStartDate": "2026-11-21",
    "dutyEndDate": "2026-11-22",
@@ -874,7 +878,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-hay-karima-s236976.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
      "sourcePublishedAt": "2026-11-22",
-     "lastCheckedAt": "2026-11-22T02:04:25.150Z",
+     "lastCheckedAt": "2026-11-22T09:40:42.755Z",
      "historyMatch": {
       "start": "2026-11-21",
       "end": "2026-11-22",
@@ -926,7 +930,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-jardins-maamoura-s254551.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
      "sourcePublishedAt": "2026-11-22",
-     "lastCheckedAt": "2026-11-22T02:04:25.150Z",
+     "lastCheckedAt": "2026-11-22T09:40:42.755Z",
      "historyMatch": {
       "start": "2026-11-21",
       "end": "2026-11-22",
@@ -952,7 +956,7 @@
    "phone": "+212537829500",
    "dutyDate": "2026-11-21",
    "dutyType": "continuous",
-   "dutyLabel": "EL Karia 24h/24h",
+   "dutyLabel": "Ouvert 24h/24",
    "hoursText": "24h/24",
    "dutyStartDate": "2026-11-21",
    "dutyEndDate": "2026-11-22",
@@ -978,7 +982,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-les-jumelles-ex-village-s254091.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
      "sourcePublishedAt": "2026-11-22",
-     "lastCheckedAt": "2026-11-22T02:04:25.150Z",
+     "lastCheckedAt": "2026-11-22T09:40:42.755Z",
      "historyMatch": {
       "start": "2026-11-21",
       "end": "2026-11-22",
@@ -1004,7 +1008,7 @@
    "phone": "+212537800874",
    "dutyDate": "2026-11-21",
    "dutyType": "continuous",
-   "dutyLabel": "My Ismail 24h/24h",
+   "dutyLabel": "Ouvert 24h/24",
    "hoursText": "24h/24",
    "dutyStartDate": "2026-11-21",
    "dutyEndDate": "2026-11-22",
@@ -1030,7 +1034,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-moulay-ismail-s241897.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
      "sourcePublishedAt": "2026-11-22",
-     "lastCheckedAt": "2026-11-22T02:04:25.150Z",
+     "lastCheckedAt": "2026-11-22T09:40:42.755Z",
      "historyMatch": {
       "start": "2026-11-21",
       "end": "2026-11-22",
@@ -1095,7 +1099,7 @@
    "phone": "+212537821833",
    "dutyDate": "2026-11-21",
    "dutyType": "continuous",
-   "dutyLabel": "El Mazza Sidi Abdellah 24h/24h",
+   "dutyLabel": "Ouvert 24h/24",
    "hoursText": "24h/24",
    "dutyStartDate": "2026-11-21",
    "dutyEndDate": "2026-11-22",
@@ -1121,7 +1125,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-yahia-ex-bismillah-s254029.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
      "sourcePublishedAt": "2026-11-22",
-     "lastCheckedAt": "2026-11-22T02:04:25.150Z",
+     "lastCheckedAt": "2026-11-22T09:40:42.755Z",
      "historyMatch": {
       "start": "2026-11-21",
       "end": "2026-11-22",
@@ -1147,7 +1151,7 @@
    "phone": "+212537602312",
    "dutyDate": "2026-11-21",
    "dutyType": "continuous",
-   "dutyLabel": "El Massira (24h/24h)",
+   "dutyLabel": "Ouvert 24h/24",
    "hoursText": "24h/24",
    "dutyStartDate": "2026-11-21",
    "dutyEndDate": "2026-11-22",
@@ -1173,7 +1177,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-2000-s237090.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-11-22",
-     "lastCheckedAt": "2026-11-22T02:04:29.707Z",
+     "lastCheckedAt": "2026-11-22T09:40:43.565Z",
      "historyMatch": {
       "start": "2026-11-21",
       "end": "2026-11-22",
@@ -1225,7 +1229,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-al-anouar-s241888.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-11-22",
-     "lastCheckedAt": "2026-11-22T02:04:29.707Z",
+     "lastCheckedAt": "2026-11-22T09:40:43.565Z",
      "historyMatch": {
       "start": "2026-11-21",
       "end": "2026-11-22",
@@ -1251,7 +1255,7 @@
    "phone": "+212537747728",
    "dutyDate": "2026-11-21",
    "dutyType": "continuous",
-   "dutyLabel": "Harhoura 24h/24h",
+   "dutyLabel": "Ouvert 24h/24",
    "hoursText": "24h/24",
    "dutyStartDate": "2026-11-21",
    "dutyEndDate": "2026-11-22",
@@ -1277,7 +1281,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-atlantique-s241765.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-11-22",
-     "lastCheckedAt": "2026-11-22T02:04:29.707Z",
+     "lastCheckedAt": "2026-11-22T09:40:43.565Z",
      "historyMatch": {
       "start": "2026-11-21",
       "end": "2026-11-22",
@@ -1303,8 +1307,8 @@
    "phone": "+212537609790",
    "dutyDate": "2026-11-21",
    "dutyType": "day",
-   "dutyLabel": "El Massira (9h à 00h00)",
-   "hoursText": "9h-24h",
+   "dutyLabel": "Garde de jour",
+   "hoursText": "9h-23h",
    "dutyStartDate": "2026-11-21",
    "dutyEndDate": "2026-11-21",
    "sources": [
@@ -1329,7 +1333,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-ennassim-s162757.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-11-22",
-     "lastCheckedAt": "2026-11-22T02:04:29.707Z",
+     "lastCheckedAt": "2026-11-22T09:40:43.565Z",
      "historyMatch": {
       "start": "2026-11-21",
       "end": "2026-11-22",
@@ -1355,8 +1359,8 @@
    "phone": "+212537640443",
    "dutyDate": "2026-11-21",
    "dutyType": "day",
-   "dutyLabel": "Centre (9h à 00h00)",
-   "hoursText": "9h-24h",
+   "dutyLabel": "Garde de jour",
+   "hoursText": "9h-23h",
    "dutyStartDate": "2026-11-21",
    "dutyEndDate": "2026-11-21",
    "sources": [
@@ -1381,7 +1385,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-khizrane-s162760.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-11-22",
-     "lastCheckedAt": "2026-11-22T02:04:29.707Z",
+     "lastCheckedAt": "2026-11-22T09:40:43.565Z",
      "historyMatch": {
       "start": "2026-11-21",
       "end": "2026-11-22",
@@ -1407,8 +1411,8 @@
    "phone": "+212537644775",
    "dutyDate": "2026-11-21",
    "dutyType": "day",
-   "dutyLabel": "Centre (9h à 00h00)",
-   "hoursText": "9h-24h",
+   "dutyLabel": "Garde de jour",
+   "hoursText": "9h-23h",
    "dutyStartDate": "2026-11-21",
    "dutyEndDate": "2026-11-21",
    "sources": [
@@ -1433,7 +1437,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-mosquee-zahra-s241775.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-11-22",
-     "lastCheckedAt": "2026-11-22T02:04:29.707Z",
+     "lastCheckedAt": "2026-11-22T09:40:43.565Z",
      "historyMatch": {
       "start": "2026-11-21",
       "end": "2026-11-22",
@@ -1485,7 +1489,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-soussan-s254635.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-11-22",
-     "lastCheckedAt": "2026-11-22T02:04:29.707Z",
+     "lastCheckedAt": "2026-11-22T09:40:43.565Z",
      "historyMatch": {
       "start": "2026-11-21",
       "end": "2026-11-22",
