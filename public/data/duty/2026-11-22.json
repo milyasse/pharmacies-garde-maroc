@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "generatedAt": "2026-11-23T07:21:30.636Z",
+ "generatedAt": "2026-11-23T19:27:36.903Z",
  "records": [
   {
    "id": "rabat-amana",
@@ -104,9 +104,7 @@
    ],
    "verificationStatus": "confirmed",
    "confidenceLevel": "high",
-   "notes": [
-    "Numéros de téléphone différents selon les sources."
-   ]
+   "notes": []
   },
   {
    "id": "rabat-medina",
@@ -328,7 +326,7 @@
    "phone": "+212537776290",
    "dutyDate": "2026-11-22",
    "dutyType": "continuous",
-   "dutyLabel": "Agdal 24h/24h",
+   "dutyLabel": "Ouvert 24h/24",
    "hoursText": "24h/24",
    "dutyStartDate": "2026-11-22",
    "dutyEndDate": "2026-11-23",
@@ -354,7 +352,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-les-iris-s238095.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-rabat.html",
      "sourcePublishedAt": "2026-11-23",
-     "lastCheckedAt": "2026-11-23T07:21:30.660Z",
+     "lastCheckedAt": "2026-11-23T19:27:36.923Z",
      "historyMatch": {
       "start": "2026-11-22",
       "end": "2026-11-23",
@@ -666,14 +664,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-baassine-s254347.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-sale.html",
      "sourcePublishedAt": "2026-11-23",
-     "lastCheckedAt": "2026-11-23T07:21:32.347Z",
+     "lastCheckedAt": "2026-11-23T19:27:54.703Z",
      "historyMatch": {
       "start": "2026-11-22",
       "end": "2026-11-23",
       "label": "Garde Jour"
      },
-     "dutyType": "day",
-     "dutyLabel": "Garde de jour"
+     "dutyType": null,
+     "dutyLabel": null
     }
    ],
    "verificationStatus": "confirmed",
@@ -782,9 +780,7 @@
    ],
    "verificationStatus": "confirmed",
    "confidenceLevel": "high",
-   "notes": [
-    "Numéros de téléphone différents selon les sources."
-   ]
+   "notes": []
   },
   {
    "id": "sale-grande-sale",
@@ -1227,14 +1223,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-al-anouar-s241888.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-11-23",
-     "lastCheckedAt": "2026-11-23T07:21:32.887Z",
+     "lastCheckedAt": "2026-11-23T19:28:06.721Z",
      "historyMatch": {
       "start": "2026-11-22",
       "end": "2026-11-23",
       "label": "Garde Jour"
      },
-     "dutyType": "day",
-     "dutyLabel": "Garde de jour"
+     "dutyType": null,
+     "dutyLabel": null
     }
    ],
    "verificationStatus": "confirmed",
@@ -1253,7 +1249,7 @@
    "phone": "+212537747728",
    "dutyDate": "2026-11-22",
    "dutyType": "continuous",
-   "dutyLabel": "Harhoura 24h/24h",
+   "dutyLabel": "Ouvert 24h/24",
    "hoursText": "24h/24",
    "dutyStartDate": "2026-11-22",
    "dutyEndDate": "2026-11-23",
@@ -1279,7 +1275,7 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-atlantique-s241765.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-11-23",
-     "lastCheckedAt": "2026-11-23T07:21:32.887Z",
+     "lastCheckedAt": "2026-11-23T19:28:06.721Z",
      "historyMatch": {
       "start": "2026-11-22",
       "end": "2026-11-23",
