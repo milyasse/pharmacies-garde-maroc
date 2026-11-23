@@ -2463,5 +2463,110 @@
   "address": "92 Lot Tour Hassan AvTarek Ibn Zyad",
   "phone": "+212537740220",
   "at": "2026-11-16T17:24:36.724Z"
+ },
+ "rabat|pharmacie de l'agdal": {
+  "address": "Avenue des nations unies, rue ibn hanbal Résidence ibn khaldoun (à proximité de Paul Agdal et de la clinique des nations unies) Tél: 0537 67 16 00",
+  "phone": "+212537671600",
+  "at": "2026-11-23T00:28:28.769Z"
+ },
+ "rabat|pharmacie sanaoubar riad": {
+  "address": "Av Sanaoubar (A coté de mosquée Saif) sect 18",
+  "phone": "+212537717110",
+  "at": "2026-11-23T00:28:31.561Z"
+ },
+ "rabat|pharmacie takaddoum": {
+  "address": "Av Al Haouz Groupe Zaitoune N°1",
+  "phone": "+212537651496",
+  "at": "2026-11-23T00:28:34.868Z"
+ },
+ "rabat|pharmacie oqba": {
+  "address": "62 Avenue OQBA - Tél: 0537 77 26 99",
+  "phone": "+212537772699",
+  "at": "2026-11-23T00:28:37.824Z"
+ },
+ "rabat|pharmacie gare hay riad": {
+  "address": "A l’intérieur de la gare Hay Riad",
+  "phone": "+212537711748",
+  "at": "2026-11-23T00:28:41.173Z"
+ },
+ "rabat|pharmacie zina": {
+  "address": "6,Av Mehdi Ben Barka — Souissi",
+  "phone": "+212537758899",
+  "at": "2026-11-23T00:28:44.130Z"
+ },
+ "rabat|pharmacie boucham": {
+  "address": "18 Rue Bani Malik Aviation Quartier Administrative",
+  "phone": "+212537757800",
+  "at": "2026-11-23T00:28:46.945Z"
+ },
+ "rabat|pharmacie bir kacem": {
+  "address": "Avenue Bir Kacem - Souissi",
+  "phone": "+212537658820",
+  "at": "2026-11-23T00:28:50.469Z"
+ },
+ "rabat|pharmacie assorour": {
+  "address": "Immeuble 14 Appt 13 Youssoufia Ouest",
+  "phone": "+212537758857",
+  "at": "2026-11-23T00:28:53.420Z"
+ },
+ "rabat|pharmacie al araar": {
+  "address": "Av Al Araar résidence Ispahan",
+  "phone": "+212537710627",
+  "at": "2026-11-23T00:28:56.974Z"
+ },
+ "rabat|pharmacie al minbat": {
+  "address": "18 Av Mehdi Benbarka Souissi",
+  "phone": "+212537751607",
+  "at": "2026-11-23T00:28:59.683Z"
+ },
+ "rabat|pharmacie mabella": {
+  "address": "56 Avenue Tadla Cité Mabella",
+  "phone": "+212537651468",
+  "at": "2026-11-23T00:29:03.031Z"
+ },
+ "rabat|pharmacie al osra": {
+  "address": "66 Hay Nahda N°1",
+  "phone": "+212537759559",
+  "at": "2026-11-23T00:29:06.343Z"
+ },
+ "sale|pharmacie said hajji": {
+  "address": "839, Lot Said Hajji Route de Kénitra",
+  "phone": "+212537878797",
+  "at": "2026-11-23T00:29:13.112Z"
+ },
+ "temara|pharmacie bahia": {
+  "address": "170 Av My Idriss 1 Massira 1",
+  "phone": "+212537605210",
+  "at": "2026-11-23T00:29:20.401Z"
+ },
+ "temara|pharmacie l'espoir": {
+  "address": "Hay Al Maghrib Al Arabi N°3465 Massira 2",
+  "phone": "+212537600833",
+  "at": "2026-11-23T00:29:23.544Z"
+ },
+ "temara|pharmacie la reference": {
+  "address": "Imm. GH 198, Mag. N° 334 Projet Annasr, à côté marche gros",
+  "phone": "+212537616641",
+  "at": "2026-11-23T00:29:25.040Z"
+ },
+ "temara|pharmacie al yousr": {
+  "address": "Lot 24 Ha Sect 5 Lot N° 100 Massira 1",
+  "phone": "+212537600006",
+  "at": "2026-11-23T00:29:26.595Z"
+ },
+ "temara|pharmacie al maarif": {
+  "address": "Secteur 1 N°252 hay Maghreb Arabie (chiga) massira 2",
+  "phone": "+212537604310",
+  "at": "2026-11-23T00:29:27.819Z"
+ },
+ "temara|pharmacie anniema": {
+  "address": "Av Tarik Ibn Ziad Rés. Imane Bloc B Imm E N°15",
+  "phone": "+212537613693",
+  "at": "2026-11-23T00:29:29.729Z"
+ },
+ "temara|pharmacie la ceinture verte": {
+  "address": "Av Alla Ben Abdellah N°21 Hay Al Andalous",
+  "phone": "+212537643584",
+  "at": "2026-11-23T00:29:31.090Z"
  }
 }
