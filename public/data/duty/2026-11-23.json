@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "generatedAt": "2026-11-24T04:42:43.391Z",
+ "generatedAt": "2026-11-24T17:29:14.879Z",
  "records": [
   {
    "id": "rabat-mithaliya",
@@ -872,14 +872,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-al-anouar-s241888.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-11-24",
-     "lastCheckedAt": "2026-11-24T04:42:45.378Z",
+     "lastCheckedAt": "2026-11-24T17:29:39.237Z",
      "historyMatch": {
       "start": "2026-11-23",
       "end": "2026-11-24",
       "label": "Garde Jour"
      },
-     "dutyType": "day",
-     "dutyLabel": "Garde de jour"
+     "dutyType": null,
+     "dutyLabel": null
     }
    ],
    "verificationStatus": "confirmed",
@@ -924,14 +924,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-annasr-s254254.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-11-24",
-     "lastCheckedAt": "2026-11-24T04:42:45.378Z",
+     "lastCheckedAt": "2026-11-24T17:29:39.237Z",
      "historyMatch": {
       "start": "2026-11-23",
       "end": "2026-11-24",
       "label": "Garde Jour"
      },
-     "dutyType": "day",
-     "dutyLabel": "Garde de jour"
+     "dutyType": null,
+     "dutyLabel": null
     }
    ],
    "verificationStatus": "confirmed",
@@ -1028,14 +1028,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-azur-s251691.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-11-24",
-     "lastCheckedAt": "2026-11-24T04:42:45.378Z",
+     "lastCheckedAt": "2026-11-24T17:29:39.237Z",
      "historyMatch": {
       "start": "2026-11-23",
       "end": "2026-11-24",
       "label": "Garde Jour"
      },
-     "dutyType": "day",
-     "dutyLabel": "Garde de jour"
+     "dutyType": null,
+     "dutyLabel": null
     }
    ],
    "verificationStatus": "confirmed",
