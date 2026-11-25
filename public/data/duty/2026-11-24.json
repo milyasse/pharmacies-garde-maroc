@@ -1,6 +1,6 @@
 {
  "date": "2026-11-24",
- "generatedAt": "2026-11-25T03:08:55.027Z",
+ "generatedAt": "2026-11-25T14:08:38.539Z",
  "records": [
   {
    "id": "rabat-amana",
@@ -820,14 +820,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-al-anouar-s241888.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-11-25",
-     "lastCheckedAt": "2026-11-25T03:08:56.874Z",
+     "lastCheckedAt": "2026-11-25T14:09:02.861Z",
      "historyMatch": {
       "start": "2026-11-24",
       "end": "2026-11-25",
       "label": "Garde Jour"
      },
-     "dutyType": "day",
-     "dutyLabel": "Garde de jour"
+     "dutyType": null,
+     "dutyLabel": null
     }
    ],
    "verificationStatus": "confirmed",
@@ -872,14 +872,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-annasr-s254254.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-11-25",
-     "lastCheckedAt": "2026-11-25T03:08:56.874Z",
+     "lastCheckedAt": "2026-11-25T14:09:02.861Z",
      "historyMatch": {
       "start": "2026-11-24",
       "end": "2026-11-25",
       "label": "Garde Jour"
      },
-     "dutyType": "day",
-     "dutyLabel": "Garde de jour"
+     "dutyType": null,
+     "dutyLabel": null
     }
    ],
    "verificationStatus": "confirmed",
@@ -924,14 +924,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-azur-s251691.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-11-25",
-     "lastCheckedAt": "2026-11-25T03:08:56.874Z",
+     "lastCheckedAt": "2026-11-25T14:09:02.861Z",
      "historyMatch": {
       "start": "2026-11-24",
       "end": "2026-11-25",
       "label": "Garde Jour"
      },
-     "dutyType": "day",
-     "dutyLabel": "Garde de jour"
+     "dutyType": null,
+     "dutyLabel": null
     }
    ],
    "verificationStatus": "confirmed",
