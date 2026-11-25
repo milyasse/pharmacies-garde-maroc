@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-25T14:08:38.539Z",
+ "generatedAt": "2026-11-25T18:09:38.004Z",
  "todayMorocco": "2026-11-25",
  "dates": [
   "2026-10-12",
@@ -69,7 +69,7 @@
    "pageDate": "2026-11-25",
    "count": 8,
    "error": null,
-   "checkedAt": "2026-11-25T14:08:38.563Z"
+   "checkedAt": "2026-11-25T18:09:38.034Z"
   },
   {
    "sourceId": "annuaire-gratuit",
@@ -80,7 +80,7 @@
    "pageDate": "2026-11-25",
    "count": 7,
    "error": null,
-   "checkedAt": "2026-11-25T14:08:50.789Z"
+   "checkedAt": "2026-11-25T18:09:39.441Z"
   },
   {
    "sourceId": "annuaire-gratuit",
@@ -91,7 +91,7 @@
    "pageDate": "2026-11-25",
    "count": 6,
    "error": null,
-   "checkedAt": "2026-11-25T14:09:02.861Z"
+   "checkedAt": "2026-11-25T18:09:39.988Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -100,9 +100,9 @@
    "url": "https://www.guidepharmacies.ma/pharmacies-de-garde/rabat.html",
    "ok": true,
    "pageDate": "2026-11-23",
-   "count": 42,
+   "count": 43,
    "error": null,
-   "checkedAt": "2026-11-25T14:09:08.804Z"
+   "checkedAt": "2026-11-25T18:09:41.334Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -113,7 +113,7 @@
    "pageDate": "2026-11-30",
    "count": 60,
    "error": null,
-   "checkedAt": "2026-11-25T14:09:11.702Z"
+   "checkedAt": "2026-11-25T18:09:44.901Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -124,7 +124,7 @@
    "pageDate": "2026-11-23",
    "count": 39,
    "error": null,
-   "checkedAt": "2026-11-25T14:09:12.675Z"
+   "checkedAt": "2026-11-25T18:09:46.683Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -135,7 +135,7 @@
    "pageDate": "2026-11-30",
    "count": 53,
    "error": null,
-   "checkedAt": "2026-11-25T14:09:14.035Z"
+   "checkedAt": "2026-11-25T18:09:48.120Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -146,7 +146,7 @@
    "pageDate": "2026-11-23",
    "count": 33,
    "error": null,
-   "checkedAt": "2026-11-25T14:09:15.489Z"
+   "checkedAt": "2026-11-25T18:09:49.794Z"
   },
   {
    "sourceId": "guidepharmacies",
@@ -157,7 +157,7 @@
    "pageDate": "2026-11-30",
    "count": 39,
    "error": null,
-   "checkedAt": "2026-11-25T14:09:17.153Z"
+   "checkedAt": "2026-11-25T18:09:51.239Z"
   }
  ],
  "connectors": [
