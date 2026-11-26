@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "generatedAt": "2026-11-26T02:25:19.253Z",
+ "generatedAt": "2026-11-26T10:43:46.858Z",
  "records": [
   {
    "id": "rabat-attannoub",
@@ -208,9 +208,7 @@
    ],
    "verificationStatus": "confirmed",
    "confidenceLevel": "high",
-   "notes": [
-    "Numéros de téléphone différents selon les sources."
-   ]
+   "notes": []
   },
   {
    "id": "rabat-residences",
@@ -822,14 +820,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-al-anouar-s241888.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-11-26",
-     "lastCheckedAt": "2026-11-26T02:25:21.266Z",
+     "lastCheckedAt": "2026-11-26T10:44:09.829Z",
      "historyMatch": {
       "start": "2026-11-25",
       "end": "2026-11-26",
       "label": "Garde Jour"
      },
-     "dutyType": "day",
-     "dutyLabel": "Garde de jour"
+     "dutyType": null,
+     "dutyLabel": null
     }
    ],
    "verificationStatus": "confirmed",
@@ -874,14 +872,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-annasr-s254254.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-11-26",
-     "lastCheckedAt": "2026-11-26T02:25:21.266Z",
+     "lastCheckedAt": "2026-11-26T10:44:09.829Z",
      "historyMatch": {
       "start": "2026-11-25",
       "end": "2026-11-26",
       "label": "Garde Jour"
      },
-     "dutyType": "day",
-     "dutyLabel": "Garde de jour"
+     "dutyType": null,
+     "dutyLabel": null
     }
    ],
    "verificationStatus": "confirmed",
@@ -926,14 +924,14 @@
      "sourceUrl": "https://www.annuaire-gratuit.ma/pharmacies/pharmacie-azur-s251691.html",
      "listingUrl": "https://www.annuaire-gratuit.ma/pharmacie-garde-temara.html",
      "sourcePublishedAt": "2026-11-26",
-     "lastCheckedAt": "2026-11-26T02:25:21.266Z",
+     "lastCheckedAt": "2026-11-26T10:44:09.829Z",
      "historyMatch": {
       "start": "2026-11-25",
       "end": "2026-11-26",
       "label": "Garde Jour"
      },
-     "dutyType": "day",
-     "dutyLabel": "Garde de jour"
+     "dutyType": null,
+     "dutyLabel": null
     }
    ],
    "verificationStatus": "confirmed",
